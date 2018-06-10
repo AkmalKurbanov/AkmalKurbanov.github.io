@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="font" horiz-adv-x="1000" >
+<font-face font-family="font" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="event" unicode="&#xe800;" d="M786-49h-589l-182 556 1 1 476 342 477-343-1-2z m-586 5h583l180 549-471 339-472-339z m130-80l-1 1-329 482 1 1 362 461 1 0 552-197v-2l-20-582-2-1z m-324 482l325-477 560 162 21 578-548 195z m498-508l-477 337 177 560h2l586 9 0-1 185-553-1-1z m-472 339l472-333 468 347-183 549-581-9z" horiz-adv-x="977" />
+</font>
+</defs>
+</svg>
