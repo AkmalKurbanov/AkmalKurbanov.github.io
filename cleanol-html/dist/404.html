@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>html cleanol</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class="loader">
+      <ul class="loader__lines">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- loader -->
+    
+    <header class="header">
+      <div class="header__head">
+        <div class="container">
+          <div class="header__logo">
+            <a href="#">
+              <img src="images/logo.png" alt="">
+            </a>
+            <div class="header__description">
+              <!-- <h3>Чистое решение</h3> -->
+              <div class="header__decision">
+                <img src="images/clear-decision.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="header__contacts">
+            <div class="header__phone">
+              <a href="tel:+74956096828"><span>+7 (495) 609-68-28</span></a>
+            </div>
+            <a href="#callback" class="header__callback popup">Заказать обратный звонок</a>
+          </div>
+        </div>
+      </div>
+      <!-- header__head -->
+      <nav class="header__nav js-mobileNav">
+        <div class="container">
+          <ul>
+            <li><a href="#">Инвесторам</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Оборудование</a></li>
+            <li><a href="#">Истории успеха</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Статьи</a></li>
+          </ul>
+          <div class="navtrigger">
+            <i></i><i></i><i></i>
+            <span>Меню</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header -->
+
+    <section class="errorpage">
+      <div class="container">
+        <div class="errorpage__head">
+          <h2>404</h2>
+          <h4>Страница не найдена</h4>
+          <p>Простите, но у нас возникли проблемы с поиском <br> страницы, которую Вы запрашиваете</p>
+        </div>
+        <p class="errorpage__descr">Пожалуйста, перейдите на главную страницу – там Вы <br> также сможете найти много полезной информации.</p>
+        <a href="#">Перейти на главную</a>
+      </div>
+    </section>
+    <!-- errorpage -->
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="#">Инвесторам</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Оборудование</a></li>
+            <li><a href="#">Истории успеха</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Статьи</a></li>
+          </ul>
+        </nav>
+        <div class="footer__copy">
+          &copy; Автомойки самообслуживание - <a href="#" target="_blank">Cleanol Techno</a>, 2016. Разработка сайта <a href="http://flabio.ru/" target="_blank">Flabio</a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <a href="#" id="back-to-top" title="Back to top"></a>
+
+    <!-- modal begin -->
+
+    <div id="callback" class="callback-popup mfp-hide">
+      <form action="#">
+        <div class="banner__form-wrap">
+          <h3>заказать обратный звонок</h3>
+          <input type="text" placeholder="Ваше имя">
+          <input type="tel" placeholder="Номер телефона">
+          <input type="text" placeholder="Удобное время для звонка">         
+          <div class="text-center">
+          <button type="submit" class="button popup">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- callback-popup -->
+
+    <div id="map-popup" class="map-popup mfp-hide">
+      <div class="map">
+        <div class="map__yandex" id="map"></div>
+      </div>
+    </div>
+    <!-- map-popup -->
+
+    <div id="desireform" class="callback-popup mfp-hide">
+      <form action="#">
+        <div class="banner__form-wrap">
+          <h3>Хочу открыть автомойку</h3>
+          <input type="text" placeholder="Ваше имя">
+          <input type="text" placeholder="Ваша эл. почта">
+          <input type="tel" placeholder="Номер телефона">        
+          <div class="text-center">
+          <button type="submit" class="button popup">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- callback-popup -->
+
+    <!-- modal end -->
+
+    <script src="scripts/vendor.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
