@@ -1,0 +1,51 @@
+.flabCursor{
+	position: fixed;
+	z-index: 100;
+	width: rem(40px);
+	height: rem(40px);
+	margin: rem(-25px) 0 0 rem(-25px);
+	animation: appear .5s;
+	pointer-events: none;
+  z-index: 99;
+  &:after{
+    content: '';
+    font-family: "flabioiconfont";
+    position: absolute;
+    width: rem(50px);
+    text-align: center;
+    font-size: rem(30px);
+    top: 0;
+    left: 0;
+    color: $fifth_color;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: .8;
+    transform: scale(0.5, 0.5);
+  }
+  70% {
+    opacity: .3;
+    transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: .8;
+    -webkit-transform: scale(0.5, 0.5);
+  }
+  70% {
+    opacity: .3;
+    -webkit-transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.5, 0.5);
+  }
+}

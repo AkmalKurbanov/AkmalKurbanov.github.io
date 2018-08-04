@@ -1,0 +1,670 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>html</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <section class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="header__logo">
+              <img src="images/logo_black.svg" alt="">
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="header__right">
+              <div class="header__right-item3">
+                <a href="#"><i class="icon-steam"></i></a>
+                <span>Войти через<a href="#">  Steam</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu">
+      <ul>
+        <li><a href="#" title="Главная"><i class="icon-home"></i><span>Главная</span></a></li>
+        <li><a href="#" title="Топ"><i class="icon-people"></i><span>Топ</span></a></li>
+        <li><a href="#" title="История игр"><i class="icon-list"></i><span>История игр</span></a></li>
+        <li><a href="#" title="О сайте"><i class="icon-i"></i><span>О сайте</span></a></li>
+        <li><a href="#" title="Правила"><i class="icon-mehan"></i><span>Правила</span></a></li>
+        <li><a href="#" title="Поддержка"><i class="icon-peopl"></i><span>Поддержка</span></a></li>
+      </ul>
+      <div class="menu__toggle js_menu_toggle">
+        <i class="icon-arrowleft"></i>
+      </div>
+    </section>
+
+    <section class="content">
+
+      <div class="content__promo">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 -item">
+              <div class="content__promo-item">
+                <span>1K</span>
+                <p>игроков за сутки</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 -item">
+              <div class="content__promo-item">
+                <span>1K</span>
+                <p>лоторей за 24 часа</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 -item">
+              <div class="content__promo-item">
+                <span>36K</span>
+                <p>лоторей завершено</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 -item">
+              <div class="content__promo-item">
+                <span>$52K</span>
+                <p>всего выиграно</p>
+              </div>
+            </div>
+          </div>
+          <div class="content__promo-text">
+            <p><span>CSGO-SHOP.PRO</span>- здесь вы можете поменять или заработать скины бесплатно!<br>Чтобы пользоваться сайтом, необходимо <a href="#">авторизоваться</a> через Steam</p>
+          </div> 
+        </div>
+      </div>
+      <!-- promo -->
+      <div class="content__filter">
+
+        <div class="content__filter-wrap">
+          <div class="content__filter--col -size1">
+            <span>Поиск</span>
+            <form class="search" action="#">
+              <div class="search__group">
+                <input type="text" placeholder="">
+                <button class="search__btn"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+          <div class="content__filter--col">
+            <span>Сортировка</span>
+            <select data-placeholder="по популярности" class="js_chosen">
+              <option value=""></option>
+              <option value="1">Старые</option>
+              <option value="3">Новые</option>
+              <option value="4">Очень старые</option>
+              <option value="5">Самые новые</option>
+            </select>
+          </div>
+
+          <div class="content__filter--col">
+            <span>Раритетность</span>
+            <select data-placeholder="все" class="js_chosen">
+              <option value=""></option>
+              <option value="1">Редкое</option>
+              <option value="4">Постораешься найдешь</option>
+              <option value="2">Не редкое</option>
+              <option value="3">Не найти нигде</option>
+            </select>
+          </div>
+
+          <div class="content__filter--col">
+            <span>Тип</span>
+            <select data-placeholder="все" class="js_chosen">
+              <option value=""></option>
+              <option value="1">Пистолет</option>
+              <option value="2">Автомат</option>
+              <option value="3">Пистолет-автомат</option>
+              <option value="5">Снайперка</option>
+              <option value="4">Ножи</option>
+            </select>
+          </div>
+
+          <div class="content__filter--col">
+            <span>Качество</span>
+            <select data-placeholder="все" class="js_chosen">
+              <option value=""></option>
+              <option value="1">Новое</option>
+              <option value="2">БУ</option>
+              <option value="3">Поцарапаное</option>
+            </select>
+          </div>
+
+          <div class="content__filter--col -price">
+            <div class="content__filter--num">
+              <span>от</span>
+              <input type="text" value="0">
+              <span>до</span>
+              <input type="text" value="300">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog">
+        <div class="container-fluid">
+          <div class="blog__pagination">          
+            <ul>
+              <li><a href="#" class="-prev"><i class="icon-left-open"></i></a></li>
+              <li><a href="#" class="-active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li>. . .</li>
+              <li><a href="#">400</a></li>
+              <li><a href="#" class="-next"><i class="icon-right-open"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog">
+        <div class="catalog__items">
+        <div class="container-fluid">
+          <div class="row">
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3>AK-47 | Aquamarine Revenge</h3>
+                    <p>НЕМНОГО ПОНОШЕННОЕ</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/Ak47.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>                    
+                    <span class="-price">$30.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$25</span> 
+                    /
+                    <span class="-purchases">50%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="50" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3 class="-white">M4A1-S | Mecha Industries</h3>
+                    <p class="-aqua">ПРЯМО С ЗАВОДА</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/M4A1.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$40.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$15</span> 
+                    /
+                    <span class="-purchases">30%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="30" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3 class="-blue">M4A4 | ASIIMOV</h3>
+                    <p class="-red">ЗАКАЛЕННОЕ В БОЯХ</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/M4A4.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$30.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$35</span> 
+                    /
+                    <span class="-purchases">70%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="70" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3>AK-47 | Aquamarine Revenge</h3>
+                    <p>НЕМНОГО ПОНОШЕННОЕ</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/Ak47.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$30.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$0</span> 
+                    /
+                    <span class="-purchases">0%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="0" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3>AK-47 | Aquamarine Revenge</h3>
+                    <p>ПОСЛЕ ПОЛЕВЫХ ИСПЫТАНИЙ</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/Ak47.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$30.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$15</span> 
+                    /
+                    <span class="-purchases">50%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="0" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3 class="-white">M4A1-S | Mecha Industries</h3>
+                    <p class="-aqua">ПРЯМО С ЗАВОДА</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/M4A1.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$40.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$15</span> 
+                    /
+                    <span class="-purchases">50%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="0" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3 class="-blue">M4A4 | ASIIMOV</h3>
+                    <p class="-red">ЗАКАЛЕННОЕ В БОЯХ</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/M4A4.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$30.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$15</span> 
+                    /
+                    <span class="-purchases">50%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="0" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3>AK-47 | Aquamarine Revenge</h3>
+                    <p>ПОСЛЕ ПОЛЕВЫХ ИСПЫТАНИЙ</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/Ak47.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$30.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$15</span> 
+                    /
+                    <span class="-purchases">50%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="0" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3>AK-47 | Aquamarine Revenge</h3>
+                    <p>НЕМНОГО ПОНОШЕННОЕ</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/Ak47.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$30.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$15</span> 
+                    /
+                    <span class="-purchases">50%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="0" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3 class="-white">M4A1-S | Mecha Industries</h3>
+                    <p class="-aqua">ПРЯМО С ЗАВОДА</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/M4A1.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$40.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$15</span> 
+                    /
+                    <span class="-purchases">50%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="0" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3 class="-blue">M4A4 | ASIIMOV</h3>
+                    <p class="-red">ЗАКАЛЕННОЕ В БОЯХ</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/M4A4.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$30.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$15</span> 
+                    /
+                    <span class="-purchases">50%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="0" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="catalog__item">
+                  <div class="catalog__item-head">
+                    <h3>AK-47 | Aquamarine Revenge</h3>
+                    <p>ПОСЛЕ ПОЛЕВЫХ ИСПЫТАНИЙ</p>
+                  </div>
+                  <div class="catalog__item-thumbnail">
+                    <img src="images/Ak47.png" alt="#">
+                  </div>
+                  <div class="catalog__item-cena">
+                    <p>Цена в Steam</p>
+                    <span class="-price">$30.00</span>
+                  </div>
+                  <div class="catalog__item-bottom">
+                    <span class="-price_slide">$15</span> 
+                    /
+                    <span class="-purchases">50%</span>
+                    <div class="js_range_slider">
+                      <input type="range" value="0" min="0" max="100">
+                    </div>
+                    <div class="catalog__item-btn">
+                    <a href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog">
+        <div class="container-fluid">
+          <div class="blog__pagination">          
+            <ul>
+              <li><a href="#" class="-prev"><i class="icon-left-open"></i></a></li>
+              <li><a href="#" class="-active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li>. . .</li>
+              <li><a href="#">400</a></li>
+              <li><a href="#" class="-next"><i class="icon-right-open"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="victory">
+        <div class="container-fluid">
+          <div class="victory__blog">
+            <h2>ПОСЛЕДНИЕ ПОБЕДЫ</h2>
+          </div>
+          <div class="victory__catalog">              
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="victory__item">
+                  <div class="victory__item-head">
+                    <h3>AK-47 | Aquamarine Revenge</h3>
+                  </div>
+                  <div class="victory__item-thumbnail">
+                    <img src="images/Ak47.png" alt="#">
+                  </div>
+                  <div class="victory__item-bottom">
+                    <p>за <span class="-purchases">20%</span></p>
+                    <p>от <span class="-price_slide">$30.00</span></p>                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="victory__item">
+                  <div class="victory__item-head">
+                    <h3>M4A1-S | Mecha Industries</h3>
+                  </div>
+                  <div class="victory__item-thumbnail">
+                    <img src="images/M4A1.png" alt="#">
+                  </div>
+                  <div class="victory__item-bottom">
+                    <p>за <span class="-purchases">12%</span></p>
+                    <p>от <span class="-price_slide">$30.00</span></p>                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="victory__item">
+                  <div class="victory__item-head">
+                    <h3>M4A4 | Asiimov</h3>
+                  </div>
+                  <div class="victory__item-thumbnail">
+                    <img src="images/M4A4.png" alt="#">
+                  </div>
+                  <div class="victory__item-bottom">
+                    <p>за <span class="-purchases">15%</span></p>
+                    <p>от <span class="-price_slide">$30.00</span></p>                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="victory__item">
+                  <div class="victory__item-head">
+                    <h3>AK-47 | Aquamarine Revenge</h3>
+                  </div>
+                  <div class="victory__item-thumbnail">
+                    <img src="images/Ak47.png" alt="#">
+                  </div>
+                  <div class="victory__item-bottom">
+                    <p>за <span class="-purchases">20%</span></p>
+                    <p>от <span class="-price_slide">$30.00</span></p>                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="victory__item">
+                  <div class="victory__item-head">
+                    <h3>M4A1-S | Mecha Industries</h3>
+                  </div>
+                  <div class="victory__item-thumbnail">
+                    <img src="images/M4A1.png" alt="#">
+                  </div>
+                  <div class="victory__item-bottom">
+                    <p>за <span class="-purchases">12%</span></p>
+                    <p>от <span class="-price_slide">$30.00</span></p>                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="victory__item">
+                  <div class="victory__item-head">
+                    <h3>M4A4 | Asiimov</h3>
+                  </div>
+                  <div class="victory__item-thumbnail">
+                    <img src="images/M4A4.png" alt="#">
+                  </div>
+                  <div class="victory__item-bottom">
+                    <p>за <span class="-purchases">15%</span></p>
+                    <p>от <span class="-price_slide">$30.00</span></p>                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="footer">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="footer__copy">2016 © CSGO-SHOP.PRO</p>          
+        </div>
+        <div class="col-sm-6">
+          <p class="footer__dev">Разработано <span>Flabio.ru</span></p>          
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <script src="scripts/vendor.js"></script>
+    
+    <script src="scripts/plugins.js"></script>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

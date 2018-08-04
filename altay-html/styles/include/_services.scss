@@ -1,0 +1,120 @@
+.flabServices{
+	min-height: rem(540px);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: rem(50px) 0;
+	@include media-breakpoint-down(sm) {
+		padding: rem(30px) 0;
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		background-color: rgba(0,0,0,0.5);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	&__serviseDesc {
+		padding: 0 0 rem(40px);
+		position: relative;
+		text-align: center;
+		p{
+			word-spacing: 0.5px;
+			margin: 0;
+			color: $white;
+			font-size: rem(15px);
+		}
+	}
+	&__list {
+		text-align: center;
+		position: relative;
+		padding: 0 rem(20px) rem(50px);
+		@include media-breakpoint-down(md)  {
+			padding: 0 0 rem(50px);
+		}
+		@include media-breakpoint-down(sm) {
+			padding: 0 0 rem(30px);
+		}
+	}
+	&__listItems {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		@include media-breakpoint-down(md) {
+			display: block;
+		}
+	}
+	&__item {
+		max-width: rem(100px);
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+		@include media-breakpoint-down(md) {
+			max-width: rem(230px);
+			padding-bottom: rem(30px);
+		}
+		@include media-breakpoint-down(sm) {
+			max-width: rem(120px);
+		}
+		&:last-child {
+			@include media-breakpoint-down(xs) {
+				padding-bottom: 0;
+			}
+		}
+		p{
+			color: $white;
+			margin: 0;
+			line-height: rem(18px);
+		}
+	}
+	&__iconWrap {
+		min-height: rem(65px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: rem(5px);
+		i{
+			color: $white;
+			height: auto;
+		}
+		.flabio-sauna{
+			font-size: rem(42px);
+		}
+		.flabio-tour {
+			font-size: rem(42px);
+			margin-right: rem(12px);
+		}
+		.flabio-food-2 {
+			font-size: rem(42px);
+			margin-right: rem(10px);
+		}
+		.flabio-bike {
+			font-size: rem(30px);
+			margin-right: rem(20px);
+		}
+		.flabio-wifi-1 {
+			font-size: rem(34px);
+			margin-right: rem(12px);
+		}
+		.flabio-parking {
+			font-size: rem(34px);
+			margin-right: rem(2px);
+		}
+		.flabio-transfer {
+			font-size: rem(32px);
+			margin-right: rem(15px);
+		}
+		.flabio-wash {
+			font-size: rem(34px);
+		}
+	}
+}

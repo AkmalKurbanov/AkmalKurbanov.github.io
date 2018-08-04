@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/jqvmap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+    <!-- overlay for menu -->
+    <div class="overlay"></div>
+    <!-- end overlay for menu -->
+    <!-- header -->
+    <header class="main-head">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <ul>
+                        <li class="logo">
+                            <img src="img/logo.png" alt="#">
+                            <span class="blue-logo">
+                        be
+                        </span>
+                            <span class="pink-logo">
+                         helper
+                        </span>
+                        </li>
+                        <li class="city-choose">
+                            <select class="dropdown-toggle" data-width="76px">
+                              <option>Москва</option>
+                              <option>Lorem</option>
+                              <option>Lorem</option>
+                            </select>
+                        </li>
+                        <li class="metro">
+                            <img src="img/metro-icon.png" alt="#">
+                            <span>Павелецкая</span>
+                        </li>
+                        <li class="head-phone hidden-lg hidden-md">
+                            +7 (495) 230-75-20
+                        </li>
+                        <li class="login-sm hidden-lg hidden-md">
+                            <a href="">
+                                <div class="login-sm-img">
+                                    <img src="img/User-sm.png" alt="#">
+                                    <div class="logo-counter">
+                                        3
+                                    </div>
+                                </div>
+                                <span>Кабинет</span>
+                            </a>
+                        </li>
+                        <li class="menu-toggle">
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4  head-contacts ">
+                    <ul>
+                        <li class="head-phone hidden-xs">
+                            +7 (495) 230-75-20
+                        </li>
+                        <li class="email-us">
+                            <a href="">Написать нам</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 login col-sm-3 col-xs-3">
+                    <a href="" class="login-md">
+                        <img src="img/User.png" alt="">
+                        <span>Вход / Регистрация</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- end header  -->
+    <!-- mobile menu -->
+    <div class="menu-wrap">
+        <div class="container">
+            <div class="menu-top">
+                <div class="menu-city">
+                    <ul>
+                      <li>
+                          <span>Ваш город:</span>
+                      </li>
+                      <li class="city-choose">
+                          <select class="dropdown-toggle" data-width="86px">
+                            <option>Москва</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                      </li>
+                    </ul>
+                </div>
+                <div class="menu-login">
+                    <div class="user-avatar">
+                        <img src="img/User-sm.png" alt="">
+                    </div>
+                    <a href="">Вход / Регистрация</a>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="">Главная страница<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="">Каталог работников<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="">Каталог вакансий<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="">О системе<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="head-phone ">
+                +7 (495) 230-75-20
+            </div>
+            <div class="email-us">
+                <a href="">Написать нам</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end mobile menu -->
+    <!-- main-content -->
+    <article>
+        <!-- search-for -->
+        <section class="search-for">
+            <div class="container">
+                <div class="row">
+                    <div class="tab-heads col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6 tab-head tab-active tab-head-1" data-tab="tab-1">
+                                <div class="tab-head-wrap">
+                                    <img src="img/tab-head-1.png" alt="">
+                                    <input type="radio" id="radio1">
+                                    <label for="radio1"><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-dot-circle-o" aria-hidden="true"></i></label>
+                                    <span>Найти <span class="hide-word">отличного</span> работника</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6  tab-head tab-head-2" data-tab="tab-2">
+                                <div class="tab-head-wrap">
+                                    <img src="img/tab-head-2.png" alt="">
+                                    <input type="radio" id="radio2">
+                                    <label for="radio2"><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-dot-circle-o" aria-hidden="true"></i></label>
+                                    <span>Найти <span class="hide-word">стабильную</span> работу</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs col-md-12 col-sm-12 col-xs-12">
+
+                        <div id="tab-1" class="tab-item tab-active clearfix">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3 col-md-push-0 col-sm-push-0 col-xs-3 col-xs-push-9 job-item job-item-1">
+                                    <a href=""><img src="img/job-item-1.png" alt=""><span class="hidden-xs">Сиделкой</span><span class="hidden-md hidden-sm hidden-lg">Сиделка</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-md-push-0 col-sm-push-0 col-xs-3 col-xs-push-3 job-item job-item-2">
+                                    <a href=""><img src="img/job-item-2.png" alt=""><span class="hidden-xs">Репетитором</span> <span class="hidden-md hidden-sm hidden-lg">Репетитор</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-md-pull-0 col-sm-pull-0 col-xs-3  col-xs-pull-6 job-item job-item-3">
+                                    <a href=""><img src="img/job-item-3.png" alt=""><span class="hidden-xs">Няней</span><span class="hidden-md hidden-sm hidden-lg">Няня</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-md-3  col-sm-3  col-md-pull-0 col-sm-pull-0 col-xs-3 col-xs-pull-6  job-item job-item-4">
+                                    <a href=""><img src="img/job-item-4.png" alt=""><span class="hidden-xs">Домработницей</span><span class="hidden-md hidden-sm hidden-lg">Домработница</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Найти работника <span>рядом</span> с домом</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9 col-sm-9 col-xs-9 search-items">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-6 searh-item search-item-1">
+                                            <div class="search-toggle"><span></span></div>
+                                            <select class="search-select"  title="Выбрать район" data-width="100%">
+                                              <option>Mustard</option>
+                                              <option>Ketchup</option>
+                                              <option>Relish</option>
+                                            </select>
+                                          </div>
+                                        <div class="col-md-6 col-sm-6  col-xs-6 searh-item search-item-2">
+                                            <div class="search-toggle"><span></span></div>
+                                            <select class="search-select"  title="Ищу няню" data-width="100%">
+                                              <option>Mustard</option>
+                                              <option>Ketchup</option>
+                                              <option>Relish</option>
+                                            </select>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 search-btn-wrap clearfix">
+                                    <a href="" class="search-btn"><span>Найти</span></a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-12 labors-top">
+                                    <span>Представляем</span>
+                                    <a href=""><i class="fa fa-plus" aria-hidden="true"></i><span>Хочу сюда</span></a>
+                                </div>
+                                <div class="col-md-12 labors-carousel ">
+                                    <div class="labors-carousel-wrap">
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="labor-nav">
+                                        <div class="labor-next"><img src="img/next-btn.png" alt=""></div>
+                                        <div class="labor-prev"><img src="img/prev-btn.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 all-labors">
+                                    <a href="" class="main-btn">
+                                  Все работники
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-item clearfix">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3 col-md-push-0 col-sm-push-0 col-xs-3 col-xs-push-9 job-item job-item-1">
+                                    <a href=""><img src="img/job-item-1.png" alt=""><span class="hidden-xs">Сиделкой</span><span class="hidden-md hidden-sm hidden-lg">Сиделка</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-md-push-0 col-sm-push-0  col-xs-3 col-xs-push-3 job-item job-item-2">
+                                    <a href=""><img src="img/job-item-2.png" alt=""><span class="hidden-xs">Репетитором</span> <span class="hidden-md hidden-sm hidden-lg">Репетитор</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-md-3 col-sm-3  col-md-pull-0 col-sm-pull-0 col-xs-3  col-xs-pull-6 job-item job-item-3">
+                                    <a href=""><img src="img/job-item-3.png" alt=""><span class="hidden-xs">Няней</span><span class="hidden-md hidden-sm hidden-lg">Няня</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col-md-3  col-sm-3  col-md-pull-0 col-sm-pull-0 col-xs-3 col-xs-pull-6  job-item job-item-4">
+                                    <a href=""><img src="img/job-item-4.png" alt=""><span class="hidden-xs">Домработницей</span><span class="hidden-md hidden-sm hidden-lg">Домработница</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Найти работника <span>рядом</span> с домом</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-9 col-sm-9 col-xs-9 search-items">
+                                  <div class="row">
+                                      <div class="col-md-6 col-sm-6 col-xs-6 searh-item search-item-1">
+                                          <div class="search-toggle"><span></span></div>
+                                          <select class="search-select"  title="Выбрать район" data-width="100%">
+                                            <option>Mustard</option>
+                                            <option>Ketchup</option>
+                                            <option>Relish</option>
+                                          </select>
+                                        </div>
+                                      <div class="col-md-6 col-sm-6  col-xs-6 searh-item search-item-2">
+                                          <div class="search-toggle"><span></span></div>
+                                          <select class="search-select"  title="Ищу няню" data-width="100%">
+                                            <option>Mustard</option>
+                                            <option>Ketchup</option>
+                                            <option>Relish</option>
+                                          </select>
+                                        </div>
+                                  </div>
+                              </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 search-btn-wrap clearfix">
+                                    <a href="" class="search-btn"><span>Найти</span></a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-12 labors-top">
+                                    <span>Представляем</span>
+                                    <a href=""><i class="fa fa-plus" aria-hidden="true"></i><span>Хочу сюда</span></a>
+                                </div>
+                                <div class="col-md-12 labors-carousel ">
+                                    <div class="labors-carousel-wrap-2">
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="labor-item">
+                                            <a class="labor-item-wrap" href="">
+                                                <div class="labor-item-img">
+                                                    <img src="img/labor-item-5.png" alt="">
+                                                </div>
+                                                <div class="labor-item-desc">
+                                                    <p>Вероника, 22 года</p>
+                                                    <p> Домработница</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="labor-nav">
+                                        <div class="labor-next-2"><img src="img/next-btn.png" alt=""></div>
+                                        <div class="labor-prev-2"><img src="img/prev-btn.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 all-labors">
+                                    <a href="" class="main-btn">
+                                  Все работники
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end search-for -->
+        <!-- feedback -->
+        <section class="feedback">
+            <div class="feedback-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Отзывы пользователей</h1>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 feedback-item feedback-item-1">
+                                    <div class="feedback-item-wrap clearfix">
+                                        <div class="feedback-img">
+                                            <img src="img/feedback-img.png" alt="">
+                                        </div>
+
+                                        <div class="feedback-desc">
+                                            <div class="feedback-name">
+                                                <span class="author-name">Илья Максимов</span><span class="feedback-date">2 дня назад</span>
+                                            </div>
+                                            <div class="feedback-txt">
+                                                <p>В сентябре без проблем нашли умную </p>
+                                                <p>няню для сына. На сайте всё доступно и понятно.</p>
+                                            </div>
+                                            <div class="feedback-rating">
+                                                <span class="rate-number">7.8</span>
+                                                <div class="feedback-stars">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 feedback-item feedback-item-2">
+                                    <div class="feedback-item-wrap clearfix">
+                                        <div class="feedback-img">
+                                            <img src="img/feedback-img.png" alt="">
+                                        </div>
+
+                                        <div class="feedback-desc">
+                                            <div class="feedback-name">
+                                                <span class="author-name">Илья Максимов</span><span class="feedback-date">2 дня назад</span>
+                                            </div>
+                                            <div class="feedback-txt">
+                                                <p>В сентябре без проблем нашли умную </p>
+                                                <p>няню для сына. На сайте всё доступно и понятно.</p>
+                                            </div>
+                                            <div class="feedback-rating">
+                                                <span class="rate-number">7.8</span>
+                                                <div class="feedback-stars">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see-all">
+                <a href="" class="main-btn">
+                Посмотреть все
+              </a>
+            </div>
+        </section>
+        <!-- end feedback -->
+        <!-- vacancies -->
+        <section class="vacancies">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 vacancies-top">
+                        <a href="" class="open-vacancies"><img src="img/open-vac-img.png" alt=""><span>Открытие вакансии</span></a>
+                        <a href="" class="all-vacancies"><img src="img/all-vac-img.png" alt=""><span class="hidden-xs">Все вакансии</span><span class="hidden-lg hidden-md hidden-sm">Еще</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="vacancy-carousel">
+                <ul class="vacancies-carousel-wrap">
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор2</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item ">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор1</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                    <li class="vacancies-item">
+                        <a href="">
+                            <p class="vacancy-name">Репетитор</p>
+                            <span class="vacancy-salary">20 000 — 28 000	&#8381;</span>
+                            <p class="vacancy-labor">
+                                Алена,Казань
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="vacancy-nav">
+                    <div class="vacancy-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                    <div class="vacancy-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end vacancies -->
+        <!-- about-us -->
+        <section class="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <h3>О проекте Be Helper</h3>
+
+                        <div class="about-us__blog">
+                            <p>BeHelper — это первый в России полностью бесплатный и удобный сервис по поиску работы и подбору домашнего персонала без посредников.</p>
+                        </div>                        
+
+                    </div>
+
+                    <div class="col-md-5 col-sm-12">
+                        <div class="about-us__block">
+                            <p>Получите полный бесплатный доступ к каталогу вакансий и резюме работников следующих типов: няня, домработница, репетитор, сиделка.</p>
+                            <img src="img/down.png" alt="#">
+                            <a href="#" class="btn">Получить доступ</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="about-us__map">
+                            <span>Сервис работает для пользователей из следующих регионов:</span>
+                            <ul>
+                                <li><a href="#" id="mc" class="focus-region">a,</a>Москва</li>
+                                <li><a href="#" id="jqvmap1_mc" class="jqvmap-region">b,</a>Московская область</li>
+                                <li><a href="#" id="pe" class="focus-region">c,</a>Санкт-Петербург</li>
+                                <li><a href="#" id="al" class="focus-region">d,</a>Ленинградская область</li>
+                                <li><a href="#" id="kr" class="focus-region">e,</a>Красноярский край</li>
+                            </ul>
+                            <div class="map" id="vmap" style="width: 100%; height: 400px;"></div>
+
+                            <div class="maps__navs">
+                                <div class="mape-prev"></div>
+                                <div class="mape-next"></div>
+                            </div>
+
+                            <div class="maps js-mape">
+                                <div class="mape__item">
+                                    <p>Санкт-Петербург:</p>
+                                    <p><span>520</span>вакансий</p>
+                                    <p><span>1320</span>резюме</p>
+                                </div>
+                                <div class="mape__item">
+                                    <p>Санкт-Петербург:</p>
+                                    <p><span>520</span>вакансий</p>
+                                    <p><span>1320</span>резюме</p>
+                                </div>
+                            </div>
+
+                            <p>До конца 2018 мы планируем охватить все регионы России.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end about us -->
+
+        <section class="using">
+            <div class="container">
+                <h3>Как пользоваться?</h3>
+
+                <div class="row">
+
+                    <div class="using__navs">
+                        <div class="using-prev"></div>
+                        <div class="using-next"></div>
+                    </div>
+
+                    <div class="using__slid js-services">
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="using__item using__item--img1">
+                                <h5>Работодатель</h5>
+                                <ul>
+                                    <li><span>1</span>Зарегистрируйтесь на сайте.</li>
+                                    <li><span>2</span>Разместите вакансию и собирайте отклики работников или ищите их на сайте и отправляйте приглашения самостоятельно.</li>
+                                    <li><span>3</span>Выбирайте подходящих кандидатов и общайтесь с ними напрямую онлайн.</li>
+                                    <li><span>4</span>Оставляйте отзыв по результатам общения.</li>
+                                    <li><span>5</span>Встречайтесь для общения вживую.</li>
+                                    <li><span>6</span>Дополняйте и меняйте мнение о работнике..</li>
+                                </ul>
+                                <img class="-left" src="img/girl1.png" alt="#">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="using__item using__item--img2">
+                                <h5>Работник</h5>
+                                <ul class="-blue">
+                                    <li><span>1</span>Зарегистрируйтесь на сайте.</li>
+                                    <li><span>2</span>Разместите одно или несколько резюме, собирайте приглашения работодателей или откликайтесь на готовые вакансии.</li>
+                                    <li><span>3</span>Выбирайте подходящие вакансии работодателей и общайтесь с ними напрямую онлайн.</li>
+                                    <li><span>4</span>Обсудите условия работы детально.</li>
+                                    <li><span>5</span>Оставьте отзыв о работодателе по результатам общения.</li>
+                                    <li><span>6</span>Встречайтесь для общения вживую.</li>
+                                    <li><span>7</span>Дополняйте и меняйте мнение о работодателе.</li>
+                                </ul>
+                                <img class="-right" src="img/girl2.png" alt="#">
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+            </div>
+        </section>
+        <!-- end using -->
+
+        <section class="necessary">
+            <div class="container">
+                <h3>Зачем все это нужно?</h3>
+                <div class="necessary__blog">
+                    <p>В интернете уже есть подобные сайты для поиска нянь и домашнего персонала, но они либо неудобны, либо взимают плату за пользование своими услугами.</p>
+                    <p>Мы постарались устранить эти недостатки, сделав пользование базовым функционалом сайта полностью бесплатным и создав удобную площадку для поиска нянь, домработниц, репетиторов и сиделок без посредников.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end necessary -->
+
+        <section class="conclusion">
+            <div class="container">
+                <h3>Пару слов о сервисе в заключение...</h3>
+
+                <div class="row">
+
+                    <div class="conclusion__navs">
+                        <div class="conclusion-prev"></div>
+                        <div class="conclusion-next"></div>
+                    </div>
+
+                    <div class="conclusion__blog js-conclusion">
+
+                    <div class="col-md-4 col-sm-12">
+                            <div class="conclusion__item">
+                                <img src="img/it1.png" alt="#">
+                                <h6><span>BeHelper</span> - справедливый сервис.</h6>
+                                <p>Мы не берем никакой оплаты за работу с базовым функционалом сайта behelper.ru и обязуемся в дальнейшем этого не делать.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <div class="conclusion__item">
+                                <img src="img/it2.png" alt="#">
+                                <h6><span>BeHelper</span> - честный сервис</h6>
+                                <p>Система устроена таким образом, что рейтинг пользователей, формируется самими пользователями. Мы лишь обслуживаем работу системы, предоставляя информационное пространство для общения работника и работодателя.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                            <div class="conclusion__item">
+                                <img src="img/it3.png" alt="#">
+                                <h6><span>BeHelper</span> - удобный сервис</h6>
+                                <p>Мы постарались уменьшить количество лишних действий совершаемых пользователем, чтобы не отнимать драгоценное время людей.</p>
+                            </div>
+                        </div>
+
+                    </div>                    
+                </div>
+
+            </div>
+        </section>
+        <!-- end conclusion -->
+
+        <section class="comparison">
+            <div class="container">
+                <h3>Сравнение с другими сервисами</h3>
+                <p>Или чего нет в нашем сервисе и никогда не появится.</p>
+                <p>В мире нет ничего идеального, мы не смогли предусмотреть все. В особенности мы не смогли предусмотреть все, что перечислено в левом столбце таблицы ниже:</p>
+                <div class="row">
+                    
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h5 class="bot">Другие сервисы <span>по подбору домашнего персонала</span></h5>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h5 class="-blue bot">BeHelper.ru</h5>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="comparison__item rrr">
+                            <ul>
+                                <li>Грабительские тарифы для работодателей и вообще любые тарифы за пользование функционалом системы с оплатой за время;</li>
+                                <li>Ограничение на просмотр контактных данных пользователей   в сутки, в месяц в год</li>
+                                <li>Отсутствие прямого контакта работодателя и работника</li>
+                                <li>Прямое посредничество за деньги между работником и работодателем.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        
+                        <div class="comparison__item -bluee rrr">
+                            <ul class="-helper">
+                                <li>Нет никаких тарифов. Пользование нашим сервисом <span>бесплатно</span></li>
+                                <li>Нет никаких ограничений, если конечно пользователи, сами   не ограничивают доступ к контактным данным в своих резюме</li>
+                                <li>Прямой контакт работодателя и работника, онлайн-чат</li>
+                                <li>Никакого посредничества. Общение работника и   работодателя происходит напрямую.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end comparison -->
+
+    </article>
+    <!-- footer -->
+    <!-- end footer -->
+    <footer class="main-foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4  ">
+                    <ul class="footer-first-row">
+                        <li class="logo">
+                            <img src="img/logo.png" alt="#">
+                            <span class="blue-logo">
+                                      be
+                            </span>
+                            <span class="pink-logo">
+                                 helper
+                              </span>
+                        </li>
+                        <li class="social-copyright">
+                            <div class="copyright">
+                                &copy; 2009-2016 Все права защищены.
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hidden-lg hidden-md hidden-sm foot-links">
+                            <div> <a href="">Полная версия</a></div>
+                            <div><a href="">Реклама на сайте</a></div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8   foot-menu">
+                    <ul>
+                        <li class="foot-menu-head">
+                            <p>Резюме:</p>
+                            <ul>
+                                <li>
+                                    <a href="">Няни</a>
+                                </li>
+                                <li>
+                                    <a href="">Помощники</a>
+                                </li>
+                                <li>
+                                    <a href="">Репетиторы</a>
+                                </li>
+                                <li>
+                                    <a href="">Сиделки</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-plus" aria-hidden="true"></i>Добавить резюме</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="foot-menu-head">
+                            <p>Вакансии:</p>
+                            <ul>
+                                <li>
+                                    <a href="">Няни</a>
+                                </li>
+                                <li>
+                                    <a href="">Помощники</a>
+                                </li>
+                                <li>
+                                    <a href="">Репетиторы</a>
+                                </li>
+                                <li>
+                                    <a href="">Сиделки</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-plus" aria-hidden="true"></i>Добавить вакансию</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="foot-menu-head">
+                            <p>О компании:</p>
+                            <ul>
+                                <li>
+                                    <a href="">Советы и статьи</a>
+                                </li>
+                                <li>
+                                    <a href="">Тарифы и оплата</a>
+                                </li>
+                                <li>
+                                    <a href="">Детские центры развития</a>
+                                </li>
+                                <li>
+                                    <a href="">Каталог агенств</a>
+                                </li>
+                                <li>
+                                    <a href="">Для СМИ</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end main content  -->
+    <!-- load scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui-slider-pips.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.vmap.js"></script>
+    <script src="js/jquery.vmap.min.js"></script>
+    <script src="js/jquery.vmap.russia.js"></script>
+    <script src="js/main.js"></script>    
+    <!-- end load scripts -->
+</body>
+
+</html>

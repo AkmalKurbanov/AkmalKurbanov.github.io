@@ -1,0 +1,15 @@
+
+.icon-list:before { content: '\e800'; } /* '' */
+.icon-pay:before { content: '\e801'; } /* '' */
+.icon-payment:before { content: '\e802'; } /* '' */
+.icon-price:before { content: '\e803'; } /* '' */
+.icon-send:before { content: '\e804'; } /* '' */
+.icon-application:before { content: '\e805'; } /* '' */
+.icon-arrow-left:before { content: '\e806'; } /* '' */
+.icon-arrow-right:before { content: '\e807'; } /* '' */
+.icon-bicycle:before { content: '\e808'; } /* '' */
+.icon-call:before { content: '\e809'; } /* '' */
+.icon-callback:before { content: '\e80a'; } /* '' */
+.icon-checked:before { content: '\e80b'; } /* '' */
+.icon-guarantee:before { content: '\e80c'; } /* '' */
+.icon-kamaz:before { content: '\e80d'; } /* '' */

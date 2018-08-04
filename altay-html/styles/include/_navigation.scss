@@ -1,0 +1,120 @@
+.flabNavigation {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+  &__item {
+    display: inline-block;
+    margin-left: rem(20px);
+    margin-right: rem(20px);
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      margin-left: rem(10px);
+      margin-right: rem(10px);
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+    &--active{
+      .flabNavigation__link{
+        color: $white;
+        &:before,
+        &:after{
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+          -webkit-transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+          transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+          -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+        }
+      }
+    }
+    &--submenu{
+			.flabNavigation__link{
+				.flabIcon{
+					&:before{
+						transform: rotate(0deg);
+						transition: transform .3s ease;
+					}
+				}
+				&--open{
+					color: $white;
+					&:before,
+					&:after{
+						-webkit-transform: scale3d(1, 1, 1);
+						transform: scale3d(1, 1, 1);
+						-webkit-transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+						transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+						-webkit-transition-duration: 0.4s;
+						transition-duration: 0.4s;
+					}
+					.flabIcon{
+						&:before{
+							transform: rotate(180deg);
+						}
+					}
+				}
+			}
+		}
+  }
+
+  &__link {
+    font-size: $f_sz_fourth;
+    color: darken($white, 36);
+    position: relative;
+    display: block;
+    &:after{
+      bottom: 0;
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+    }
+    &:before{
+      top: 0;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+    }
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: rem(1px);
+      background: $white;
+      -webkit-transform: scale3d(0, 1, 1);
+      transform: scale3d(0, 1, 1);
+      -webkit-transition: -webkit-transform 0.2s;
+      transition: transform 0.2s;
+    }
+    &:hover{
+			color: $white;
+			text-decoration: none;
+			&:before,
+			&:after{
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				-webkit-transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+				transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+				-webkit-transition-duration: 0.4s;
+				transition-duration: 0.4s;
+			}
+		}
+  }
+
+}
+// flabNavigation end
+
+.flabSubmenu {
+  &__item {
+    &--active {
+
+    }
+  }
+  &__link {
+
+  }
+}
+// flabSubmenu end

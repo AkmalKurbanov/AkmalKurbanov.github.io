@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="font" horiz-adv-x="1000" >
+<font-face font-family="font" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="i2" unicode="&#xe800;" d="M590 850l395-978c-205-31-201-29-283 129-18 35-74 59-117 72-36 12-80-3-120 3-118 19-187-21-216-145-34-143-152-44-249-81l372 1000z m-213-579h223l-115 302z m1253-26h-256l-12-237h-174l-14 232h-237v194h237l11 241h174l15-236h256z" horiz-adv-x="1630" />
+
+<glyph glyph-name="i1" unicode="&#xe801;" d="M418 850h320v-331l-103-11 6-100c184-9 398 52 410-233l107-5v-320h-331v313l97 18c-19 113-87 133-288 90l4-94 92-11v-312h-318v309l100 20-4 90c-222 43-291 20-285-94l87-17v-309h-312v312l92 17c16 298 251 200 418 231v90l-92 22z" horiz-adv-x="1158" />
+
+<glyph glyph-name="i3" unicode="&#xe802;" d="M442-149v268h-442v731h1178v-731h-18c-128 0-257 0-385 1a41 41 0 0 1-31-12c-87-83-174-166-262-249-12-11-25-9-40-8z m676 328v611h-1061v-611h445v-218l21 19c67 64 133 127 201 190a37 37 0 0 0 22 9c77 0 153 0 230 0z m-869 197v121h128v-121z m381 122v-121h-128v121z m273-1v-121h-128v121z" horiz-adv-x="1178" />
+
+<glyph glyph-name="i4" unicode="&#xe803;" d="M384 113h-384v737h1120v-737h-16c-122 0-244 0-366 0a37 37 0 0 1-28-11q-65-62-132-123c-30-28-61-55-92-82-14-13-26-27-39-39a33 33 0 0 0-19-7c-14-2-29-1-45-1z m-286 103h387v-189l17 17c58 55 116 109 173 164a32 32 0 0 0 24 9c102 0 203 0 305 0h15v529h-921z m815 245v-149h-139v149z m-568-3v-148h-140v148z m297 0v-148h-140v148z" horiz-adv-x="1120" />
+
+<glyph glyph-name="i5" unicode="&#xe804;" d="M384 113h-384v737h1120v-737h-16c-122 0-244 0-366 0a37 37 0 0 1-28-11q-65-62-132-123c-30-28-61-55-92-82-14-13-26-27-39-39a33 33 0 0 0-19-7c-14-2-29-1-45-1z m-286 103h387v-189l17 17c58 55 116 109 173 164a32 32 0 0 0 24 9c102 0 203 0 305 0h15v529h-921z" horiz-adv-x="1120" />
+</font>
+</defs>
+</svg>

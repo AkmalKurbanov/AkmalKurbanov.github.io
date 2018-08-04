@@ -1,0 +1,314 @@
+* { margin: 0; padding: 0; outline: 0; }
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+body {  width:100%; min-width: 1000px; color: #595959; font-weight: normal; text-align: center;}
+#main {width: 100%; position: relative; margin: auto; }
+div.top {position: relative; margin: 0px auto; width: 100%;  height: 539px;}
+div.benefits {position: relative; margin: 0px auto; width: 100%;  background: url(images/benef_back.png) repeat; height:153px;}
+div.shadow {position: relative; margin: -2px auto; width: 100%;  background: url(images/shadow.png) no-repeat center top; height: 48px; float: left;}
+div.clock {position: relative; margin: 0px auto; width: 100%;  height:1150px;}
+div.catch {position: relative; margin: 0px auto; width: 100%;  height: 294px;background: url(images/catch_back.png) repeat; float: left; }
+div.fot {position: relative; margin: 0px auto; width: 100%;  height: 50px; float: left; }
+div.response {position: relative; margin: 0px auto; width: 100%;  height:auto; overflow: hidden; float: left;}
+
+div.wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+.wrap h1 {font-size: 32px; margin: 10px 0 10px 0; font-weight: normal; text-align: center;}
+div.logo {
+	width: 200px;
+	height: 100px;
+	float: left;
+	margin: 20px 0 0 20px;
+	background: url(images/logo.png) no-repeat;
+}
+.logo p {margin: 50px auto; text-align: center; font-size: 18px;}
+div.cash {float: left;
+	width:365px;
+	height: 100px;
+	background: url(images/ribbon.png) no-repeat top center;
+	margin: 0 0 0 90px;
+}
+.cash h2, .cash p {text-align: center;}
+.cash h2 {font-size: 28px; margin: 10px auto;color:#fff; }
+.cash p {font-size: 18px; margin: 10px auto;}
+div.number {
+	width: 280px;
+	height: 100px;
+	float: left;
+	margin: 0px 0 0  40px;
+	text-align: right;
+}
+.number p {font-size: 18px;margin-top: 5px;}
+.number h2 {font-size: 24px;margin-top: 5px;}
+div.button {
+	width: 266px;
+	height: 44px;
+	background: url(images/call_button.png) repeat;
+	margin: 5px 0 0 10px;
+}
+div.button:hover {
+	background-position: 0 -44px;
+	cursor: pointer;
+	
+}
+div.why_box {width: 800px; height: auto;margin: 20px 100px 0 100px; float: left;}
+div.why_box h1 {float: left; font-size: 90px; color: #ff8502; font-weight: normal; text-align: left; width: 70px; margin-top: -15px;}
+div.why_box h4 {float: left; font-size: 50px; color: #27bc62; font-weight: normal; text-align: left; width: 40px; margin-top: -15px;}
+div.why_box h2 {float: left; font-size: 20px; color: #595959; text-align: left;  width: 730px;}
+div.why_box h3 {float: left; font-size: 20px; color: #595959; text-align: left;  width: 800px; font-weight: normal;}
+div.why_box p {float: left; font-size: 18px; color: #595959; text-align: left;font-weight: normal; width: 730px; height:auto; margin-top: 10px;}
+div.why_box ol {float: left; font-size: 18px; color: #595959; text-align: left;font-weight: normal; width: 730px; height:auto; margin: 10px 0 0 40px;}
+
+div.form {
+	width: 475px; 
+	height: 341px; 
+	float: right;   
+	position: relative; 
+	border: 4px solid #ff8502;
+}
+.form h2 {font-size: 24px; font-weight: normal; text-align: center; margin: 10px 10px 10px 10px;}
+.form p{font-size: 18px; margin: 5px 0 0 30px; float: left; font-weight: normal; text-align: center;}
+div.form2 {
+	width: 300px; 
+	height: 341px; 
+	float: right;   
+	position: relative; 
+	margin: 40px 100px 0 0;
+}
+.form2 p{font-size: 18px; margin: 0px 0 0 0px; float: left; font-weight: normal; text-align: center;}
+div.dcp {
+	width: 1000px;
+	height: 40px;
+	float: left;
+	margin: 10px 0 10px 0;
+	font-size: 32px;
+	text-align: center;
+}
+.dcp h1 {font-size: 32px;
+	text-align: center; font-weight: normal;}
+	div.head {width: 1000px;
+		height: 349px;
+		background: url(images/head.jpg) no-repeat top left;
+		float: left;
+		margin: 10px 0 0 0;}
+		div.icon {width: 200px; height: 120px; margin-top: 20px; float: left;}
+		.icon p {font-size: 20px; margin-top: 60px; text-align: center;}
+		div.clock_img { background: url(images/clock.html) no-repeat center bottom;
+			width: 960px; height: 560px; margin: 40px 0 20px 40px;}
+			.clock_img h4 {color: #ff8502; font-size: 26px; font-weight: normal; }
+			.clock_img p { font-size: 18px; margin-top: 10px;}
+			.catch h2 {
+				width: 500px; 
+				float: left;
+				font-weight: normal;
+				font-size: 30px;
+				margin: 50px 0 0 40px;
+				text-align: right;
+				line-height: 45px;
+			}
+
+			div.response_content{width:960px;height:350px;margin:20px 0 20px 20px;float:left;}
+			.response_content h3{color:#ff8502;text-align:right;font-size:26px;font-weight:normal; margin-left: 580px;}
+			.response_content h2{color:#d4004f;text-align:right;font-size:32px;font-weight:normal;width:300px;margin:5px 0px 0 0px;float:right;}
+			.response_content p{color:#666666;text-align:left;font-size:18px;width:750px;margin:5px 0px 0px 40px; float: left;}
+			div.response_wrap {width: 500px; height: 90px; margin: 5px 0 0 500px;}
+			div.metro, .ruble, .time, .flat {float: left; width: 250px; height: 33px; margin-top: 5px;}
+			div.metro p, .ruble p, .time p, .flat p {margin: 5px 0 0 40px;}
+			div.metro {background: url(images/metro.png) no-repeat left center;}
+			div.ruble {background: url(images/ruble.png) no-repeat left center;}
+			div.time {background: url(images/time.png) no-repeat left center;}
+			div.flat {background: url(images/flat.png) no-repeat left center;}
+			div.other_button{float:left;width:236px;height:38px;margin:20px 0 20px 379px;background:url(images/other_button.png) no-repeat;}
+			div.other_button:hover{background-position:0 -38px;cursor:pointer;}
+			div.other {display: none; width: 1000px; height:auto; overflow: hidden;}
+			div.copyr {
+				text-align: right;
+				Height: 50px;
+				float: right;
+				margin-right: 50px;
+				color: #000000;
+				margin-top:10px;
+			}
+			div.timeline {width: 32px; height: 443px; float: left; background:url(images/timeline.png) no-repeat;}
+			div.time_text {height: 35px; width: 200px;float: left; margin-bottom: 33px; }
+			div.time_wrap {width: 200px; margin: 0 10px 0px 100px; height: 443px; float: left;}
+			.time_text h2 {color:#ff8502; font-size: 26px; text-align: right; font-weight: normal; }
+			div.time_descript {height: 33px; width: 630px; float: right; margin-bottom: 35px;}
+			div.time_descript p {font-size: 20px; text-align: left;}
+			div.denisov {
+				text-align: center;
+				Height: 50px;
+				float: left;
+				margin-left: 50px;
+				color: #000000;
+				margin-top:10px;
+			}
+
+			div.footer {
+				width: 1000px;
+				height: 50px;
+			}
+			.footer p {text-align: center; font-size: 16px;}
+			a { color: #2C71B9; text-decoration: none; border-bottom: 1px dashed #2C71B9; }
+			a:hover { color: #2C71B9; text-decoration: none; border-bottom: 1px solid #2C71B9; }
+			a:active { color: #2C71B9; text-decoration: none; border-bottom: 0px solid #003B79; }
+
+
+			.b1c-form .b1c-cr, .b1c-form .b1c-cr * {
+				font-size: 1.1px !important;
+				color: #f2f2f2 !important;
+			}
+
+			.b1c-form .b1c-tl {
+				background: #5CB85C!important;
+			}
+
+			.thanks{
+				max-width: 1140px;
+				margin: 0 auto;	
+				min-height: 100vh;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				-moz-flex-direction: column;
+				-ms-flex-direction: column;
+				-o-flex-direction: column;
+				flex-direction: column;
+				justify-content: center;
+				-ms-align-items: center;
+				align-items: center;
+			}
+			.thanks h1{
+				font-size: 70px;
+				margin-bottom: 25px;
+				color: #27bc62;
+			}
+			.thanks p{
+				font-size: 30px;
+				padding-top: 20px;
+				padding-bottom: 50px;
+				margin: 0;
+			}
+			.img-wrap{
+				padding-top: 30px;
+			}
+			.thanks .to-main{
+				margin-top: 40px;
+				font-size: 20px;
+				background-color: #27bc62;
+				display: block;
+				max-width: 265px;
+				width: 100%;
+				height: 45px;
+				line-height: 45px;
+				border-radius:  30px;
+				color:  #fff;				
+				text-transform: uppercase;
+				border:  1px solid transparent;
+				-webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+				-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+				box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+			}
+			.thanks .to-main:hover {
+				border:  1px solid #ddd;
+			}
+			.js-popup{
+				font-size: 16px;
+				background-color: #27bc62;
+				display: block;
+				max-width: 265px;
+				width: 100%;
+				height: 43px;
+				line-height: 43px;
+				border-radius:  30px;
+				color:  #fff;		
+				text-align: center;		
+				text-transform: uppercase;
+				border:  1px solid transparent;
+				-webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+				-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+				box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+			}
+			.js-popup:hover {
+				border:  1px solid #ddd;
+				color: #fff;
+			}
+
+
+			.hidden{
+				display: none;
+				transition: all 1s ease;
+			}    
+
+			#popup{
+				background-color: #fff;
+				position: relative;
+				width: auto;
+				max-width: 350px;
+				width: 100%;
+				margin: 20px auto;
+			}
+			.description-popup{
+				background-color: #27bc62;
+				padding: 10px;
+				font-size: 14px;
+				color: #fff;
+			}
+			#popup input {
+				display: block;
+				width: 98%;
+				max-width: 100%;
+				height: 25px;
+				border: none;
+				outline: none;
+				border: 1px solid #999;
+				display: block;
+				padding-left: 5px;
+				margin-bottom: 15px;
+			}
+			#popup p{
+				font-size: 13px;
+			}
+			#popup form {
+				padding: 10px;
+				padding-bottom: 0;
+			}
+			.input-popup{
+				padding-top: 10px;
+			}
+			.input-popup label{
+				color: #000;
+				font-weight: 500;
+				font-size: 13px;
+				cursor: pointer;
+			}
+			.popup-bottom{
+				border-top: 1px solid #e6e6e6;
+				background: #f2f2f2;
+				padding: 10px 0 10px 0;
+				position: relative;
+			}
+			.popup-bottom button{
+				font-size: 14px;
+				margin: 0 auto;
+				width: 85px;
+				height: 25px;
+				display: block;
+				border: none;
+				color: #fff;
+				background-color: #27bc62;
+				cursor: pointer;
+				transition: all .3s;
+			}
+			.popup-bottom button:hover{
+				color: #000; 
+			}

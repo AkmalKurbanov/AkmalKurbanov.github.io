@@ -1,0 +1,138 @@
+.flabServicesPage {
+	&__desc {
+		text-align: center;
+		padding: rem(20px) 0 0;
+		&:last-child {
+			padding: 0;
+		}
+		p {
+			font-size: rem(15.8px);
+			line-height: rem(20px);
+			color: $black;
+			margin: 0;
+		}
+	}
+	&__list {
+		// text-align: center;
+		padding: rem(50px) 0;
+		@include media-breakpoint-down(sm) {
+			padding: rem(30px) 0 rem(10px) ;
+		}
+	}
+	&__listItem {
+		max-width: 100%;
+		width: 100%;
+		border: rem(1px) solid #292929;
+		cursor: pointer;
+		position: relative;
+		margin-bottom: rem(20px);
+		@include media-breakpoint-down(sm) {
+			max-width: rem(350px);
+			margin: auto;
+			margin-bottom: rem(20px);
+		}
+		&:last-child {
+			margin-bottom: 0;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: rem(20px);
+			}
+		}
+	}
+	&__hiddenItem {
+		display: none;
+		border-top: rem(1px) solid #292929;
+		padding: rem(15px) rem(15px) rem(15px) rem(40px);		
+		@include media-breakpoint-down(md) {
+			padding: rem(10px) rem(15px) rem(10px) rem(20px);		
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			li{
+				list-style-type: none;
+				position: relative;
+				color: $black;
+				font-size: rem(15px);
+				margin-bottom: rem(5px);
+				@include media-breakpoint-down(md) {
+					font-size: rem(13px);
+				}
+				&:last-child {
+					margin-bottom: 0;				
+				}
+				&:before {
+					position: absolute;
+					content: '';
+					width: rem(15px);
+					height: rem(1px);
+					background-color: #292929;
+					left: rem(-23px);
+					top: rem(10px);
+					@include media-breakpoint-down(md) {
+						left: rem(-13px);
+						top: rem(8px);
+						width: rem(7px);
+					}
+				}
+			}
+		}
+	}
+	&__clickPlace {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;				
+	}
+	&__iconWrap {
+		border-right: rem(1px) solid #292929;
+		padding: 0 rem(4px);
+		min-height: rem(45px);
+		max-width: rem(50px);
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		i{
+			color: #523532;
+			font-size: rem(30px);		
+			margin-top: rem(5px);			
+		}
+		.flabio-wifi-1 {
+			font-size: rem(23px);		
+		}
+		.flabio-ambrella {
+			font-size: rem(27px);		
+			margin-right: rem(5px);
+		}
+		.flabio-bicycle {
+			font-size: rem(25px);	
+			margin-right: rem(5px);
+		}
+		.flabio-transfer {
+			font-size: rem(23px);				
+			margin-right: rem(10px);
+		}
+		.flabio-persons {
+			font-size: rem(20px);				
+			margin-right: rem(10px);
+		}
+		.flabio-tour {
+			margin-right: rem(5px);
+		}
+		.flabio-tv-1 {
+			margin-right: rem(5px);
+		}
+	}
+	&__itemName {
+		padding-left: rem(10px);
+		padding-right: rem(10px);		
+		p{
+			margin: 0;
+			color: $black;
+			@include media-breakpoint-down(md) {
+				font-size: rem(15px);
+			}
+		}
+	}
+}
+

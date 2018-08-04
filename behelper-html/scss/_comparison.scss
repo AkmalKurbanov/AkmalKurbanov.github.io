@@ -1,0 +1,146 @@
+.comparison{
+	padding-top: 50px;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		background-image: url('../img/volna.png');
+		background-repeat: repeat-x;
+		height: 5px;
+		width: 100%;
+		top: 30px;
+		left: 0;
+		bottom: 0;
+	}
+	h3{
+		font-size: 20px;
+		color: #191919;
+		font-family: "Roboto-Regular";
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+      left: 0;
+      top: auto;
+      bottom: -15px;
+      width: 45px;
+      height: 2px;
+      background-color: #279CE2;
+    }
+	}
+	p{
+		font-size: 16px;
+		color: #191919;
+		font-family: "Roboto-Thin";
+		padding-top: 35px;
+		margin: 0;
+	}
+	h5{
+		text-align: center;
+		font-size: 16px;
+		color: #191919;
+		font-family: "Roboto-Regular";
+		margin-top: 25px;
+		margin-bottom: -35px;
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #C9C9C9;
+		border-radius: 3px 0 0 3px;
+		position: relative;
+		z-index: 9999;
+		@media only screen and (max-width : 768px) {
+			cursor: pointer;
+		}
+		span{
+			@media only screen and (max-width : 992px) {
+				display: none;
+			}
+		}
+	}
+	.-blue{
+		background-color: #279CE2;
+		border-radius: 0 3px 3px 0;
+	}
+	&__item{
+		text-align: center;
+		margin: -15px;
+		margin-top: 35px;
+		background-color: #F1F1F1;
+		@media only screen and (max-width : 768px) {
+			display: block;
+		}
+		&.-active{
+			display: none;
+		}
+		ul{
+			text-align: left;
+			padding-left: 20px;
+			padding-top: 20px;
+			height: 250px;
+			@media only screen and (max-width : 992px) {
+				padding-bottom: 20px;
+				height: 350px;
+			}
+			@media only screen and (max-width : 570px) {
+				min-height: 250px;
+				height: auto;
+			}			
+			li{
+				display: block;
+				padding-bottom: 15px;
+				font-size: 16px;
+				color: #191919;
+				font-family: "Roboto-Thin";
+				padding-right: 5px;
+				padding-left: 25px;
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					background-image: url('../img/close.png');
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center cebter;
+					width: 11px;
+					height: 11px;
+					left: 0;
+					top: 5px;
+				}
+				span{
+					font-family: "Roboto-Regular";
+				}
+			}
+		}
+		.-helper{
+			@media only screen and (max-width : 992px) {
+				padding-bottom: 0;
+			}			
+			li{
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					background-image: url('../img/check.png');
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center cebter;
+					width: 15px;
+					height: 11px;
+					left: 0;
+					top: 5px;
+				}
+			}
+		}
+	}
+	.-bluee{
+		background-color: #D3EFFA;
+		@media only screen and (max-width : 768px) {
+			display: none;
+		}
+		&.-active{
+			display: block;
+		}
+	}
+}

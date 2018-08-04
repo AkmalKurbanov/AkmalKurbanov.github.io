@@ -1,0 +1,275 @@
+.flabReviewsPage {
+	&__source {
+		text-align: center;
+		p {
+			font-size: rem(25px);
+			line-height: rem(30px);
+			margin: 0;
+		}
+	}
+	&__sourceLinks {
+		text-align: center;
+		padding-top: rem(35px);
+		p{
+			font-size: rem(14px);
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+	&__linksList {
+		padding: 0;
+		margin: 0;
+		padding-top: rem(20px);
+		margin-bottom: rem(30px);
+	}
+	&__sourceItems {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	&__itemsReviewsLinks {
+		text-align: left;
+		cursor: pointer;
+		height: 55px;
+		margin-bottom: 10px;
+		&:hover,
+		&--current {
+			.flabReviewsPage__itemsReviewsLogo {
+				color: $white;
+				&--al{
+					background-color: $third_color;
+					border: rem(1px) solid $third_color;
+				}
+				&--bk{
+					background-color: #003580;
+					border: rem(1px) solid #003580;
+				}
+				&--ta{
+					background-color: #00af87;
+					border: rem(1px) solid #00af87;
+				}
+				&--ab{
+					background-color: #fd5c63;
+					border: rem(1px) solid #fd5c63;
+				}
+			}
+			.flabReviewsPage__itemsReviewsName{
+				img{
+					opacity: 1;
+					filter: grayscale(0);
+				}
+			}
+		}
+	}
+	&__itemsReviewsLogo {
+		width: 55px;
+		text-align: center;
+		height: 100%;
+		border-right: rem(1px) solid #a5a5a5;
+		font-size: 25px;
+		line-height: 55px;
+		float: left;
+		transition: all .4s ease;
+		color: #999;
+		border: rem(1px) solid #a5a5a5;
+		i {
+			position: relative;
+		}
+		.flabio-tripadvisor{
+			left: -2px;
+		}
+		.flabio-etno{
+			left: -1px;
+		}
+	}
+	&__itemsReviewsName {
+		width: calc(100% - 55px);
+		padding: 0 rem(15px);
+		float: left;
+		text-align: center;
+		border-top: rem(1px) solid #a5a5a5;
+		border-bottom: rem(1px) solid #a5a5a5;
+		border-right: rem(1px) solid #a5a5a5;
+		height: 55px;
+		img{
+			position: relative;
+			top: 40%;
+			transform: translateY(-40%);
+			opacity: .5;
+			filter: grayscale(1);
+			transition: all .4s ease;
+		}
+	}
+	.flabChat {
+		display: none;
+		&--current{
+			display: block;
+		}
+		ul {
+			list-style: none;
+			padding: 20px 30px 50px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			max-width: 900px;
+			box-shadow: 0 2px 32px rgba($black,.1);
+			@include media-breakpoint-down(xs) {
+				padding: 10px;
+			}
+			li {
+				margin: 45px 0 0 0;
+				position: relative;
+				.user {
+					margin: -30px 0 0 0;
+					display: block;
+					color: $black;
+					@include media-breakpoint-down(xs) {
+						display: none;
+					}
+					img {
+						width: 65px;
+						height: 65px;
+						border-radius: 50%;
+						background-color: #f3f3f3;
+						box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+					}
+				}
+				.date {
+					font-size: 14px;
+					color: lighten($black, 45);
+				}
+				.name{
+					font-size: 14px;
+					color: $black;
+					span{
+						position: relative;
+						top: -2px;
+						margin-right: 3px;
+					}
+				}
+				.message {
+					display: block;
+					padding: 10px;
+					position: relative;
+					color: $white;
+					background-color: $third_color;
+					border-radius: 3px;
+					box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+					&:before{
+						content: '';
+						position: absolute;
+						border-top: 16px solid rgba(0,0,0,0.15);
+						border-left: 16px solid transparent;
+						border-right: 16px solid transparent;
+						@include media-breakpoint-down(xs) {
+							display: none;
+						}
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						top: 0;
+						border-top: 17px solid $third_color;
+						border-left: 17px solid transparent;
+						border-right: 17px solid transparent;
+						@include media-breakpoint-down(xs) {
+							display: none;
+						}
+					}
+					&.blur {
+						p {
+							filter: blur(3px);
+						}
+						.hider{
+							opacity: 1;
+							z-index: 1;
+						}
+					}
+					p {
+						margin: 0;
+						padding: 0;
+						transition: all 0.1s;
+					}
+					.hider {
+						opacity: 0;
+						z-index: -1;
+						position: absolute;
+						height: 100%;
+						width: 100%;
+						margin: -10px;
+						text-align: center;
+						cursor: pointer;
+						transform-style: preserve-3d;
+						transition: all 0.1s;
+						span {
+							display: block;
+							position: relative;
+							top: 50%;
+							font-size: 16px;
+							transform: translateY(-50%);
+						}
+					}
+				}
+			}
+			li.other {
+				.user {
+					float: right;
+				}
+				.date {
+					float: left;
+					margin: -20px 0 0 0;
+				}
+				.name{
+					float: right;
+					margin: -20px 10px 0 0;
+				}
+				.message {
+					margin: 0 90px 0 0;
+					@include media-breakpoint-down(xs) {
+						margin: 0;
+					}
+					&:before {
+						margin: -9px -16px 0 0;
+						right: 0;
+					}
+					&:after{
+						content: '';
+						right: 0;
+						margin: 0 -15px 0 0;
+					}
+				}
+			}
+			li.you {
+				.user {
+					float: left;
+				}
+				.date {
+					float: right;
+					margin: -20px 0 0 0;
+					@include media-breakpoint-down(xs) {
+						display: none;
+					}
+				}
+				.name{
+					float: left;
+					margin: -20px 0 0 10px;
+				}
+				.message {
+					margin: 0 0 0 90px;
+					background-color: $primary_color;
+					@include media-breakpoint-down(xs) {
+						margin: 0;
+					}
+					&:before {
+						margin: -9px 0 0 -16px;
+						left: 0;
+					}
+					&:after{
+						content: '';
+						left: 0;
+						margin: 0 0 0 -15px;
+						border-top: 17px solid $primary_color;
+					}
+				}
+			}
+		}
+	}
+}

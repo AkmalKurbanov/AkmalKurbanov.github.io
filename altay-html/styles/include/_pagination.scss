@@ -1,0 +1,36 @@
+// pagination start
+.flabPagination{
+  border-top: rem(1px) solid #f5f5f5;
+  padding-top: 40px;
+  text-align: center;
+  &__link{
+    color: #a4a3a3;
+    font-size: rem(14px);
+    font-weight: 400;
+    border: rem(1px) solid #a4a3a3;
+    padding: rem(6px) rem(10px);
+    padding-bottom: rem(5px);
+    margin-left: rem(5px);
+    text-decoration: none;
+    display: inline-block;
+    &:first-child{
+      margin-left: 0;
+    }
+    .flabIcon{
+      margin-right: 5px;
+      margin-left: 5px;
+      position: relative;
+      bottom: -1px;
+    }
+    &:hover{
+      background-color: #292929;
+      text-decoration: none;
+      color: $white;
+    }
+    &--current{
+      background-color: #292929;
+      color: $white;
+    }
+  }
+}
+// pagination end

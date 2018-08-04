@@ -1,0 +1,307 @@
+.flabBlog {
+	background-color: #f8f8f8;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	&__lines {
+		position: relative;
+		padding: rem(43px) 0;
+		@include media-breakpoint-down(lg) {
+			&:before,&:after {
+				display: none;
+			}
+			@include media-breakpoint-down(sm) {
+				padding: rem(30px) 0;
+			}
+		}
+		&--etnoStyleLines {
+			@include media-breakpoint-down(sm) {
+				&:before, &:after{
+					display: none;
+				}
+			}
+			&:before {
+				position: absolute;
+				content: '';
+				height: rem(562px);
+				width: rem(1px);
+				left: rem(25px);
+				bottom: rem(20px);
+				background-color: #d4d4d4;
+			}
+			&:after {
+				position: absolute;
+				content: '';
+				height: rem(562px);
+				width: rem(1px);
+				right: rem(25px);
+				top: rem(20px);
+				background-color: #d4d4d4;
+			}
+
+		}
+	}
+	&__articlesList {
+		padding: rem(25px) 0 rem(50px);
+		@include media-breakpoint-down(md)  {
+			padding: rem(25px) 0 rem(10px);
+		}
+	}
+	&__articlesImg {
+		display: block;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			background-color: rgba(0,0,0,0.5);
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			transition: all .3s;
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			width: 0;
+			height: 0;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			border-top: rem(13px) solid transparent;
+			border-right: rem(15px) solid $white;
+			border-bottom: rem(13px) solid transparent;
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+		}
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+		&--vArrow {
+			&:after {
+				position: absolute;
+				content: '';
+				width: 0;
+				height: 0;
+				top: 89%;
+				left: 47%;
+				border-left: rem(13px) solid transparent;
+				border-right: rem(13px) solid $white;
+				border-bottom: rem(15px) solid transparent;
+				transform: rotate(90deg);
+				@include media-breakpoint-down(lg) {
+					top: 87%;
+				}
+				@include media-breakpoint-down(md) {
+					display: none;
+				}
+			}
+		}
+	}
+	&__articlesItems {
+		margin-bottom: rem(15px);
+		margin-right: rem(15px);
+		&:hover {
+			.flabBlog__articlesImg {
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+		&:last-child {
+			margin-bottom: 0;
+			@include media-breakpoint-down(md) {
+				margin-bottom: rem(20px);
+			}
+		}
+		@include media-breakpoint-down(md) {
+			margin: auto;
+			margin-bottom: rem(20px);
+			max-width: rem(400px);
+		}
+		&--verticalColumn {
+			margin-right: 0;
+			@include media-breakpoint-down(md) {
+				margin: auto;
+			}
+			[class*="col-xl-6"] {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			.flabBlog__articlesDesc {
+				min-height: rem(222px);
+				@include media-breakpoint-down(lg) {
+					min-height: rem(195px);
+				}
+			}
+		}
+		&--even{
+			.flabBlog__articlesImg{
+				&:after {
+					right: auto;
+					left: 0;
+					border-top: rem(13px) solid transparent;
+					border-right: none;
+					border-left: rem(15px) solid $white;
+					border-bottom: rem(13px) solid transparent;
+				}
+			}
+		}
+	}
+
+	&__articlesDesc {
+		background-color: #fff;
+		height: 100%;
+		overflow: hidden;
+		padding: rem(15px);
+		min-height: rem(224px);
+		@include media-breakpoint-down(lg) {
+			min-height: auto;
+		}
+		@include media-breakpoint-down(md) {
+			padding: rem(35px) rem(15px) rem(15px);
+		}
+	}
+	&__articlesDate {
+		text-align: center;
+		border-right: rem(2px) solid #a4a3a3;
+		@include media-breakpoint-down(lg)  {
+			padding-right: rem(10px);
+		}
+		@include media-breakpoint-down(md)  {
+			border: none;
+			text-align: right;
+			position: absolute;
+			left: rem(-15px);
+			right: rem(-15px);
+			top: rem(-35px);
+			background-color: lighten($secondary_color,35);
+		}
+		span {
+			font-size: rem(25px);
+			color: $secondary_color;
+			@include media-breakpoint-down(lg) {
+				font-size: rem(20px);
+			}
+			@include media-breakpoint-down(md)  {
+				color: lighten($black,40);
+			}
+		}
+		p {
+			font-size: rem(15px);
+			color: $secondary_color;
+			margin: 0;
+			@include media-breakpoint-down(md)  {
+				display: inline-block;
+				color: lighten($black,40);
+			}
+		}
+	}
+	&__articlesCaption {
+		padding: 0 0 0 rem(15px);
+		display: flex;
+		align-items: center;
+		height: 100%;
+		@include media-breakpoint-down(md) {
+			justify-content: center;
+			padding: 0;
+
+		}
+		@include media-breakpoint-down(xs) {
+			justify-content: center;
+		}
+		a {
+			color: $black;
+			text-decoration: none;
+			line-height: rem(20px);
+			font-weight: 600;
+			@include media-breakpoint-down(lg) {
+				font-size: rem(13px);
+			}
+			@include media-breakpoint-down(md) {
+				font-size: rem(18px);
+				padding-top: rem(10px);
+			}
+			&:hover {
+				color: $secondary_color;
+			}
+		}
+	}
+	&__articlesAnons {
+		padding-top: rem(30px);
+		height: rem(102px);
+		overflow: hidden;
+		@include media-breakpoint-down(lg) {
+			padding-top: rem(15px);
+			height: rem(70px);
+		}
+		@include media-breakpoint-down(md) {
+			margin-bottom: rem(40px);
+		}
+		p {
+			color: #a4a3a3;
+			line-height: rem(18px);
+			font-size: rem(15px);
+			margin: 0;
+			@include media-breakpoint-down(lg) {
+				font-size: rem(13px);
+			}
+			@include media-breakpoint-down(md) {
+				font-size: rem(16px);
+			}
+		}
+	}
+	&__articlesMore {
+		position: absolute;
+		bottom: rem(13px);
+		right: rem(13px);
+		a {
+			color: #a4a3a3;
+			text-transform: uppercase;
+			text-decoration: none;
+			transition: all .3s;
+			@include media-breakpoint-down(lg) {
+				font-size: rem(15px);
+			}
+			&:hover {
+				color: $secondary_color;
+			}
+		}
+	}
+	&--etnoStyle {
+		@include media-breakpoint-down(sm) {
+			&:before, &:after{
+				display: none;
+			}
+		}
+		&:before {
+			position: absolute;
+			content: '';
+			font-family: 'flabioiconfont';
+			font-size: rem(125px);
+			color: rgba(164,163,163,0.3);
+			top: rem(-32px);
+			left: rem(-50px);
+			transform: rotate(135deg);
+			@include media-breakpoint-down(lg) {
+				font-size: rem(100px);
+			}
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			font-family: 'flabioiconfont';
+			font-size: rem(125px);
+			color: rgba(164,163,163,0.3);
+			bottom: rem(-32px);
+			right: rem(-50px);
+			transform: rotate(-45deg);
+			@include media-breakpoint-down(lg) {
+				font-size: rem(100px);
+			}
+		}
+	}
+}

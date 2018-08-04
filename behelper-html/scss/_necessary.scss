@@ -1,0 +1,31 @@
+.necessary{
+	padding-top: 50px;
+	@media only screen and (max-width : 768px) {
+		padding-top: 0;
+	}
+	h3{
+		font-size: 20px;
+		color: #191919;
+		font-family: "Roboto-Regular";
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+      left: 0;
+      top: auto;
+      bottom: -15px;
+      width: 45px;
+      height: 2px;
+      background-color: #279CE2;
+    }
+	}
+	&__blog{
+		p{
+			font-size: 16px;
+			color: #191919;
+			font-family: "Roboto-Thin";
+			padding-top: 35px;
+			margin: 0;
+		}
+	}
+}

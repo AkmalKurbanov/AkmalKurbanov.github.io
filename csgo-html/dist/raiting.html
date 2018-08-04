@@ -1,0 +1,693 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>html</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <section class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="header__logo">
+              <img src="images/logo_black.svg" alt="">
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="header__right">
+              <div class="header__right-item">
+                <i class="icon-ak47"></i>
+                <a href="#">инвентарь</a>
+              </div>
+              <div class="header__right-item">
+                <span>$44.22</span>
+                <a href="#">пополнить</a>
+              </div>
+              <div class="header__right-item2 dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>camufleur</span> <img src="images/Picc.png" alt="#"></a> <i class="icon-down-dir"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Инвентарь</a></li>
+                  <li><a href="#">Баланс</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Выйти</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu">
+      <ul>
+        <li><a href="#" title="Главная"><i class="icon-home"></i><span>Главная</span></a></li>
+        <li><a href="#" title="Топ"><i class="icon-people"></i><span>Топ</span></a></li>
+        <li><a href="#" title="История игр"><i class="icon-list"></i><span>История игр</span></a></li>
+        <li><a href="#" title="О сайте"><i class="icon-i"></i><span>О сайте</span></a></li>
+        <li><a href="#" title="Правила"><i class="icon-mehan"></i><span>Правила</span></a></li>
+        <li><a href="#" title="Поддержка"><i class="icon-peopl"></i><span>Поддержка</span></a></li>
+      </ul>
+      <div class="menu__toggle js_menu_toggle">
+        <i class="icon-arrowleft"></i>
+      </div>
+    </section>
+
+    <section class="content">
+
+      <div class="content__promo">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 -item">
+              <div class="content__promo-item">
+                <span>1K</span>
+                <p>игроков за сутки</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 -item">
+              <div class="content__promo-item">
+                <span>1K</span>
+                <p>лоторей за 24 часа</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 -item">
+              <div class="content__promo-item">
+                <span>36K</span>
+                <p>лоторей завершено</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 -item">
+              <div class="content__promo-item">
+                <span>$52K</span>
+                <p>всего выиграно</p>
+              </div>
+            </div>
+          </div>
+          <div class="content__promo-text">
+            <p><span>CSGO-SHOP.PRO</span>- здесь вы можете поменять или заработать скины бесплатно!<br>Чтобы пользоваться сайтом, необходимо <a href="#">авторизоваться</a> через Steam</p>
+          </div> 
+        </div>
+      </div>
+      <!-- promo -->
+
+      <!-- pogination -->
+        <div class="raiting">
+          <h2>РЕЙТИНГ ИГРОКОВ</h2>
+          <div class="raiting__search">
+            <form class="search" action="#">
+              <div class="search__group">
+                <input type="text" placeholder="">
+                <button class="search__btn"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- pogination -->
+
+        <!-- table -->
+        <div class="raitings">
+
+          <div class="raitings__table">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>НИК <b></b> </th>
+                  <th>ВСЕГО ИГР <b></b> </th>
+                  <th>ПОБЕД <b></b> </th>
+                  <th>ПОРАЖЕНИЙ <b></b> </th>
+                  <th>ВЫИГРАНО <b></b> </th>
+                  <th>ПРОДАНО <b></b> </th>
+                  <th>ОНЛАЙН <b></b> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>Devil666</td>
+                  <td>1500</td>
+                  <td>1500</td>
+                  <td>1500</td>
+                  <td>$1500</td>
+                  <td>$500</td>
+                  <td>115 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>2</th>
+                  <td>DevilHunter</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>$980</td>
+                  <td>$480</td>
+                  <td>110 дней</td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>HunterDevil</td>
+                  <td>860</td>
+                  <td>860</td>
+                  <td>860</td>
+                  <td>$860</td>
+                  <td>$460</td>
+                  <td>100 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>4</th>
+                  <td>DevilHunter</td>
+                  <td>750</td>
+                  <td>750</td>
+                  <td>750</td>
+                  <td>$750</td>
+                  <td>$450</td>
+                  <td>95 дней</td>
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <td>HunterDevil</td>
+                  <td>433</td>
+                  <td>433</td>
+                  <td>433</td>
+                  <td>$433</td>
+                  <td>$433</td>
+                  <td>90 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>6</th>
+                  <td>DevilHunter</td>
+                  <td>425</td>
+                  <td>425</td>
+                  <td>425</td>
+                  <td>$425</td>
+                  <td>$425</td>
+                  <td>85 дней</td>
+                </tr>
+                <tr>
+                  <th>7</th>
+                  <td>HunterDevil</td>
+                  <td>420</td>
+                  <td>420</td>
+                  <td>420</td>
+                  <td>$420</td>
+                  <td>$480</td>
+                  <td>82 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>8</th>
+                  <td>DevilHunter</td>
+                  <td>415</td>
+                  <td>415</td>
+                  <td>415</td>
+                  <td>$415</td>
+                  <td>$415</td>
+                  <td>80 дней</td>
+                </tr>
+                <tr>
+                  <th>9</th>
+                  <td>HunterDevil</td>
+                  <td>410</td>
+                  <td>410</td>
+                  <td>410</td>
+                  <td>$410</td>
+                  <td>$410</td>
+                  <td>50 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>10</th>
+                  <td>DevilHunter</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>$400</td>
+                  <td>$400</td>
+                  <td>10 дней</td>
+                </tr>
+                <tr>
+                  <th>11</th>
+                  <td>HunterDevil</td>
+                  <td>325</td>
+                  <td>325</td>
+                  <td>325</td>
+                  <td>$325</td>
+                  <td>$325</td>
+                  <td>10 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>12</th>
+                  <td>DevilHunter</td>
+                  <td>325</td>
+                  <td>325</td>
+                  <td>325</td>
+                  <td>$325</td>
+                  <td>$325</td>
+                  <td>10 дней</td>
+                </tr>
+                <tr>
+                  <th>13</th>
+                  <td>HunterDevil</td>
+                  <td>325</td>
+                  <td>325</td>
+                  <td>325</td>
+                  <td>$325</td>
+                  <td>$325</td>
+                  <td>10 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>14</th>
+                  <td>DevilHunter</td>
+                  <td>325</td>
+                  <td>325</td>
+                  <td>325</td>
+                  <td>$325</td>
+                  <td>$325</td>
+                  <td>10 дней</td>
+                </tr>
+                <tr>
+                  <th>15</th>
+                  <td>HunterDevil</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>$980</td>
+                  <td>$480</td>
+                  <td>110 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>16</th>
+                  <td>DevilHunter</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>$980</td>
+                  <td>$480</td>
+                  <td>110 дней</td>
+                </tr>
+                <tr>
+                  <th>17</th>
+                  <td>HunterDevil</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>$980</td>
+                  <td>$480</td>
+                  <td>110 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>18</th>
+                  <td>DevilHunter</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>$980</td>
+                  <td>$480</td>
+                  <td>110 дней</td>
+                </tr>
+                <tr>
+                  <th>19</th>
+                  <td>HunterDevil</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>$980</td>
+                  <td>$480</td>
+                  <td>110 дней</td>
+                </tr>
+                <tr class="-color">
+                  <th>20</th>
+                  <td>DevilHunter</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>$980</td>
+                  <td>$480</td>
+                  <td>110 дней</td>
+                </tr>
+                <tr>
+                  <th>21</th>
+                  <td>HunterDevil</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>980</td>
+                  <td>$980</td>
+                  <td>$480</td>
+                  <td>110 дней</td>
+                </tr><tr class="-color">
+                <th>22</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>23</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>24</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>25</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>26</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>27</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>28</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>29</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>30</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>31</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>32</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>33</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>34</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>35</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>36</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>37</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>38</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>39</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>40</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>41</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>42</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>42</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>43</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>44</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>45</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>46</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>47</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>48</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr class="-color">
+                <th>49</th>
+                <td>DevilHunter</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+              <tr>
+                <th>50</th>
+                <td>HunterDevil</td>
+                <td>980</td>
+                <td>980</td>
+                <td>980</td>
+                <td>$980</td>
+                <td>$480</td>
+                <td>110 дней</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- table -->
+
+        <!-- prev -->
+        <div class="raitings__prev">
+          <a href="#">&laquo; Предыдущие 50</a>
+          <a href="#">В начало</a>
+          <a href="#">Следующие 50 &raquo;</a>
+        </div>
+        <!-- next -->
+
+    </section>
+
+    <section class="footer">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="footer__copy">2016 © CSGO-SHOP.PRO</p>          
+        </div>
+        <div class="col-sm-6">
+          <p class="footer__dev">Разработано <span>Flabio.ru</span></p>          
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <script src="scripts/vendor.js"></script>
+    
+    <script src="scripts/plugins.js"></script>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

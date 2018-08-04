@@ -1,0 +1,140 @@
+$time: 4s;
+$size: 40px;
+$inner:  0.6 * $size;
+$pad: ($size - $inner) / 2;
+
+.flabLoader {
+  background: $third_color;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  animation-duration: $time / 2;
+  animation-iteration-count: infinite;
+  animation-name: bg;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  &__wrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: $size;
+    height: $size;
+    margin-top: -$size;
+    margin-left: -$size;
+    border-radius: $size;
+    background: #fff;
+    transform: translate3d(0, 0, 0);
+    animation-duration: $time;
+    animation-iteration-count: infinite;
+    animation-name: loader;
+    z-index: 9999;
+    &::after {
+      content: '';
+      position: absolute;
+      top: auto;
+      left: auto;
+      bottom: $pad;
+      right: $pad;
+      width: $inner;
+      height: $inner;
+      background: $third_color;
+      border-radius: $inner;
+      animation-duration: $time;
+      animation-iteration-count: infinite;
+      animation-name: inner;
+    }
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: translate3d(0, 0, 0);
+    width: $size;
+  }
+
+  12.5% {
+    transform: translate3d(0, 0, 0);
+    width: $size * 2;
+  }
+
+  25% {
+    transform: translate3d($size, 0, 0);
+    width: $size;
+    height: $size;
+  }
+
+  37.5% {
+    transform: translate3d($size, 0, 0);
+    width: $size;
+    height: $size * 2;
+  }
+
+  50% {
+    transform: translate3d($size, $size, 0);
+    width: $size;
+    height: $size;
+  }
+
+  62.5% {
+    transform: translate3d(0, $size, 0);
+    width: $size * 2;
+    height: $size;
+  }
+
+  75% {
+    transform: translate3d(0, $size, 0);
+    width: $size;
+    height: $size;
+  }
+
+  87.5% {
+    transform: translate3d(0, 0, 0);
+    width: $size;
+    height: $size * 2;
+  }
+}
+
+@keyframes inner {
+  0% {
+    background: $third_color;
+    top: auto;
+    left: auto;
+    bottom: $pad;
+    right: $pad;
+  }
+  25% {
+    background: $primary_color;
+  }
+  50% {
+    background: $third_color;
+    top: auto;
+    left: auto;
+    bottom: $pad;
+    right: $pad;
+  }
+  51% {
+    top: $pad;
+    left: $pad;
+    bottom: auto;
+    right: auto;
+  }
+  75% {
+    background: $primary_color;
+  }
+  99% {
+    top: $pad;
+    left: $pad;
+    bottom: auto;
+    right: auto;
+  }
+}
+
+@keyframes bg {
+  0% { background: $third_color; }
+  50% { background: $primary_color; }
+  100% { background: $third_color; }
+}

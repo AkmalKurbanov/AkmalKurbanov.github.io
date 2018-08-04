@@ -1,0 +1,30 @@
+<div style="height: 400px;" id="map"></div>
+<input class="lat">
+<input class="lng">
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJU599LtguD8tcVWFcEPforo-JSyJdoWA&callback=initMap">
+  </script>
+
+  <script>
+  	var myLatlng = new google.maps.LatLng(42.87789194,74.5622086);
+var mapOptions = {
+  zoom: 17,
+  center: myLatlng
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+// Place a draggable marker on the map
+var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    draggable:true,
+    title:"Drag me!"
+});
+
+google.maps.event.addListener(marker,'dragend',function(event) {
+        $('.lat').val(event.latLng.lat());
+        $('.lng').val(event.latLng.lng());
+});
+
+  </script>

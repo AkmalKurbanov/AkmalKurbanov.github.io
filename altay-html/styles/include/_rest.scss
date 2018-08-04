@@ -1,0 +1,190 @@
+.flabRest {
+	position: relative;
+	overflow: hidden;
+	padding: rem(50px) 0;
+	@include media-breakpoint-down(md) {
+		padding: rem(50px) 0;
+	}
+	&__wrap {
+		position: relative;
+		text-align: center;
+		.col-xl-4 {
+			padding: 0;
+			@include media-breakpoint-down(sm) {
+				padding: 0 rem(15px);
+			}
+		}
+	}
+
+	&__effect {
+		position: relative;
+		overflow: hidden;
+		max-width: 380px;
+		width: 100%;
+		text-align: center;
+		cursor: pointer;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+		@include media-breakpoint-down(md) {
+			margin: auto;
+			margin-bottom: rem(20px);
+		}
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(15px);
+		}
+		&:before {
+			position: absolute;
+			content: '';
+			background-color: rgba(0,0,0,0.63);
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+		h2 {
+			margin: 0;
+			transition: transform 0.35s;
+			color: $white;
+			font-size: rem(20px);
+			font-weight: 400;
+			transform: translateY(17px);
+			@include media-breakpoint-down(lg) {
+				font-size: rem(18px);
+			}
+			@include media-breakpoint-down(md) {
+				font-size: rem(20px);
+			}
+			@include media-breakpoint-down(xs) {
+				font-size: rem(17px);
+			}
+		}
+		p {
+			margin: 0;
+			opacity: 0;
+			transition: opacity 0.35s, transform 0.35s;
+			transform: translate3d(0, 20px, 0);
+			color: $white;
+			i{
+				margin-right: rem(2px);
+			}
+		}
+		&:hover {
+			.flabRest__fallingCaption {
+				h2 {
+					transform: translateY(0);
+				}
+				&::before, &::after {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+			p {
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+			}
+		}
+		&--kitchenEffect {
+			max-width: 100%;
+			width: 100%;
+			display: block;
+			margin-bottom: rem(30px);
+			@include media-breakpoint-down(xs) {
+				margin-bottom: rem(20px);
+			}
+			&:before {
+				background-color: rgba(0,0,0,0.4);
+				transition: all .3s;
+			}
+			a{
+				display: block;
+				outline: none;
+				img {
+					width: 100%;	
+					max-width: 100%;
+				}			
+			}
+			.flabRest__fallingCaption {
+				h2 {
+					text-transform: uppercase;
+				}
+				p {
+					i {
+						font-size: rem(27px);
+					}
+				}
+			}
+		}
+	}
+
+	&__fallingCaption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		&::before, &::after {
+			position: absolute;
+			top: 13px;
+			right: 13px;
+			bottom: 13px;
+			left: 13px;
+			content: '';
+			opacity: 0;
+			transition: opacity 0.35s, transform 0.35s;
+		}
+		&::before {
+			border-top: rem(1px) solid #fff;
+			border-bottom: rem(1px) solid #fff;
+			transform: scale(0, 1);
+		}
+		&::after {
+			border-right: rem(1px) solid #fff;
+			border-left: rem(1px) solid #fff;
+			transform: scale(1, 0);
+		}
+	}
+	&__middleCaption {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		padding: 0 rem(50px);
+		.flabContent__headline {
+			@include media-breakpoint-down(lg) {
+				.flabHeadline__item {
+					font-size: rem(19px);
+				}
+			}
+		}
+	}
+	&__hiddenCaption {
+		display: none;
+		@include media-breakpoint-down(md) {
+			display: block;
+		}
+	}
+	&__hiddeCaption {
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+	.middleCaption {
+		width: 100%;
+		@include media-breakpoint-down(md) {
+			position: absolute;
+			width: 100%;
+			top: rem(-55px);
+		}
+	}
+}

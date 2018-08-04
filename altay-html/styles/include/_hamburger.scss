@@ -1,0 +1,53 @@
+.flabHamburger {
+  width: rem(30px);
+  height: rem(30px);
+  position: absolute;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 2;
+  right: rem(15px);
+  top: rem(15px);
+  display: none;
+  @include media-breakpoint-down(xs) {
+    display: block;
+  }
+  &__item {
+    display: block;
+    position: absolute;
+    height: rem(2px);
+    // max-width: rem(30px);
+    width: 100%;
+    background: $secondary_color;
+    border-radius: rem(9px);
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    &:nth-child(1) {
+      top: rem(0px);
+    }
+    &:nth-child(2) {
+      top: rem(10px);
+    }
+    &:nth-child(3) {
+      top: rem(20px);
+    }
+  }
+  &--open{
+    .flabHamburger__item{
+      &:nth-child(1) {
+        top: rem(18px);
+        transform: rotate(135deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        left: rem(-60px);
+      }
+      &:nth-child(3) {
+        top: rem(18px);
+        transform: rotate(-135deg);
+      }
+    }
+  }
+}

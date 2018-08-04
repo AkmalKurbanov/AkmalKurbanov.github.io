@@ -1,0 +1,60 @@
+// Required bootstrap don't touch
+@import "./bower_components/bootstrap/scss/functions";
+@import "./bower_components/bootstrap/scss/variables";
+@import "./bower_components/bootstrap/scss/mixins";
+// End bootstrap
+
+// Fonts
+@import "fonts";
+// End Fonts
+
+// Icons
+@import "../fonts/flabioiconfont/css/flabioiconfont";
+// End Icons
+
+//  Custom variables
+@import "vars";
+// End variables
+
+// Optional bootstrap
+@import "./bower_components/bootstrap/scss/reboot";
+@import "./bower_components/bootstrap/scss/grid";
+// End optional
+
+// bower:scss
+// endbower
+
+// help styles
+@import "helper";
+// end help
+
+// included scss
+// @import "include/mobilenav";
+@import "include/loader";
+@import "include/header";
+@import "include/cursor";
+@import "include/pagination";
+@import "include/navigation";
+@import "include/bookform";
+@import "include/slideshow";
+@import "include/hamburger";
+@import "include/content";
+@import "include/social";
+@import "include/flabio";
+@import "include/footer";
+@import "include/greeting";
+@import "include/gallery";
+@import "include/services";
+@import "include/video";
+@import "include/video_page";
+@import "include/rest";
+@import "include/reviews";
+@import "include/tours";
+@import "include/blog";
+@import "include/blogwrap";
+@import "include/contacts";
+@import "include/services_page";
+@import "include/rooms_main";
+@import "include/rooms";
+@import "include/reviews_page";
+// end included

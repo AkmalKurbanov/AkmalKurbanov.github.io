@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mobile html</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="mobile">
+      <div class="container">
+
+        <div class="mobile__menu">
+
+          <div class="mobile__navtrigger js-navtrigger">
+            <i></i><i></i><i></i>
+
+          </div>
+
+          <ul class="mobile__menu_mnu">
+            <li><a href="#">Полная Версия сайта</a></li>
+            <li><a href="#ty" class="popup-link">Политика конфиденциальности</a></li>
+            <li><a href="#tu" class="popup-link">Обратная связь</a></li>
+          </ul>
+
+        </div>
+
+        <div class="mobile__slide owl-carousel">
+          <div class="mobile__caption">
+            <h2>Мир Финансовых рынков:</h2>
+            <p>«Непрозрачный» рынок прозрачных возможностей</p>
+          </div>
+          <div class="mobile__caption1">
+            <h2>Из книги Вы узнаете</h2>
+            <ul>
+              <li>Особенности брокеров</li>
+              <li>Что такое "Кухня"?</li>
+              <li>Критерии выбора хорошего брокера</li>
+              <li>Как и кем происходит регуляция финансовых рынков?</li>
+            </ul>
+          </div>
+          <div class="mobile__caption2">
+            <h2>Краткое пособие о том, <br>что будет в книге</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7teoFH2j2aM"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile__subtitle">
+          <h4>Скачайте книгу <span>прямо сейчас</span></h4>
+          <h5>0,00 руб. <span>1890 руб.</span></h5>
+        </div>
+
+        <div class="mobile__check">
+          <input type="checkbox" id="test1" checked="checked"/>
+          <label for="test1"></label>
+          <p>Ознакомился с политикой конфиденциальности</p>
+          <a href="#to" class="-btn popup-link">Скачать книгу</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="popup mfp-hide" id="tu">
+      <div class="popup__title">
+        <h6>Заполните форму</h6>
+        <p>и получите книгу в электронном виде</p>
+        <span>бесплатно</span>
+      </div>
+
+      <form action="#" class="-forms">
+        <div class="popup__form">
+          <input type="text" name="name" placeholder="Как к Вам обращаться">
+        </div>
+        <div class="popup__form">
+          <input type="text" name="email" placeholder="Ваш Email">
+        </div>
+        <button class="popup__btn" type="submit">Отправить</button>
+      </form>
+      <p class="bot">* информация, оставленная Вами, не будет передана третьим лицам согласно ФЗ №152 "О персональных данных"</p>
+
+    </div>
+
+    <div class="popup mfp-hide" id="ty">
+      <div class="popup__title">
+        <h6>Заполните форму</h6>
+        <p>и получите книгу в электронном виде</p>
+        <span>бесплатно</span>
+      </div>
+      <div class="popup__sube">
+        <p>Мы вам отправили СМС с кодом доступа для скачивания файла <a href="#">Отправить повторно</a></p>
+      </div>
+      <form action="#" class="-forms">
+
+        <div class="popup__form">
+          <input type="text" name="phone" placeholder="Введите код из СМС">
+        </div>
+        <span>Осталось попыток: 3</span>
+        <button class="popup__btn bottom" type="submit">Отправить</button>
+      </form>
+      <p class="bot">* информация, оставленная Вами, не будет передана третьим лицам согласно ФЗ №152 "О персональных данных"</p>
+
+    </div>
+
+    <div class="popup mfp-hide" id="to">
+      <div class="popup__title">
+        <h6>Заполните форму</h6>
+        <p>и получите книгу в электронном виде</p>
+        <span>бесплатно</span>
+      </div>
+      <form action="#" class="-forms for">
+        <div class="popup__form">
+          <input class="left" id="phone" type="text" name="phone" placeholder="+7 (___) ___-__-__"">
+        </div>
+        <button class="popup__btn bbb" type="submit">Отправить</button>
+      </form>
+      <p class="bot">* информация, оставленная Вами, не будет передана третьим лицам согласно ФЗ №152 "О персональных данных"</p>
+
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    <script src="scripts/vendor.js"></script>
+    
+    <script src="scripts/plugins.js"></script>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

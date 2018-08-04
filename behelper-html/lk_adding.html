@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery-ui-slider-pips.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- overlay for menu -->
+    <div class="overlay"></div>
+    <!-- end overlay for menu -->
+
+    <!-- header -->
+    <header class="main-head">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <ul>
+                        <li class="logo">
+                            <img src="img/logo.png" alt="">
+                            <span class="blue-logo">
+                        be
+                        </span>
+                            <span class="pink-logo">
+                         helper
+                        </span>
+                        </li>
+                        <li class="city-choose">
+                            <select class="dropdown-toggle" data-width="76px">
+                              <option>Москва</option>
+                              <option>Lorem</option>
+                              <option>Lorem</option>
+                            </select>
+                        </li>
+                        <li class="metro">
+                            <img src="img/metro-icon.png" alt="">
+                            <span>Павелецкая</span>
+                        </li>
+                        <li class="head-phone hidden-lg hidden-md">
+                            +7 (495) 230-75-20
+                        </li>
+                        <li class="login-sm hidden-lg hidden-md">
+                            <a href="">
+                                <div class="login-sm-img">
+                                    <img src="img/User-sm.png" alt="">
+                                    <div class="logo-counter">
+                                        3
+                                    </div>
+                                </div>
+                                <span>Кабинет</span>
+                            </a>
+                        </li>
+                        <li class="menu-toggle">
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4  head-contacts ">
+                    <ul>
+                        <li class="head-phone hidden-xs">
+                            +7 (495) 230-75-20
+                        </li>
+                        <li class="email-us">
+                            <a href="">Написать нам</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 login col-sm-3 col-xs-3">
+                    <a href="" class="login-md">
+                        <img src="img/User.png" alt="">
+                        <span>Вход / Регистрация</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- end header  -->
+    <!-- mobile menu -->
+    <div class="menu-wrap">
+        <div class="container">
+            <div class="menu-top">
+                <div class="menu-city">
+                    <ul>
+                      <li>
+                          <span>Ваш город:</span>
+                      </li>
+                      <li class="city-choose">
+                          <select class="dropdown-toggle" data-width="86px">
+                            <option>Москва</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                      </li>
+                    </ul>
+                </div>
+                <div class="menu-login">
+                    <div class="user-avatar">
+                        <img src="img/User-sm.png" alt="">
+                    </div>
+                    <a href="">Вход / Регистрация</a>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="">Главная страница<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="">Каталог работников<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="">Каталог вакансий<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="">О системе<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="head-phone ">
+                +7 (495) 230-75-20
+            </div>
+            <div class="email-us">
+                <a href="">Написать нам</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end mobile menu -->
+    <!-- navigation -->
+    <hr class="head-hr">
+    <section class="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 navigation-wrap">
+                    <ul>
+                        <li class="navigation-item">
+                            <a href="#"><img src="img/home-img.png" alt="" class="hidden-sm hidden-md hidden-lg home-img"><span>Главная</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="navigation-item active-nav hidden-mob"><a href="#"><span>Личный кабинет</span><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                        <li class="navigation-item hidden-mob"><a href="#"><span>Создать вакансию</span></a></li>
+                        <li class="navigation-item active-nav hidden-lg hidden-md hidden-sm display-mob"><a href="#"><span>Добавить вакансию</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end navigation -->
+    <!-- catalog-content -->
+    <article class="company-content lk-add-content ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 catalog-content lk-vacancy lk-add">
+                    <div class="lk-add-wrap">
+                        <h4>Создание вакансии няни</h4>
+                        <input type="text" placeholder="Название">
+                        <p>Начните со специальности. Укажите с кем и как часто придется работать.</p>
+                        <p>Например: «Няня на вечер, по будням забирать из сада ребенка», «Няня-сопровождающая для мальчика 8 лет, 2 раза в неделю», «Няня-гувернантка к 2 детям по будням, на полный день».</p>
+                        <textarea placeholder="Описание"></textarea>
+                        <p>Обязательно укажите возраст ребенка (детей). Опишите своими словами основные обязанности няни или гувернантки. Например, «гулять один раз в день, вечером забирать девочку из садика, готовить еду двум детям, отводить на занятия
+                            …». Сформулируйте предъявляемые требования к няне, желателен точный график и условия работы. </p>
+                        <p>Выделите принципиальные моменты: наличие рекомендаций, «прописку», загранпаспорт, водительские права и т.д. Чем четче будет описание, тем легче соискателям оценить перспективы работы в вашей семье.</p>
+                        <p>Пожалуйста, не оставляйте свои контактные данные - они будут удалены при проверке</p>
+                    </div>
+                    <div class="banner-right">
+                        <img src="img/banner-right-add.png" alt="" class="hidden-xs">
+                    </div>
+                </div>
+                <div class="col-md-12 lk-add-info-s1">
+                    <h4>Место работы</h4>
+                    <p>Из списка выберите ближайшую станцию метро или ближайший город</p>
+                    <ul class="sort-by">
+                        <li class="sort-item">
+                            <select class="search-side"  data-width="100%" title="Регион">
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                            </select>
+                        </li>
+                        <li class="sort-item">
+                            <select class="search-side"  data-width="100%" title="Город/Район">
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                            </select>
+                        </li>
+                        <li class="sort-item">
+                            <select class="search-side"  data-width="100%" title="Улица">
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 lk-add-info-s2">
+                    <div class="lk-add-info-s2-left">
+                        <h4>Режим работы</h4>
+                        <table class="table-md">
+                            <tbody>
+                                <tr>
+                                    <th><span>Пн</span><input type="checkbox" id="table-c1"><label for="table-c1" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>Вт</span><input type="checkbox" id="table-c2"><label for="table-c2" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>Ср</span><input type="checkbox" id="table-c3"><label for="table-c3" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>Чт</span><input type="checkbox" id="table-c4"><label for="table-c4" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>Пт</span><input type="checkbox" id="table-c5"><label for="table-c5" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>Сб</span><input type="checkbox" id="table-c6"><label for="table-c6" class="choose-row"><span></span></label></th>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>Вс</span><input type="checkbox" id="table-c7"><label for="table-c7" class="choose-row"><span></span></label></th>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Часы</th>
+                                    <td class="choose-column"><input type="checkbox" id="table-c8"><label for="table-c8" class="choose-row"><span></span></label>1</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c9"><label for="table-c9" class="choose-row"><span></span></label>2</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c10"><label for="table-c10" class="choose-row"><span></span></label>3</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c11"><label for="table-c11" class="choose-row"><span></span></label>4</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c12"><label for="table-c12" class="choose-row"><span></span></label>5</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c13"><label for="table-c13" class="choose-row"><span></span></label>6</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c14"><label for="table-c14" class="choose-row"><span></span></label>7</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c15"><label for="table-c15" class="choose-row"><span></span></label>8</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c16"><label for="table-c16" class="choose-row"><span></span></label>9</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c17"><label for="table-c17" class="choose-row"><span></span></label>10</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c18"><label for="table-c18" class="choose-row"><span></span></label>11</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c19"><label for="table-c19" class="choose-row"><span></span></label>12</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c20"><label for="table-c20" class="choose-row"><span></span></label>13</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c21"><label for="table-c21" class="choose-row"><span></span></label>14</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c22"><label for="table-c22" class="choose-row"><span></span></label>15</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c23"><label for="table-c23" class="choose-row"><span></span></label>16</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c24"><label for="table-c24" class="choose-row"><span></span></label>17</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c25"><label for="table-c25" class="choose-row"><span></span></label>18</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c26"><label for="table-c26" class="choose-row"><span></span></label>19</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c27"><label for="table-c27" class="choose-row"><span></span></label>20</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c28"><label for="table-c28" class="choose-row"><span></span></label>21</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c29"><label for="table-c29" class="choose-row"><span></span></label>22</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c30"><label for="table-c30" class="choose-row"><span></span></label>23</td>
+                                    <td class="choose-column"><input type="checkbox" id="table-c31"><label for="table-c31" class="choose-row"><span></span></label>24</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="hidden-lg hidden-md hidden-sm table-xs">
+                            <tbody>
+                                <tr>
+                                    <th class="table-top">Часы</th>
+                                    <td class="choose-column">Пн<input type="checkbox" id="table-c32"><label for="table-c32" class="choose-row"><span></span></label></td>
+                                    <td class="choose-column">Вт<input type="checkbox" id="table-c33"><label for="table-c33" class="choose-row"><span></span></label></td>
+                                    <td class="choose-column">Ср<input type="checkbox" id="table-c34"><label for="table-c34" class="choose-row"><span></span></label></td>
+                                    <td class="choose-column">Чт<input type="checkbox" id="table-c35"><label for="table-c35" class="choose-row"><span></span></label></td>
+                                    <td class="choose-column">Пт<input type="checkbox" id="table-c36"><label for="table-c36" class="choose-row"><span></span></label></td>
+                                    <td class="choose-column">Сб<input type="checkbox" id="table-c37"><label for="table-c37" class="choose-row"><span></span></label></td>
+                                    <td class="choose-column">Вс<input type="checkbox" id="table-c38"><label for="table-c38" class="choose-row"><span></span></label></td>
+                                </tr>
+                                <tr>
+                                    <th><span>1</span><input type="checkbox" id="table-c39"><label for="table-c39" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>2</span><input type="checkbox" id="table-c40"><label for="table-c40" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>3</span><input type="checkbox" id="table-c41"><label for="table-c41" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>4</span><input type="checkbox" id="table-c42"><label for="table-c42" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>5</span><input type="checkbox" id="table-c43"><label for="table-c43" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>6</span><input type="checkbox" id="table-c44"><label for="table-c44" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>7</span><input type="checkbox" id="table-c45"><label for="table-c45" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>8</span><input type="checkbox" id="table-c46"><label for="table-c46" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>9</span><input type="checkbox" id="table-c47"><label for="table-c47" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>10</span><input type="checkbox" id="table-c48"><label for="table-c48" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>11</span><input type="checkbox" id="table-c49"><label for="table-c49" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>12</span><input type="checkbox" id="table-c50"><label for="table-c50" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>13</span><input type="checkbox" id="table-c51"><label for="table-c51" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>14</span><input type="checkbox" id="table-c52"><label for="table-c52" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>15</span><input type="checkbox" id="table-c53"><label for="table-c53" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>16</span><input type="checkbox" id="table-c54"><label for="table-c54" class="choose-row"><span></span></label></th>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="white-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="gray-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>17</span><input type="checkbox" id="table-c55"><label for="table-c55" class="choose-row"><span></span></label></th>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>18</span><input type="checkbox" id="table-c56"><label for="table-c56" class="choose-row"><span></span></label></th>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>19</span><input type="checkbox" id="table-c57"><label for="table-c57" class="choose-row"><span></span></label></th>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>20</span><input type="checkbox" id="table-c58"><label for="table-c58" class="choose-row"><span></span></label></th>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>21</span><input type="checkbox" id="table-c59"><label for="table-c59" class="choose-row"><span></span></label></th>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>22</span><input type="checkbox" id="table-c60"><label for="table-c60" class="choose-row"><span></span></label></th>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>23</span><input type="checkbox" id="table-c61"><label for="table-c61" class="choose-row"><span></span></label></th>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>24</span><input type="checkbox" id="table-c62"><label for="table-c62" class="choose-row"><span></span></label></th>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="blue-cell cell"><i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btm-s2-left-wrap">
+                        <ul class="btm-s2-left btm-1">
+                            <li><input type="checkbox" id="lk-c1"><label for="lk-c1"><span></span><p class="label-inner">Только в будни (с 9 до 18)</p></label></li>
+                            <li><input type="checkbox" id="lk-c2"><label for="lk-c2"><span></span><p class="label-inner">Выбрать все</p></label></li>
+                        </ul>
+                        <ul class="btm-s2-left btm-2">
+                            <li><input type="checkbox" id="lk-c3"><label for="lk-c3"><span></span><p class="label-inner">Только в выходные (с 9 до 18)</p></label></li>
+                            <li>
+                                <a href=""><img src="img/clear-all.png" alt=""><span>Очистить все</span></a>
+                            </li>
+                        </ul>
+                          </div>
+                        <div class="s2-left-btm">
+                            <div>
+                                <span>Заработная плата, руб. в час</span>
+                                <input type="text" placeholder="250 руб">
+                            </div>
+                            <p>Няня будет работать 45 часов в неделю, в.т.ч 5 часов в выходные дни.</p>
+                            <p>Оплата составит: <b>45 000 руб. в месяц</b></p>
+
+                        </div>
+                    </div>
+                    <div class="lk-add-info-s2-right">
+                        <h4>Количество детей в семье для одновременной работы</h4>
+                        <div class="range-s2-wrap">
+                            <div class="range-s2"></div>
+                        </div>
+                        <div class="baby-age-s2">
+                            <h4>Возраст детей</h4>
+                             <ul class="sort-by">
+                                <li class="sort-item">
+                                  <select class="search-side"  data-width="100%" title="Первый">
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                  </select>
+                                </li>
+                                <li class="sort-item">
+                                    <select class="search-side"  data-width="100%" title="Второй">
+                                      <option>Mustard</option>
+                                      <option>Ketchup</option>
+                                      <option>Relish</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <ul class="sort-by">
+                                <li class="sort-item">
+                                    <select class="search-side"  data-width="100%" title="Третий">
+                                      <option>Mustard</option>
+                                      <option>Ketchup</option>
+                                      <option>Relish</option>
+                                    </select>
+                                </li>
+                                <li class="sort-item">
+                                    <select class="search-side"  data-width="100%" title="Четвертый">
+                                      <option>Mustard</option>
+                                      <option>Ketchup</option>
+                                      <option>Relish</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="work-start-s2">
+                            <h4>Дата начала работы</h4>
+                            <ul>
+                                <li><input type="checkbox" id="lk-c5"><label for="lk-c5"><span></span><p class="label-inner">Немедленно</p></label></li>
+                                <li><input type="checkbox" id="lk-c6"><label for="lk-c6"><span></span><p class="label-inner">С указанной даты</p></label><input type="text" placeholder="26.12.2016"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 show-other-wrap">
+                    <a href="" class="show-other"><img src="img/show-other.png" alt=""><span>Свернуть расширенные настройки</span></a>
+                </div>
+                <div class="col-md-12 lk-add-info-s3">
+                    <div class="info-s3-item info-1">
+                        <h4>
+                      Возраст няни, лет
+                    </h4>
+                        <ul class="sort-by">
+                            <li class="sort-item sort-ages">
+                              <select class="search-side"  data-width="100%">
+                                <option>от 16</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                              </select>
+                            </li>
+                            <li class="hyphen">—</li>
+                            <li class="sort-item sort-ages">
+                              <select class="search-side"  data-width="100%">
+                                <option>от 72</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                              </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-s3-item info-2">
+                        <h4>
+                      Опыт работы, лет
+                    </h4>
+                        <ul class="sort-by">
+                            <li class="sort-item">
+                              <select class="search-side"  data-width="100%">
+                                <option>3 года</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                              </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-s3-item info-3">
+                        <h4>
+                      Пол
+                    </h4>
+                        <ul class="s3-sort">
+                            <li><input type="radio" id="s3-r1" name="radio"><label for="s3-r1"><span></span>Мужчина</label></li>
+                            <li><input type="radio" id="s3-r2" name="radio"><label for="s3-r2"><span></span>Женщина</label></li>
+                            <li><input type="radio" id="s3-r3" name="radio"><label for="s3-r3"><span></span>Не важно</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 vacancy-info lk-add-info-s4">
+                    <div class="skills-info">
+                        <div class="skill-item skills-1">
+                            <h4>Опыт работы с возрастными группами детей</h4>
+                            <ul class="skill-list first-skill-list">
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c7"><label for="lk-c7"><span></span></label>Груднички (до года)</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c8"><label for="lk-c8"><span></span></label>Малыши (1-3 лет)</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c9"><label for="lk-c9"><span></span></label>Дошкольники (4-6 лет)</li>
+                            </ul>
+                            <ul class="skill-list">
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c10"><label for="lk-c10"><span></span></label>Младшая школа (7-10 лет)</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c11"><label for="lk-c11"><span></span></label>Школьники (10+ лет)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-item skills-2">
+                            <h4>Дополнительно</h4>
+                            <ul class="skill-list first-skill-2">
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c12"><label for="lk-c12"><span></span></label>Личный автомобиль</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c13"><label for="lk-c13"><span></span></label>Без вредных привычек</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c14"><label for="lk-c14"><span></span></label>С проживанием в семье</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c15"><label for="lk-c15"><span></span></label>Постоянная регистрация по месту жительства</li>
+                            </ul>
+                            <ul class="skill-list sort-by">
+                                <li class="sort-item">
+                                  <select class="search-side"  data-width="100%" title="Национальность">
+                                    <option>3 года</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                  </select>
+                                </li>
+                                <li class="sort-item">
+                                    <select class="search-side"  data-width="100%" title="Гражданство">
+                                      <option>3 года</option>
+                                      <option>Ketchup</option>
+                                      <option>Relish</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skill-item skills-3">
+                            <h4>Требуемые навыки</h4>
+                            <ul class="skill-list first-skill-list">
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c16"><label for="lk-c16"><span></span></label>Личный автомобиль</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c17"><label for="lk-c17"><span></span></label>Мытье детской посуды</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c18"><label for="lk-c18"><span></span></label>Кормление ребенка</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c19"><label for="lk-c19"><span></span></label>Уборка детской комнаты</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c20"><label for="lk-c20"><span></span></label>Стирка, глажка детского</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c21"><label for="lk-c21"><span></span></label>Купание ребенка</li>
+                            </ul>
+                            <ul class="skill-list">
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c22"><label for="lk-c22"><span></span></label>Прогулка, сопровождение</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c23"><label for="lk-c23"><span></span></label>Развитие по возрасту</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c24"><label for="lk-c24"><span></span></label>Игры и развлечения</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c25"><label for="lk-c25"><span></span></label>Подготовка к школе</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c26"><label for="lk-c26"><span></span></label>Контроль выполнения уроков</li>
+                            </ul>
+                        </div>
+                        <div class="skill-item skills-4">
+                            <h4>Дополнительные обязанности</h4>
+                            <ul class="skill-list">
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c27"><label for="lk-c27"><span></span></label>Уборка квартиры</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c28"><label for="lk-c28"><span></span></label>Приготовление еды на семью</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c29"><label for="lk-c29"><span></span></label>Мытье посуды семьи</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c30"><label for="lk-c30"><span></span></label>Покупка продуктов</li>
+                                <li class="skil-list-item"><input type="checkbox" id="lk-c31"><label for="lk-c31"><span></span></label>Разовые поручения</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="publish-wrap">
+                        <li><a href="" class="reg-btn enter-btn">Опубликовать вакансию</a></li>
+                        <li><a href="" class="reg-btn">Сохранить черновик</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 labors-top lk-labors-top">
+                    <span>Обратите внимание</span>
+                </div>
+                <div class="col-md-12 labors-carousel lk-labors">
+                    <div class="lk-labor-carousel">
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="labor-item">
+                            <a class="labor-item-wrap" href="">
+                                <div class="labor-item-img">
+                                    <img src="img/labor-item-5.png" alt="">
+                                </div>
+                                <div class="labor-item-desc">
+                                    <p>Вероника, 22 года</p>
+                                    <p> Домработница</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="labor-nav lk-labor-nav">
+                        <div class="labor-next"><img src="img/next-btn-lk.png" alt=""></div>
+                        <div class="labor-prev"><img src="img/prev-btn-lk.png" alt=""></div>
+                    </div>
+                    <div class="see-all hidden-lg hidden-md hidden-sm">
+                        <a href="" class="main-btn">
+                      Все работники
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- end catalog-content -->
+    <!-- footer -->
+    <footer class="main-foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4  ">
+                    <ul class="footer-first-row">
+                        <li class="logo">
+                            <img src="img/logo.png" alt="">
+                            <span class="blue-logo">
+                                      be
+                            </span>
+                            <span class="pink-logo">
+                                 helper
+                              </span>
+                        </li>
+                        <li class="social-copyright">
+                            <div class="copyright">
+                                &copy; 2009-2016 Все права защищены.
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hidden-lg hidden-md hidden-sm foot-links">
+                            <div> <a href="">Полная версия</a></div>
+                            <div><a href="">Реклама на сайте</a></div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8   foot-menu">
+                    <ul>
+                        <li class="foot-menu-head">
+                            <p>Резюме:</p>
+                            <ul>
+                                <li>
+                                    <a href="">Няни</a>
+                                </li>
+                                <li>
+                                    <a href="">Помощники</a>
+                                </li>
+                                <li>
+                                    <a href="">Репетиторы</a>
+                                </li>
+                                <li>
+                                    <a href="">Сиделки</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-plus" aria-hidden="true"></i>Добавить резюме</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="foot-menu-head">
+                            <p>Вакансии:</p>
+                            <ul>
+                                <li>
+                                    <a href="">Няни</a>
+                                </li>
+                                <li>
+                                    <a href="">Помощники</a>
+                                </li>
+                                <li>
+                                    <a href="">Репетиторы</a>
+                                </li>
+                                <li>
+                                    <a href="">Сиделки</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-plus" aria-hidden="true"></i>Добавить вакансию</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="foot-menu-head">
+                            <p>О компании:</p>
+                            <ul>
+                                <li>
+                                    <a href="">Советы и статьи</a>
+                                </li>
+                                <li>
+                                    <a href="">Тарифы и оплата</a>
+                                </li>
+                                <li>
+                                    <a href="">Детские центры развития</a>
+                                </li>
+                                <li>
+                                    <a href="">Каталог агенств</a>
+                                </li>
+                                <li>
+                                    <a href="">Для СМИ</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- load scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui-slider-pips.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- end load scripts -->
+</body>
+
+</html>
