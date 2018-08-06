@@ -1,6 +1,16 @@
 'use strict';
 
 $(document).ready(function () {
+  // autoplay audio
+  $(window).on('load', function () {
+    function audioLoopedPlay() {
+      if ($('#audio').length) {
+        $('#audio').load();
+        $('#audio')[0].play();
+      }
+    }
+  });
+  // autoplay audio end
 
   // clickEffect //////////////////////////////////////////////////////////////////
   var clickEffect = {
@@ -28,17 +38,17 @@ $(document).ready(function () {
   // equalizer click toggleClass //////////////////////////////////////////////////////////////////
 
   // right panel //////////////////////////////////////////////////////////////
-  if (Modernizr.mq('(min-width: 992px)')) {
-    $('body').scroll(function () {
-      var head_h = $('.flabHeader').height();
-      var windowTop = $('body').scrollTop();
-      if (head_h < windowTop) {
-        $('.flabApperance').addClass('flabShow');
-      } else {
-        $('.flabApperance').removeClass('flabShow');
-      }
-    });
-  };
+  // if (Modernizr.mq('(min-width: 1200px)')) {
+  $('body').scroll(function () {
+    var head_h = $('.flabHeader').height();
+    var windowTop = $('body').scrollTop();
+    if (head_h < windowTop) {
+      $('.flabApperance').addClass('flabShow');
+    } else {
+      $('.flabApperance').removeClass('flabShow');
+    }
+  });
+  // };
   // right panel end //////////////////////////////////////////////////////////////
 
   // smooth scroll down //////////////////////////////////////////////////////////////
