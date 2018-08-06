@@ -1,82 +1,265 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Cleanol</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <!--[if lt IE 9]>
-  <script src="javascripts/html5shiv.js"></script>
-  <![endif]-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p o r t f o l i o</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
   <style>
-    html{
-      height: 100%;
-      padding: 0;
-      margin: 0;
+    .flabList {
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      padding-top: 7%;
+      position: relative;
     }
-    body{
-      background-color: #f1f1f1;
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      margin: 0;
-      height: 100%;
+
+    @media (max-width: 575.98px) {
+      .flabList {
+        padding-top: 15%;
+      }
     }
-    .container-fluid{
-      margin: 0 auto;
-      width: 400px;
-      background-color: #fff;
-      padding: 20px;
-      height: 100%;
+
+    .flabList:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
     }
-    .container-fluid img{
-      margin: 0 auto;
-      display: block;
+
+    @media (max-width: 767.98px) {
+      .flabList:before {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: block;
+      }
     }
-    h1{
-      margin: 0;
-      text-align: center;
-      font-weight: normal;
-      text-transform: uppercase;
-      text-rendering: optimizelegibility;
-      font-size: 24px;
-      letter-spacing: 2px;
-      margin-top: 40px;
+
+    .flabList .flabAgLogo {
+      max-width: 150px;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      right: 65px;
     }
-    .list{
-      font-size: 13px;
-      line-height: 20px;
+
+    @media (max-width: 1199.98px) {
+      .flabList .flabAgLogo {
+        max-width: 120px;
+        top: 50px;
+        right: 20px;
+      }
     }
-    a{
+
+    @media (max-width: 991.98px) {
+      .flabList .flabAgLogo {
+        right: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList .flabAgLogo {
+        max-width: 100px;
+        right: 20px;
+        top: auto;
+        bottom: 15px;
+      }
+    }
+
+    .flabList .flabAgLogo img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .flabList__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+
+    .flabList__logo {
+      position: relative;
+      z-index: 1;
+    }
+
+    .flabList__pages {
+      column-count: 3;
+      margin-top: 5%;
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages {
+        column-count: auto;
+      }
+    }
+
+    .flabList__pages li {
+      list-style-type: none;
+    }
+
+    @media (max-width: 1199.98px) {
+      .flabList__pages li {
+        padding-left: 40px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li {
+        padding-left: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li {
+        padding-left: 0;
+      }
+    }
+
+    .flabList__pages li a {
       text-decoration: none;
-      color: #0e62a8;
+      text-transform: uppercase;
+      color: #59595b;
+      font-size: 20px;
+      line-height: 1.8;
+      position: relative;
+      padding-left: 25px;
+      transition: all 0.3s;
     }
-    a:hover{
-      text-decoration: underline;
+
+    @media (max-width: 1199.98px) {
+      .flabList__pages li a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li a {
+        font-size: 14px;
+        padding-left: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li a {
+        color: #ffffff;
+      }
+    }
+
+    .flabList__pages li a:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 1px solid #adadac;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li a:before {
+        width: 10px;
+        height: 10px;
+        left: -8px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li a:before {
+        border: 1px solid #fff;
+      }
+    }
+
+    .flabList__pages li a:hover {
+      color: #cf3c3a;
+    }
+
+    .flabList__pages li a:hover:before {
+      border: 1px solid #cf3c3a;
     }
   </style>
-</head>
-<body>
-<div class="container-fluid">
-  <div style="background-color: #e31f25; display: block; text-align: center; padding: 10px;">
-    <img width="200" src="dist/images/logo.png" alt="">
+
+  <!-- flabList -->
+  <div class="flabList" style="background-image: url('http://screen.flabio.tech/adver/listBG.jpg');">
+    <div class="flabAgLogo">
+      <a href="http://adver.kg/" target="_blank">
+        <img src="http://screen.flabio.tech/adver/logo.png" alt="">
+      </a>
+    </div>
+    <div class="container">
+      <div class="flabList__wrap">
+        <div class="flabList__logo">
+          <img src="dist/images/logo.png" alt="">
+        </div>
+        <ul class="flabList__pages">
+          <li>
+            <a target="_blank" href="dist/index.html">Главная</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/investors.html">Инвесторы</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/warranty.html">Гарантии</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/about.html">О компании</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/history.html">Истории успеха</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/equipments.html">Оборудование</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/equipments-single.html">Оборудование внутр</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/news.html">Новости</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/news-single.html">Новости внутр</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/materials.html">Материалы</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/materials-single.html">Материалы внутр</a>
+          </li>
+          <li>
+            <a target="_blank" href="dist/404.html">404</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
   </div>
-  <ol class='list'>
-    <li><a target="_blank" href="dist/index.html">Главная</a></li>
-    <li><a target="_blank" href="dist/investors.html">Инвесторы</a></li>
-    <li><a target="_blank" href="dist/warranty.html">Гарантии</a></li>
-    <li><a target="_blank" href="dist/about.html">О компании</a></li>
-    <li><a target="_blank" href="dist/history.html">Истории успеха</a></li>
-    <li><a target="_blank" href="dist/equipments.html">Оборудование</a></li>
-    <li><a target="_blank" href="dist/equipments-single.html">Оборудование внутр</a></li>
-    <li><a target="_blank" href="dist/news.html">Новости</a></li>
-    <li><a target="_blank" href="dist/news-single.html">Новости внутр</a></li>
-    <li><a target="_blank" href="dist/materials.html">Материалы</a></li>
-    <li><a target="_blank" href="dist/materials-single.html">Материалы внутр</a></li>
-    <li><a target="_blank" href="dist/404.html">404</a></li>
-  </ol>
-</div>
+  <!-- flabList end  -->
+
 </body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
 </html>
