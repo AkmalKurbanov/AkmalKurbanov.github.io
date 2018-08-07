@@ -115,26 +115,6 @@ $(document).ready(function () {
   });
 
   if (Modernizr.mq('(max-width: 767px)')) {
-    var init = function init(data) {
-      $('#map').html('');
-      myMap = new ymaps.Map('map', {
-        controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
-        center: [48.701567, 44.497518],
-        behaviors: ['drag'],
-        zoom: 17
-      });
-
-      if (!data.type) {
-        myPlacemark = new ymaps.Placemark([48.701567, 44.497518], {
-          balloonContentHeader: 'Matreshka',
-          balloonContentBody: 'Волгоград, улица Канунникова, 13'
-
-        });
-        myMap.geoObjects.add(myPlacemark);
-        return true;
-      };
-    };
-
     $('a.-pagescroll[href*="#"]:not([href="#"])').click(function () {
       API.close();
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -148,30 +128,7 @@ $(document).ready(function () {
         }
       }
     });
-    var myMap, myPlacemark;
-
-    ymaps.ready(init);
-    ;
   } else {
-    var _init = function _init(data) {
-      $('#map').html('');
-      myMap = new ymaps.Map('map', {
-        controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
-        center: [48.701567, 44.497518],
-        behaviors: ['drag'],
-        zoom: 17
-      });
-
-      if (!data.type) {
-        myPlacemark = new ymaps.Placemark([48.701567, 44.497518], {
-          balloonContentHeader: 'Matreshka',
-          balloonContentBody: 'Волгоград, улица Канунникова, 13'
-        });
-        myMap.geoObjects.add(myPlacemark);
-        return true;
-      };
-    };
-
     $('a.-pagescroll[href*="#"]:not([href="#"])').click(function () {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -184,12 +141,7 @@ $(document).ready(function () {
         }
       }
     });
-    var myMap, myPlacemark;
-
-    ymaps.ready(_init);
-    ;
   }
-
   var wow = new WOW({
     boxClass: 'wow',
     animateClass: 'animated',
