@@ -133,152 +133,121 @@
     <section class="navigation">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 navigation-wrap">
+                <div class="col-md-12 col-sm-12 col-xs-12 navigation-wrap">
                     <ul>
                         <li class="navigation-item">
                             <a href="#"><img src="img/home-img.png" alt="" class="hidden-sm hidden-md hidden-lg home-img"><span>Главная</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </li>
-                        <li class="navigation-item active-nav"><a href="#"><span>Информация</span><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                        <li class="navigation-item"><a href="#"><span>О компании</span></a></li>
+                        <li class="navigation-item active-nav reg-nav"><a href="#"><span>Регистрация</span></a></li>
+                        <li class="navigation-item active-nav hidden-sm hidden-md hidden-lg sign-or-reg"><a href="#"><span>Вход или регистрация</span></a></li>
+                        <li class="navigation-item active-nav hidden-sm hidden-md hidden-lg sign-in-nav"><a href="#"><span>Авторизация</span></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <!-- end navigation -->
-    <!-- overlay for sidepanel -->
-    <div class="overlay-2"></div>
-    <!-- end overlay for sidepanel -->
-    <!-- about-company -->
-    <article class="company-content">
+    <!-- registration -->
+    <article class="registration">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-12 side-panel">
-                    <div class="side-panel-wrap">
-                      <div class="active-link toggle-link"><a href="#">О компании<i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
-                        <ul class="side-top">
-                            <li class="active-link"><a href="#">О компании</a></li>
-                            <li><a href="#">Нанимателям</a></li>
+                <section class="col-md-6 col-xs-12 sign-in" id="sign-in">
+                    <div class="sign-wrap">
+                        <h4> Вход в личный кабинет</h4>
+                        <ul>
                             <li>
-                                <a href="#">Работникам</a>
+                                <input type="text" placeholder="Ваш e-mail адрес" class="reg-input">
                             </li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Партнеры</a></li>
-                            <li class="sub-parent"><a href="#"><span>Правовая информация</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                <ul class="side-sub">
-                                    <li><a href="#">Lorem</a></li>
-                                    <li><a href="#">Lorem</a></li>
-                                    <li><a href="#">Lorem</a></li>
-                                    <li><a href="#">Lorem</a></li>
+                            <li>
+                                <input type=" text " placeholder="Введите пароль " class="reg-input">
+                            </li>
+                            <li>
+                                <ul class="remember-me">
+                                    <li>
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me"><span></span>Запомнить меня</label>
+                                    </li>
+                                    <li>
+                                        <a href="">Забыли пароль</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#">Условия использования</a>
-                            </li>
-                            <li>
-                                <a href="#">Правила системы</a>
-                            </li>
-                            <li>
-                                <a href="#">Соглашение о конфиденциальности</a>
-                            </li>
-                            <li>
-                                <a href="#">Контакты</a>
-                            </li>
                         </ul>
-                        <ul class="side-bottom">
-                            <li><a href="#">Написать в службу поддержки</a></li>
-                            <li><a href="#">Написать директору</a></li>
-                        </ul>
+                        <a href="" class="reg-btn enter-btn">Войти на сайт</a>
                     </div>
-                </div>
-                <div class="col-md-9 col-sm-8 col-xs-12 about-txt">
-                    <div class="first-indent">
-                        <h4>О компании Би Хелпер</h4>
-                        <p>Би Хелпер — это проект, созданный специально для будущих мам и пап, которые на пути к зачатию столкнулись с некоторыми трудностями. Здесь вы сможете ознакомиться с современными методами репродуктивных технологий, найти нужную
-                            клинику, спросить совета и поделиться опытом.</p>
-                        <p>Наш сайт в процессе постоянной модернизации. Мы придумываем новые сервисы и разделы для вашего удобства. Добавляем новые клиники и врачей. Собираем самые актуальные статьи и новости о методах борьбы с бесплодием.</p>
-                        <div class="tagline"><img src="img/tagline-img.png" alt="">
-                            <p>Мы делаем все, для того, чтобы ваша встреча с заветной мечтой состоялась как можно быстрее.</p>
-                        </div>
+                    <div class="or">
+                        <div class="before"></div> <span>или</span>
+                        <div class="after"></div>
                     </div>
-                    <div class="second-indent clearfix">
-                        <h4>Би Хелпер в России</h4>
-                        <div class="second-indent-wrap">
-                        <div class="second-indent-left hidden-xs hidden-sm">
-                            <ul>
-                                <li>Москва</li>
-                                <li>Санкт-Петербург</li>
-                            </ul>
-                            <ul>
-                                <li>Екатеринбург</li>
-                                <li>Новосибирск</li>
-                            </ul>
-                            <ul>
-                                <li>Казань</li>
-                                <li>Волгоград</li>
-                            </ul>
-                        </div>
-                        <div class="second-indent-left hidden-md hidden-lg clearfix">
-                            <ul>
-                                <li>Москва</li>
-                                <li>Санкт-Петербург</li>
-                                <li>Казань</li>
-                            </ul>
-                            <ul>
-                                <li>Екатеринбург</li>
-                                <li>Новосибирск</li>
-                                <li>Волгоград</li>
-                            </ul>
-
-                        </div>
-                        <div class="second-indent-right clearfix">
-                            <img src="img/russia-map.png" alt="">
-                        </div>
-                        </div>
-                    </div>
-                    <div class="third-indent">
-                        <h4>Преимущества</h4>
+                </section>
+                <section class="col-md-6 col-xs-12 sign-up" id="sign-up">
+                    <div class="sign-wrap">
+                        <h4>Зарегистрироваться</h4>
                         <ul>
-                            <li><img src="img/adv-item-1.png" alt="">
-                                <div class="adv-desc">
-                                    <p>Сотрудники рядом с вами</p><span>Обширная база специалистов позволяет найти сотрудников в любом районе города.</span></div>
+                            <li>
+                                <input type="text" placeholder="Ваш имя" class="reg-input">
                             </li>
-                            <li><img src="img/adv-item-2.png" alt="">
-                                <div class="adv-desc">
-                                    <p>Доступные цены</p><span>Записываясь к сотруднику через BeHelper.ru, Вы получаете скидки на свой первый заказ.</span></div>
+                            <li>
+                                <input type="text" placeholder="Номер телефона" class="reg-input">
                             </li>
-                            <li><img src="img/adv-item-3.png" alt="">
-                                <div class="adv-desc">
-                                    <p>Подлинные отзывы</p><span>Отзывы о сотрудниках публикуются только после проверки модераторами на достоверность</span></div>
+                            <li>
+                                <input type="text" placeholder="E-mail адрес" class="reg-input">
                             </li>
-                        </ul>
-                    </div>
-                    <div class="fourth-indent">
-                        <h4>Наша миссия</h4>
-                        <ul>
-                            <li><span>1.</span> Предоставление инновационных услуг нанимателям и работникам;</li>
-                            <li><span>2.</span> Повышение цивилизованности и прозрачности рынка </li>
-                            <li><span>3.</span> Внимательное отношение и помощь пользователям сайта в любой момент.</li>
-                        </ul>
-                    </div>
-                    <div class="about-register">
-                        <div class="now-reg">
-                            <img src="img/now-reg.png" alt="">
-                            <span>Зарегистрируйтесь и оцените наши возможности!</span>
-                        </div>
-                        <a href="" class="reg-btn">
-                        Зарегистрироваться
-                      </a>
-                    </div>
-                </div>
+                            <li>
+                                <input type="text" placeholder="Введите пароль" class="reg-input">
+                            </li>
+                            <li class="btm-inputs">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="searh-for-work" name="radio">
+                                        <label for="searh-for-work"><span></span>Я ищу работу(соискатель)</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="searh-for-labor" name="radio">
+                                        <label for="searh-for-labor"><span></span>Я ищу работника (работодатель)</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="agency" name="radio">
+                                        <label for="agency"><span></span>Агенство</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="agree-with">
+                                        <label for="agree-with"><span></span>Согласен (а) с <a href="">условиями использования</a> сервиса</label>
+                                    </li>
+                                </ul>
 
+                            </li>
+                            <a href="" class="reg-btn">Зарегистрироваться</a>
+                    </div>
+                </section>
+                <section class="col-xs-12 hidden-lg hidden-md hidden-sm sign-or-sing-up">
+                    <h4>Выберите интересующую вас страницу</h4>
+                    <a href="" class="reg-btn enter-btn" id="sign-in-link">Войти в личный кабинет</a>
+                    <div class="or-reg-wrap">
+                        <div class="before-or"></div>
+                        <div class="or-reg">
+                            <span>или</span>
+                        </div>
+                        <div class="after-or"></div>
+                    </div>
+                    <a href="" class="reg-btn" id="sign-up-link">Зарегистрироваться</a>
+                </section>
             </div>
         </div>
+        <div class="btm-img-wrap">
+            <picture>
+                <source srcset="img/reg-img-1920.png" media="(min-width: 1700px)" />
+                <source srcset="img/reg-img.png" media="(min-width: 1400px)" />
+                <source srcset="img/reg-img-990.png" media="(min-width: 990px)" />
+                <source srcset="img/reg-img-768.png" media="(min-width: 640px)" />
+                <img srcset="img/reg-img-480.png" />
+            </picture>
 
+        </div>
     </article>
-    <!-- end about company -->
-    <!-- footer -->
-    <footer class="main-foot company-foot">
+    <!-- end registration -->
+    <!--footer -->
+    <footer class="main-foot">
         <div class="container">
             <div class="row">
                 <div class="col-md-4  ">
@@ -381,8 +350,50 @@
                     </ul>
                 </div>
             </div>
+            <div class="flabCopyAg">
+  <div class="flabCopyAg__copyLink">
+    <a href="http://www.adver.kg/">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.79 354.54">
+          <defs>
+            <style>
+              .ALetter {
+                fill: #b10d15
+              }
+
+              .GLetter {
+                fill: #005285
+              }
+
+            </style>
+          </defs>
+          <title>Adver Group</title>
+          <g id="Слой_2" data-name="Слой 2">
+            <g id="adver_logo">
+              <path id="g" class="GLetter" d="M364.09,197.5l-.7-38c13.5-.5,27-1,40.5-.7,12.3.4,24.6,1.3,37.5,3,39.7,5.4,65.5,25.7,78.2,51.1a87.46,87.46,0,0,1,9.1,43.2,94.36,94.36,0,0,1-12.8,43.3c-16.1,28.1-47.4,50.4-93.3,54.2a224.84,224.84,0,0,1-30.7.7c-34.3-1.5-62.3-11.4-82.3-29.8-20.2-18.6-32.4-45.7-35.4-81.6-2.7-31.2-.6-68.2-.6-100.1,0-32.3,6.6-59.1,17.9-80.4,11.1-20.8,26.9-36.6,45.7-46.8C355.89,5.1,377.59,0,400.79,0c32.8,0,63.6,10,92.3,25.3V69.8c-4.6.8-9.2,1.5-13.7,2.2-6-18.9-19-29-37.9-34.2a86.63,86.63,0,0,0-37.9-1.5,85.24,85.24,0,0,0-37,15.7c-35.7,26.8-33.2,63.7-34.2,103-1.5,50.4-3.5,126.2,21.1,145.6,13.7,12.3,36.4,19.3,54.6,17.7,22.4-1.7,39.5-12.8,50.4-27.9a76.21,76.21,0,0,0,13.1-32.3,63.67,63.67,0,0,0-3-33.2c-5.2-13.7-15.7-24.9-31.8-30.7-9.7-3.2-24.4-6.8-37.6-6.1-9.7.4-17,2.9-23.6,10.1-3.8-.2-7.7-.4-11.5-.7Z"></path>
+              <path id="a" class="ALetter" d="M192.49,185.1l-21,1h-.1c-5.3.1-10.9.3-16.5.3-21.4.3-42.8.6-62.8,7.4a51,51,0,0,0-31.9,30.6,64.38,64.38,0,0,0-3.1,33.1,76.61,76.61,0,0,0,13.1,32.4,67.85,67.85,0,0,0,50.4,28,80,80,0,0,0,29.2-3.4,70.56,70.56,0,0,0,24.7-13.7l.1-.2c23.9-19,21.8-49.9,19.5-84.8-.7-10-1.5-20.3-1.6-30.7m-105-23.7h0c14.1-1.9,28.1-1.9,42.3-1.7,13.4,0,26.8.1,40-1.6a43.56,43.56,0,0,0,11.8-3,24,24,0,0,0,7.8-5.1,21.75,21.75,0,0,0,4.2-8.3,50.67,50.67,0,0,0,1.6-13.4c0-35.8-13.4-59.7-32.1-73.9A80.5,80.5,0,0,0,126.49,39a88.66,88.66,0,0,0-38,2c-19.6,5.4-33.6,16-39.9,35.7-4.5-.7-9.1-1.4-13.7-2.1V30c29.6-15.9,61.7-26.3,95.5-26.3,22.5,0,43.8,4.9,62.1,14.9A110.22,110.22,0,0,1,237.09,64c11,20.8,17.3,47,17.3,78.8v70.9c.2,5.1.4,10.2.5,15.2,1.5,43.7,2.6,80.6,44.9,114.3l6.1,5-7.7,1.3c-23,4.1-40,2.6-52.8-3-11.3-4.9-19.3-13-24.9-23a95.2,95.2,0,0,1-20.9,15.3,107.73,107.73,0,0,1-30.7,10.7,247.56,247.56,0,0,1-31,3.8,211,211,0,0,1-31.8-.2c-45.8-3.9-77.2-26-93.3-54.2A96.68,96.68,0,0,1,.09,255.7a88.57,88.57,0,0,1,9.1-43.2c12.6-25.5,38.6-45.7,78.3-51.1Z"></path>
+            </g>
+          </g>
+        </svg>
+      </span>
+      <div class="jumpingAdver">
+        <div class="jumpingLetter">a</div>
+        <div class="jumpingLetter">d</div>
+        <div class="jumpingLetter">v</div>
+        <div class="jumpingLetter">e</div>
+        <div class="jumpingLetter">r</div>
+        <div class="jumpingLetter">g</div>
+        <div class="jumpingLetter">r</div>
+        <div class="jumpingLetter">o</div>
+        <div class="jumpingLetter">u</div>
+        <div class="jumpingLetter">p</div>
+      </div>
+    </a>
+  </div>
+</div>
+ 
         </div>
-    </footer>
+    </footer> -->
     <!-- end footer -->
     <!-- load scripts -->
     <script src="js/jquery.min.js"></script>
