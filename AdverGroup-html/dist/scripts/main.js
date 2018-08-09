@@ -1,6 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
+
   // autoplay audio
   $(window).on('load', function () {
     function audioLoopedPlay() {
@@ -48,6 +49,9 @@ $(document).ready(function () {
       $('.flabApperance').removeClass('flabShow');
     }
   });
+  // Let's rotate this mother!
+
+
   // };
   // right panel end //////////////////////////////////////////////////////////////
 
@@ -278,6 +282,34 @@ $(document).ready(function () {
   });
   // slider of flabMainSlider end //////////////////////////////////////////////////////////////////
 
+  // slider of flabTeam
+  var swiper = new Swiper('.flabTeam-js', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false
+    },
+    breakpoints: {
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      575: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      }
+    }
+  });
+  // slider of flabTeam end
+
   // swiper end //////////////////////////////////////////////////////////////////
 
   // portfolio filter //////////////////////////////////////////////////////////////////
@@ -369,6 +401,81 @@ $(document).ready(function () {
     theme: 'themeMalihu'
   });
   // malihu scroll end //////////////////////////////////////////////////////////////////
+
+
+  // rotate background parallax
+  $('body').scroll(function () {
+    var y = $(this).scrollTop(),
+        speed = 0.5,
+        spin = y * speed,
+        $FlabRotateFigure = $('.flabParallax');
+    $FlabRotateFigure.css({
+      '-webkit-transform': 'rotate(' + spin + 'deg)',
+      '-moz-transform': 'rotate(' + spin + 'deg)',
+      '-o-transform': 'rotate(' + spin + 'deg)',
+      'transform': 'rotate(' + spin + 'deg)'
+    });
+  });
+  // rotate background parallax end
+
+
+  // change text on mainSlider
+  var words = document.getElementsByClassName('word');
+  var wordArray = [];
+  var currentWord = 0;
+
+  words[currentWord].style.opacity = 1;
+  for (var i = 0; i < words.length; i++) {
+    splitLetters(words[i]);
+  }
+
+  function changeWord() {
+    var cw = wordArray[currentWord];
+    var nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+    for (var i = 0; i < cw.length; i++) {
+      animateLetterOut(cw, i);
+    }
+
+    for (var i = 0; i < nw.length; i++) {
+      nw[i].className = 'letter behind';
+      nw[0].parentElement.style.opacity = 1;
+      animateLetterIn(nw, i);
+    }
+
+    currentWord = currentWord == wordArray.length - 1 ? 0 : currentWord + 1;
+  }
+
+  function animateLetterOut(cw, i) {
+    setTimeout(function () {
+      cw[i].className = 'letter out';
+    }, i * 80);
+  }
+
+  function animateLetterIn(nw, i) {
+    setTimeout(function () {
+      nw[i].className = 'letter in';
+    }, 340 + i * 80);
+  }
+
+  function splitLetters(word) {
+    var content = word.innerHTML;
+    word.innerHTML = '';
+    var letters = [];
+    for (var i = 0; i < content.length; i++) {
+      var letter = document.createElement('span');
+      letter.className = 'letter';
+      letter.innerHTML = content.charAt(i);
+      word.appendChild(letter);
+      letters.push(letter);
+    }
+
+    wordArray.push(letters);
+  }
+
+  changeWord();
+  setInterval(changeWord, 4000);
+
+  // change text on mainSlider end
 
 
   // services 3d card //////////////////////////////////////////////////////////////////
