@@ -3363,16 +3363,13 @@ body {
 .flabApperance .flabAgTrigger {
   position: absolute;
   top: 3.5625rem;
-  left: 31%;
-  right: 0.375rem;
+  left: 21%;
+  right: 0;
   max-width: 1.5625rem;
   width: 100%;
   margin: auto;
   cursor: pointer;
-  animation-name: triggerHiddenMnu;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-delay: 0s;
+  height: 100%;
 }
 
 .flabApperance .flabAgTrigger img,
@@ -3387,6 +3384,12 @@ body {
 
 @media (max-width: 1199.98px) {
   .flabApperance .flabAgTrigger:hover {
+    top: 0.4375rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .flabApperance .flabAgTrigger:hover {
     top: 0.625rem;
   }
 }
@@ -3400,21 +3403,91 @@ body {
 
 @media (max-width: 1199.98px) {
   .flabApperance .flabAgTrigger {
-    top: 0.625rem;
-    right: 3.125rem;
+    top: 0.4375rem;
     left: auto;
+    right: auto;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
-@keyframes triggerHiddenMnu {
-  0% {
-    transform: translateX(10%);
+@media (max-width: 767.98px) {
+  .flabApperance .flabAgTrigger {
+    top: 0.625rem;
   }
-  50% {
-    transform: translateX(20%);
+}
+
+.flabApperance .flabAgTrigger__imgWrap {
+  max-width: 1.5625rem;
+  width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  .flabApperance .flabAgTrigger__imgWrap {
+    float: right;
+    margin-right: 3.125rem;
   }
-  100% {
-    transform: translateX(0%);
+}
+
+.flabApperance .flabAgTrigger__logoWrap {
+  transform: rotate(270deg);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+@media (max-width: 1199.98px) {
+  .flabApperance .flabAgTrigger__logoWrap {
+    position: absolute;
+    top: -0.625rem;
+    min-height: auto;
+    transform: rotate(0deg);
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+.flabApperance .flabAgTrigger__logoWrap p {
+  white-space: nowrap;
+  margin: 0;
+  font-family: 'Bell';
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #58595b;
+  letter-spacing: 1.5625rem;
+}
+
+@media (max-width: 1229.98px) {
+  .flabApperance .flabAgTrigger__logoWrap p {
+    font-size: 1.25rem;
+    letter-spacing: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .flabApperance .flabAgTrigger__logoWrap p {
+    margin-bottom: 0;
+    font-size: 1.5625rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .flabApperance .flabAgTrigger__logoWrap p {
+    font-size: 1.25rem;
+    letter-spacing: 0.9375rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .flabApperance .flabAgTrigger__logoWrap p {
+    font-size: 1rem;
+    letter-spacing: 0.3125rem;
   }
 }
 
