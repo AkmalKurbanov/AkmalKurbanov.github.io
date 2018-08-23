@@ -1,0 +1,11 @@
+
+.flabio-24-hours:before { content: '\e800'; } /* '' */
+.flabio-chat:before { content: '\e801'; } /* '' */
+.flabio-copy:before { content: '\e802'; } /* '' */
+.flabio-discount:before { content: '\e803'; } /* '' */
+.flabio-event:before { content: '\e804'; } /* '' */
+.flabio-gift:before { content: '\e805'; } /* '' */
+.flabio-gift-clock:before { content: '\e806'; } /* '' */
+.flabio-money:before { content: '\e807'; } /* '' */
+.flabio-settings:before { content: '\e808'; } /* '' */
+.flabio-transfer:before { content: '\e809'; } /* '' */
