@@ -1,117 +1,250 @@
-<!doctype html>
-<html class="no-js" lang="ru">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>reserve html</title>
-
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="styles/vendor.css">
-
-  <link rel="stylesheet" href="styles/main.css">
-
-  <script src="scripts/vendor/modernizr.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p o r t f o l i o</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
 
-      <!-- <div id="prelaoder">
-        <div class="spinner">
-          <div class="spinner-inner"></div>
+  <style>
+    .flabList {
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      padding-top: 7%;
+      position: relative;
+    }
+
+    @media (max-width: 575.98px) {
+      .flabList {
+        padding-top: 15%;
+      }
+    }
+
+    .flabList:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList:before {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: block;
+      }
+    }
+
+    .flabList .flabAgLogo {
+      max-width: 150px;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      right: 65px;
+    }
+
+    @media (max-width: 1199.98px) {
+      .flabList .flabAgLogo {
+        max-width: 120px;
+        top: 50px;
+        right: 20px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList .flabAgLogo {
+        right: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList .flabAgLogo {
+        max-width: 100px;
+        right: 20px;
+        top: auto;
+        bottom: 15px;
+      }
+    }
+
+    .flabList .flabAgLogo img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .flabList__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+
+    .flabList__logo {
+      max-width: 270px;
+      width: 100%;
+    }
+
+    .flabList__logo img {
+      width: 100%;
+    }
+
+    .flabList__pages {
+      column-count: 3;
+      margin-top: 5%;
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages {
+        column-count: auto;
+      }
+    }
+
+    .flabList__pages li {
+      list-style-type: none;
+    }
+
+    @media (max-width: 1199.98px) {
+      .flabList__pages li {
+        padding-left: 40px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li {
+        padding-left: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li {
+        padding-left: 0;
+      }
+    }
+
+    .flabList__pages li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #59595b;
+      font-size: 20px;
+      line-height: 1.8;
+      position: relative;
+      padding-left: 25px;
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 1199.98px) {
+      .flabList__pages li a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li a {
+        font-size: 14px;
+        padding-left: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li a {
+        color: #ffffff;
+      }
+    }
+
+    .flabList__pages li a:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 1px solid #adadac;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li a:before {
+        width: 10px;
+        height: 10px;
+        left: -8px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li a:before {
+        border: 1px solid #fff;
+      }
+    }
+
+    .flabList__pages li a:hover {
+      color: #cf3c3a;
+    }
+
+    .flabList__pages li a:hover:before {
+      border: 1px solid #cf3c3a;
+    }
+  </style>
+
+  <!-- flabList -->
+  <div class="flabList" style="background-image: url('http://screen.flabio.tech/adver/listBG.jpg');">
+    <div class="flabAgLogo">
+      <a href="http://adver.kg/" target="_blank">
+        <img src="http://screen.flabio.tech/adver/logo.png" alt="">
+      </a>
+    </div>
+    <div class="container">
+      <div class="flabList__wrap">
+        <div class="flabList__logo">
+            <img src="images/logo.png" alt="">
         </div>
-      </div> -->
-
-      <div class="loader">
-        <div class="loader_inner"></div>
+        <ul class="flabList__pages">
+          <li>
+            <a target="_blank" href="main.html">Главная</a>
+          </li>
+          <li>
+            <a target="_blank" href="rybalka.html">Рыбалка</a>
+          </li>
+          <li>
+            <a target="_blank" href="ohota.html">Охота</a>
+          </li>
+          <li>
+            <a target="_blank" href="nilo.html">Река Нило</a>
+          </li>
+          <li>
+            <a target="_blank" href="turizm.html">Туризм</a>
+          </li>
+          <li>
+            <a target="_blank" href="galley.html">Галерея</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </div>
+  <!-- flabList end  -->
 
-      <div class="main-content">
-        <div class="menu">
-
-          <div class="menu__logo">
-            <a href="#"><img src="images/logo.png" alt=""></a>
-          </div>
-
-          <ul class="ul">
-            <li><a href="#" class="-active">Главная</a></li>
-            <li><a href="#">Рыбалка</a>
-              <ul class="under">
-                <li><a href="#">Маршруты</a></li>
-                <li><a href="#">Туризм</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Охота</a></li>
-            <li><a href="#">Проживание</a></li>
-            <li><a href="#">Природа</a></li>
-            <li><a href="#">Галлерея</a></li>
-            <li><a href="#">Истории</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-
-          <div class="menu__toggle js_menu_toggle">
-            <i class="fa fa-angle-double-right"></i>
-            <span>Меню</span>
-          </div>
-
-          <div class="menu__social">
-            <ul class="social-ul">
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="content">
-
-          <div class="container-fluid noPadding height">
-            <div class="content__main">
-              <a href="#" class="content__blog">
-                <h2 class="h2">Анюйская <br>остановка</h2>
-                <span>14.07.2017</span>
-                <p>191 км. в пути мы сделали крутую остановку отлично порыбачили, горы эмоций и рыбы.</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="container-fluid noPadding hundred">
-            <div class="row noMargin heigh">
-              <div class="col-md-6 noPadding heigh">
-                <div class="content__bottom content__bottom--imge">
-                  <a href="#" class="content__block">
-                    <i class="icon-fish"></i>
-                    <h3>РЫБАЛКА</h3>
-                    <p>маршруты для рыбалки <br>по горным рекам</p>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6 noPadding heigh">
-                <div class="content__bottom content__bottom--imga">
-                  <a href="#" class="content__block">
-                    <i class="icon-ytka"></i>
-                    <h3>ОХОТА</h3>
-                    <p>охотьничьи маршруты <br>по дикой тайге</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</body>
 
 
-      <script src="scripts/vendor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-      <script src="scripts/plugins.js"></script>
 
-      <script src="scripts/main.js"></script>
-    </body>
-    </html>
+
+</html>
