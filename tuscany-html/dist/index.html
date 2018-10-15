@@ -1,420 +1,265 @@
-<!doctype html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>tuscany</title>
+<!DOCTYPE html>
+<html lang="en">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>p o r t f o l i o</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <link rel="stylesheet" href="styles/vendor.css">
+<body>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,400italic|Oranienbaum&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <style>
+    .flabList {
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      padding-top: 7%;
+      position: relative;
+    }
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    @media (max-width: 575.98px) {
+      .flabList {
+        padding-top: 15%;
+      }
+    }
 
-    <link rel="stylesheet" href="styles/main.css">
+    .flabList:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+    }
 
-    <script src="scripts/vendor/modernizr.js"></script>
-  </head>
-  <body>
-    <div class="b_main_slider">
-      <div class="_slider owl-carousel">
-        <div class="_slide" style="background-image: url(images/main_slider_img.jpg)">
-          <div class="_block_wrapper">
-            <div class="_block amour">
-              <div class="_main_caption">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-            </div>
-          </div>
+    @media (max-width: 767.98px) {
+      .flabList:before {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: block;
+      }
+    }
+
+    .flabList .flabAgLogo {
+      max-width: 150px;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      right: 65px;
+    }
+
+    @media (max-width: 1199.98px) {
+      .flabList .flabAgLogo {
+        max-width: 120px;
+        top: 50px;
+        right: 20px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList .flabAgLogo {
+        right: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList .flabAgLogo {
+        max-width: 100px;
+        right: 20px;
+        top: auto;
+        bottom: 15px;
+      }
+    }
+
+    .flabList .flabAgLogo img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .flabList__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+
+    .flabList__logo {
+      max-width: 270px;
+      width: 100%;
+    }
+
+    .flabList__logo img {
+      width: 100%;
+    }
+
+    .flabList__pages {
+      column-count: 3;
+      margin-top: 5%;
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages {
+        column-count: auto;
+      }
+    }
+
+    .flabList__pages li {
+      list-style-type: none;
+    }
+
+    @media (max-width: 1199.98px) {
+      .flabList__pages li {
+        padding-left: 40px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li {
+        padding-left: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li {
+        padding-left: 0;
+      }
+    }
+
+    .flabList__pages li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #59595b;
+      font-size: 20px;
+      line-height: 1.8;
+      position: relative;
+      padding-left: 25px;
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 1199.98px) {
+      .flabList__pages li a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li a {
+        font-size: 14px;
+        padding-left: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li a {
+        color: #ffffff;
+      }
+    }
+
+    .flabList__pages li a:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 1px solid #adadac;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li a:before {
+        width: 10px;
+        height: 10px;
+        left: -8px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li a:before {
+        border: 1px solid #fff;
+      }
+    }
+
+    .flabList__pages li a:hover {
+      color: #cf3c3a;
+    }
+
+    .flabList__pages li a:hover:before {
+      border: 1px solid #cf3c3a;
+    }
+  </style>
+
+  <!-- flabList -->
+  <div class="flabList" style="background-image: url('http://screen.flabio.tech/adver/listBG.jpg');">
+    <div class="flabAgLogo">
+      <a href="http://adver.kg/" target="_blank">
+        <img src="http://screen.flabio.tech/adver/logo.png" alt="">
+      </a>
+    </div>
+    <div class="container">
+      <div class="flabList__wrap">
+        <div class="flabList__logo">
+            <h1>Tuscany</h1>
         </div>
-        <div class="_slide" style="background-image: url(images/main_slider_img_2.jpg)">
-          <div class="_block_wrapper">
-            <div class="_block amour">
-              <div class="_main_caption">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-            </div>
-          </div>
-        </div>
-        <div class="_slide" style="background-image: url(images/main_slider_img_3.jpg)">
-          <div class="_block_wrapper">
-            <div class="_block amour">
-              <div class="_main_caption">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-            </div>
-          </div>
-        </div>
-        <div class="_slide" style="background-image: url(images/main_slider_img_4.jpg)">
-          <div class="_block_wrapper">
-            <div class="_block amour">
-              <div class="_main_caption">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-            </div>
-          </div>
-        </div>
-        <div class="_slide" style="background-image: url(images/main_slider_img_5.jpg)">
-          <div class="_block_wrapper">
-            <div class="_block amour">
-              <div class="_main_caption">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-            </div>
-          </div>
-        </div>
-        <div class="_slide" style="background-image: url(images/main_slider_img_6.jpg)">
-          <div class="_block_wrapper">
-            <div class="_block amour">
-              <div class="_main_caption">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-            </div>
-          </div>
-        </div>
-        <div class="_slide" style="background-image: url(images/main_slider_img_7.jpg)">
-          <div class="_block_wrapper">
-            <div class="_block amour">
-              <div class="_main_caption">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-            </div>
-          </div>
-        </div>
+        <ul class="flabList__pages">
+          <li>
+            <a target="_blank" href="main.html">Главная</a>
+          </li>
+          <li>
+            <a target="_blank" href="about.html">О компании</a>
+          </li>
+          <li>
+            <a target="_blank" href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a target="_blank" href="contacts.html">Контакты</a>
+          </li>
+          <li>
+            <a target="_blank" href="object.html">Объект</a>
+          </li>
+          <li>
+            <a target="_blank" href="order.html">Заказ</a>
+          </li>
+          <li>
+            <a target="_blank" href="tuscany.html">Тоскана</a>
+          </li>
+          <li>
+            <a target="_blank" href="articles.html">Статьи</a>
+          </li>
+          <li>
+            <a target="_blank" href="single.html">Статья</a>
+          </li>
+          <li>
+            <a target="_blank" href="faq.html">Вопрос ответ</a>
+          </li>
+          <li>
+            <a target="_blank" href="404.html">404</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="b_main_slider_placer">
-      <header class="b_header amour">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-sm-4">
-              <nav class="_nav">
-                <div class="_nav_item">
-                  <a href="#" class="_nav_item_name -with_dropdown">Меню</a>
-                  <div class="_nav_dropdown">
-                    <a href="#" class="_nav_subitem_name">Главная</a>
-                    <a href="#" class="_nav_subitem_name">О компании</a>
-                    <a href="#" class="_nav_subitem_name">Тоскана</a>
-                    <a href="#" class="_nav_subitem_name">Каталог</a>
-                    <a href="#" class="_nav_subitem_name">Контакты</a>
-                    <a href="#" class="_nav_subitem_name">Заявка на подбор</a>
-                  </div>
-                </div>
-                <div class="_nav_item"><a href="#" class="_nav_item_name">Каталог объектов</a></div>
-              </nav>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <a href="#" class="_logo"><img src="images/header_logo.png" height="110" width="224" alt="Luxury Houses Of Tuscuny"></a>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-8">
-              <div class="_order_wrapper">
-                <a href="#" class="_order">Заявка на подбор</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <a href="#" class="_left_arrow"></a>
-      <a href="#" class="_right_arrow"></a>
-      <div class="_block_wrapper">
-        <div class="_block amour">
-          <!-- <div class="_main_caption">Тоскана - это место для ценителей комфортной жизни и престижа</div> -->
-          <a href="#" class="_btn btn">Наши объекты</a>
-          <div class="_dots"></div>
-        </div>
-      </div>
-    </div>
-    <div class="b_objects">
-      <div class="_wrapper">
-        <div class="container">
-          <h2 class="title_1 amour"><span>Другие объекты</span></h2>
-          <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="_item">
-                <a href="#" class="_img"><img src="images/object_preview.jpg" alt="Название проекта" class="img-responsive"></a>
-                <div class="_cont">
-                  <div data-mh="object_description">
-                    <a href="#" class="_name">Замок в Маремме</a>
-                    <a href="#" class="_type">Вилла</a>
-                    <a href="#" class="_text">Этот исторический замок находится в одном из самых известных и престижных мест Италии - Маремме, которое завоевало свою популярность благодаря своей необыкновенно красивой природе и чистейшей морской воде. Здесь большое количество древних городков, памятников старины, а также оздоровительных термальных источников.</a>
-                  </div>
-                  <div class="_specs">
-                    <div class="_spec">
-                      <div class="_spec_val ora">2500</div>
-                      <div class="_spec_text">Площадь<br> участка, м²</div>
-                    </div>
-                    <div class="_spec">
-                      <div class="_spec_val ora">321</div>
-                      <div class="_spec_text">Площадь<br> здания, м²</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="_item">
-                <a href="#" class="_img"><img src="images/object_preview.jpg" alt="Название проекта" class="img-responsive"></a>
-                <div class="_cont">
-                  <div data-mh="object_description">
-                    <a href="#" class="_name">Апартаменты в историческом центре Флоренции</a>
-                    <a href="#" class="_type">Вилла</a>
-                    <a href="#" class="_text">Филигранное сочетание величественной старины, оснащенности по последнему слову техники и безупречного состояния.</a>
-                  </div>
-                  <div class="_specs">
-                    <div class="_spec">
-                      <div class="_spec_val ora">2500</div>
-                      <div class="_spec_text">Площадь<br> участка, м²</div>
-                    </div>
-                    <div class="_spec">
-                      <div class="_spec_val ora">321</div>
-                      <div class="_spec_text">Площадь<br> здания, м²</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="_item">
-                <a href="#" class="_img"><img src="images/object_preview.jpg" alt="Название проекта" class="img-responsive"></a>
-                <div class="_cont">
-                  <div data-mh="object_description">
-                    <a href="#" class="_name">Историческая вилла в центре Флоренции</a>
-                    <a href="#" class="_type">Вилла</a>
-                    <a href="#" class="_text">Само здание является историческим памятником и прекрасно сохраняет лучшие флорентийские традиции...</a>
-                  </div>
-                  <div class="_specs">
-                    <div class="_spec">
-                      <div class="_spec_val ora">2500</div>
-                      <div class="_spec_text">Площадь<br> участка, м²</div>
-                    </div>
-                    <div class="_spec">
-                      <div class="_spec_val ora">321</div>
-                      <div class="_spec_text">Площадь<br> здания, м²</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="_item">
-                <a href="#" class="_img"><img src="images/object_preview.jpg" alt="Название проекта" class="img-responsive"></a>
-                <div class="_cont">
-                  <div data-mh="object_description">
-                    <a href="#" class="_name">Загородный дом, Инпрунета</a>
-                    <a href="#" class="_type">Вилла</a>
-                    <a href="#" class="_text">Этот загородный дом находится в одном из самых известных мест Тосканы - Кьянти.  Из его окон и террас открываются красивейшие панорамные виды на виноградники и оливковые плантации, на зеленые луга и возвышенности, на ухоженные поля и разноцветные цветы.</a>
-                  </div>
-                  <div class="_specs">
-                    <div class="_spec">
-                      <div class="_spec_val ora">2500</div>
-                      <div class="_spec_text">Площадь<br> участка, м²</div>
-                    </div>
-                    <div class="_spec">
-                      <div class="_spec_val ora">321</div>
-                      <div class="_spec_text">Площадь<br> здания, м²</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="_item">
-                <a href="#" class="_img"><img src="images/object_preview.jpg" alt="Название проекта" class="img-responsive"></a>
-                <div class="_cont">
-                  <div data-mh="object_description">
-                    <a href="#" class="_name">Вилла Муралина</a>
-                    <a href="#" class="_type">Вилла</a>
-                    <a href="#" class="_text">Живописные пейзажи, чистый воздух, плантации оливок и виноградников, - все это создает прекрасную атмосферу для спокойной комфортной жизни.</a>
-                  </div>
-                  <div class="_specs">
-                    <div class="_spec">
-                      <div class="_spec_val ora">2500</div>
-                      <div class="_spec_text">Площадь<br> участка, м²</div>
-                    </div>
-                    <div class="_spec">
-                      <div class="_spec_val ora">321</div>
-                      <div class="_spec_text">Площадь<br> здания, м²</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="_item">
-                <a href="#" class="_img"><img src="images/object_preview.jpg" alt="Название проекта" class="img-responsive"></a>
-                <div class="_cont">
-                  <div data-mh="object_description">
-                    <a href="#" class="_name">Историческая вилла в центре Флоренции</a>
-                    <a href="#" class="_type">Вилла</a>
-                    <a href="#" class="_text">Само здание является историческим памятником и прекрасно сохраняет лучшие флорентийские традиции...</a>
-                  </div>
-                  <div class="_specs">
-                    <div class="_spec">
-                      <div class="_spec_val ora">2500</div>
-                      <div class="_spec_text">Площадь<br> участка, м²</div>
-                    </div>
-                    <div class="_spec">
-                      <div class="_spec_val ora">321</div>
-                      <div class="_spec_text">Площадь<br> здания, м²</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="_btn_wrapper">
-            <a href="#" class="btn amour">Еще 147 объектов</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
+  <!-- flabList end  -->
 
-    <div class="b_services">
-      <div class="container">
-        <h2 class="title_1 amour"><span>Наши услуги</span></h2>
-        <div class="_caption">Мы хотим, чтобы покупая недвижимость в Италии, вы чувствовали себя здесь комфортно  как в собственном доме. Мы гарантируем Вам подбор самой лучшей недвижимости в Тоскане. С нами купить дом в Италии – просто и надежно.</div>
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="_item">
-              <div class="_img"><img src="images/services_ico_1.png" height="72" width="70" alt=""></div>
-              <div class="_text ora">Целенаправленный поиск требуемого объекта</div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="_item">
-              <div class="_img"><img src="images/services_ico_2.png" height="76" width="81" alt=""></div>
-              <div class="_text ora">Юридическое сопровождение процесса покупки</div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="_item">
-              <div class="_img"><img src="images/services_ico_3.png" height="73" width="68" alt=""></div>
-              <div class="_text ora">Консалтинговые услуги по вопросам приобретения</div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="_item">
-              <div class="_img"><img src="images/services_ico_4.png" height="77" width="92" alt=""></div>
-              <div class="_text ora">Русскоязычный перевод в процессе выбора и покупки</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+</body>
 
-    <div class="b_about">
-      <div class="container">
-        <h2 class="title_1 amour"><span>О компании</span></h2>
-        <div class="_caption">Наша компания специализируется на продаже элитных вилл, замков, домов и апартаментов Италии и, прежде всего, - в Тоскане.  Мы родились, выросли и учились в этих местах, где все пронизано гармонией культуры, искусства, архитектуры, удивительной природы и очень комфортной жизни. </div>
-        <div class="_stakeholders">
-          <div class="row">
-            <div class="_stakeholders_item col-sm-3">
-              <div class="_stakeholders_foto"><img src="images/about_stakeholder_1.jpg" height="220" width="250" alt=""></div>
-              <div class="_stakeholders_name ora">Роберто<br> Фонтанелли</div>
-            </div>
-            <div class="_stakeholders_item col-sm-3">
-              <div class="_stakeholders_foto"><img src="images/about_stakeholder_2.jpg" height="220" width="250" alt=""></div>
-              <div class="_stakeholders_name ora">Франко<br> Таралло</div>
-            </div>
-            <div class="_stakeholders_item col-sm-3">
-              <div class="_stakeholders_foto"><img src="images/about_stakeholder_3.jpg" height="220" width="250" alt=""></div>
-              <div class="_stakeholders_name ora">Ирина<br> Лебедева</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="b_facts owl-carousel">
-      <div class="_slider" style="background-image: url(images/facts_img.jpg)">
-        <div class="_wrapper">
-          <div class="_caption ora">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-          <div class="_number">3 факт из 563</div>
-        </div>
-      </div>
-      <div class="_slider" style="background-image: url(images/facts_img_2.jpg)">
-        <div class="_wrapper">
-          <div class="_caption ora">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-          <div class="_number">3 факт из 563</div>
-        </div>
-      </div>
-      <div class="_slider" style="background-image: url(images/facts_img_3.jpg)">
-        <div class="_wrapper">
-          <div class="_caption ora">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-          <div class="_number">3 факт из 563</div>
-        </div>
-      </div>
-      <div class="_slider" style="background-image: url(images/facts_img_4.jpg)">
-        <div class="_wrapper">
-          <div class="_caption ora">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-          <div class="_number">3 факт из 563</div>
-        </div>
-      </div>
-      <div class="_slider" style="background-image: url(images/facts_img_5.jpg)">
-        <div class="_wrapper">
-          <div class="_caption ora">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-          <div class="_number">3 факт из 563</div>
-        </div>
-      </div>
-      <div class="_slider" style="background-image: url(images/facts_img_6.jpg)">
-        <div class="_wrapper">
-          <div class="_caption ora">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-          <div class="_number">3 факт из 563</div>
-        </div>
-      </div>
-      <div class="_slider" style="background-image: url(images/facts_img_7.jpg)">
-        <div class="_wrapper">
-          <div class="_caption ora">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-          <div class="_number">3 факт из 563</div>
-        </div>
-      </div>
-      <div class="_slider" style="background-image: url(images/facts_img_8.jpg)">
-        <div class="_wrapper">
-          <div class="_caption ora">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-          <div class="_number">3 факт из 563</div>
-        </div>
-      </div>
-      <div class="_slider" style="background-image: url(images/facts_img_9.jpg)">
-        <div class="_wrapper">
-          <div class="_caption ora">Тоскана - это место для ценителей комфортной жизни и престижа</div>
-          <div class="_number">3 факт из 563</div>
-        </div>
-      </div>
-    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <div class="b_contacts">
-      <h2 class="title_1 amour"><span>Контакты</span></h2>
-      <div class="_caption">Свяжитесь с нами любым удобным способом, и мы обязательно поможем вам выбрать ваш новый дом мечты. Мы доступны в Москве и Флоренции. Ждем вас!</div>
-      <div class="_data">
-        <div class="_data_item">
-          <div class="_city">Москва</div>
-          <a href="tel:+79852905055" class="_tel">+7 985 290-50-55</a>
-          <a href="mailto:irinalebedeva.it@gmail.com" class="_mail">irinalebedeva.it@gmail.com</a>
-          <div class="_person">Ирина Лебедева</div>
-        </div>
-        <div class="_data_item">
-          <div class="_city">Флоренция</div>
-          <a href="tel:+393402116861" class="_tel">+39 340 211-68-61</a>
-          <a href="mailto:irinalebedeva.it@gmail.com" class="_mail">irinalebedeva.it@gmail.com</a>
-          <div class="_person">Роберто Фонтанелли</div>
-        </div>
-      </div>
-    </div>
 
-    <footer class="b_footer">
-      <a href="#" class="_by"><img src="images/5corners.png" alt="5углов"></a>
-    </footer>
 
-    <script src="scripts/vendor.js"></script>
-
-    <script src="scripts/plugins.js"></script>
-
-    <script src="scripts/main.js"></script>
-  </body>
 </html>
