@@ -1,4 +1,180 @@
 @charset "UTF-8";html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}
+.flabCopyAg {
+	position: relative;
+	z-index: 9999;
+	padding-top: -30px;
+	padding-right: 50px;
+	display: inline-block;
+}
+@media (max-width: 991.98px) {
+	.flabCopyAg {
+		padding-top: 0;
+	}
+}
+@media (max-width: 767.98px) {
+	.flabCopyAg {
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 576.98px) {
+	.flabCopyAg {
+		padding-top: 0;
+		padding-right: 0;
+	}
+}
+.flabCopyAg svg,
+.flabCopyAg img {
+	width: 100%;
+	max-width: 100%;
+}
+.flabCopyAg__copyLink {
+	display: inline-block;
+	
+/*  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;*/
+  text-decoration: none;
+}
+@media (max-width: 576.98px) {
+	.flabCopyAg__copyLink {
+		justify-content: center;
+	}
+}
+.flabCopyAg__copyLink:hover {
+	text-decoration: none;
+}
+.flabCopyAg__copyLink:hover p {
+	color: #fff;
+}
+.flabCopyAg__copyLink a {
+	text-decoration: none;
+}
+.flabCopyAg__copyLink p {
+	margin: 0;
+	color: #737b7e;
+	margin-right: 10px;
+	font-size: 12px;
+	transition: all 0.3s;
+}
+.flabCopyAg__copyLink span {
+	max-width: 30px;
+	width: 100%;
+	position: relative;
+	color: #b8b8b8;
+	display: block;
+	float: left;
+}
+.flabCopyAg__copyLink span:before, .flabCopyAg__copyLink span:after {
+	position: absolute;
+	content: "";
+	height: 1px;
+	width: 100%;
+	max-width: 100%;
+	animation: drawLine 4s alternate infinite;
+}
+.flabCopyAg__copyLink span:before {
+	top: -7px;
+	background-color: #b10d15;
+	left: 0;
+	width: 0;
+}
+.flabCopyAg__copyLink span:after {
+	bottom: -2px;
+	background-color: #005285;
+	right: 0;
+	width: 0;
+}
+@keyframes drawLine {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+.flabCopyAg__copyLink .jumpingAdver {
+	padding-left: 40px;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter {
+	color: #777;
+	position: relative;
+	display: inline-block;
+	top: 1px;
+	animation: bounce 0.8s alternate infinite;
+	font-family: "BellMT";
+	font-size: 17px;
+	font-weight: 700;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:before, .flabCopyAg__copyLink .jumpingAdver .jumpingLetter:after {
+	display: none;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:first-child {
+	-webkit-animation-delay: 0.2s;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:nth-child(2) {
+	-webkit-animation-delay: 0.3s;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:nth-child(3) {
+	-webkit-animation-delay: 0.4s;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:nth-child(4) {
+	-webkit-animation-delay: 0.5s;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:nth-child(5) {
+	-webkit-animation-delay: 0.6s;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:nth-child(6) {
+	margin-left: 5px;
+	-webkit-animation-delay: 0.7s;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:nth-child(7) {
+	-webkit-animation-delay: 0.8s;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:nth-child(8) {
+	-webkit-animation-delay: 0.9s;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:nth-child(9) {
+	-webkit-animation-delay: 1s;
+}
+.flabCopyAg__copyLink .jumpingAdver .jumpingLetter:nth-child(10) {
+	-webkit-animation-delay: 1.1s;
+}
+@keyframes bounce {
+	100% {
+		top: -10px;
+	}
+}
+.flabCopyAg--mainCopyAg {
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+}
+@media (max-width: 576.98px) {
+	.flabCopyAg--mainCopyAg {
+		right: 0;
+	}
+}
+._copy{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+@media (max-width:575px) {
+	._copy {
+		display: block;
+		text-align: center;
+		
+	}
+}
 
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome

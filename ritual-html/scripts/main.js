@@ -1,1 +1,0 @@
-"use strict";$("._navtrigger").click(function(){$(this).toggleClass("-active"),$("._mnu").toggleClass("-mobile")});
