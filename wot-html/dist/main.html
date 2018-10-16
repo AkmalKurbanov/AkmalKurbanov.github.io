@@ -1,0 +1,610 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>wot html</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="topline">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4">
+            <div class="topline__logo">
+              <a href="index.html"><img src="images/logo.png" alt="#"></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-4">
+            <div class="topline__menu">
+
+              <div id="pull" class="fold_in btn-menu">
+                <div class="line outer_line" id="line1"></div>
+                <div class="line inner_line" id="line2"></div>
+                <div class="line outer_line" id="line3"></div>
+              </div>
+
+              <ul id="submenu" class="lista-menu menu">
+                <li><a class="smooth_scroll" data-section=1 href="#Page1">Ввести код</a></li>
+                <li><a class="smooth_scroll" data-section=2 href="#Page2">Об акции</a></li>
+                <li><a class="smooth_scroll" data-section=3 href="#Page3">Призы от world of tanks</a></li>
+                <li><a class="smooth_scroll" data-section=4 href="#Page4">Супер приз</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4">
+            <div class="topline__code">
+              <div class="-button">
+                <a class="image-popup-zoom" href="images/suh.png"><i class="fa fa-info-circle"></i>
+                 <img class="hide" src="images/suh.png" alt="" />Как найти код?</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main_social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-vk"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+
+      <div id="Page1" class="main__section bg section" style="background-image: url('images/main_bg.jpg');">
+        <div class="container">          
+
+          <div class="main__text">
+            <h1>Выиграй</h1>
+            <h3>СУПЕРПРИЗ И ПРИЗЫ ОТ WORLD OF TANKS</h3>
+            <h4>ЗАРЕГИСТРИРУЙТЕ ПРОМОКОД ПРЯМО СЕЙЧАС!</h4>
+          </div>
+
+          <div class="main__forms">
+            <form action="#">
+              <input type="text" placeholder="Промокод">
+              <input type="text" placeholder="Электронная почта">
+              <div class="input-check">
+                <input type="checkbox" id="checkBox01" />
+                <label for="checkBox01">Я согласен с правилами акции и даю согласие <br>на обработку моих персональных данных</label>
+              </div>
+              <button>ЗАРЕГИСТРИРОВАТЬ</button>
+            </form>
+          </div>
+
+          <div class="main__partner">
+            <h4>ОФИЦИАЛЬНЫЙ ПАРТНЕР</h4>
+            <a class="open-popup-link" href="#popup_wot"><img src="images/wot.png" alt="#"></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="Page2" class="main__section section" style="background-image: url('images/bg-2.jpg');">
+
+        <!-- <div id="bgVideo" class="player"></div> -->
+        <iframe src="https://www.youtube.com/embed/OSo_oPORnOc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=OSo_oPORnOc" frameborder="0" data-keepplaying allowfullscreen style="pointer-events: none; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;"></iframe>
+
+        <div class="container">
+
+          <div class="main__text">
+            <h2>КАК ПРИНЯТЬ УЧАСТИЕ?</h2>
+          </div>
+
+          <div class="main__block">
+            <div class="row">
+              
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="main__rpz main__rpz--wide">
+                  <img src="images/priz-1.png" alt="">
+                </div>
+                <div class="main__step">
+                  <p><span>1</span>Купи</p>
+                </div>
+                <p class="p">пачку сух-пай в <br>промо упаковке</p>
+              </div>
+
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="main__rpz main__rpz--widthe">
+                  <img src="images/priz-2.png" alt="">
+                </div>
+                <div class="main__step main__step--strelka">
+                  <p><span>2</span>Зарегистрируй</p>
+                </div>
+                <p class="p">на сайте промокод <br>из пачки</p>
+              </div>
+
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="main__rpz main__rpz--width">
+                  <img src="images/priz-3.png" alt="">
+                </div>
+                <div class="main__step">
+                  <p><span>3</span>Получи</p>
+                </div>
+                <p class="p">возможность выиграть <br>призы от World of Tanks</p>
+              </div>
+
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="main__rpz main__rpz--wid">
+                  <img src="images/priz-4.png" alt="">
+                </div>
+                <div class="main__step main__step--strelka">
+                  <p><span>4</span>Супер приз</p>
+                </div>
+                <p class="p">участвуй в розыгрыше <br>суперприза</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="main__vkontakte">
+            <a href="#"><i class="fa fa-vk"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="Page3" class="main__section section" style="background-image: url('images/bg-2.jpg');">
+
+        <!-- <div id="bgVideo2" class="player"></div> -->
+        <iframe src="https://www.youtube.com/embed/OSo_oPORnOc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=OSo_oPORnOc" frameborder="0" data-keepplaying allowfullscreen style="pointer-events: none; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;"></iframe>
+        
+        <div class="container">
+
+          <div class="main__text">
+            <h2>ПРИЗЫ ОТ WORLD OF TANKS</h2>
+          </div>
+
+          <div class="main__prizes">
+            <div class="row">
+              
+              <div class="col-md-2">
+                <div class="prizes_img">
+                  <img src="images/1.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="row">
+                  
+                  <div class="col-md-3">
+                    <div class="prizes">
+                      <img src="images/2.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="prizes">
+                      <img src="images/3.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="prizes">
+                      <img src="images/4.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="prizes">
+                      <img src="images/5.png" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="prizes">
+                      <img src="images/7.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="prizes">
+                      <img src="images/8.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="prizes">
+                      <img src="images/9.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="prizes">
+                      <img src="images/10.png" alt="">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="prizes_img">
+                  <img src="images/6.png" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="main__prizese">
+
+            <div class="prizese">
+              <img src="images/1.png" alt="">
+            </div>
+
+            <div class="prizese">
+              <img src="images/2.png" alt="">
+            </div>
+
+            <div class="prizese">
+              <img src="images/3.png" alt="">
+            </div>
+
+            <div class="prizese">
+              <img src="images/4.png" alt="">
+            </div>
+
+            <div class="prizese">
+              <img src="images/5.png" alt="">
+            </div>
+
+            <div class="prizese">
+              <img src="images/7.png" alt="">
+            </div>
+
+            <div class="prizese">
+              <img src="images/8.png" alt="">
+            </div>
+
+            <div class="prizese">
+              <img src="images/9.png" alt="">
+            </div>
+
+            <div class="prizese">
+              <img src="images/10.png" alt="">
+            </div>
+
+            <div class="prizese">
+              <img src="images/6.png" alt="">
+            </div>
+
+          </div>         
+
+        </div>
+      </div>
+
+      <div id="Page4" class="main__section section opasity" style="background-image: url('images/bg-3.jpg');">
+
+        <!-- <div id="bgVideo3" class="player opasity"></div> -->
+        
+        <!-- <div class="video-background">
+          <div class="video-foreground">
+            <iframe src="https://www.youtube.com/embed/8LiT2huOMhw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=8LiT2huOMhw" frameborder="0" data-keepplaying allowfullscreen ></iframe>
+          </div>
+        </div> -->
+        <div class="video">
+        	<iframe src="https://www.youtube.com/embed/8LiT2huOMhw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=8LiT2huOMhw" frameborder="0" data-keepplaying allowfullscreen ></iframe>
+        </div>
+
+        <div class="container padding">
+
+          <div class="tab">
+            <div class="main__tabse">
+              <ul class="tabs">
+                <li><a class="active" href="#">Суперприз</a></li>
+                <li><a href="#">Что включает в себя?</a></li>
+                <li><a href="#">Правила проведения розыгрыша</a></li>
+              </ul>
+            </div>
+              
+            <div class="tab_content">
+            
+              <div class="main__contenttab tabs_item">
+                <h1>СУПЕРПРИЗ</h1>
+                <h3>- ЭТО БОЕВАЯ ПОЕЗДКА НА <br>СУПЕРСОВРЕМЕННОМ <span>ТАНКЕ Т-62!</span></h3>
+                <h4>(ПРОДОЛЖИТЕЛЬНОСТЬ ПОЕЗДКИ 45 МИНУТ)</h4>
+                <img src="images/t62.png" alt="">
+              </div>
+            
+              <div class="main__contenttab tabs_item">
+
+                <div class="js-carousel owl-carousel owl-theme ul">
+                  <div class="item li"><img src="images/icon_1.png" alt="#"><span>Встречу в лагере, инструктаж, ознакомление с техникой безопасности</span></div>
+                  <div class="item li"><img src="images/icon_2.png" alt="#"><span>Пиротехнические взрывы по трассе (высотой 10 м)</span></div>
+                  <div class="item li"><img src="images/icon_3.png" alt="#"><span>3 выстрела из танка Т-62</span></div>
+                  <div class="item li widhte"><img src="images/icon_4.png" alt="#"><span>Увлекательный рассказ в лесу про технику</span></div>
+                  <div class="item li"><img src="images/icon_5.png" alt="#"><span>Демонстрацию ходовых качеств техники</span></div>
+                  <div class="item li"><img src="images/icon_6.png" alt="#"><span>Езду по бездорожью (лес и живописные места)</span></div>
+                  <div class="item li"><img src="images/icon_7.png" alt="#"><span>Экстремальную трассу с горками, окопами, буераками, водная преграда</span></div>
+                  <div class="item li"><img src="images/icon_8.png" alt="#"><span>Военно-полевой обед (гречка с тушенкой, чай, 100 г фронтовых, хлеб, сладости к чаю)</span></div>
+                  <div class="item li"><img src="images/icon_9.png" alt="#"><span>Исторический рассказ о экспозиции оружия , сборка\разборка АК- 74 (макет, мастер-класс)</span></div>
+                  <div class="item li"><img src="images/icon_10.png" alt="#"><span>Стрельба из оружия 80 выстрелов из любого оружия (холостые)</span></div>
+                </div>
+
+              </div>
+
+              <div class="main__contenttab tabs_item">
+                <div class="main__vk">
+                  <a href="#"><i class="fa fa-vk"></i></a>
+                  <p>Розыгрыш суперприза проводится среди всех зарегистрированных участников акции<br>
+                    в официальной группе «Сух-Пай» в «ВКонтакте».<br>
+                  Победителя определим с помощью генератора случайных чисел</p>
+                  <button>ВСТУПИТЬ В ГРУППУ</button>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="main__section section" style="background-image: url('images/bg-2.jpg');">
+        <!-- <div id="bgVideo4" class="player"></div> -->
+        <iframe src="https://www.youtube.com/embed/OSo_oPORnOc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=OSo_oPORnOc" frameborder="0" data-keepplaying allowfullscreen style="pointer-events: none; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;"></iframe>
+        <div class="container">
+
+          <div class="main__text">
+            <h2>ВЫБЕРИ СВОЙ "СУХ-ПАЙ"! <br>ПРОДУКТЫ, КОТОРЫЕ УЧАСТВУЮТ В АКЦИИ</h2>
+          </div>
+
+          <div class="main__carousel">
+            <div class="js-loop owl-carousel owl-theme">
+
+              <div class="item">
+                <div class="row">
+
+                  <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+                    <div class="main__sect">
+                      <img src="images/adjika.png" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-5 col-sm-5">
+                    <div class="main__ssect">
+                      <h4>ГРЕНКИ СО ВКУСОМ <span>АДЖИКИ</span></h4>
+                    <p>Такие гренки вы еще не пробовали! <br>Хрустящие золотистые гренки «СУХ-ПАЙ» <br>из отборного хлеба с изысканным вкусом <br>аджики подарят море удовольствия.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row">
+
+                  <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2">
+                    <div class="main__sect">
+                      <img src="images/adjika.png" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-5 col-sm-5">
+                    <div class="main__ssect">
+                      <h4>ГРЕНКИ СО ВКУСОМ <span>АДЖИКИ</span></h4>
+                    <p>Такие гренки вы еще не пробовали! <br>Хрустящие золотистые гренки «СУХ-ПАЙ» <br>из отборного хлеба с изысканным вкусом <br>аджики подарят море удовольствия.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="main__section section" style="background-image: url('images/bg-2.jpg');">
+        <!-- <div id="bgVideo5" class="player"></div> -->
+        <iframe src="https://www.youtube.com/embed/OSo_oPORnOc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=OSo_oPORnOc" frameborder="0" data-keepplaying allowfullscreen style="pointer-events: none; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;"></iframe>
+        <div class="container">
+
+          <div class="main__text">
+            <h2>ПОЗДРАВЛЯЕМ НАШИХ ПОБЕДИТЕЛЕЙ!</h2>
+          </div>
+
+          <div class="well mCustomScrollbar" data-mcs-theme="3d">
+
+            <div class="table-scroll-container">
+              <div class="table-scroll">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>ПОБЕДИТЕЛЬ</th>
+                      <th>ПРИЗ</th>
+                      <th>ДАТА</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                    <tr>
+                      <td>*******@MAIL.RU</td>
+                      <td>РЕМКОМПЛЕКТ</td>
+                      <td>20.08.2017</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="footer">
+          <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-md-4 col-sm-4 col-xs-5">
+                <div class="footer__left">
+                  <p>© 2017 ООО "ТД КОМПЛЕКТ". Все права защищены. <br>Телефон горячей линии: 8 (800) 800 00 00. <br>Звонки по России бесплатно, ежедневно с 9:00 до 21:00 (время московское)</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-5">
+                <div class="footer__center">
+                  <ul class="">
+                    <li><a class="smooth_scroll" data-section=1 href="#Page1">Ввести код</a></li>
+                    <li><a class="smooth_scroll" data-section=2 href="#Page2">Правила акции</a></li>
+                    <li><a class="smooth_scroll" data-section=3 href="#Page2">Об акции</a></li>
+                    <li><a class="smooth_scroll" data-section=4 href="#">Вопросы</a></li>
+                    <li><a class="smooth_scroll" data-section=5 href="#Page3">Призы от world of tanks</a></li>
+                    <li><a class="smooth_scroll" data-section=6 href="#Page4">Супер приз</a></li>
+                    <li><a class="smooth_scroll" data-section=7 href="#">Обратная связь</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="footer__right">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>              
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- end-main -->
+
+    <div class="popup mfp-hide" id="popup_wot">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-4 col-md-offset-1 col-sm-4">
+            <div class="popup__img">
+              <img src="images/wot_1.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="popup__imag">
+              <img src="images/WoT_logo.png" alt="">
+            </div>
+            <div class="popup__text">
+              <p>World of Tanks — культовая ММО-игра о бронетехнике, 
+                покорившая миллионы игроков по всему миру. 
+                Разнообразие игровых карт, исторически достоверные 
+                машины, реалистичный геймплей — присоединяйтесь 
+                к армии танкистов и окунитесь в атмосферу 
+              легендарных сражений.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    <script src="scripts/vendor.js"></script>
+    
+    <script src="scripts/plugins.js"></script>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
