@@ -13,6 +13,9 @@
 <body>
 
   <style>
+    h1{
+      text-align: center;
+    }
     .flabList {
       min-height: 100vh;
       background-size: cover;
@@ -89,9 +92,8 @@
     }
 
     .flabList__logo {
-      max-width: 270px;
+      max-width: 200px;
       width: 100%;
-      z-index: 1;
       position: relative;
     }
 
@@ -101,7 +103,7 @@
 
     .flabList__pages {
       column-count: 3;
-      margin-top: 5%;
+      margin-top: 3%;
     }
 
     @media (max-width: 991.98px) {
@@ -202,39 +204,8 @@
     .flabList__pages li a:hover:before {
       border: 1px solid #cf3c3a;
     }
-
-    .blinker {
-      text-align: center;
-      animation-name: blinker;
-      animation-iteration-count: infinite;
-      animation-duration: 1.5s;
-    }
-
-    @keyframes blinker {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-
-    @-webkit-keyframes blinker {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-
   </style>
+
 
   <!-- flabList -->
   <div class="flabList" style="background-image: url('http://screen.flabio.tech/adver/listBG.jpg');">
