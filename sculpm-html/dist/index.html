@@ -1,449 +1,256 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>sculptur html</title>
-
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link href="https://fonts.googleapis.com/css?family=Prosto+One&amp;subset=cyrillic" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles/vendor.css">
-
-  <link rel="stylesheet" href="styles/main.css">
-
-  <script src="scripts/vendor/modernizr.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Скульптура М</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-  <div class="mmenu-nav"></div>
+  <style>
+    .flabList {
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      padding-top: 7%;
+      position: relative;
+    }
 
-  <div class="header">
-    <div class="header__wrap">
-      <div class="container">
+    @media (max-width: 575.98px) {
+      .flabList {
+        padding-top: 15%;
+      }
+    }
 
-        <div class="row">
+    .flabList:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+    }
 
-          <div class="col-md-5">
-            <div class="header__item">
+    @media (max-width: 767.98px) {
+      .flabList:before {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: block;
+      }
+    }
 
-              <div class="header__logo">
-                <a href="#">
-                  <img src="images/logo2.png" alt="">
-                </a>
-              </div>
+    .flabList .flabAgLogo {
+      max-width: 150px;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      right: 65px;
+    }
 
-            </div>
-          </div>
+    @media (max-width: 1199.98px) {
+      .flabList .flabAgLogo {
+        max-width: 120px;
+        top: 50px;
+        right: 20px;
+      }
+    }
 
-          <div class="col-md-3 col-sm-6">
-            <div class="header__item">
-              <img src="images/2.png" alt="#">
-              <p>Скульптуры с
-                <br>гарантией
-                <span>500</span> лет</p>
-            </div>
-          </div>
+    @media (max-width: 991.98px) {
+      .flabList .flabAgLogo {
+        right: 10px;
+      }
+    }
 
-          <div class="col-md-3 col-md-push-1 col-sm-6">
-            <div class="header__item">
-              <ul>
-                <li>
-                  <i class="fa fa-mobile-phone"></i>
-                  <a href="tel:88004444444">8 (800) 444-44-44</a>
-                </li>
-                <li>
-                  <a href="tel:88004444444">8 (800) 444-44-44</a>
-                </li>
-                <li>
-                  <i class="fa fa-envelope-o"></i>
-                  <a href="mailto:company_mail@mail.ru">company_mail@mail.ru</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    @media (max-width: 767.98px) {
+      .flabList .flabAgLogo {
+        max-width: 100px;
+        right: 20px;
+        top: auto;
+        bottom: 15px;
+      }
+    }
 
-          <div class="col-md-1 col-md-pull-3">
-            <div class="header__navtrigger js-navtrigger">
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-          </div>
+    .flabList .flabAgLogo img {
+      width: 100%;
+      max-width: 100%;
+    }
 
+    .flabList__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+
+    .flabList__logo {
+      font-size: 50px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .flabList__logo img {
+      width: 100%;
+    }
+
+    .flabList__pages {
+      column-count: 3;
+      margin-top: 5%;
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages {
+        column-count: auto;
+      }
+    }
+
+    .flabList__pages li {
+      list-style-type: none;
+    }
+
+    @media (max-width: 1199.98px) {
+      .flabList__pages li {
+        padding-left: 40px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li {
+        padding-left: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li {
+        padding-left: 0;
+      }
+    }
+
+    .flabList__pages li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #59595b;
+      font-size: 20px;
+      line-height: 1.8;
+      position: relative;
+      padding-left: 25px;
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 1199.98px) {
+      .flabList__pages li a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li a {
+        font-size: 14px;
+        padding-left: 10px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li a {
+        color: #ffffff;
+      }
+    }
+
+    .flabList__pages li a:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 1px solid #adadac;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 991.98px) {
+      .flabList__pages li a:before {
+        width: 10px;
+        height: 10px;
+        left: -8px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .flabList__pages li a:before {
+        border: 1px solid #fff;
+      }
+    }
+
+    .flabList__pages li a:hover {
+      color: #cf3c3a;
+    }
+
+    .flabList__pages li a:hover:before {
+      border: 1px solid #cf3c3a;
+    }
+
+  </style>
+
+  <!-- flabList -->
+  <div class="flabList" style="background-image: url('http://screen.flabio.tech/adver/listBG.jpg');">
+    <div class="flabAgLogo">
+      <a href="http://adver.kg/" target="_blank">
+        <img src="http://screen.flabio.tech/adver/logo.png" alt="">
+      </a>
+    </div>
+    <div class="container">
+      <div class="flabList__wrap">
+        <div class="flabList__logo">
+          <img src="images/logo2.png" alt="">
         </div>
+        <ul class="flabList__pages">
+          <li>
+            <a target="_blank" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a target="_blank" href="bronze.html">Скульптуры из бронзы</a>
+          </li>
+          <li>
+            <a target="_blank" href="sculp.html">Скульптуры</a>
+          </li>
+          <li>
+            <a target="_blank" href="bst.html">Бюст</a>
+          </li>
+          <li>
+            <a target="_blank" href="about.html">О нас</a>
+          </li>
+          <li>
+            <a target="_blank" href="contacts.html">Контакты</a>
+          </li>
+          <li>
+            <a target="_blank" href="404.html">Ошибка</a>
+          </li>
+
+        </ul>
       </div>
     </div>
   </div>
-  <!-- end header-->
-  <div class="wrapper">
-    <div class="content">
-      <div class="container">
-        <div class="content__top">
-          <p>Изготавливаем</p>
-          <h2>СКУЛЬПТУРНЫЕ ПРОИЗВЕДЕНИЯ НА ЗАКАЗ</h2>
-          <span>Доставка и установка в любом городе</span>
-        </div>
-        <div class="content__wrap">
-          <div class="row">
-            <div class="col-md-9 col-md-push-3">
-              <div class="content__wrap--maincontent">
-                <div class="title__headline">
-                  <h3>Мемориальная доска</h3>
-                </div>
-                <br>
-                <h4>По следам кумиров: куда ведет мемориальная доска</h4>
-                <br>
+  <!-- flabList end  -->
 
-                <img src="images/home_2.jpg" alt="" style="float: left; margin-right: 30px; margin-bottom:30px;">
-                <br>
-                <p>Выдающиеся исторические персоны оставляют создают себе нерукотворные памятники при жизни. После их ухода
-                  принято увековечивать память обо всем, что связано с деятельностью знаменитых людей. Мемориальная доска,
-                  установленная на здании, иногда рассказывает больше, чем учебник истории. Изготовление скульптуры для размещения
-                  рядом с домом не всегда возможно. А компактную плиту с профилем персоны и поясняющей надписью без труда
-                  закрепляют на фасаде.</p>
-                <p>После ухода выдающийся человек становится легендой. Личность растворяется в произведениях, достижениях, открытиях,
-                  подвиге. Образ неотделим от наследия, доставшегося новым поколениям. Формируется абстрактный образ, который
-                  где-то жил, учился, работал, проводил время.</p>
-                <br>
-                <img src="images/home_3.jpg" alt="" style="float: right; margin-left: 30px; margin-bottom: 90px;">
-
-                <h4 class="pdtop">Историческая память в деталях</h4>
-
-                <br>
-                <p>Узнать больше о повседневной жизни людей, вошедших в историю, помогают мемориальные доски. Памятные знаки
-                  размещают на фасадах зданий, связанных с личностью. По ориентирам на стенах можно составить целый маршрут,
-                  гулять по улицам и представлять, как жил любимый писатель, поэт, великий ученый или герой войны.</p>
-                <br>
-                <p>Для изготовления мемориальной доски используют камень или применяют художественное литье. Гранитные знаки
-                  отличаются сдержанностью: на них размещают пояснительную надпись и делают гравировку. Прочный камень редко
-                  используют для создания объемных портретов или высечения профиля. Твердая структура гранита не в полной
-                  степени передает внешнее сходство.</p>
-                <br>
-                <br>
-                <div class="title__headline">
-                  <h3>Барельеф</h3>
-                </div>
-                <br>
-                <h4>Бронзовый барельеф: больше, чем декоративный элемент</h4>
-                <br>
-
-                <img src="images/home_4.jpg" alt="" style="float: left; margin-right: 30px; margin-bottom: 10px;">
-
-                <p class="pdtop">При упоминании барельефа сразу вспоминается Петербург, где каждое историческое здание увенчано изящными изваяниями.
-                  Камень и металл в руках художников разных эпох превратились в уникальные памятники архитектуры. Изготовление
-                  скульптуры, привлекающей не меньшее внимание, чем величественные дворцы, – настоящее искусство.</p>
-
-                <p>Барельефу в архитектуре отводится скромная и достойная роль – подчеркнуть красоту, придать завершенность
-                  оформлению здания или памятника. Иногда по воле художника барельеф превращается в грандиозную монументальную
-                  композицию, выполненную по технологии художественное литье.</p>
-                <br>
-
-                <img src="images/home_5.jpg" alt="" style="float: right; margin-left: 30px; margin-bottom: 10px;">
-                <br>
-                <h4>Магия бронзовых барельефов</h4>
-                <br>
-                <p>Бронза – великолепный материал для сочетания различных эффектов, усиливающих выразительность скульптуры.
-                  Удивительные свойства металла ярко проявляются при создании барельефов. Перед художником стоит непростая
-                  задача – на плоской основе создать объемное изображение, пластичное, характерное, притягательное.</p>
-                <br>
-                <p>В современной лаконичной архитектуре практически не осталось места изящным элементам. Тем не менее, барельефы
-                  остаются актуальными элементами декорирования архитектурных объектов:</p>
-                <br>
-                <p>
-                  <b>Эмблема.</b> Фирменный знак или логотип, воплощенные в благородной бронзе, подчеркивают респектабельность
-                  компании и серьезность бизнеса. Скульптура на заказ может быть приурочена к важному событию, стать частью
-                  ребрендинга. Одинаково уместна на фасаде здания и в холле офиса.</p>
-                <br>
-                <br>
-                <p>
-                  <b>Герба.</b> Геральдические знаки – незыблемые символы величия, достоинства, высоких достижений. Предмет
-                  гордости поколений и государств. Воплощение в барельефной композиции подчеркивает уважение к истории, традициям
-                  или формирует почтительное отношение к новым и возрожденным символам.</p>
-                <br>
-                <br>
-                <p>Глубокое изучение истории родного города, края и даже собственной семьи подчас преподносит открытия, достойные
-                  увековечивания в бронзе и сохранения для будущих поколений.</p>
-                <br>
-                <br>
-                <p>
-                  <b>Портрет.</b> Может быть выполнен как отдельное изображение, часть мемориальной доски, элемент памятного
-                  монумента. Лучше всего купить скульптуру из бронзы – несколько тысяч лет в металле увековечивают образы
-                  выдающихся деятелей, бесстрашных героев, людей, чьи заслуги достойны остаться в истории.</p>
-              </div>
-            </div>
-
-            <div class="col-md-3 col-md-pull-9">
-              <div class="content__wrap--leftbar">
-                <div class="content__nmu">
-                  <ul>
-                    <li>
-                      <a href="#">Главная</a>
-                    </li>
-                    <li>
-                      <a href="#">Изготовление скульптур</a>
-                    </li>
-                    <li>
-                      <a href="#">Изготовление бюстов</a>
-                    </li>
-                    <li>
-                      <a href="#">Изготовление мемориальных досок</a>
-                    </li>
-                    <li>
-                      <a href="#">Бронза и другие материалы</a>
-                    </li>
-                    <li>
-                      <a href="#">Цены на изготовления скульптур</a>
-                    </li>
-                    <li>
-                      <a href="#">Статьи</a>
-                    </li>
-                    <li>
-                      <a href="#">О нас</a>
-                    </li>
-                    <li>
-                      <a href="#">Контакты</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- <div class="content__widget">
-                <h5>Популярные статьи</h5>
-                <div class="content__side">
-
-                  <div class="content__navi">
-                    <img src="images/page1_2.jpg" alt="">
-                    <p>Скульптура из бронзы</p>
-                    <span><i class="fa fa-calendar"></i>22.03.2017</span>
-                  </div>
-
-                  <div class="content__navi">
-                    <img src="images/page1_3.jpg" alt="">
-                    <p>Скульптура льва</p>
-                    <span><i class="fa fa-calendar"></i>02.03.2017</span>
-                  </div>
-
-                  <div class="content__navi">
-                    <img src="images/page1_4.jpg" alt="">
-                    <p>Памятник солдату ВОВ</p>
-                    <span><i class="fa fa-calendar"></i>05.04.2017</span>
-                  </div>
-
-                  <div class="content__navi">
-                    <img src="images/page1_5.jpg" alt="">
-                    <p>Бюст генералу</p>
-                    <span><i class="fa fa-calendar"></i>21.02.2017</span>
-                  </div>
-
-                </div>
-              </div> -->
-
-                <div class="content__widget">
-                  <h5>Последние статьи</h5>
-
-                  <ul>
-                    <li>
-                      <a href="#">Скульптура из бронзы</a>
-                    </li>
-                    <li>
-                      <a href="#">Скульптура из мрамора</a>
-                    </li>
-                    <li>
-                      <a href="#">Скульптура из гранита</a>
-                    </li>
-                    <li>
-                      <a href="#">Скульптура из стеклопластика</a>
-                    </li>
-                    <li>
-                      <a href="#">Скульптура льва</a>
-                    </li>
-                    <li>
-                      <a href="#">Памятник солдату ВОВ</a>
-                    </li>
-                    <li>
-                      <a href="#">Бюст генералу</a>
-                    </li>
-                    <li>
-                      <a href="#">Скульптура ангела на могилу</a>
-                    </li>
-                    <li>
-                      <a href="#">Памятник семье</a>
-                    </li>
-                    <li>
-                      <a href="#">Памятник влюбленным</a>
-                    </li>
-                    <li>
-                      <a href="#">Барельеф на памятник</a>
-                    </li>
-                    <li>
-                      <a href="#">Памятник святым Петру и Февронии</a>
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end content-->
-
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-9 col-sm-6">
-            <div class="footer__item">
-              <ul>
-                <li>
-                  <a href="#">Главная</a>
-                </li>
-                <li>
-                  <a href="#">Статьи</a>
-                </li>
-                <li>
-                  <a href="#">О нас</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="footer__item">
-              <ul class="-rightnav">
-                <li>
-                  <a href="#">
-                    <i class="fa fa-vk"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-odnoklassniki"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-google"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-12">
-            <div class="footer__items">
-              <p>
-                <i class="fa fa-map-marker"></i>г. Москва
-                <br> ул. Цветной бульвар 55 стр 1</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="footer__items">
-              <ul>
-                <li>
-                  <i class="fa fa-mobile-phone"></i>
-                  <a href="tel:88004444444">8 (800) 444-44-44</a>
-                </li>
-                <li>
-                  <a href="tel:88004444444">8 (800) 444-44-44</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="footer__items">
-              <ul>
-                <li>
-                  <i class="fa fa-envelope-o"></i>
-                  <a href="mailto:company_mail@mail.ru">company_mail@mail.ru</a>
-                </li>
-                <li>
-                  <a href="mailto:company_mail@mail.ru">company_mail@mail.ru</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="footer__bottom">
-          <p>Скульптура М © 2017. Все права защищены</p>
-          <div class="flabCopyAg">
-            <div class="flabCopyAg__copyLink">
-              <a target="_blank" href="http://adver.kg/">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.79 354.54">
-                    <defs>
-                      <style>
-                        .ALetter {
-                          fill: #b10d15
-                        }
-
-                        .GLetter {
-                          fill: #005285
-                        }
-
-                      </style>
-                    </defs>
-                    <title>Adver Group</title>
-                    <g id="Слой_2" data-name="Слой 2">
-                      <g id="adver_logo">
-                        <path id="g" class="GLetter" d="M364.09,197.5l-.7-38c13.5-.5,27-1,40.5-.7,12.3.4,24.6,1.3,37.5,3,39.7,5.4,65.5,25.7,78.2,51.1a87.46,87.46,0,0,1,9.1,43.2,94.36,94.36,0,0,1-12.8,43.3c-16.1,28.1-47.4,50.4-93.3,54.2a224.84,224.84,0,0,1-30.7.7c-34.3-1.5-62.3-11.4-82.3-29.8-20.2-18.6-32.4-45.7-35.4-81.6-2.7-31.2-.6-68.2-.6-100.1,0-32.3,6.6-59.1,17.9-80.4,11.1-20.8,26.9-36.6,45.7-46.8C355.89,5.1,377.59,0,400.79,0c32.8,0,63.6,10,92.3,25.3V69.8c-4.6.8-9.2,1.5-13.7,2.2-6-18.9-19-29-37.9-34.2a86.63,86.63,0,0,0-37.9-1.5,85.24,85.24,0,0,0-37,15.7c-35.7,26.8-33.2,63.7-34.2,103-1.5,50.4-3.5,126.2,21.1,145.6,13.7,12.3,36.4,19.3,54.6,17.7,22.4-1.7,39.5-12.8,50.4-27.9a76.21,76.21,0,0,0,13.1-32.3,63.67,63.67,0,0,0-3-33.2c-5.2-13.7-15.7-24.9-31.8-30.7-9.7-3.2-24.4-6.8-37.6-6.1-9.7.4-17,2.9-23.6,10.1-3.8-.2-7.7-.4-11.5-.7Z"></path>
-                        <path id="a" class="ALetter" d="M192.49,185.1l-21,1h-.1c-5.3.1-10.9.3-16.5.3-21.4.3-42.8.6-62.8,7.4a51,51,0,0,0-31.9,30.6,64.38,64.38,0,0,0-3.1,33.1,76.61,76.61,0,0,0,13.1,32.4,67.85,67.85,0,0,0,50.4,28,80,80,0,0,0,29.2-3.4,70.56,70.56,0,0,0,24.7-13.7l.1-.2c23.9-19,21.8-49.9,19.5-84.8-.7-10-1.5-20.3-1.6-30.7m-105-23.7h0c14.1-1.9,28.1-1.9,42.3-1.7,13.4,0,26.8.1,40-1.6a43.56,43.56,0,0,0,11.8-3,24,24,0,0,0,7.8-5.1,21.75,21.75,0,0,0,4.2-8.3,50.67,50.67,0,0,0,1.6-13.4c0-35.8-13.4-59.7-32.1-73.9A80.5,80.5,0,0,0,126.49,39a88.66,88.66,0,0,0-38,2c-19.6,5.4-33.6,16-39.9,35.7-4.5-.7-9.1-1.4-13.7-2.1V30c29.6-15.9,61.7-26.3,95.5-26.3,22.5,0,43.8,4.9,62.1,14.9A110.22,110.22,0,0,1,237.09,64c11,20.8,17.3,47,17.3,78.8v70.9c.2,5.1.4,10.2.5,15.2,1.5,43.7,2.6,80.6,44.9,114.3l6.1,5-7.7,1.3c-23,4.1-40,2.6-52.8-3-11.3-4.9-19.3-13-24.9-23a95.2,95.2,0,0,1-20.9,15.3,107.73,107.73,0,0,1-30.7,10.7,247.56,247.56,0,0,1-31,3.8,211,211,0,0,1-31.8-.2c-45.8-3.9-77.2-26-93.3-54.2A96.68,96.68,0,0,1,.09,255.7a88.57,88.57,0,0,1,9.1-43.2c12.6-25.5,38.6-45.7,78.3-51.1Z"></path>
-                      </g>
-                    </g>
-                  </svg>
-                </span>
-                <div class="jumpingAdver">
-                  <div class="jumpingLetter">a</div>
-                  <div class="jumpingLetter">d</div>
-                  <div class="jumpingLetter">v</div>
-                  <div class="jumpingLetter">e</div>
-                  <div class="jumpingLetter">r</div>
-                  <div class="jumpingLetter">g</div>
-                  <div class="jumpingLetter">r</div>
-                  <div class="jumpingLetter">o</div>
-                  <div class="jumpingLetter">u</div>
-                  <div class="jumpingLetter">p</div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <!-- end footer-->
-
-  </div>
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-
-  <script src="scripts/vendor.js"></script>
-
-  <script src="scripts/plugins.js"></script>
-
-  <script src="scripts/main.js"></script>
 </body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
 
 </html>
