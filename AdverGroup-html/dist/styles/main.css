@@ -3268,7 +3268,7 @@ body {
 @media (max-width: 1199.98px) {
   .flabApperance {
     display: block;
-    max-width: calc(100% - 15px);
+    max-width: 100%;
     top: -3.125rem;
     right: 15px;
     bottom: auto;
