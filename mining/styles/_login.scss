@@ -1,0 +1,78 @@
+.popup {
+  background: transparent;
+
+  @media (max-width: 575.98px) {
+    padding: 20px;
+  }
+
+  .fancybox-button {
+    padding: 0;
+
+    @media (max-width: 575.98px) {
+      right: -13px;
+      padding: 5px;
+      top: -12px;
+    }
+
+    &:hover {
+      svg {
+        color: red;
+      }
+    }
+
+    svg {
+      color: $wc;
+      transition: all .3s;
+    }
+  }
+
+
+  .login {
+    background: linear-gradient(180deg, rgb(239, 79, 41) 0%, rgb(248, 150, 4) 100%);
+    z-index: 1;
+    position: relative;
+    max-width: 400px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 400px;
+
+    @media (max-width: 575.98px) {
+      padding: 20px 10px;
+      min-height: 350px;
+    }
+
+    button {
+      outline: none;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .form {
+      &__input {
+        max-width: 400px;
+        width: 100%;
+        min-height: 45px;
+        border-radius: 5px;
+        background-color: #fff;
+        outline: none;
+        border: none;
+        margin-bottom: 30px;
+        padding-left: 20px;
+
+        @media (max-width: 575.98px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: $wc;
+      }
+    }
+  }
+}
