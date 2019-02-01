@@ -1,0 +1,88 @@
+.form-search {
+  background-color: #f4f6f7;
+  padding: 60px 0;
+
+  @media (max-width: 991.98px) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 30px 0;
+  }
+  @media (max-width: 575.98px) {
+    padding: 25px 0;
+  }
+
+  .form {
+    @media (max-width: 767.98px) {
+      margin-top: 20px;
+    }
+
+    &__input,
+    &__button {
+      width: 100%;
+      max-width: 100%;
+      border: none;
+      outline: none;
+      min-height: 40px;
+      border-radius: 5px;
+    }
+
+    &__button {
+      background-color: $mc;
+      color: $wc;
+      cursor: pointer;
+      transition: all .4s;
+      position: relative;
+      box-shadow: 0px 17px 30.4px 1.6px rgba(248, 149, 5, 0.16);
+      border: 1px solid $mc;
+
+      &:hover {
+        background-color: transparent;
+        box-shadow: none;
+        color: $mc;
+      }
+
+      @media (max-width: 991.98px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 767.98px) {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &__input {
+      padding-left: 20px;
+      color: #afafaf;
+      font-size: 14px;
+
+      @media (max-width: 767.98px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    ::-webkit-input-placeholder {
+      color: #afafaf;
+      font-size: 14px;
+    }
+
+    ::-moz-placeholder {
+      color: #afafaf;
+      font-size: 14px;
+    }
+
+    :-moz-placeholder {
+      color: #afafaf;
+      font-size: 14px;
+    }
+
+    :-ms-input-placeholder {
+      color: #afafaf;
+      font-size: 14px;
+    }
+  }
+}

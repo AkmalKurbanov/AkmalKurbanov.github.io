@@ -1,0 +1,53 @@
+.hamburger {
+  position: absolute;
+  right: 15px;
+  display: none;
+  z-index: 999999;
+  top: 15px;
+
+  @media (max-width: 767.98px) {
+    display: block;
+  }
+
+  &__line {
+    width: 35px;
+    height: 3px;
+    background-color: $wc;
+    display: block;
+    margin: 9px auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .lineBg {
+    background-color: #fff;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.openClose {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+
+  .hamburger__line {
+    &:nth-child(2) {
+      width: 0;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      transition-delay: 0.3s;
+    }
+
+    &:nth-child(1) {
+      transform: translateY(12px);
+    }
+
+    &:nth-child(3) {
+      transform: translateY(-12px) rotate(90deg);
+    }
+  }
+}
