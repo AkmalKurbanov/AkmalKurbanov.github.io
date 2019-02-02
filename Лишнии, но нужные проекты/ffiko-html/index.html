@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>project ffiko</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!--[if lt IE 9]>
+  <script src="javascripts/html5shiv.js"></script>
+<![endif]-->
+<style>
+html{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-culor: #f1f1f1;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+ul {
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-top: 80px;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-column: 2;
+}
+@media screen and (max-width: 768px) {
+  ul{
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-column: 1;
+  }
+}
+ul li {
+  list-style-type: none;
+  padding-bottom: 5px;
+  list-style-position: outside;
+  color: #939393;
+}
+ul li a {
+  font-size: 18px;
+  color: #939393;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+ul li a:hover {
+  color: #000;
+}
+ul li a:hover:before {
+  content: '\f101';
+  font-family: 'FontAwesome';
+  padding-right: 10px;
+  transition: all 0.3s;
+}
+ul li a:before {
+  content: '\f101';
+  font-family: 'FontAwesome';
+  padding-right: 5px;
+  transition: all 0.3s;
+}
+
+h1{
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-rendering: optimizelegibility;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-top: 40px;
+}
+
+._block{
+  height: 100vh;
+}
+
+._iframe{
+  max-width: 50%; 
+  width: 100%; 
+  display: inline-block; 
+  height: 100vh; 
+  float: left;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  ._iframe{
+    display: none;
+  }
+}
+
+._items{
+  max-width: 50%; 
+  width: 100%; 
+  display: inline-block; 
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  ._items{
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+._items img {
+  display: block; 
+  margin: 0 auto; 
+  filter: brightness(0.5); 
+  -webkit-filter: brightness(0.5); 
+  padding-top: 50px;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="_block">
+    <div class="container-fluid">
+
+      <div class="_iframe" style="background-image: url('dist/images/bg1.jpg');"></div>
+
+      <div class="_items">
+        <img src="dist/images/logo.png" alt="">
+        <ul>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/index.html">Главная</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/about.html">О нас</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/coaches.html">Тренеры</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/cup.html">Турниры</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/cup2.html">Турниры 2</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/league.html">Лига</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/new.html">Новости</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/news.html">Новости 2</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/school.html">Школа</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/team.html">Команды</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/teams.html">Коаманды 2</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/gallery.html">Галерея</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/contact.html">Контакты</a></li>
+          <li><a target="_blank" href="http://html.flabio.ru/ffiko-html/dist/error.html">Ошибка</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
