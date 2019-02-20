@@ -49,10 +49,14 @@
     <script src="static/js/separate-js/respond.min.js" type="text/javascript"></script>
     <meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
+    <script>
 
+
+    </script>
     <style>
-        .modal__heading {
-         padding: 2.5rem 0;
+
+        .modal-dialog--blockWithStock {
+            display: block!important;
         }
         .modal__stock {
     border: 1px solid #73367e;
@@ -203,21 +207,6 @@
     z-index: 2;
     border: 1px solid #73367e;
 }
-
-/* .modal__stockWrap .modal__stockRadioBtnWrap label:before {
-    position: absolute;
-    content: '';
-    height: 20px;
-    max-width: 20px;
-    width: 100%;
-    background-color: #fff;
-    right: 0;
-    cursor: pointer;
-    transition: all .3s;
-    z-index: 2;
-    border: 1px solid #73367e;
-} */
-
 .modal__stockWrap .modal__stockRadioBtnWrap label:after {
     position: absolute;
     content: '';
@@ -859,7 +848,7 @@
 
         <!-- Modal Buy Begin -->
         <div class="modal -wide" id="buy-modal" tabindex="-1" role="dialog" aria-labelledby="Купить">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog--blockWithStock">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&#10005;</span>
                 </button>
                 <div class="modal__heading">
@@ -901,7 +890,7 @@
                             <p class="modal__stockDesc">Соглашаясь на данную акцию, вы сможете использовать данный
                                 билет только во вторник</p>
                             <div class="modal__stockRadioBtnWrap">
-                                <input class="modal__stockRadioBtn" type="checkbox" id="stock1">
+                                <input class="modal__stockRadioBtn" type="radio" id="stock1" name="choose">
                                 <label for="stock1">Купить по акции</label>
                             </div>
                         </div>
@@ -917,12 +906,11 @@
                             <p class="modal__stockDesc">Данная акция предусматривает, что кол-во человек будет не
                                 меньше 15. В противном случае билет будет не действителен</p>
                             <div class="modal__stockRadioBtnWrap">
-                                <input class="modal__stockRadioBtn" type="checkbox" id="stock2">
+                                <input class="modal__stockRadioBtn" type="radio" id="stock2" name="choose">
                                 <label for="stock2">Купить по акции</label>
                             </div>
                         </div>
                     </div>
-
                     <!-- Ай, Макыс, вот эти блоки! end -->
 
 
@@ -1023,6 +1011,25 @@
     <script src="static/js/main.min.js"></script>
     <script src="static/js/separate-js/scripts.js"></script>
 
+
+    <!-- скрипт radio -->
+    <script>
+        $(function () {
+            $("input[type=radio]").click(function () {
+
+                var previousValue = $(this).data('storedValue');
+
+                if (previousValue) {
+                    $(this).prop('checked', !previousValue);
+                    $(this).data('storedValue', !previousValue);
+                } else {
+                    $(this).data('storedValue', true);
+                    $("input[type=radio]:not(:checked)").data("storedValue", false);
+                }
+            });
+        });
+    </script>
+    <!-- скрипт radio end -->
 
 </body>
 
