@@ -51,9 +51,12 @@
     <![endif]-->
 
     <style>
+        .modal__heading {
+         padding: 2.5rem 0;
+        }
         .modal__stock {
     border: 1px solid #73367e;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .modal__stock:nth-child(2n) {
@@ -101,8 +104,8 @@
 .modal__stock .modal__stockAction h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 25px;
-    min-height: 40px;
+    font-size: 18px;
+    min-height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,14 +114,14 @@
 }
 
 .modal__stockWrap {
-    padding: 20px 30px;
-    min-height: 300px;
+    padding: 10px 15px;
+    min-height: 150px;
 }
 
 @media (max-width:575px) {
     .modal__stockWrap {
         padding: 15px;
-        min-height: 300px;
+        min-height: 150px;
     }
 }
 
@@ -126,53 +129,54 @@
 .modal__stockWrap .modal__stockName {
     text-transform: uppercase;
     margin: 0;
-    font-size: 25px;
+    font-size: 17px;
 }
 
 @media (max-width:575px) {
     .modal__stockWrap .modal__stockName {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 .modal__stockWrap .modal__stockPercent {
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
     color: #73367e;
     margin: 0;
-    margin-top: 10px;
+    line-height: 20px;
 }
 
 @media (max-width:575px) {
     .modal__stockWrap .modal__stockPercent {
         margin-top: 0;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
 .modal__stockWrap .modal__stockPercent span {
     color: #6fbd5c;
-    font-size: 30px;
-    padding-left: 15px;
+    font-size: 20px;
+    padding-left: 5px;
 }
 
 @media (max-width:575px) {
     .modal__stockWrap .modal__stockPercent span {
-        font-size: 25px;
+        font-size: 18px;
     }
 }
 
 .modal__stockWrap .modal__stockDesc {
-    margin-top: 20px;
-    font-size: 17px;
-    font-family: 'IBM Plex Sans',
-        sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 19px;
 }
 
 @media (max-width:575px) {
     .modal__stockWrap .modal__stockDesc {
-        margin-top: 10px;
+        margin-top: 0;
         font-size: 16px;
         line-height: normal;
     }
@@ -892,11 +896,10 @@
                             <h2>Акция</h2>
                         </div>
                         <div class="modal__stockWrap">
-                            <p class="modal__stockName">"Super вторник"</p>
-                            <p class="modal__stockPercent">скидка <span>30%</span></p>
-                            <p class="modal__stockDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                                deserunt amet repudiandae incidunt. Laudantium, cumque eius ut vel iste soluta
-                                assumenda sint aspernatur esse unde reiciendis tenetur quos velit ipsum.</p>
+                            <p class="modal__stockName">"Каждый вторник"</p>
+                            <p class="modal__stockPercent">скидка <span>20%</span></p>
+                            <p class="modal__stockDesc">Соглашаясь на данную акцию, вы сможете использовать данный
+                                билет только во вторник</p>
                             <div class="modal__stockRadioBtnWrap">
                                 <input class="modal__stockRadioBtn" type="checkbox" id="stock1">
                                 <label for="stock1">Купить по акции</label>
@@ -909,13 +912,10 @@
                             <h2>Акция</h2>
                         </div>
                         <div class="modal__stockWrap">
-                            <p class="modal__stockName">"Super вторник"</p>
-                            <p class="modal__stockPercent">скидка <span>30%</span></p>
-                            <p class="modal__stockDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                                deserunt amet
-                                repudiandae incidunt. Laudantium, cumque eius ut vel iste soluta assumenda sint
-                                aspernatur esse unde
-                                reiciendis tenetur quos velit ipsum.</p>
+                            <p class="modal__stockName">"При посещении более от 15 человек"</p>
+                            <p class="modal__stockPercent">скидка <span>15%</span></p>
+                            <p class="modal__stockDesc">Данная акция предусматривает, что кол-во человек будет не
+                                меньше 15. В противном случае билет будет не действителен</p>
                             <div class="modal__stockRadioBtnWrap">
                                 <input class="modal__stockRadioBtn" type="checkbox" id="stock2">
                                 <label for="stock2">Купить по акции</label>
@@ -923,7 +923,7 @@
                         </div>
                     </div>
 
-                    <!-- Ай, Макыс, вот эти блоки! end --> 
+                    <!-- Ай, Макыс, вот эти блоки! end -->
 
 
                     <button type="submit" class="button -purple modal__button">Купить</button>
