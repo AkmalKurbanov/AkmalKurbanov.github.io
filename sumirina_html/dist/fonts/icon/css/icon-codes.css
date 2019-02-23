@@ -1,0 +1,10 @@
+
+.icon-quote:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-svitok:before { content: '\e802'; } /* '' */
+.icon-svechi:before { content: '\e803'; } /* '' */
+.icon-starofdavid:before { content: '\e804'; } /* '' */
+.icon-polsvechi:before { content: '\e806'; } /* '' */
+.icon-polzvezdy:before { content: '\e807'; } /* '' */
+.icon-angle-down:before { content: '\f107'; } /* '' */
+.icon-mobile:before { content: '\f10b'; } /* '' */
