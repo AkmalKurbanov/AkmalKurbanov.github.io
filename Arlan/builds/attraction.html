@@ -74,7 +74,9 @@
   transition: transform 1.2s;
 }
 
-.dp-img img { border-left: 1px solid #fff; }
+.dp-img img { border-left: 1px solid #fff;
+width: 100%;
+max-width: 100%; }
 
 #dp-slider .dp_item:first-child {
   z-index: 10 !important;
@@ -137,7 +139,14 @@
 
 .dp_item { width: 85%; }
 
-.dp-content,  .dp-img { text-align: left; }
+.dp-content,  .dp-img { text-align: left;
+min-height: 500px;
+width: 100%;
+max-width: 100%;
+-webkit-background-size: cover;
+ background-size: cover; 
+background-position: center center;
+background-repeat: no-repeat; }
 
 .dp_item {
   display: flex;
@@ -184,7 +193,7 @@
   object-position: right;
 }
 
-#dp-slider,  .dp-img img { height: 738px; }
+#dp-slider,  .dp-img img { height: 500px; }
 
 #dp-slider .dp_item:hover:not(:first-child) { cursor: pointer; }
 
@@ -328,24 +337,24 @@
       <div class="dp_item" data-class="1" data-position="1">
        
 
-        <div class="dp-img">
-          <img class="img-fluid" src="http://wallpapers-images.ru/1920x1080/nature/wallpapers/wallpapers-nature-1.jpg" alt="investing">
+        <div class="dp-img" style="background-image: url('static/img/content/p4.jpg');">
+          <!-- <img class="img-fluid" src="static/img/content/news.jpg" alt="investing"> -->
         </div>
       </div>
 
       <div class="dp_item" data-class="2" data-position="2">
         
 
-        <div class="dp-img">
-          <img class="img-fluid" src="http://wp.widewallpapers.ru/2k/cities/paris/1920x1080/Paris-1920x1080-069.jpg" alt="investing">
+        <div class="dp-img" style="background-image: url('static/img/content/p3.jpg');">
+          <!-- <img class="img-fluid" src="http://wp.widewallpapers.ru/2k/cities/paris/1920x1080/Paris-1920x1080-069.jpg" alt="investing"> -->
         </div>
       </div>
 
       <div class="dp_item" data-class="3" data-position="3">
         
 
-        <div class="dp-img">
-          <img class="img-fluid" src="https://images.wallpaperscraft.ru/image/abstrakciya_ogon_rozovyy_goluboy_fioletovyy_uzory_47133_1920x1080.jpg" alt="investing">
+        <div class="dp-img" style="background-image: url('static/img/content/p2.jpg');">
+          <!-- <img class="img-fluid" src="https://images.wallpaperscraft.ru/image/abstrakciya_ogon_rozovyy_goluboy_fioletovyy_uzory_47133_1920x1080.jpg" alt="investing"> -->
         </div>
       </div>
     </div>
