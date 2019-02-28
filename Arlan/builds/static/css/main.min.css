@@ -19284,8 +19284,8 @@ a:hover {
 }
 
 .modal.-wide {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+    /*-webkit-transform: translateY(-100%);*/
+    /*transform: translateY(-100%);*/
     -webkit-transition: -webkit-transform .45s ease-in-out;
     transition: transform .45s ease-in-out;
     transition: transform .45s ease-in-out, -webkit-transform .45s ease-in-out;
