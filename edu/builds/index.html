@@ -16,7 +16,7 @@
         <!-- Stylesheet -->
         <link href="static/css/main.css" rel="stylesheet" type="text/css">
         <link href="static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
-        <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+        <!-- <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"> -->
         <!--  Open Graph Tags -->
         <meta property="og:title" content="" />
         <meta property="og:url" content="" />
@@ -59,7 +59,7 @@
                 <!-- Header Begin -->
                 <header class="header">
                     <div class="header__container">
-                        <a href="#" class="logo header__logo" title="Yelikbayev.kz">Y<span>elikbayev.kz</span></a>
+                        <a href="#" class="logo header__logo" title="Yelikbayev.online">Y<span>elikbayev.<span>online</span></span></a>
                         <nav class="navigation">
                             <a href="#features" class="navigation__link" data-scroll>О курсе</a>
                             <a href="#" class="navigation__link">Об авторе</a>
@@ -88,27 +88,39 @@
 
                 <!-- Entry Begin -->
                 <section class="entry" style="background-image: url('static/img/content/entry-bg1.jpg')">
-                    <a href="#" class="playButtonWrap">
-                        <div class="entry__play">
-                            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M99.8165 11.0026C50.5422 11.5647 10.2609 52.032 11.0103 100.743C11.7597 149.641 52.6031 189.921 100.566 188.984C150.028 187.86 189.372 148.142 188.997 99.6186C188.623 50.7206 148.154 10.6279 99.8165 11.0026Z" class="entry__play-stroke-solid"
-                                fill="none" stroke="white" />
-                                <path d="M99.8165 11.0026C50.5422 11.5647 10.2609 52.032 11.0103 100.743C11.7597 149.641 52.6031 189.921 100.566 188.984C150.028 187.86 189.372 148.142 188.997 99.6186C188.623 50.7206 148.154 10.6279 99.8165 11.0026Z" fill="none" class="entry__play-stroke-dotted"
-                                stroke="white" />
-                                <path d="M86.6594 140.615C85.1819 141.605 84 140.615 84 138.438V67.5623C84 65.3846 85.1819 64.3947 86.6594 65.3846L136.892 101.02C138.369 102.01 138.369 103.792 136.892 104.782L86.6594 140.615Z" class="entry__play-icon" fill="white" />
-                            </svg>
-                        </div>
-                    </a>
+                    <!--                <a href="#" class="playButtonWrap">-->
+                    <!--                    <div class="entry__play">-->
+                    <!--                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none"-->
+                    <!--                            xmlns="http://www.w3.org/2000/svg">-->
+                    <!--                            <path-->
+                    <!--                                d="M99.8165 11.0026C50.5422 11.5647 10.2609 52.032 11.0103 100.743C11.7597 149.641 52.6031 189.921 100.566 188.984C150.028 187.86 189.372 148.142 188.997 99.6186C188.623 50.7206 148.154 10.6279 99.8165 11.0026Z"-->
+                    <!--                                class="entry__play-stroke-solid" fill="none" stroke="white" />-->
+                    <!--                            <path-->
+                    <!--                                d="M99.8165 11.0026C50.5422 11.5647 10.2609 52.032 11.0103 100.743C11.7597 149.641 52.6031 189.921 100.566 188.984C150.028 187.86 189.372 148.142 188.997 99.6186C188.623 50.7206 148.154 10.6279 99.8165 11.0026Z"-->
+                    <!--                                fill="none" class="entry__play-stroke-dotted" stroke="white" />-->
+                    <!--                            <path-->
+                    <!--                                d="M86.6594 140.615C85.1819 141.605 84 140.615 84 138.438V67.5623C84 65.3846 85.1819 64.3947 86.6594 65.3846L136.892 101.02C138.369 102.01 138.369 103.792 136.892 104.782L86.6594 140.615Z"-->
+                    <!--                                class="entry__play-icon" fill="white" />-->
+                    <!--                        </svg>-->
+                    <!--                    </div>-->
+                    <!--                </a>-->
                     <div class="entry__content">
-                        <h1 class="entry__title typed-effect">
-
+                        <div class="entry__titlePrint">
+                            <h1 class="entry__title typed-effect">
                         <span id="js-typed-strings">
-
-                            <p>Алишер Еликбаев <br> <span>Плохому не научит</span> </p>
-
+                            <p>Алишер <br class="br"> Еликбаев <br> <span>Плохому не научит</span> </p>
                         </span>
-
                     </h1>
+                        </div>
+                        <div class="entry__buy">
+                            <div class="btnWrap">
+                                <a href="#" class="btn btn--solid">Купить весь курс</a>
+                            </div>
+                            <div class="btnWrap">
+                                <a href="#" class="btn">Пройти бесплатный урок</a>
+                            </div>
+                        </div>
+                        <p>Или полистайте далее, чтобы узнать подробности</p>
                     </div>
                 </section>
                 <!--/. Entry Begin -->
@@ -161,21 +173,49 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="btnWrap btnWrap--btnWrapFeatures">
+                            <a href="#" class="btn">пройти бесплатный урок</a>
+                        </div>
+
                     </div>
                 </section>
                 <!--/. Features Begin -->
 
+                <!--/. explain Begin -->
+                <section class="explain">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="explain__wrap">
+                                    <div class="features__title features__title--caption">Зачем?</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, animi ipsam quisquam esse provident perferendis minus suscipit earum asperiores pariatur at ad nihil vitae voluptatem ab culpa inventore rem non facilis
+                                        aspernatur nostrum. Cupiditate quia dicta in omnis veniam, laboriosam quas ea consequuntur quisquam iure natus deleniti accusamus vel nisi tempora maxime sapiente recusandae maiores ullam quaerat quasi officiis!
+                                        Quam rerum beatae incidunt eum alias architecto veniam eligendi labore accusantium!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deleniti, hic sequi sunt vero ullam aliquid modi quae ea, illum facilis sapiente amet tempore architecto quo omnis cupiditate cum quos placeat maiores
+                                        molestiae distinctio tempora unde error. Deleniti, cumque vel!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/. explain Begin -->
+
                 <!-- Courses Begin -->
                 <section class="courses">
                     <div class="container">
+                        <div class="features__title">Направления:</div>
                         <div class="row" vertical-gutter="30">
                             <div class="col-md-6 col-lg-3 col-sm-6">
                                 <a href="#" class="courses__item">
                                     <img src="static/img/content/p1.jpg" alt="" class="courses__img">
-                                    <div class="courses__title">Правила личностного роста</div>
+                                    <div class="courses__title">Правила личностного роста
+                                        <p class="courses__startDate">Запуск 1 сентября</p>
+                                    </div>
                                     <div class="courses__content">
                                         <div class="courses__title">Правила хорошего роста</div>
-                                        <div class="courses__text">Научитесь выходить за рамки собственных границ и представлений о жизни. Доход, путешествия, признание – все зависит только от вас. Попробуйте по-другому взглянуть на свои возможности с моей помощью.</div>
+                                        <div class="courses__text">Научитесь выходить за рамки собственных границ и представлений о жизни. Доход, путешествия, признание – все зависит только от вас. Попробуйте по-другому взглянуть на свои возможности с моей помощью.
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -186,7 +226,8 @@
                                     <div class="courses__content">
                                         <div class="courses__title">PR и репутация</div>
                                         <div class="courses__text">Правильно выстроенные коммуникации – неоценимый инструмент для любого бизнеса. Мы научим вас использовать этот инструмент максимально эффективно. Отличные коммуникации – это имидж и репутация, которая создается
-                                            годами.</div>
+                                            годами.
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -196,7 +237,8 @@
                                     <div class="courses__title">SMM</div>
                                     <div class="courses__content">
                                         <div class="courses__title">SMM</div>
-                                        <div class="courses__text">социальные медиа – простой, бесплатный и самый оперативный канал коммуникаций с вашим клиентом. Почему бы не вывести их на новый уровень?</div>
+                                        <div class="courses__text">социальные медиа – простой, бесплатный и самый оперативный канал коммуникаций с вашим клиентом. Почему бы не вывести их на новый уровень?
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -206,7 +248,8 @@
                                     <div class="courses__title">Публичные выступления</div>
                                     <div class="courses__content">
                                         <div class="courses__title">Публичные выступления</div>
-                                        <div class="courses__text">Каждый умеет говорить, но не каждый может донести свою мысль до слушателя. Научитесь выступать так, чтобы ваша аудитория снова мечтала услышать ваши мысли.</div>
+                                        <div class="courses__text">Каждый умеет говорить, но не каждый может донести свою мысль до слушателя. Научитесь выступать так, чтобы ваша аудитория снова мечтала услышать ваши мысли.
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -215,6 +258,36 @@
                 </section>
                 <!--/. Courses End -->
 
+                <!--/. explain Begin -->
+                <section class="explain">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 offset-lg-1 ">
+                                <div class="explain__wrap">
+                                    <div class="features__title features__title--caption">Как?</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, animi ipsam quisquam esse provident perferendis minus suscipit earum asperiores pariatur at ad nihil vitae voluptatem ab culpa inventore rem non facilis
+                                        aspernatur nostrum. Cupiditate quia dicta in omnis veniam, laboriosam quas ea consequuntur quisquam iure natus deleniti accusamus vel nisi tempora maxime sapiente recusandae maiores ullam quaerat quasi officiis!
+                                        Quam rerum beatae incidunt eum alias architecto veniam eligendi labore accusantium!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deleniti, hic sequi sunt vero ullam aliquid modi quae ea, illum facilis sapiente amet tempore architecto quo omnis cupiditate cum quos placeat maiores
+                                        molestiae distinctio tempora unde error. Deleniti, cumque vel!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="explain__wrap">
+                                    <div class="features__title features__title--caption">О чем?</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, animi ipsam quisquam esse provident perferendis minus suscipit earum asperiores pariatur at ad nihil vitae voluptatem ab culpa inventore rem non facilis
+                                        aspernatur nostrum. Cupiditate quia dicta in omnis veniam, laboriosam quas ea consequuntur quisquam iure natus deleniti accusamus vel nisi tempora maxime sapiente recusandae maiores ullam quaerat quasi officiis!
+                                        Quam rerum beatae incidunt eum alias architecto veniam eligendi labore accusantium!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deleniti, hic sequi sunt vero ullam aliquid modi quae ea, illum facilis sapiente amet tempore architecto quo omnis cupiditate cum quos placeat maiores
+                                        molestiae distinctio tempora unde error. Deleniti, cumque vel!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/. explain Begin -->
 
                 <!-- Features Begin -->
                 <section class="features features--coursesFeatures" id="featuresCourse">
@@ -227,7 +300,9 @@
                                             <img src="static/img/general/p1.svg" alt="">
                                         </div>
                                         <div class="features__title">Весь курс</div>
-                                        <div class="features__title features__title--price">70 000 &#8376;</div>
+                                        <span class="discount">70 000 ₸</span>
+                                        <div class="features__title features__title--price">60 000 &#8376;</div>
+                                        <span class="discountDate">до 31 августа</span>
                                         <div class="features__text">
                                             <p>
                                                 <a href="#">Полный курс</a>, состоящий из 4 блоков, где каждый блок — это отдельное направление. Более того, приобретая весь курс, вы не только экономите, но и получаете возможность участвовать в розыгрыше
@@ -245,8 +320,9 @@
                                             <img src="static/img/general/p4.svg" alt="">
                                         </div>
                                         <div class="features__title">Один блок</div>
-                                        <div class="features__title features__title--price">25 000 &#8376;
-                                        </div>
+                                        <span class="discount">25 000 ₸</span>
+                                        <div class="features__title features__title--price">20 000 &#8376;</div>
+                                        <span class="discountDate">до 31 августа</span>
                                         <div class="features__text">
                                             <p>
                                                 Если вас не интересует полный курс, но вы решительно настроены развиваться в одном из 4 представленных направлений — у вас есть возможность приобрести эти лекции отдельно. К слову, расти вширь тоже достойно. Так и рождаются настоящие профессионалы.
@@ -254,7 +330,7 @@
                                         </div>
                                     </div>
                                     <div class="btnWrap">
-                                        <a href="#" class="btn">Купить</a>
+                                        <a href="#" class="btn btn--buy">Купить</a>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -270,6 +346,7 @@
                                     </div>
                                     <div class="btnWrap">
                                         <a href="#" class="btn">Попробовать</a>
+
                                     </div>
                                 </div>
                             </div>
@@ -285,13 +362,12 @@
                         <div class="offer__prise">
                             <div class="cationWrap">
                                 <h2 class="caption">
-
-                                Купи полный курс и <br> выиграй новую <br> Toyota Camry!
-
-                            </h2>
+                            Купи полный курс и <br> выиграй новую <br> Toyota Camry!
+                        </h2>
                             </div>
                             <div class="offer__img">
-                                <img src="static/img/content/offer.png" alt="">
+                                <img src="static/img/content/toyota-camry1.png" alt="">
+                                <img src="static/img/content/toyota-camry2.png" alt="">
                             </div>
                         </div>
                         <p class="offer__note">
@@ -321,10 +397,8 @@
                                     <div class="about__desc">
                                         <div class="cationWrap">
                                             <h2 class="caption caption--captionAbout">
-
-                                            Алишер Еликбаев
-
-                                        </h2>
+                                        Алишер Еликбаев
+                                    </h2>
                                         </div>
                                         <p>Я работаю в медиа и PR уже более 20 лет и за это время мой послужной список разросся настолько, что, перечисляя все свои должности, я могу усыпить любого. И все же я хотел бы рассказать вам о некоторых проектах,
                                             давших мне тот опыт и знания, которыми я хочу поделиться с вами.</p>
@@ -438,10 +512,8 @@
 
                             <div class="course-list__item">
                                 <a class="course-list__header" href="#faq1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="faq1">
-
-                                Что мне это даст?
-
-                            </a>
+                            Что мне это даст?
+                        </a>
                                 <div class="collapse" id="faq1">
                                     <div class="course-list__lecture">
                                         <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Журчит ему использовало вопроса своих рыбного встретил большой вдали, агентство диких последний всемогущая ведущими lorem послушавшись.
@@ -452,10 +524,8 @@
 
                             <div class="course-list__item">
                                 <a class="course-list__header" href="#faq2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="faq2">
-
-                                Для кого курс?
-
-                            </a>
+                            Для кого курс?
+                        </a>
                                 <div class="collapse" id="faq2">
                                     <div class="course-list__lecture">
                                         <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Журчит ему использовало вопроса своих рыбного встретил большой вдали, агентство диких последний всемогущая ведущими lorem послушавшись.
@@ -466,10 +536,8 @@
 
                             <div class="course-list__item">
                                 <a class="course-list__header" href="#faq3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="faq3">
-
-                                Как оплатить?
-
-                            </a>
+                            Как оплатить?
+                        </a>
                                 <div class="collapse" id="faq3">
                                     <div class="course-list__lecture">
                                         <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Журчит ему использовало вопроса своих рыбного встретил большой вдали, агентство диких последний всемогущая ведущими lorem послушавшись.
@@ -480,10 +548,8 @@
 
                             <div class="course-list__item">
                                 <a class="course-list__header" href="#faq4" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="faq4">
-
-                                В каком формате проходит обучение?
-
-                            </a>
+                            В каком формате проходит обучение?
+                        </a>
                                 <div class="collapse" id="faq4">
                                     <div class="course-list__lecture">
                                         <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Журчит ему использовало вопроса своих рыбного встретил большой вдали, агентство диких последний всемогущая ведущими lorem послушавшись.
@@ -525,7 +591,6 @@
                         </div>
 
 
-
                     </div>
                 </section>
                 <!--/. Faq Begin -->
@@ -534,6 +599,14 @@
                 <!-- Footer Begin -->
                 <footer class="footer">
                     <div class="container footer__container">
+
+                        <div class="footer__copyright">
+                            <span>© yelikbayev.online</span>
+                            All Rights Reserved.
+                            <a href="mailto:info@yelikbayev.online">info@yelikbayev.online</a>
+                            <a href="tel:77477331010">+7 747 733 10 10</a>
+                        </div>
+
                         <ul class="footer__menu">
                             <li>
                                 <a href="#" class="footer__menu-link">Публичная оферта</a>
@@ -542,10 +615,27 @@
                                 <a href="#" class="footer__menu-link">Политика безопасности</a>
                             </li>
                         </ul>
-                        <div class="footer__copyright">
-                            <span>© Elikbayev.kz</span>
-                            <br>All Rights Reserved. Kazakhstan, Almaty, Baker Str. 123
+
+                        <div class="social social--footerSocial">
+                            <ul class="footer__social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+
                     </div>
                 </footer>
                 <!--/. Footer End -->
@@ -569,8 +659,9 @@
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
         <script src="static/js/main.js"></script>
+        <!-- <script src="static/js/plugins/jquery.maskedinput.js"></script> -->
         <script src="static/js/separate-js/scripts.js"></script>
 
     </body>

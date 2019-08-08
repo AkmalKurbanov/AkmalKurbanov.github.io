@@ -16,7 +16,7 @@
         <!-- Stylesheet -->
         <link href="static/css/main.css" rel="stylesheet" type="text/css">
         <link href="static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
-        <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+        <!-- <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"> -->
         <!--  Open Graph Tags -->
         <meta property="og:title" content="" />
         <meta property="og:url" content="" />
@@ -167,18 +167,14 @@
 
                                     <div class="test__replay">
                                         <a href="#" class="button test__finish test__finish--replay">посмотреть видео-урок
-
                                         еще
-
                                         раз</a>
 
                                         <a href="#" class="button test__finish test__finish--replay">пройти тест повторно
-
                                         сейчас</a>
                                     </div>
 
                                     <a href="#" class="button test__finish -show -left">Все равно перейти к следующему
-
                                     уроку</a>
                                 </div>
                             </div>
@@ -193,7 +189,16 @@
 
         </div>
         <!--/. Layout End -->
-
+        <div class="modalWindow">
+            <div class="modalWindow__box">
+                <h2>Закрыть тест?</h2>
+                <p>Если закрыть тест до окончания, ваши ответы не сохранятся и вам придется проходить его заново.</p>
+                <div class="modalWindow__controls">
+                    <button class="modalWindow__closeBtn closeWindow-js">Продолжить тест</button>
+                    <button class="modalWindow__closeBtn">Закрыть</button>
+                </div>
+            </div>
+        </div>
 
         <!-------------------------------- CONTENT ENDS HERE -------------------------------->
 
@@ -208,8 +213,9 @@
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
         <script src="static/js/main.js"></script>
+        <!-- <script src="static/js/plugins/jquery.maskedinput.js"></script> -->
         <script src="static/js/separate-js/scripts.js"></script>
 
     </body>

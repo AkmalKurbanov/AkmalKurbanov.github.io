@@ -7,6 +7,7 @@ $(function () {
     | Typed.js
     |--------------------------------------------------------------------------
     */
+
     // scroll button
     function scrollToSection(event) {
         event.preventDefault();
@@ -15,17 +16,15 @@ $(function () {
             scrollTop: $section.offset().top
         }, 700);
     }
+
     $('[data-scroll]').on('click', scrollToSection);
 
-    $('.navigation__link').on('click', function() {
+    $('.navigation__link').on('click', function () {
         $('.navigation').removeClass('mobileMenu');
         $('.burger').removeClass('-open');
         $('.navigation__userPanel').removeClass('userPanelShow');
     });
     // scroll button end
-
-
-
 
 
     //    burger
@@ -41,9 +40,9 @@ $(function () {
 
 
 //    burger end
-   setTimeout(function () {
-      $(".entry__title").css('display','inline');
-   }, 100);
+    setTimeout(function () {
+        $(".entry__title").css('display', 'inline');
+    }, 100);
     $(function () {
         $(".entry__title").typed({
 
@@ -92,13 +91,16 @@ $(function () {
             },
 
             // starting callback function before each string
-            preStringTyped: function () {},
+            preStringTyped: function () {
+            },
 
             //callback for every typed string
-            onStringTyped: function () {},
+            onStringTyped: function () {
+            },
 
             // callback for reset
-            resetCallback: function () {}
+            resetCallback: function () {
+            }
         });
     });
 
@@ -228,11 +230,13 @@ $(function () {
             swiperPaginationBullet = intoAnArray(swiperPaginationBullet);
             for (let i = 0; i < swiperPaginationBullet.length; i++) {
                 if (swiperPaginationBullet[i].classList.contains('swiper-pagination-bullet-active')) slidesActive = i + 1;
-            };
+            }
+            ;
 
             sliders[i].querySelector('.jsCounterCurrent').innerHTML = slidesActive;
             sliders[i].querySelector('.jsCounterTotal').innerHTML = swiperPaginationBullet.length;
-        };
+        }
+        ;
         requestAnimationFrame(initializationCounter);
     });
 
@@ -245,13 +249,6 @@ $(function () {
             prevEl: '.reviewsnavPre',
         },
     });
-
-
-
-
-
-
-
 
 
     $(".youtube").each(function () {
@@ -268,34 +265,68 @@ $(function () {
     });
 
 
+    // maodal window
+    $('.test__close').on('click', function () {
+        $('.modalWindow').css('display', 'flex');
+    });
 
-    // $(function () {
-    //     $("#datepicker").datepicker();
-    //     dateFormat: "d/MM/yy",
-    // });
-    $('#datepicker').datepicker({
-        dateFormat: "d/MM/yy",
-        prevText: 'Пред',
-        nextText: 'След',
-        monthNames: [
-            'Январ', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
-        ],
-        dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+    $('.closeWindow-js').on('click', function () {
+        $('.modalWindow').hide();
+    });
+
+    // maodal window end
+
+
+// $('.courseItem-js').on('click', function() {
+//     $(this).toggleClass('-active');
+// });
+
+
+    let buttonDesabled = function () {
+        var count = 0
+        $('.control__input').each(function (index, value) {
+
+            if ($(value).val() !== '') {
+                count += 1
+                $('.login__button').attr('disabled', 'disabled');
+
+            }
+
+        });
+        if (count === $('.control__input').length) {
+            $('.login__button').removeAttr('disabled');
+        }
+
+    }
+
+    $(document).ready(function () {
+        buttonDesabled()
     });
 
 
+    $('.control__input').on('input', function (e) {
+        buttonDesabled()
+    })
 
 
+});
 
 
+// coments hide/show
+$('.comments__reply .comments__item:gt(5)').hide();
 
-
-
-
-
-
+$('.more-js').click(function () {
+    $('.comments__reply .comments__item:gt(-6)').show();
+    $(this).parent().prev().find('.comments__reply').addClass('scroll-js');
+    $('.scroll-js').stop().animate({
+        scrollTop: $('.scroll-js')[0].scrollHeight
+    }, 2000);
+    // $('.comments__reply .comments__item:gt(1)').show();
+    // $('.scroll-js').scrollTop($(document).height());
 
 
 
 });
+
+
+// coments hide/show end

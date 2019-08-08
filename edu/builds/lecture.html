@@ -16,7 +16,7 @@
         <!-- Stylesheet -->
         <link href="static/css/main.css" rel="stylesheet" type="text/css">
         <link href="static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
-        <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+        <!-- <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"> -->
         <!--  Open Graph Tags -->
         <meta property="og:title" content="" />
         <meta property="og:url" content="" />
@@ -59,7 +59,7 @@
                 <!-- Header Begin -->
                 <header class="header">
                     <div class="header__container">
-                        <a href="#" class="logo header__logo" title="Yelikbayev.kz">Y<span>elikbayev.kz</span></a>
+                        <a href="#" class="logo header__logo" title="Yelikbayev.online">Y<span>elikbayev.<span>online</span></span></a>
                         <nav class="navigation">
                             <a href="#features" class="navigation__link" data-scroll>О курсе</a>
                             <a href="#" class="navigation__link">Об авторе</a>
@@ -93,15 +93,17 @@
                     <main class="page">
                         <div class="container">
 
-                            <!-- Page Header Begin -->
-                            <header class="page__header">
-                                <a href="#" class="page__header-backlink">Назад</a>
-                                <h1 class="page__header-title">3 лекция – Подбор аудитории</h1>
-                            </header>
-                            <!--/. Page Header End -->
 
                             <div class="row" vertical-gutter="40">
                                 <div class="col-lg-8">
+
+                                    <!-- Page Header Begin -->
+                                    <header class="page__header">
+                                        <a href="#" class="page__header-backlink">Назад</a>
+                                        <h1 class="page__header-title">3 лекция – Подбор аудитории</h1>
+                                    </header>
+                                    <!--/. Page Header End -->
+
 
                                     <!-- Article Begin -->
                                     <article class="article">
@@ -112,6 +114,15 @@
                                             occupy mustache authentic, locavore semiotics chartreuse single-origin coffee vinyl pug cray live-edge prism. Asymmetrical tumeric gastropub kombucha, mustache kale chips organic celiac. Kickstarter retro tousled
                                             authentic hot chicken. Austin venmo vinyl adaptogen umami. Kogi ennui church-key typewriter activated charcoal enamel pin selvage.</p>
                                         <a href="#" class="article__link">Пройти тест</a>
+                                        <div class="article__link article__link--again">
+
+
+                                            <div class="test__result">
+                                                <p>Тест пройден: <span>56/100 баллов!</span>
+                                                </p>
+                                            </div>
+                                            <a href="#">Пройти заново</a>
+                                        </div>
                                     </article>
                                     <!--/. Article End -->
 
@@ -124,91 +135,186 @@
                                         <ul class="comments__list">
                                             <li class="comments__item">
                                                 <div class="comments__body">
+                                                    <div class="comments__text">
+                                                        <strong>Джамал Малик</strong> Lorem ipsum dolor amet flannel pop-up VHS, lyft kickstarter succulents messenger bag austin copper mug sriracha tousled.
+                                                    </div>
                                                     <div class="comments__date">21:23</div>
+                                                </div>
+                                                <button type="button" class="comments__reply-button collapsed" data-toggle="collapse" href="#answer1">Ответить
+                                                </button>
+                                                <!--                                        <div id="answer1" class="collapse">-->
+                                                <!--                                            <div class="comment__item">-->
+                                                <!--                                                <div class="comments__body">-->
+                                                <!--                                                    <div class="comments__form">-->
+                                                <!--                                                            <textarea class="form-control comments__reply-textarea"-->
+                                                <!--                                                                      placeholder="Ваш ответ..."></textarea>-->
+                                                <!--                                                        <div class="comments__btns">-->
+                                                <!--                                                            <button type="button"-->
+                                                <!--                                                                    class="button -default comments__button"-->
+                                                <!--                                                                    data-toggle="collapse"-->
+                                                <!--                                                                    data-target="#answer1">Отмена-->
+                                                <!--                                                            </button>-->
+                                                <!--                                                            <button type="submit"-->
+                                                <!--                                                                    class="button -black comments__button">Ответить-->
+                                                <!--                                                            </button>-->
+                                                <!--                                                        </div>-->
+                                                <!--                                                    </div>-->
+                                                <!--                                                </div>-->
+                                                <!--                                            </div>-->
+                                                <!--                                        </div>-->
+                                                <ul class="comments__reply">
+                                                    <li class="comments__item">
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <button type="button" class="comments__reply-button comments__reply-button--answer collapsed" data-toggle="collapse" href="#answer1">Ответить
+                                                </button>
+                                            </li>
+                                            <li class="comments__item">
+                                                <div class="comments__body">
                                                     <div class="comments__text">
                                                         <strong>Джамал Малик</strong> Lorem ipsum dolor amet flannel pop-up VHS, lyft kickstarter succulents messenger bag austin copper mug sriracha tousled.
                                                     </div>
-                                                </div>
-                                                <button type="button" class="comments__reply-button collapsed" data-toggle="collapse" href="#answer1">Ответить</button>
-                                                <div id="answer1" class="collapse">
-                                                    <div class="comment__item">
-                                                        <div class="comments__body">
-                                                            <div class="comments__form">
-                                                                <textarea class="form-control comments__reply-textarea" placeholder="Ваш ответ..."></textarea>
-                                                                <div class="comments__btns">
-                                                                    <button type="button" class="button -default comments__button" data-toggle="collapse" data-target="#answer1">Отмена</button>
-                                                                    <button type="submit" class="button -black comments__button">Ответить</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <div class="comments__date">21:23</div>
                                                 </div>
                                                 <ul class="comments__reply">
                                                     <li class="comments__item">
                                                         <div class="comments__body">
-                                                            <div class="comments__date">10.10.2010 21:23</div>
                                                             <div class="comments__text">
-                                                                <strong>Timur Mamyrbek</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                                <strong>Timur Mamyrbek1</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
                                                             </div>
-                                                        </div>
-                                                        <button type="button" class="comments__reply-button collapsed" data-toggle="collapse" href="#answer2">Ответить</button>
-                                                        <div id="answer2" class="collapse">
-                                                            <div class="comment__item">
-                                                                <div class="comments__body">
-                                                                    <div class="comments__form">
-                                                                        <textarea class="form-control comments__reply-textarea" placeholder="Ваш ответ..."></textarea>
-                                                                        <div class="comments__btns">
-                                                                            <button type="button" class="button -default comments__button" data-toggle="collapse" data-target="#answer1">Отмена</button>
-                                                                            <button type="submit" class="button -black comments__button">Ответить</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="comments__item">
-                                                <div class="comments__body">
-                                                    <div class="comments__date">10.10.2010 21:23</div>
-                                                    <div class="comments__text">
-                                                        <strong>Джамал Малик</strong> Lorem ipsum dolor amet flannel pop-up VHS, lyft kickstarter succulents messenger bag austin copper mug sriracha tousled.
-                                                    </div>
-                                                </div>
-                                                <ul class="comments__reply">
-                                                    <li class="comments__item">
-                                                        <div class="comments__body">
-                                                            <div class="comments__date">10.10.2010 21:23</div>
-                                                            <div class="comments__text">
-                                                                <strong>Timur Mamyrbek</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
-                                                            </div>
+                                                            <div class="comments__date">21:23</div>
                                                         </div>
                                                     </li>
                                                     <li class="comments__item">
                                                         <div class="comments__body">
-                                                            <div class="comments__date">10.10.2010 21:23</div>
                                                             <div class="comments__text">
-                                                                <strong>Timur Mamyrbek</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                                <strong>Timur Mamyrbek2</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
                                                             </div>
+                                                            <div class="comments__date">21:23</div>
                                                         </div>
                                                     </li>
                                                     <li class="comments__item">
-                                                        <button type="button" class="comments__more">+5 сообщений</button>
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek3</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
                                                     </li>
+                                                    <li class="comments__item">
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek4</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="comments__item">
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek5</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="comments__item">
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek6</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="comments__item">
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek7</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="comments__item">
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek8</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="comments__item">
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek9</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="comments__item">
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek10</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="comments__item">
+                                                        <div class="comments__body">
+                                                            <div class="comments__text">
+                                                                <strong>Timur Mamyrbek11</strong> Asymmetrical authentic distillery chartreuse literally bicycle rights
+                                                            </div>
+                                                            <div class="comments__date">21:23</div>
+                                                        </div>
+                                                    </li>
+
+                                                    <!--                                            <div id="answer2" class="collapse">-->
+                                                    <!--                                                <div class="comment__item">-->
+                                                    <!--                                                    <div class="comments__body">-->
+                                                    <!--                                                        <div class="comments__form">-->
+                                                    <!--                                                                    <textarea-->
+                                                    <!--                                                                            class="form-control comments__reply-textarea"-->
+                                                    <!--                                                                            placeholder="Ваш ответ..."></textarea>-->
+                                                    <!--                                                            <div class="comments__btns">-->
+                                                    <!--                                                                <button type="button"-->
+                                                    <!--                                                                        class="button -default comments__button"-->
+                                                    <!--                                                                        data-toggle="collapse"-->
+                                                    <!--                                                                        data-target="#answer1">Отмена-->
+                                                    <!--                                                                </button>-->
+                                                    <!--                                                                <button type="submit"-->
+                                                    <!--                                                                        class="button -black comments__button">-->
+                                                    <!--                                                                    Ответить-->
+                                                    <!--                                                                </button>-->
+                                                    <!--                                                            </div>-->
+                                                    <!--                                                        </div>-->
+                                                    <!--                                                    </div>-->
+                                                    <!--                                                </div>-->
+                                                    <!--                                            </div>-->
                                                 </ul>
+                                                <button type="button" class="comments__reply-button comments__reply-button--answer collapsed" data-toggle="collapse" href="#answer2">Ответить
+                                                </button>
+                                                <li class="comments__item">
+                                                    <button type="button" class="comments__more more-js">+5 сообщений</button>
+                                                </li>
                                             </li>
                                             <li class="comments__item">
                                                 <div class="comments__body">
-                                                    <div class="comments__date">10.10.2010 21:23</div>
                                                     <div class="comments__text">
                                                         <strong>Джамал Малик</strong> Lorem ipsum dolor amet flannel pop-up VHS, lyft kickstarter succulents messenger bag austin copper mug sriracha tousled.
                                                     </div>
+                                                    <div class="comments__date">21:23</div>
                                                 </div>
                                             </li>
                                         </ul>
-                                        <textarea class="comments__textarea" placeholder="Добавить комментарий..."></textarea>
-                                        <div class="text-right mt-2">
-                                            <button type="submit" class="button -black comments__button">Ответить</button>
+                                        <div class="comments__textareaWrap">
+                                            <textarea class="comments__textarea" placeholder="Добавить комментарий..."></textarea>
+                                            <div class="text-right">
+                                                <button type="submit">Опубликовать</button>
+                                            </div>
                                         </div>
                                     </aside>
                                     <!--/. Aside End -->
@@ -226,6 +332,14 @@
                 <!-- Footer Begin -->
                 <footer class="footer">
                     <div class="container footer__container">
+
+                        <div class="footer__copyright">
+                            <span>© yelikbayev.online</span>
+                            All Rights Reserved.
+                            <a href="mailto:info@yelikbayev.online">info@yelikbayev.online</a>
+                            <a href="tel:77477331010">+7 747 733 10 10</a>
+                        </div>
+
                         <ul class="footer__menu">
                             <li>
                                 <a href="#" class="footer__menu-link">Публичная оферта</a>
@@ -234,10 +348,27 @@
                                 <a href="#" class="footer__menu-link">Политика безопасности</a>
                             </li>
                         </ul>
-                        <div class="footer__copyright">
-                            <span>© Elikbayev.kz</span>
-                            <br>All Rights Reserved. Kazakhstan, Almaty, Baker Str. 123
+
+                        <div class="social social--footerSocial">
+                            <ul class="footer__social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+
                     </div>
                 </footer>
                 <!--/. Footer End -->
@@ -261,8 +392,9 @@
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
         <script src="static/js/main.js"></script>
+        <!-- <script src="static/js/plugins/jquery.maskedinput.js"></script> -->
         <script src="static/js/separate-js/scripts.js"></script>
 
     </body>
