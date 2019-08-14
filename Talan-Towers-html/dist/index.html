@@ -1,170 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Talan Towers</title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="assets/styles.min.css">
+    </head>
+    
+    <body>
+        <!-- <div class="side-bar">-->
+        <!-- asdasasdsa-->
+        <!-- </div>-->
+        <div class="content-side">
+            <div class="inner-page inner-page--main-page">
+                <div class="reservation">
+                    <div class="reservation__header">
+                        <div class="reservation__calendar">
+                            <div class="reservation__reservation-date">
+                                <div class="reservation__date-img">
+                                    <img src="assets/icons/calendar.svg" alt="">
+                                </div>
+                                <input type="text" id="datepicker" autocomplete="off" class="date-format">
+                                <p>Сегодня</p>
+                            </div>
+                        </div>
+                        <div class="reservation__panel-control  authorization localization-lang">
+                            <div class="authorization__authorized" href="#"> <a class="authorized-js" href="#">Кайсин Арлан Мухтарулы <i class="icon-down-open-big"></i></a>
 
-<!DOCTYPE html>
-<html lang="en">
+                                <ul
+                                class="dropdown-menu">
+                                    <li><a href="#">Мой профиль</a>
+                                    </li>
+                                    <li><a href="#">История платежей</a>
+                                    </li>
+                                    </ul>
+                            </div> <a class="authorization__log-in log-out-js" href="#">Выход</a>
+ <a class="authorization__log-in log-in-js"
+                            href="#">Вход</a>
+ <a class="authorization__registration registration-js"
+                            href="#">Регистрация</a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TALAN TOWERS</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
-    <link rel="manifest" href="images/favicon//site.webmanifest">
-    <link rel="mask-icon" href="images/favicon//safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-</head>
+                            <div class="localization-lang__select"> <span class="lang">RU</span><i class="icon-down-open-big"></i>
 
-<body>
+                                <ul class="language-select">
+                                    <li class="activel">RU</li>
+                                    <li>EN</li>
+                                    <li>KZ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-wrap">
+                        <div class="table-wrap__table-header">
+                            <div class="table-wrap__header-item">
+                                <p>Зал А на <span>10 <i class="icon-user"></i></span>
+                                </p>
+                            </div>
+                            <div class="table-wrap__header-item">
+                                <p>Зал b на <span>10 <i class="icon-user"></i></span>
+                                </p>
+                            </div>
+                            <div class="table-wrap__header-item">
+                                <p>Зал C на <span>10 <i class="icon-user"></i><i class="icon-camera"></i></span>
+                                </p>
+                            </div>
+                            <div class="table-wrap__header-item">
+                                <p>Зал D на <span>10 <i class="icon-user"></i></span>
+                                </p>
+                            </div>
+                            <div class="table-wrap__header-item">
+                                <p>Зал E на <span>10 <i class="icon-user"></i></span>
+                                </p>
+                            </div>
+                            <div class="table-wrap__header-item">
+                                <p>Зал F на <span>10 <i class="icon-user"></i></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="scroll-table scroll-table--top"> <i class="icon-up-open-big"></i>
 
-<style>
-    .main {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: relative;
-        background-size: cover;
-        padding: 30px 0;
-    }
+                        </div>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="time reserving-time">07:00</td>
+                                    <td class=" td-free reserving" rowspan="5">07:00-09:00
+                                        <div class="reservation-selection"> <a href="#" class="btn btn--table-reservation">Забронировать</a>
+ <a href="#"
+                                            class="cancel">отмена</a>
 
-    .logo {
-        margin-bottom: 30px;
-        text-transform: uppercase;
-        color: #ffc400;
-        position: relative;
-        font-size: 40px;
-    }
+                                        </div>
+                                    </td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free reserved" rowspan="6">07:00-9:30</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">08:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time reserving-time">09:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">10:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">11:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free reserved" rowspan="4">11:30-13:00</td>
+                                    <td class=" td-free reserved" rowspan="4">11:30-13:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free reserved" rowspan="4">11:30-13:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">12:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">13:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">14:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">15:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">16:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">17:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">18:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">19:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">20:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">21:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                                <tr>
+                                    <td class="time">22:00</td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                    <td class=" td-free"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="scroll-table scroll-table--bottom"> <i class="icon-down-open-big"></i>
 
-    @media (max-width: 767.98px) {
-        .logo {
-            margin-bottom: 0;
-            font-size: 30px;
-        }
-    }
+                        </div>
+                    </div>
+                    <div class="additional-info">
+                        <div class="hall-info">
+                            <p><i class="icon-camera"></i>– Зал С имеет особенное оборудование под названием
+                                «Cisco» c
+                                <br>помощью которого посетители могут производить видеозвонки и т. д.</p>
+                        </div>
+                        <div class="btn-wrap"> <a href="#" class="btn btn-submit">Забронировать</a>
 
-    img {
-        width: 100%;
-        max-width: 100%;
-    }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="authorization-window window-popup">
+                 <h2 class="caption">Вход</h2>
 
-    ul {
-        margin: 0;
-        padding: 0;
-        column-count: 1;
-        width: 100%;
-        max-width: 100%;
-    }
+                <form action="">
+                    <div class="window-popup__input input-js">
+                        <label class="label" for="E-mail">E-mail адрес</label>
+                        <input id="E-mail" type='text'>
+                    </div>
+                    <div class="window-popup__input input-js">
+                        <label class="label" for="password">Пароль</label>
+                        <input id="password" type='password'>
+                    </div> <a href="#" class="window-popup__password-recovery">Забыли пароль?</a>
 
+                    <button
+                    type="submit" class="btn">Войти</button>
+                </form>
+                <div class="window-popup__close close-js">
+                    <img src="assets/icons/close.svg" alt="">
+                </div>
+            </div>
+            <div class="recovery-window window-popup">
+                 <h2 class="caption">Забыли пароль?</h2>
 
-    li {
-        list-style-type: none;
-    }
+                <form action="">
+                    <p>Введите зарегистрированный e-mail для восстановления пароля</p>
+                    <div class="window-popup__input input-js">
+                        <label class="label" for="E-mail">E-mail адрес</label>
+                        <input id="E-mail" type='text'>
+                    </div>
+                    <button type="submit" class="btn">Восстановить пароль</button>
+                </form>
+                <div class="window-popup__close close-js">
+                    <img src="assets/icons/close.svg" alt="">
+                </div>
+            </div>
+            <div class="registration-window window-popup">
+                 <h2 class="caption">Регистрация</h2>
 
-    ul li a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 20px;
-        line-height: 1.8;
-        position: relative;
-        padding-left: 25px;
-        transition: all .3s
-    }
+                <form action="">
+                     <h5>Введите данные</h5>
 
-    @media (max-width: 1199.98px) {
-        ul li a {
-            font-size: 16px
-        }
-    }
+                    <div class="window-popup__input input-js">
+                        <label class="label" for="name">Ф.И.О.</label>
+                        <input id="name" type='text'>
+                    </div>
+                    <div class="window-popup__input input-js">
+                        <label class="label" for="E-mail">E-mail адрес</label>
+                        <input id="E-mail" type='text'>
+                    </div>
+                    <div class="window-popup__input input-js">
+                        <label class="label" for="num-phone">Номер телефона</label>
+                        <input id="num-phone" type='text'>
+                    </div>
+                     <h5>Придумайте пароль</h5>
 
-    @media (max-width: 991.98px) {
-        ul li a {
-            font-size: 14px;
-            padding-left: 10px
-        }
-    }
+                    <div class="window-popup__input input-js">
+                        <label class="label" for="input">Пароль</label>
+                        <input id="input" type='password'>
+                    </div>
+                    <div class="window-popup__input input-js">
+                        <label class="label" for="password-check">Проверка пароля</label>
+                        <input id="password-check" type='password'>
+                    </div>
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </form>
+                <div class="window-popup__close close-js">
+                    <img src="assets/icons/close.svg" alt="">
+                </div>
+            </div>
+            <div class="check-mail-window window-popup">
+                 <h2 class="caption">Проверьте почту</h2>
 
-    @media (max-width: 767.98px) {
-        ul li a {
-            color: #fff
-        }
-    }
+                <p>Для завершения регистрации подтвердите e-mail адрес</p>
+                <button type="submit"
+                class="btn">Вернуться к бронированию</button>
+                <div class="window-popup__close close-js">
+                    <img src="assets/icons/close.svg" alt="">
+                </div>
+            </div>
+            <div class="reservation-window window-popup window-popup--reservation">
+                <div class="window-popup__caption">
+                     <h2>Забронировать зал(-ы)</h2>
 
-    ul li a::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        border: 1px solid #fff;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: all .3s
-    }
+                </div>
+                <form action="#">
+                    <div class="window-popup__conference-hall row no-gutters">
+                        <div class="col-md-4">
+                            <div class="agreement agreement--reservation-hall">
+                                <input type="checkbox" id="hall1">
+                                <label for="hall1">Конференц зал 1</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="agreement agreement--reservation-hall">
+                                <input type="checkbox" id="hall3">
+                                <label for="hall3">Конференц зал 3</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="agreement agreement--reservation-hall">
+                                <input type="checkbox" id="hall5">
+                                <label for="hall5">Конференц зал 5</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="agreement agreement--reservation-hall">
+                                <input type="checkbox" id="hall2">
+                                <label for="hall2">Конференц зал 2</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="agreement agreement--reservation-hall">
+                                <input type="checkbox" id="hall4">
+                                <label for="hall4">Конференц зал 4</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="agreement agreement--reservation-hall">
+                                <input type="checkbox" id="hall6">
+                                <label for="hall6">Конференц зал 6</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__caption">
+                         <h2>Дата и время бронирования</h2>
 
-    @media (max-width: 1199.98px) {
-        ul li a:before {
-            width: 12px;
-            height: 12px;
-            left: 5px;
-        }
-    }
+                    </div>
+                    <div class="window-popup__reservation-date-wrap">
+                        <div class="window-popup__reservation-item">
+                            <div class="window-popup__reservation-date">
+                                <div class="window-popup__date-img">
+                                    <img src="assets/icons/calendar.svg" alt="">
+                                </div>
+                                <input type="text" id="datepicker1" autocomplete="off" class="date-format">
+                                <p>С</p>
+                            </div>
+                            <div class="window-popup__reservation-hours">
+                                <input type="text" id="from" class="timepicker" autocomplete="off">
+                                <p>до</p>
+                                <input type="text" id="up-to" class="timepicker" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__caption">
+                         <h2>Контактные данные</h2>
 
-    @media (max-width: 991.98px) {
-        ul li a:before {
-            width: 10px;
-            height: 10px;
-            left: -8px
-        }
-    }
+                    </div>
+                    <div class="window-popup__contact-details">
+                        <div class="window-popup__input input-js">
+                            <label class="label" for="name">Ф.И.О.</label>
+                            <input id="name" type='text'>
+                        </div>
+                        <div class="window-popup__input input-js">
+                            <label class="label" for="E-mail">E-mail адрес</label>
+                            <input id="E-mail" type='text'>
+                        </div>
+                        <div class="window-popup__input input-js">
+                            <label class="label" for="num-phone">Номер телефона</label>
+                            <input id="num-phone" type='text'>
+                        </div>
+                    </div>
+                    <div class="window-popup__caption">
+                         <h2>Дополнительно</h2>
 
+                        <div class="trigger-js"> <i class="icon-down-open-big"></i>
 
-    ul li a:hover {
-        color: #cd8f38;
-        text-decoration: none;
-    }
+                        </div>
+                    </div>
+                    <div class="window-popup__additionally additionally-list-js">
+                        <div class="window-popup__additionally-list">
+                            <div class="window-popup__additionally-item">
+                                <div class="window-popup__additionally-product row no-gutters">
+                                    <div class="agreement agreement--reservation-hall col-lg-3">
+                                        <input type="checkbox" id="product1">
+                                        <label for="product1">Вода <span>0,5л</span>
 
-    ul li a:hover:before {
-        border: 1px solid #cd8f38;
-    }
-</style>
-<div class="main" style="background-image:url(../../iside.jpg)">
-    <div class="logo">Talan Towers</div>
-    <div class="list">
-        <ul>
-            <li>
-                <a target="_blank" href="main.html">Главная</a>
-            </li>
-            <li>
-                <a target="_blank" href="profile.html">Профиль</a>
-            </li>
-            <li>
-                <a target="_blank" href="edit-profile.html">Редактирование профиля</a>
-            </li>
-            <li>
-                <a target="_blank" href="history.html">История платежей</a>
-            </li>
-            <li>
-                <a target="_blank" href="list-services.html">Список выбранных услуг</a>
-            </li>
-        </ul>
-    </div>
-</div>
+                                        </label>
+                                    </div>
+                                    <div class="quantity-block col-lg-1"> <span class="quantity-arrow-minus" id="minus-js"></span>
 
-</body>
+                                        <input class="quantity-num"
+                                        type="number" value="1" /> <span class="quantity-arrow-plus" id="plus-js"></span>
 
+                                    </div>
+                                    <p>шт.</p>
+                                    <div class="window-popup__additionally-product-total col-lg-4">
+                                        <p>500 тг</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="window-popup__additionally-item">
+                                <div class="window-popup__additionally-product row no-gutters">
+                                    <div class="agreement agreement--reservation-hall col-lg-3">
+                                        <input type="checkbox" id="product4">
+                                        <label for="product4">Трансфер</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="window-popup__additionally-item">
+                                <div class="window-popup__additionally-product row no-gutters">
+                                    <div class="agreement agreement--reservation-hall col-lg-3">
+                                        <p>Прибытия рейса</p>
+                                    </div>
+                                    <div class="quantity-block quantity-block--arrival col-lg-1">
+                                        <input type="text" id="from" class="timepicker" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="window-popup__additionally-item">
+                                <div class="window-popup__additionally-product row no-gutters">
+                                    <div class="agreement agreement--reservation-hall col-lg-3">
+                                        <p>Номер рейса</p>
+                                    </div>
+                                    <div class="quantity-block quantity-block--arrival col-lg-1">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="window-popup__additionally-item">
+                                <div class="window-popup__additionally-product row no-gutters">
+                                    <div class="agreement agreement--reservation-hall col-lg-3">
+                                        <p>Пассажиры</p>
+                                    </div>
+                                    <div class="quantity-block col-lg-1"> <span class="quantity-arrow-minus" id="minus-js"></span>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+                                        <input class="quantity-num"
+                                        type="number" value="1" /> <span class="quantity-arrow-plus" id="plus-js"></span>
 
+                                    </div>
+                                    <p>чел.</p>
+                                    <div class="window-popup__additionally-product-total col-lg-4">
+                                        <p>4000 тг</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__total-wrap service__total-wrap--reservation">
+                        <div class="service__total-cap">
+                            <p>Итого</p>
+                        </div>
+                        <div class="service__total">
+                            <p>35 120 тг</p>
+                            <ul class="change-currency">
+                                <li class="change-currency__item"><a href="#">USD</a>
+
+                                </li>
+                                <li class="change-currency__item change-currency__item--active"><a href="#">KZT</a>
+
+                                </li>
+                                <li class="change-currency__item"><a href="#">RUB</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pay pay--reservation"> <a href="#" class="btn">Забронировать</a>
+
+                    </div>
+                    <div class="window-popup__caption">
+                         <h2>Купить еще</h2>
+
+                    </div>
+                </form>
+                <div class="window-popup__close close-js">
+                    <img src="assets/icons/close.svg" alt="">
+                </div>
+                <div class="window-popup__buy-more">
+                    <div class="row">
+                        <div class="col-lg-6"> <a class="window-popup__more" href="#">
+                    <div class="window-popup__more-img">
+                        <img src="assets/img/service/service.jpg" alt="">
+                    </div>
+                    <p>Аренда рабочего места</p>
+                </a>
+
+                        </div>
+                        <div class="col-lg-6"> <a class="window-popup__more" href="#">
+                    <div class="window-popup__more-img">
+                        <img src="assets/img/service/service.jpg" alt="">
+                    </div>
+                    <p>Аренда капсулы сна</p>
+                </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/scripts.min.js"></script>
+    </body>
 
 </html>

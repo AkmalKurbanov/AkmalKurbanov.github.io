@@ -14,7 +14,9 @@
         <button
         type="submit" class="btn">Войти</button>
     </form>
-    <div class="window-popup__close close-js"></div>
+    <div class="window-popup__close close-js">
+        <img src="assets/icons/close.svg" alt="">
+    </div>
 </div>
 <div class="recovery-window window-popup">
      <h2 class="caption">Забыли пароль?</h2>
@@ -27,7 +29,9 @@
         </div>
         <button type="submit" class="btn">Восстановить пароль</button>
     </form>
-    <div class="window-popup__close close-js"></div>
+    <div class="window-popup__close close-js">
+        <img src="assets/icons/close.svg" alt="">
+    </div>
 </div>
 <div class="registration-window window-popup">
      <h2 class="caption">Регистрация</h2>
@@ -59,7 +63,9 @@
         </div>
         <button type="submit" class="btn">Зарегистрироваться</button>
     </form>
-    <div class="window-popup__close close-js"></div>
+    <div class="window-popup__close close-js">
+        <img src="assets/icons/close.svg" alt="">
+    </div>
 </div>
 <div class="check-mail-window window-popup">
      <h2 class="caption">Проверьте почту</h2>
@@ -67,7 +73,9 @@
     <p>Для завершения регистрации подтвердите e-mail адрес</p>
     <button type="submit"
     class="btn">Вернуться к бронированию</button>
-    <div class="window-popup__close close-js"></div>
+    <div class="window-popup__close close-js">
+        <img src="assets/icons/close.svg" alt="">
+    </div>
 </div>
 <div class="reservation-window window-popup window-popup--reservation">
     <div class="window-popup__caption">
@@ -118,15 +126,19 @@
 
         </div>
         <div class="window-popup__reservation-date-wrap">
-            <div class="window-popup__reservation-date">
-                <p class="window-popup__reservation-date-choose">
-                    <img src="../assets/icons/calendar.svg" alt="">Воскресенье, 17 сентября 2019 год</p>
-                <p>С</p>
-            </div>
-            <div class="window-popup__reservation-hours">
-                <input type="text" id="from">
-                <p>до</p>
-                <input type="text" id="up-to">
+            <div class="window-popup__reservation-item">
+                <div class="window-popup__reservation-date">
+                    <div class="window-popup__date-img">
+                        <img src="assets/icons/calendar.svg" alt="">
+                    </div>
+                    <input type="text" id="datepicker1" autocomplete="off" class="date-format">
+                    <p>С</p>
+                </div>
+                <div class="window-popup__reservation-hours">
+                    <input type="text" id="from" class="timepicker" autocomplete="off">
+                    <p>до</p>
+                    <input type="text" id="up-to" class="timepicker" autocomplete="off">
+                </div>
             </div>
         </div>
         <div class="window-popup__caption">
@@ -186,6 +198,26 @@
                 <div class="window-popup__additionally-item">
                     <div class="window-popup__additionally-product row no-gutters">
                         <div class="agreement agreement--reservation-hall col-lg-3">
+                            <p>Прибытия рейса</p>
+                        </div>
+                        <div class="quantity-block quantity-block--arrival col-lg-1">
+                            <input type="text" id="from" class="timepicker" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="window-popup__additionally-item">
+                    <div class="window-popup__additionally-product row no-gutters">
+                        <div class="agreement agreement--reservation-hall col-lg-3">
+                            <p>Номер рейса</p>
+                        </div>
+                        <div class="quantity-block quantity-block--arrival col-lg-1">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="window-popup__additionally-item">
+                    <div class="window-popup__additionally-product row no-gutters">
+                        <div class="agreement agreement--reservation-hall col-lg-3">
                             <p>Пассажиры</p>
                         </div>
                         <div class="quantity-block col-lg-1"> <span class="quantity-arrow-minus" id="minus-js"></span>
@@ -229,7 +261,9 @@
 
         </div>
     </form>
-    <div class="window-popup__close close-js"></div>
+    <div class="window-popup__close close-js">
+        <img src="assets/icons/close.svg" alt="">
+    </div>
     <div class="window-popup__buy-more">
         <div class="row">
             <div class="col-lg-6"> <a class="window-popup__more" href="#">
