@@ -1,151 +1,50 @@
-<div class="authorization-window window-popup">
-     <h2 class="caption">Вход</h2>
+<div class="modal" id="log-in">
+    <div class="authorization-window window-popup">
+         <h2 class="caption">Вход</h2>
 
-    <form action="">
-        <div class="window-popup__input input-js">
-            <label class="label" for="E-mail">E-mail адрес</label>
-            <input id="E-mail" type='text'>
+        <form action="">
+            <div class="window-popup__input input-js">
+                <label class="label" for="E-mail">E-mail адрес</label>
+                <input id="E-mail" type='text'>
+            </div>
+            <div class="window-popup__input input-js">
+                <label class="label" for="password">Пароль</label>
+                <input id="password" type='password'>
+            </div> <a href="#" class="window-popup__password-recovery" data-toggle="modal"
+            data-target="#recovery">Забыли
+                пароль?</a>
+
+            <button type="submit" class="btn">Войти</button>
+        </form>
+        <div class="window-popup__close close-js" data-dismiss="modal" aria-label="Close">
+            <img src="assets/icons/close.svg" alt="">
         </div>
-        <div class="window-popup__input input-js">
-            <label class="label" for="password">Пароль</label>
-            <input id="password" type='password'>
-        </div> <a href="#" class="window-popup__password-recovery">Забыли пароль?</a>
-
-        <button
-        type="submit" class="btn">Войти</button>
-    </form>
-    <div class="window-popup__close close-js">
-        <img src="assets/icons/close.svg" alt="">
     </div>
 </div>
-<div class="recovery-window window-popup">
-     <h2 class="caption">Забыли пароль?</h2>
+<div class="modal" id="recovery">
+    <div class="recovery-window window-popup">
+         <h2 class="caption">Забыли пароль?</h2>
 
-    <form action="">
-        <p>Введите зарегистрированный e-mail для восстановления пароля</p>
-        <div class="window-popup__input input-js">
-            <label class="label" for="E-mail">E-mail адрес</label>
-            <input id="E-mail" type='text'>
+        <form action="">
+            <p>Введите зарегистрированный e-mail для восстановления пароля</p>
+            <div class="window-popup__input input-js">
+                <label class="label" for="E-mail">E-mail адрес</label>
+                <input id="E-mail" type='text'>
+            </div>
+            <button type="submit" class="btn">Восстановить пароль</button>
+        </form>
+        <div class="window-popup__close close-js" data-dismiss="modal" aria-label="Close">
+            <img src="assets/icons/close.svg" alt="">
         </div>
-        <button type="submit" class="btn">Восстановить пароль</button>
-    </form>
-    <div class="window-popup__close close-js">
-        <img src="assets/icons/close.svg" alt="">
     </div>
 </div>
-<div class="registration-window window-popup">
-     <h2 class="caption">Регистрация</h2>
+<div class="modal" id="registartion">
+    <div class="registration-window window-popup">
+         <h2 class="caption">Регистрация</h2>
 
-    <form action="">
-         <h5>Введите данные</h5>
+        <form action="">
+             <h5>Введите данные</h5>
 
-        <div class="window-popup__input input-js">
-            <label class="label" for="name">Ф.И.О.</label>
-            <input id="name" type='text'>
-        </div>
-        <div class="window-popup__input input-js">
-            <label class="label" for="E-mail">E-mail адрес</label>
-            <input id="E-mail" type='text'>
-        </div>
-        <div class="window-popup__input input-js">
-            <label class="label" for="num-phone">Номер телефона</label>
-            <input id="num-phone" type='text'>
-        </div>
-         <h5>Придумайте пароль</h5>
-
-        <div class="window-popup__input input-js">
-            <label class="label" for="input">Пароль</label>
-            <input id="input" type='password'>
-        </div>
-        <div class="window-popup__input input-js">
-            <label class="label" for="password-check">Проверка пароля</label>
-            <input id="password-check" type='password'>
-        </div>
-        <button type="submit" class="btn">Зарегистрироваться</button>
-    </form>
-    <div class="window-popup__close close-js">
-        <img src="assets/icons/close.svg" alt="">
-    </div>
-</div>
-<div class="check-mail-window window-popup">
-     <h2 class="caption">Проверьте почту</h2>
-
-    <p>Для завершения регистрации подтвердите e-mail адрес</p>
-    <button type="submit"
-    class="btn">Вернуться к бронированию</button>
-    <div class="window-popup__close close-js">
-        <img src="assets/icons/close.svg" alt="">
-    </div>
-</div>
-<div class="reservation-window window-popup window-popup--reservation">
-    <div class="window-popup__caption">
-         <h2>Забронировать зал(-ы)</h2>
-
-    </div>
-    <form action="#">
-        <div class="window-popup__conference-hall row no-gutters">
-            <div class="col-md-4">
-                <div class="agreement agreement--reservation-hall">
-                    <input type="checkbox" id="hall1">
-                    <label for="hall1">Конференц зал 1</label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="agreement agreement--reservation-hall">
-                    <input type="checkbox" id="hall3">
-                    <label for="hall3">Конференц зал 3</label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="agreement agreement--reservation-hall">
-                    <input type="checkbox" id="hall5">
-                    <label for="hall5">Конференц зал 5</label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="agreement agreement--reservation-hall">
-                    <input type="checkbox" id="hall2">
-                    <label for="hall2">Конференц зал 2</label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="agreement agreement--reservation-hall">
-                    <input type="checkbox" id="hall4">
-                    <label for="hall4">Конференц зал 4</label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="agreement agreement--reservation-hall">
-                    <input type="checkbox" id="hall6">
-                    <label for="hall6">Конференц зал 6</label>
-                </div>
-            </div>
-        </div>
-        <div class="window-popup__caption">
-             <h2>Дата и время бронирования</h2>
-
-        </div>
-        <div class="window-popup__reservation-date-wrap">
-            <div class="window-popup__reservation-item">
-                <div class="window-popup__reservation-date">
-                    <div class="window-popup__date-img">
-                        <img src="assets/icons/calendar.svg" alt="">
-                    </div>
-                    <input type="text" id="datepicker1" autocomplete="off" class="date-format">
-                    <p>С</p>
-                </div>
-                <div class="window-popup__reservation-hours">
-                    <input type="text" id="from" class="timepicker" autocomplete="off">
-                    <p>до</p>
-                    <input type="text" id="up-to" class="timepicker" autocomplete="off">
-                </div>
-            </div>
-        </div>
-        <div class="window-popup__caption">
-             <h2>Контактные данные</h2>
-
-        </div>
-        <div class="window-popup__contact-details">
             <div class="window-popup__input input-js">
                 <label class="label" for="name">Ф.И.О.</label>
                 <input id="name" type='text'>
@@ -158,129 +57,428 @@
                 <label class="label" for="num-phone">Номер телефона</label>
                 <input id="num-phone" type='text'>
             </div>
-        </div>
-        <div class="window-popup__caption">
-             <h2>Дополнительно</h2>
+             <h5>Придумайте пароль</h5>
 
-            <div class="trigger-js"> <i class="icon-down-open-big"></i>
-
+            <div class="window-popup__input input-js">
+                <label class="label" for="input">Пароль</label>
+                <input id="input" type='password'>
             </div>
-        </div>
-        <div class="window-popup__additionally additionally-list-js">
-            <div class="window-popup__additionally-list">
-                <div class="window-popup__additionally-item">
-                    <div class="window-popup__additionally-product row no-gutters">
-                        <div class="agreement agreement--reservation-hall col-lg-3">
-                            <input type="checkbox" id="product1">
-                            <label for="product1">Вода <span>0,5л</span>
-                            </label>
-                        </div>
-                        <div class="quantity-block col-lg-1"> <span class="quantity-arrow-minus" id="minus-js"></span>
-
-                            <input class="quantity-num"
-                            type="number" value="1" /> <span class="quantity-arrow-plus" id="plus-js"></span>
-
-                        </div>
-                        <p>шт.</p>
-                        <div class="window-popup__additionally-product-total col-lg-4">
-                            <p>500 тг</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="window-popup__additionally-item">
-                    <div class="window-popup__additionally-product row no-gutters">
-                        <div class="agreement agreement--reservation-hall col-lg-3">
-                            <input type="checkbox" id="product4">
-                            <label for="product4">Трансфер</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="window-popup__additionally-item">
-                    <div class="window-popup__additionally-product row no-gutters">
-                        <div class="agreement agreement--reservation-hall col-lg-3">
-                            <p>Прибытия рейса</p>
-                        </div>
-                        <div class="quantity-block quantity-block--arrival col-lg-1">
-                            <input type="text" id="from" class="timepicker" autocomplete="off">
-                        </div>
-                    </div>
-                </div>
-                <div class="window-popup__additionally-item">
-                    <div class="window-popup__additionally-product row no-gutters">
-                        <div class="agreement agreement--reservation-hall col-lg-3">
-                            <p>Номер рейса</p>
-                        </div>
-                        <div class="quantity-block quantity-block--arrival col-lg-1">
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="window-popup__additionally-item">
-                    <div class="window-popup__additionally-product row no-gutters">
-                        <div class="agreement agreement--reservation-hall col-lg-3">
-                            <p>Пассажиры</p>
-                        </div>
-                        <div class="quantity-block col-lg-1"> <span class="quantity-arrow-minus" id="minus-js"></span>
-
-                            <input class="quantity-num"
-                            type="number" value="1" /> <span class="quantity-arrow-plus" id="plus-js"></span>
-
-                        </div>
-                        <p>чел.</p>
-                        <div class="window-popup__additionally-product-total col-lg-4">
-                            <p>4000 тг</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="window-popup__input input-js">
+                <label class="label" for="password-check">Проверка пароля</label>
+                <input id="password-check" type='password'>
             </div>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+        </form>
+        <div class="window-popup__close close-js" data-dismiss="modal" aria-label="Close">
+            <img src="assets/icons/close.svg" alt="">
         </div>
-        <div class="service__total-wrap service__total-wrap--reservation">
-            <div class="service__total-cap">
-                <p>Итого</p>
-            </div>
-            <div class="service__total">
-                <p>35 120 тг</p>
-                <ul class="change-currency">
-                    <li class="change-currency__item"><a href="#">USD</a>
-
-                    </li>
-                    <li class="change-currency__item change-currency__item--active"><a href="#">KZT</a>
-
-                    </li>
-                    <li class="change-currency__item"><a href="#">RUB</a>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="pay pay--reservation"> <a href="#" class="btn">Забронировать</a>
-
-        </div>
-        <div class="window-popup__caption">
-             <h2>Купить еще</h2>
-
-        </div>
-    </form>
-    <div class="window-popup__close close-js">
-        <img src="assets/icons/close.svg" alt="">
     </div>
-    <div class="window-popup__buy-more">
-        <div class="row">
-            <div class="col-lg-6"> <a class="window-popup__more" href="#">
-                    <div class="window-popup__more-img">
-                        <img src="assets/img/service/service.jpg" alt="">
+</div>
+<div class="modal" id="check-mail">
+    <div class="check-mail-window window-popup">
+         <h2 class="caption">Проверьте почту</h2>
+
+        <p>Для завершения регистрации подтвердите e-mail адрес</p>
+        <button type="submit"
+        class="btn">Вернуться к бронированию</button>
+        <div class="window-popup__close close-js"
+        data-dismiss="modal" aria-label="Close">
+            <img src="assets/icons/close.svg" alt="">
+        </div>
+    </div>
+</div>
+<div class="modal" id="reservation">
+    <div class="reservation-window window-popup window-popup--reservation">
+        <div class="window-popup__caption">
+             <h2>Забронировать зал(-ы)</h2>
+
+        </div>
+        <form action="#">
+            <div class="window-popup__conference-hall row no-gutters">
+                <div class="col-md-4">
+                    <div class="agreement agreement--reservation-hall">
+                        <input type="checkbox" id="hall1">
+                        <label for="hall1">Конференц зал 1</label>
                     </div>
-                    <p>Аренда рабочего места</p>
-                </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="agreement agreement--reservation-hall">
+                        <input type="checkbox" id="hall3">
+                        <label for="hall3">Конференц зал 3</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="agreement agreement--reservation-hall">
+                        <input type="checkbox" id="hall5">
+                        <label for="hall5">Конференц зал 5</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="agreement agreement--reservation-hall">
+                        <input type="checkbox" id="hall2">
+                        <label for="hall2">Конференц зал 2</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="agreement agreement--reservation-hall">
+                        <input type="checkbox" id="hall4">
+                        <label for="hall4">Конференц зал 4</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="agreement agreement--reservation-hall">
+                        <input type="checkbox" id="hall6">
+                        <label for="hall6">Конференц зал 6</label>
+                    </div>
+                </div>
+            </div>
+            <div class="window-popup__caption">
+                 <h2>Дата и время бронирования</h2>
 
             </div>
-            <div class="col-lg-6"> <a class="window-popup__more" href="#">
-                    <div class="window-popup__more-img">
-                        <img src="assets/img/service/service.jpg" alt="">
-                    </div>
-                    <p>Аренда капсулы сна</p>
-                </a>
+            <div class="window-popup__reservation-date-wrap">
+                <div class="window-popup__reservation-item-wrap">
+                    <div class="window-popup__reservation-item">
+                        <div class="window-popup__reservation-date">
+                            <div class="window-popup__date-img">
+                                <img src="assets/icons/calendar.svg" alt="">
+                            </div>
+                            <p class="window-popup__date date-choose-js">Воскресенье, 17 сентября 2019 год</p>
+                            <input class="hidden-field" type="text"
+                            autocomplete="off">
+                            <p>С</p>
+                        </div>
+                        <div class="window-popup__reservation-hours">
+                            <input type="text" id="from" class="timepicker" autocomplete="off">
+                            <p>до</p>
+                            <input type="text" id="up-to" class="timepicker" autocomplete="off">
+                        </div>
+                    </div> <a href="#" class="add-more effect-underline">Добавить дату</a>
 
+                </div>
+            </div>
+            <div class="window-popup__caption">
+                 <h2>Контактные данные</h2>
+
+            </div>
+            <div class="window-popup__contact-details">
+                <div class="window-popup__input input-js">
+                    <label class="label" for="name">Ф.И.О.</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="window-popup__input input-js">
+                    <label class="label" for="E-mail">E-mail адрес</label>
+                    <input id="E-mail" type='text'>
+                </div>
+                <div class="window-popup__input input-js">
+                    <label class="label" for="num-phone1">Номер телефона</label>
+                    <input id="num-phone1" type="text">
+                </div>
+            </div>
+            <div class="window-popup__caption">
+                 <h2>Дополнительно</h2>
+
+                <div class="trigger-js"> <i class="icon-down-open-big"></i>
+
+                </div>
+            </div>
+            <div class="window-popup__additionally additionally-list-js">
+                <div class="window-popup__additionally-list">
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <input type="checkbox" id="product1">
+                                <label for="product1">Вода <span>0,5л</span>
+                                </label>
+                            </div>
+                            <div class="quantity-block col-lg-1"> <span class="quantity-arrow-minus" id="minus-js"></span>
+
+                                <input class="quantity-num"
+                                type="number" value="1" /> <span class="quantity-arrow-plus" id="plus-js"></span>
+
+                            </div>
+                            <p>шт.</p>
+                            <div class="window-popup__additionally-product-total col-lg-4">
+                                <p>500 тг</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <input type="checkbox" id="product4">
+                                <label for="product4">Трансфер</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <p>Прибытия рейса</p>
+                            </div>
+                            <div class="quantity-block quantity-block--arrival col-lg-1">
+                                <input type="text" id="from" class="timepicker" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <p>Номер рейса</p>
+                            </div>
+                            <div class="quantity-block quantity-block--arrival col-lg-1">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <p>Пассажиры</p>
+                            </div>
+                            <div class="quantity-block col-lg-1"> <span class="quantity-arrow-minus" id="minus-js"></span>
+
+                                <input class="quantity-num"
+                                type="number" value="1" /> <span class="quantity-arrow-plus" id="plus-js"></span>
+
+                            </div>
+                            <p>чел.</p>
+                            <div class="window-popup__additionally-product-total col-lg-4">
+                                <p>4000 тг</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service__total-wrap service__total-wrap--reservation">
+                <div class="service__total-cap">
+                    <p>Итого</p>
+                </div>
+                <div class="service__total">
+                    <p>35 120 тг</p>
+                    <ul class="change-currency">
+                        <li class="change-currency__item"><a href="#">USD</a>
+
+                        </li>
+                        <li class="change-currency__item change-currency__item--active"><a href="#">KZT</a>
+
+                        </li>
+                        <li class="change-currency__item"><a href="#">RUB</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pay pay--reservation">
+                <button type="submit" class="btn">Забронировать</button>
+            </div>
+            <div class="window-popup__caption">
+                 <h2>Купить еще</h2>
+
+            </div>
+        </form>
+        <div class="window-popup__close close-js" data-dismiss="modal" aria-label="Close">
+            <img src="assets/icons/close.svg" alt="">
+        </div>
+        <div class="window-popup__buy-more">
+            <div class="row">
+                <div class="col-lg-6"> <a class="window-popup__more" href="#" data-toggle="modal" data-target="#unfixed-reservation"
+                    data-dismiss="modal">
+                        <div class="window-popup__more-img">
+                            <img src="assets/img/service/service.jpg" alt="">
+                        </div>
+                        <p>Аренда рабочего места</p>
+                    </a>
+
+                </div>
+                <div class="col-lg-6"> <a class="window-popup__more" href="#" data-toggle="modal" data-target="#unfixed-reservation"
+                    data-dismiss="modal">
+                        <div class="window-popup__more-img">
+                            <img src="assets/img/service/service.jpg" alt="">
+                        </div>
+                        <p>Аренда капсулы сна</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="unfixed-reservation">
+    <div class="unfixed-reservation-window window-popup window-popup--reservation">
+        <div class="window-popup__caption">
+             <h2>Бронирование нефиксированного рабочего места</h2>
+
+        </div>
+        <form action="#">
+            <div class="window-popup__reservation-date-wrap">
+                <div class="window-popup__reservation-item-wrap">
+                    <div class="window-popup__reservation-item">
+                        <div class="window-popup__reservation-date">
+                            <p class="window-popup__unfixed-reservation">Дата бронирования</p>
+                            <div class="window-popup__date-img">
+                                <img src="assets/icons/calendar.svg" alt="">
+                            </div>
+                            <p>С</p>
+                            <div>
+                                <p class="window-popup__date  date-choose-withoutDay-js">7 июля 2019 год</p>
+                                <input class="hidden-field-withoutDay" type="text"
+                                autocomplete="off">
+                            </div>
+                            <p>до</p>
+                            <div>
+                                <p class="window-popup__date date-choose-withoutDay-js">13 июля 2019 год</p>
+                                <input class="hidden-field-withoutDay" type="text"
+                                autocomplete="off">
+                            </div>
+                        </div>
+                    </div> <a href="#" class="add-more effect-underline">Добавить дату</a>
+
+                </div>
+            </div>
+            <div class="window-popup__caption">
+                 <h2>Контактные данные</h2>
+
+            </div>
+            <div class="window-popup__contact-details">
+                <div class="window-popup__input input-js">
+                    <label class="label" for="name">Ф.И.О.</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="window-popup__input input-js">
+                    <label class="label" for="E-mail">E-mail адрес</label>
+                    <input id="E-mail" type='text'>
+                </div>
+                <div class="window-popup__input input-js">
+                    <label class="label" for="num-phone1">Номер телефона</label>
+                    <input id="num-phone1" type="text">
+                </div>
+            </div>
+            <div class="window-popup__caption">
+                 <h2>Дополнительно</h2>
+
+                <div class="trigger-js"> <i class="icon-down-open-big"></i>
+
+                </div>
+            </div>
+            <div class="window-popup__additionally additionally-list-js">
+                <div class="window-popup__additionally-list">
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <input type="checkbox" id="product1">
+                                <label for="product1">Вода <span>0,5л</span>
+                                </label>
+                            </div>
+                            <div class="quantity-block col-lg-1">
+                                <div class="quantity-block__wrap quantity-js">
+                                    <div class="minus"></div>
+                                    <input type="text" data-min="0" data-max="100" data-step="1">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                            <div class="window-popup__additionally-product-total col-lg-2">
+                                <p>шт.</p>
+                                <p>500 тг</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <input type="checkbox" id="product4">
+                                <label for="product4">Трансфер</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <p>Прибытия рейса</p>
+                            </div>
+                            <div class="quantity-block quantity-block--arrival col-lg-1">
+                                <input type="text" id="from" class="timepicker" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <p>Номер рейса</p>
+                            </div>
+                            <div class="quantity-block quantity-block--arrival col-lg-1">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-popup__additionally-item">
+                        <div class="window-popup__additionally-product row no-gutters">
+                            <div class="agreement agreement--reservation-hall col-lg-3">
+                                <p>Пассажиры</p>
+                            </div>
+                            <div class="quantity-block col-lg-1">
+                                <div class="quantity-block__wrap quantity-js">
+                                    <div class="minus"></div>
+                                    <input type="text" data-min="0" data-max="100" data-step="1">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                            <div class="window-popup__additionally-product-total col-lg-2">
+                                <p>чел.</p>
+                                <p>4000 тг</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service__total-wrap service__total-wrap--reservation">
+                <div class="service__total-cap">
+                    <p>Итого</p>
+                </div>
+                <div class="service__total">
+                    <p>35 120 тг</p>
+                    <ul class="change-currency">
+                        <li class="change-currency__item"><a href="#">USD</a>
+
+                        </li>
+                        <li class="change-currency__item change-currency__item--active"><a href="#">KZT</a>
+
+                        </li>
+                        <li class="change-currency__item"><a href="#">RUB</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pay pay--reservation">
+                <button type="submit" class="btn">Забронировать</button>
+            </div>
+            <div class="window-popup__caption">
+                 <h2>Купить еще</h2>
+
+            </div>
+        </form>
+        <div class="window-popup__close close-js" data-dismiss="modal" aria-label="Close">
+            <img src="assets/icons/close.svg" alt="">
+        </div>
+        <div class="window-popup__buy-more">
+            <div class="row">
+                <div class="col-lg-6"> <a class="window-popup__more" href="#" data-dismiss="modal">
+                        <div class="window-popup__more-img">
+                            <img src="assets/img/service/service.jpg" alt="">
+                        </div>
+                        <p>Аренда рабочего места</p>
+                    </a>
+
+                </div>
+                <div class="col-lg-6"> <a class="window-popup__more" href="#" data-dismiss="modal">
+                        <div class="window-popup__more-img">
+                            <img src="assets/img/service/service.jpg" alt="">
+                        </div>
+                        <p>Аренда капсулы сна</p>
+                    </a>
+
+                </div>
             </div>
         </div>
     </div>
