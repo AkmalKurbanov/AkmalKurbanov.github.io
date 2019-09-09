@@ -15354,6 +15354,11 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 | Common styles
 |--------------------------------------------------------------------------
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
@@ -15512,11 +15517,12 @@ a:hover, a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 @media (min-width: 1920px) {
@@ -15536,15 +15542,16 @@ a:hover, a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
   width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .layout__main {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  /* flex: 1; would be enough but it looks bad in IE */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16520,10 +16527,27 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   width: 100%;
   text-transform: uppercase;
   font-weight: 500;
+  outline: none;
 }
 
 .-mdProfile .incomingItem .payBtn:hover, .-mdProfile .incomingItem .payBtn:focus {
   color: #ffffff;
+}
+
+.-mdProfile .incomingItem .payBtn--promo {
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: normal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -1px;
+  font-size: 14px;
 }
 
 .-mdProfile p {
@@ -16570,6 +16594,30 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 .payBtn:hover, .payBtn:focus {
   color: #ffffff;
+}
+
+.promo-code {
+  padding-top: 20px;
+}
+
+.promo-code .no-gutters {
+  padding-right: 0;
+}
+
+@media (max-width: 575.98px) {
+  .promo-code .no-gutters {
+    padding-right: 15px;
+  }
+}
+
+.promo-code .control {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.promo-code .control__input {
+  height: 45px;
+  font-size: 16px !important;
 }
 
 .about {
@@ -17739,6 +17787,24 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   position: relative;
 }
 
+.control__group select.form-control:not([size]):not([multiple]) {
+  height: 64px;
+  font-size: 18px;
+  color: #9396A4;
+  outline: none;
+  background-image: url("../../static/img/general/select-arrow.svg");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: 93.9% 50%;
+}
+
+.control__group select.form-control:not([size]):not([multiple]):focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #393939;
+  outline: none;
+}
+
 .control__input {
   display: block;
   width: 100%;
@@ -17934,6 +18000,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .header__logo {
@@ -19210,8 +19277,27 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   }
 }
 
+.courses__item:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .courses__item:hover .courses__title, .courses__item:focus .courses__title {
   opacity: 0;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .courses__item:hover .courses__title, .courses__item:focus .courses__title {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 .courses__item:hover .courses__content, .courses__item:focus .courses__content {
@@ -19243,13 +19329,14 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   position: absolute;
   top: 0;
   height: 100%;
-  padding: 35px 20px;
-  padding: 2.1875rem 1.25rem;
+  padding: 25px 20px;
+  padding: 1.5625rem 1.25rem;
   background-color: rgba(255, 0, 0, 0.9);
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
+  z-index: 1;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -19283,6 +19370,9 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 .courses__content .courses__title {
   position: static;
   padding: 0;
+  font-size: 20px;
+  line-height: 25px;
+  z-index: 1;
 }
 
 .courses__content:before {
@@ -19327,6 +19417,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   bottom: 0;
   -webkit-transition: all .3s;
   transition: all .3s;
+  z-index: 9;
   padding: 20px 20px;
   padding: 1.25rem 1.25rem;
 }
@@ -20679,12 +20770,13 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 @media (max-width: 991.98px) {
   .test__inner {
-    width: auto;
+    width: 100%;
   }
 }
 
 .test__heading {
   position: relative;
+  padding-right: 40px;
 }
 
 .test__heading p {
@@ -21645,10 +21737,14 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   font-size: 24px;
 }
 
+.totalWrap .special {
+  font-weight: 700;
+}
+
 .totalWrap p {
   color: #393939;
   margin: 0;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 @media (max-width: 767.98px) {
@@ -21729,15 +21825,19 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
           justify-content: space-between;
 }
 
+.comments__text {
+  word-break: break-word;
+}
+
 .comments__date {
   font-size: 12px;
   font-size: 0.75rem;
-  color: #C4C4C4;
+  color: #000;
   display: inline-block;
   padding-left: 10px;
 }
 
-.comments__reply-button {
+.comments__reply-button, .comments label {
   font-size: 14px;
   color: #C4C4C4;
   text-transform: capitalize;
@@ -21745,16 +21845,19 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   padding: 0;
   border: none;
   background: none;
-  cursor: pointer;
   font-weight: 700;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer !important;
 }
 
-.comments__reply-button:hover, .comments__reply-button:focus {
+.comments__reply-button:hover, .comments__reply-button:focus, .comments label:hover, .comments label:focus {
   opacity: 1;
   outline: none;
+  color: #1d5cff;
 }
 
-.comments__reply-button--answer {
+.comments__reply-button--answer, .comments label--answer {
   margin-left: 15px;
 }
 
@@ -21819,8 +21922,10 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 }
 
 .comments .scroll-js {
-  height: 365px;
+  height: 500px;
   overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 7px;
 }
 
 .comments .scroll-js::-webkit-scrollbar-button {
@@ -21888,7 +21993,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   outline: 0;
   line-height: 1;
   border: 1px solid rgba(57, 57, 57, 0.25);
-  color: #C4C4C4;
+  color: #000;
   padding: 17px 132px 2px 16px;
 }
 
@@ -21961,23 +22066,19 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 .comments__textareaWrap .text-right button {
   border: none;
   background-color: transparent;
-  color: rgba(29, 92, 255, 0.2);
   font-weight: bold;
   z-index: 1;
   outline: none;
   cursor: pointer;
   -webkit-transition: all .3s;
   transition: all .3s;
+  color: rgba(29, 92, 255, 0.5);
 }
 
 @media (max-width: 1199.98px) {
   .comments__textareaWrap .text-right button {
     font-size: 13px;
   }
-}
-
-.comments__textareaWrap .text-right button:hover {
-  color: rgba(29, 92, 255, 0.5);
 }
 
 .modalWindow {
@@ -22333,6 +22434,10 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 */
 .footer {
   background-color: #F8F8F8;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0;
   padding: 80px 0;
   padding: 5rem 0;
 }

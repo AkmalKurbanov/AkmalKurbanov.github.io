@@ -65,11 +65,11 @@
                                 <a href="#" class="userbar__link">Курсы</a>
                             </li>
                             <li class="userbar__item userbar__dropdown dropdown">
-                                <a href="#" class="userbar__link" id="userDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <a href="#" class="userbar__link" id="userDropdown">
                                     <span class="d-none d-sm-inline">Кулсеитов Алибек</span>
                                     <img src="static/img/content/avatar.jpg" alt="" class="userbar__avatar">
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                <ul id="userDropdownMenu" class="dropdown-menu">
                                     <li>
                                         <a href="#" class="userbar__sublink -active">Профиль</a>
                                     </li>
@@ -164,7 +164,7 @@
                                     <div class="col-md-6">
                                         <div class="control -lg">
                                             <div class="control__group">
-                                                <input type="text" class="control__input" value="Алибек" required />
+                                                <input type="text" class="control__input" value="Алибек" required/>
                                                 <label class="control__label">Имя</label>
                                             </div>
                                             <span class="control__help">Это поле нужно заполнить</span>
@@ -173,7 +173,7 @@
                                     <div class="col-md-6">
                                         <div class="control -lg">
                                             <div class="control__group">
-                                                <input type="text" class="control__input" value="Кулсеитов" required />
+                                                <input type="text" class="control__input" value="Кулсеитов" required/>
                                                 <label class="control__label">Фамилия</label>
                                             </div>
                                             <span class="control__help">Это поле нужно заполнить</span>
@@ -184,7 +184,7 @@
                                     <div class="col-md-6">
                                         <div class="control -lg">
                                             <div class="control__group">
-                                                <input type="text" class="control__input jsMaskedDate" value="17/03/1993" required />
+                                                <input type="text" class="control__input jsMaskedDate" value="17/03/1993" required/>
                                                 <label class="control__label">Дата рождения</label>
                                             </div>
                                             <span class="control__help">Это поле нужно заполнить</span>
@@ -192,8 +192,13 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="control -lg">
-                                            <div class="control__group">
-                                                <select class="jsSelectPicker" title="Пол" required>
+                                            <div class="control__group form-group">
+                                                <!--                                            <select class="jsSelectPicker" title="Пол" required>-->
+                                                <!--                                                <option value="1" selected>Мужской</option>-->
+                                                <!--                                                <option value="2">Женский</option>-->
+                                                <!--                                                <option value="3">Three</option>-->
+                                                <!--                                            </select>-->
+                                                <select class="form-control" id="exampleFormControlSelect1">
                                                     <option value="1" selected>Мужской</option>
                                                     <option value="2">Женский</option>
                                                     <option value="3">Three</option>
@@ -208,7 +213,7 @@
                                     <div class="col-md-6">
                                         <div class="control -lg">
                                             <div class="control__group">
-                                                <input type="text" class="control__input" value="Казахстан" required />
+                                                <input type="text" class="control__input" value="Казахстан" required/>
                                                 <label class="control__label">Страна</label>
                                             </div>
                                             <span class="control__help">Это поле нужно заполнить</span>
@@ -217,7 +222,7 @@
                                     <div class="col-md-6">
                                         <div class="control -lg">
                                             <div class="control__group">
-                                                <input type="text" class="control__input" value="Алматы" required />
+                                                <input type="text" class="control__input" value="Алматы" required/>
                                                 <label class="control__label">Гоород</label>
                                             </div>
                                             <span class="control__help">Это поле нужно заполнить</span>
@@ -228,7 +233,7 @@
                                     <div class="col-md-6">
                                         <div class="control -lg">
                                             <div class="control__group">
-                                                <input type="text" class="control__input jsMaskedPhone" value="+7 701 758 48 92" required />
+                                                <input type="text" class="control__input jsMaskedPhone" value="+7 701 758 48 92" required/>
                                                 <label class="control__label">Телефон</label>
                                             </div>
                                             <span class="control__help">Это поле нужно заполнить</span>
@@ -237,7 +242,7 @@
                                     <div class="col-md-6">
                                         <div class="control -lg">
                                             <div class="control__group">
-                                                <input type="text" class="control__input" value="Я люблю верстать" required />
+                                                <input type="text" class="control__input" value="Я люблю верстать" required/>
                                                 <label class="control__label">О себе</label>
                                             </div>
                                             <span class="control__help">Это поле нужно заполнить</span>
@@ -259,53 +264,53 @@
                 </div>
                 <!--/. Layout Main End -->
 
-                <!-- Footer Begin -->
-                <footer class="footer">
-                    <div class="container footer__container">
 
-                        <div class="footer__copyright">
-                            <span>© yelikbayev.online</span>
-                            All Rights Reserved.
-                            <a href="mailto:info@yelikbayev.online">info@yelikbayev.online</a>
-                            <a href="tel:77477331010">+7 747 733 10 10</a>
-                        </div>
-
-                        <ul class="footer__menu">
-                            <li>
-                                <a href="#" class="footer__menu-link">Публичная оферта</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__menu-link">Политика безопасности</a>
-                            </li>
-                        </ul>
-
-                        <div class="social social--footerSocial">
-                            <ul class="footer__social">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </footer>
-                <!--/. Footer End -->
 
             </div>
             <!--/. Layout Wrapper End -->
+            <!-- Footer Begin -->
+            <footer class="footer">
+                <div class="container footer__container">
 
+                    <div class="footer__copyright">
+                        <span>© yelikbayev.online</span>
+                        All Rights Reserved.
+                        <a href="mailto:info@yelikbayev.online">info@yelikbayev.online</a>
+                        <a href="tel:77477331010">+7 747 733 10 10</a>
+                    </div>
+
+                    <ul class="footer__menu">
+                        <li>
+                            <a href="#" class="footer__menu-link">Публичная оферта</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__menu-link">Политика безопасности</a>
+                        </li>
+                    </ul>
+
+                    <div class="social social--footerSocial">
+                        <ul class="footer__social">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </footer>
+            <!--/. Footer End -->
         </div>
         <!--/. Layout End -->
 

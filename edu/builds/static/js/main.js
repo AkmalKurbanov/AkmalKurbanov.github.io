@@ -1,3 +1,4 @@
+
 /*!
  * Bootstrap-select v1.13.2 (https://developer.snapappointments.com/bootstrap-select)
  *
@@ -381,11 +382,11 @@
     version.success = true;
   }
   catch(err) {
-    console.warn(
-      'There was an issue retrieving Bootstrap\'s version. ' +
-      'Ensure Bootstrap is being loaded before bootstrap-select and there is no namespace collision. ' +
-      'If loading Bootstrap asynchronously, the version may need to be manually specified via $.fn.selectpicker.Constructor.BootstrapVersion.'
-    , err);
+    // console.warn(
+    //   'There was an issue retrieving Bootstrap\'s version. ' +
+    //   'Ensure Bootstrap is being loaded before bootstrap-select and there is no namespace collision. ' +
+    //   'If loading Bootstrap asynchronously, the version may need to be manually specified via $.fn.selectpicker.Constructor.BootstrapVersion.'
+    // , err);
   }
 
   var classNames = {
@@ -20740,4 +20741,3 @@ return Swiper$1;
         resetCallback: function() {}
     }
 }(window.jQuery);
-
