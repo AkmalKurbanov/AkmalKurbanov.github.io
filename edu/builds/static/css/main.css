@@ -15522,7 +15522,6 @@ a:hover, a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden;
-  min-height: 100%;
 }
 
 @media (min-width: 1920px) {
@@ -18407,6 +18406,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
     left: -100%;
     top: 80px;
     margin-left: 0;
+    height: auto;
   }
 }
 
@@ -22715,4 +22715,15 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   .footer__social li a i {
     font-size: 20px !important;
   }
+}
+
+.footer .ibecsystems {
+  max-width: 150px;
+  margin-top: 30px;
+  display: block;
+}
+
+.footer .ibecsystems img {
+  width: 100%;
+  max-width: 100%;
 }
