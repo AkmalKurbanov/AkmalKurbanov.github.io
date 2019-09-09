@@ -15522,7 +15522,7 @@ a:hover, a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden;
-  height: 100%;
+  min-height: 100%;
 }
 
 @media (min-width: 1920px) {
@@ -18459,6 +18459,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   transition: all .3s;
   background-color: #fff;
   height: auto;
+  z-index: 99999999;
 }
 
 /*
