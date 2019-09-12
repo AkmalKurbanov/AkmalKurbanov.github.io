@@ -40,7 +40,7 @@ $(function () {
         $(this).toggleClass('-open');
         $('.navigation__userPanel').toggleClass('userPanelShow');
         $('.mobileMenu').toggleClass('mobileMenu-open');
-        $('body').toggleClass('mobileBody-scroll');
+        $('body, html').toggleClass('mobileBody-scroll');
     });
 
     if ($(window).width() <= 575) {

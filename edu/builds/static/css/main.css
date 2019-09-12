@@ -16621,7 +16621,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   font-size: 16px !important;
 }
 
-.form-control option:first-child {
+.form-control--profileSex option:first-child {
   display: none;
 }
 
@@ -17797,7 +17797,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   font-size: 18px;
   color: #9396A4;
   outline: none;
-  background-image: url("../../static/img/general/select-arrow.svg");
+  background-image: url("../../frontend/img/general/select-arrow.svg");
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: 93.9% 50%;
@@ -18544,7 +18544,9 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 }
 
 .mobileBody-scroll {
-  overflow-y: hidden;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 
 /*
