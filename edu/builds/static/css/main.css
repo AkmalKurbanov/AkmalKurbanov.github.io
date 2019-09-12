@@ -18540,11 +18540,11 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 .mobileMenu-open {
   right: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobileBody-scroll {
   overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
 /*
