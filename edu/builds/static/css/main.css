@@ -18505,7 +18505,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   right: -100%;
   top: 80px;
   bottom: 0;
-  position: fixed;
+  position: absolute;
   z-index: 99999999999;
   background-color: #fff;
   padding-top: 52px;
