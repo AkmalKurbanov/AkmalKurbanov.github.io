@@ -19689,6 +19689,12 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   }
 }
 
+@media (max-width: 991.98px) {
+  .userbar__item--language {
+    display: none;
+  }
+}
+
 .userbar__link {
   font-size: 16px;
   font-size: 1rem;
