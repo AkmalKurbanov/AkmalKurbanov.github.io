@@ -18502,7 +18502,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 }
 
 .mobileMenu {
-  right: -100%;
+  left: -100%;
   top: 80px;
   bottom: 0;
   position: absolute;
@@ -18539,7 +18539,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 }
 
 .mobileMenu-open {
-  right: 0;
+  left: 0;
   -webkit-overflow-scrolling: touch;
 }
 
