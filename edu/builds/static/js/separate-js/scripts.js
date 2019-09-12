@@ -17,29 +17,46 @@ $(function () {
         }, 700);
     }
 
-    $('[data-scroll]').on('click', scrollToSection);
-
-    $('.navigation__link').on('click', function () {
-        $('.navigation').removeClass('mobileMenu');
-        $('.burger').removeClass('-open');
-        $('.navigation__userPanel').removeClass('userPanelShow');
-    });
     // scroll button end
 
 
+    $('[data-scroll]').on('click', scrollToSection);
+
+
     //    burger
-    $('.burger').on('click', function () {
-        $('.navigation').toggleClass('mobileMenu');
-        $('.header__logo span').toggleClass('mobileLogoSpan');
-        $('.header__logo').toggleClass('mobileLogo');
-        $(this).toggleClass('-open');
-        $('.header__login').toggle();
-        $('.userbar').toggle();
-        $('.navigation__userPanel').toggleClass('userPanelShow');
+    $('.navigation__link').on('click', function () {
+        $('.mobileMenu').removeClass('mobileMenu-open');
+        $('body').removeClass('mobileBody-scroll');
+        $('.burger').removeClass('-open');
+        $('.navigation__userPanel').removeClass('userPanelShow');
+        $('.header__logo').removeClass('mobileLogo');
+        $('.header__logo span').removeClass('mobileLogoSpan');
     });
 
 
+    $('.burger').on('click', function () {
+        $('.header__logo span').toggleClass('mobileLogoSpan');
+        $('.header__logo').toggleClass('mobileLogo');
+        $(this).toggleClass('-open');
+        $('.navigation__userPanel').toggleClass('userPanelShow');
+        $('.mobileMenu').toggleClass('mobileMenu-open');
+        $('body').toggleClass('mobileBody-scroll');
+    });
+
+    if ($(window).width() <= 575) {
+        $('.burger').on('click', function () {
+            $('.header__login, .userbar').toggle();
+        });
+
+        $('.navigation__link').on('click', function () {
+            $('.header__login, .userbar').show();
+        });
+    }
+
+
 //    burger end
+
+
     setTimeout(function () {
         $(".entry__title").css('display', 'inline');
     }, 100);
@@ -338,14 +355,4 @@ $(document).mouseup(function (e) {
     }
 });
 
-$(document).mouseup(function (e) {
-    var div = $('.navigation, .header');
-    if (!div.is(e.target)
-        && div.has(e.target).length === 0) {
-        div.removeClass('mobileMenu');
-        $('.navigation__userPanel').removeClass('userPanelShow');
-        $('.logo').removeClass('mobileLogo');
-        $('.burger').removeClass('-open');
-    }
-});
 
