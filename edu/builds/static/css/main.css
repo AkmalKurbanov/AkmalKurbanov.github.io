@@ -18543,7 +18543,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 }
 
 .mobileBody-scroll {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 /*
