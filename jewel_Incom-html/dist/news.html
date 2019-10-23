@@ -8,25 +8,28 @@
         <meta name="theme-color" content="#141a51">
         <title>Project</title>
         <link rel="stylesheet" href="assets/styles.min.css">
-        <link rel="stylesheet" href="assets/icons/fontawesome5/web-fonts-with-css/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/icons/fontawesome5/css/all.min.css">
+        <link rel="stylesheet" href="assets/icons/fontawesome5/css/solid.min.css">
     </head>
     
     <body>
         <div class="wrapper">
-            <div class="modal-wrap">
+            <div class="modal-wrap" id="registration">
                 <div class="container">
-                    <div class="registration">
-                        <div class="registration__aside" style="background-image: url('assets/img/hero/hero-bg.jpg');">
-                            <div class="registration__logo">
+                    <div class="popup-window">
+                        <div class="popup-window__aside" style="background-image: url('assets/img/hero/hero-bg.jpg');">
+                            <div class="popup-window__logo">
                                 <img src="assets/img/logo.png" alt="">
                             </div>
                         </div>
-                        <div class="registration__fill-form" style="background-image: url('assets/img/hero/hero-bg.jpg');">
-                            <div class="close-btn"> <i class="fal fa-times"></i>
+                        <div class="popup-window__fill-form" style="background-image: url('assets/img/hero/hero-bg.jpg');">
+                            <div data-fancybox-close class="close-btn"> <i class="fal fa-times"></i>
+
                             </div>
                             <form action="">
                                  <h2>РЕГИСТРАЦИЯ</h2>
-                                <div class="registration__sponsor-wrap">
+
+                                <div class="popup-window__sponsor-wrap">
                                     <p class="sponsor">Ваш спонсор: 122222</p>
                                     <p class="sponsor">Jewel Vip: 122222</p>
                                 </div>
@@ -77,29 +80,62 @@
                 </div>
             </div>
             <!-- /.registration -->
+            <div class="modal-wrap" id="login">
+                <div class="container">
+                    <div class="popup-window">
+                        <div class="popup-window__aside" style="background-image: url('assets/img/hero/hero-bg.jpg');">
+                            <div class="popup-window__logo">
+                                <img src="assets/img/logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="popup-window__fill-form" style="background-image: url('assets/img/hero/hero-bg.jpg');">
+                            <div data-fancybox-close class="close-btn"> <i class="fal fa-times"></i>
+
+                            </div>
+                            <form action="">
+                                 <h2>вход</h2>
+
+                                <div class="form-group">
+                                    <label for="log-in">Логин</label>
+                                    <input id="log-in" name="log-in" type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Пароль</label>
+                                    <input id="password" name="password" type="password" class="form-control">
+                                </div> <a href="#" class="recovery">Не помню пароль</a>
+
+                                <button class="btn btn--other-kind-btn">войти</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.login.html -->
             <div class="content">
                 <header class="header">
                     <div class="mobile-menu"></div>
                     <div class="container">
                         <div class="header__flex-wrapper">
-                            <div class="hamburger"> <i></i> <i></i> <i></i>
+                            <div class="hamburger"> <i></i>
+ <i></i>
+ <i></i>
+
                             </div>
-                            <div class="header__logo"> <a href="#">
-
+                            <div class="header__logo"> <a href="./">
                     <img src="assets/img/logo.png" alt="">
-
                 </a>
+
                             </div>
                             <div class="header__nav-wrapper">
                                 <nav class="nav">
                                     <ul>
-                                        <li class="nav__item nav__item--active"> <a href="#">Главная</a>
+                                        <li class="nav__item nav__item--active"> <a href="main.html">Главная</a>
 
                                         </li>
-                                        <li class="nav__item"><a href="#">Маркетинг</a>
+                                        <li class="nav__item"><a href="marketing.html">Маркетинг</a>
 
                                         </li>
-                                        <li class="nav__item"><a href="#">Новости</a>
+                                        <li class="nav__item"><a href="news.html">Новости</a>
 
                                         </li>
                                         <li class="nav__item"><a href="#">Контакты</a>
@@ -107,9 +143,10 @@
                                         </li>
                                     </ul>
                                 </nav>
-                                <div class="control-panel"> <a href="#" class="btn btn--other-btn registration-js">Регистрация</a>
+                                <div class="control-panel"> <a data-fancybox data-src="#registration" href="javascript:;" class="btn btn--other-btn registration-js">Регистрация</a>
+
                                     <a
-                                    href="#" class="btn">Вход</a>
+                                    data-fancybox="" data-src="#login" href="javascript:;" class="btn">Вход</a>
                                 </div>
                             </div>
                         </div>
@@ -120,6 +157,7 @@
                     <div class="container">
                         <div class="title-wrap">
                              <h2 class="title title--other">НОВОСТИ</h2>
+
                         </div>
                         <div class="news__wrap">
                             <div class="news__item">
@@ -127,17 +165,19 @@
                                     <img src="assets/img/news/news.jpg" alt="">
                                 </div>
                                 <div class="news__promo"> <a href="#" class="news__proho-heading">Ut in laoreet sapien eu amet</a>
+
                                     <p
                                     class="news__promo-summary">Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam
                                         ultrices metus ut enim biben dum, vitae fringilla diam mattis. Sed eget
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-
                                 <i class="icon-lock"></i>
+                            </a>
+ <span class="news__like-quantity">125</span>
 
-                            </a> <span class="news__like-quantity">125</span>
                                             </div> <a href="#" class="btn news__link-more">ЧИТАТЬ ДАЛЬШЕ</a>
+
                                         </div>
                                 </div>
                             </div>
@@ -146,17 +186,19 @@
                                     <img src="assets/img/news/news.jpg" alt="">
                                 </div>
                                 <div class="news__promo"> <a href="#" class="news__proho-heading">Ut in laoreet sapien eu amet</a>
+
                                     <p
                                     class="news__promo-summary">Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam
                                         ultrices metus ut enim biben dum, vitae fringilla diam mattis. Sed eget
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-
                                 <i class="icon-lock"></i>
+                            </a>
+ <span class="news__like-quantity">125</span>
 
-                            </a> <span class="news__like-quantity">125</span>
                                             </div> <a href="#" class="btn news__link-more">ЧИТАТЬ ДАЛЬШЕ</a>
+
                                         </div>
                                 </div>
                             </div>
@@ -165,17 +207,19 @@
                                     <img src="assets/img/news/news.jpg" alt="">
                                 </div>
                                 <div class="news__promo"> <a href="#" class="news__proho-heading">Ut in laoreet sapien eu amet</a>
+
                                     <p
                                     class="news__promo-summary">Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam
                                         ultrices metus ut enim biben dum, vitae fringilla diam mattis. Sed eget
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-
                                 <i class="icon-lock"></i>
+                            </a>
+ <span class="news__like-quantity">125</span>
 
-                            </a> <span class="news__like-quantity">125</span>
                                             </div> <a href="#" class="btn news__link-more">ЧИТАТЬ ДАЛЬШЕ</a>
+
                                         </div>
                                 </div>
                             </div>
@@ -184,17 +228,19 @@
                                     <img src="assets/img/news/news.jpg" alt="">
                                 </div>
                                 <div class="news__promo"> <a href="#" class="news__proho-heading">Ut in laoreet sapien eu amet</a>
+
                                     <p
                                     class="news__promo-summary">Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam
                                         ultrices metus ut enim biben dum, vitae fringilla diam mattis. Sed eget
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-
                                 <i class="icon-lock"></i>
+                            </a>
+ <span class="news__like-quantity">125</span>
 
-                            </a> <span class="news__like-quantity">125</span>
                                             </div> <a href="#" class="btn news__link-more">ЧИТАТЬ ДАЛЬШЕ</a>
+
                                         </div>
                                 </div>
                             </div>
@@ -203,17 +249,19 @@
                                     <img src="assets/img/news/news.jpg" alt="">
                                 </div>
                                 <div class="news__promo"> <a href="#" class="news__proho-heading">Ut in laoreet sapien eu amet</a>
+
                                     <p
                                     class="news__promo-summary">Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam
                                         ultrices metus ut enim biben dum, vitae fringilla diam mattis. Sed eget
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-
                                 <i class="icon-lock"></i>
+                            </a>
+ <span class="news__like-quantity">125</span>
 
-                            </a> <span class="news__like-quantity">125</span>
                                             </div> <a href="#" class="btn news__link-more">ЧИТАТЬ ДАЛЬШЕ</a>
+
                                         </div>
                                 </div>
                             </div>
@@ -222,17 +270,19 @@
                                     <img src="assets/img/news/news.jpg" alt="">
                                 </div>
                                 <div class="news__promo"> <a href="#" class="news__proho-heading">Ut in laoreet sapien eu amet</a>
+
                                     <p
                                     class="news__promo-summary">Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam
                                         ultrices metus ut enim biben dum, vitae fringilla diam mattis. Sed eget
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-
                                 <i class="icon-lock"></i>
+                            </a>
+ <span class="news__like-quantity">125</span>
 
-                            </a> <span class="news__like-quantity">125</span>
                                             </div> <a href="#" class="btn news__link-more">ЧИТАТЬ ДАЛЬШЕ</a>
+
                                         </div>
                                 </div>
                             </div>
@@ -245,18 +295,35 @@
             <footer class="footer" style="background-image: url('assets/img/hero/hero-bg.jpg');">
                 <div class="container">
                     <div class="footer__wrapper">
-                        <div class="footer__item">
-                            <p>Моментальные выплаты</p>
+                        <div class="footer__item"> <a href="mailto:Support@Jewel.Money"><i class="fal fa-envelope"></i>Support@Jewel.Money</a>
+
                         </div>
                         <div class="footer__item">
-                            <div class="footer__logo">
-                                <img src="assets/img/logo.png" alt="">
+                            <div class="footer__logo"> <a href="./">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+
                             </div>
                         </div>
                         <div class="footer__item">
-                            <p>Круглосуточня поддержка</p>
+                            <div class="social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                                    </li>
+                                    <li><a href="#"><i class="fab fa-vk"></i></a>
+
+                                    </li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a>
+
+                                    </li>
+                                    <li><a href="#"><i class="fab fa-telegram-plane"></i></a>
+
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div> <a href="mailto:Support@Jewel.Money">Support@Jewel.Money</a>
+                    </div>
                 </div>
             </footer>
             <!-- /.footer -->

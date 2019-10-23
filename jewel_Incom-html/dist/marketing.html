@@ -8,28 +8,28 @@
         <meta name="theme-color" content="#141a51">
         <title>Project</title>
         <link rel="stylesheet" href="assets/styles.min.css">
-        <link rel="stylesheet" href="assets/icons/fontawesome5/web-fonts-with-css/css/fontawesome-all.min.css">
-        <!-- <link href="https://unpkg.com/treeflex/dist/css/treeflex.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="assets/icons/fontawesome5/css/all.min.css">
+        <link rel="stylesheet" href="assets/icons/fontawesome5/css/solid.min.css">
     </head>
     
     <body>
         <div class="wrapper">
-            <div class="modal-wrap">
+            <div class="modal-wrap" id="registration">
                 <div class="container">
-                    <div class="registration">
-                        <div class="registration__aside" style="background-image: url('assets/img/hero/hero-bg.jpg');">
-                            <div class="registration__logo">
+                    <div class="popup-window">
+                        <div class="popup-window__aside" style="background-image: url('assets/img/hero/hero-bg.jpg');">
+                            <div class="popup-window__logo">
                                 <img src="assets/img/logo.png" alt="">
                             </div>
                         </div>
-                        <div class="registration__fill-form" style="background-image: url('assets/img/hero/hero-bg.jpg');">
-                            <div class="close-btn"> <i class="fal fa-times"></i>
+                        <div class="popup-window__fill-form" style="background-image: url('assets/img/hero/hero-bg.jpg');">
+                            <div data-fancybox-close class="close-btn"> <i class="fal fa-times"></i>
 
                             </div>
                             <form action="">
                                  <h2>РЕГИСТРАЦИЯ</h2>
 
-                                <div class="registration__sponsor-wrap">
+                                <div class="popup-window__sponsor-wrap">
                                     <p class="sponsor">Ваш спонсор: 122222</p>
                                     <p class="sponsor">Jewel Vip: 122222</p>
                                 </div>
@@ -80,6 +80,37 @@
                 </div>
             </div>
             <!-- /.registration -->
+            <div class="modal-wrap" id="login">
+                <div class="container">
+                    <div class="popup-window">
+                        <div class="popup-window__aside" style="background-image: url('assets/img/hero/hero-bg.jpg');">
+                            <div class="popup-window__logo">
+                                <img src="assets/img/logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="popup-window__fill-form" style="background-image: url('assets/img/hero/hero-bg.jpg');">
+                            <div data-fancybox-close class="close-btn"> <i class="fal fa-times"></i>
+
+                            </div>
+                            <form action="">
+                                 <h2>вход</h2>
+
+                                <div class="form-group">
+                                    <label for="log-in">Логин</label>
+                                    <input id="log-in" name="log-in" type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Пароль</label>
+                                    <input id="password" name="password" type="password" class="form-control">
+                                </div> <a href="#" class="recovery">Не помню пароль</a>
+
+                                <button class="btn btn--other-kind-btn">войти</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.login.html -->
             <div class="content">
                 <header class="header">
                     <div class="mobile-menu"></div>
@@ -90,7 +121,7 @@
  <i></i>
 
                             </div>
-                            <div class="header__logo"> <a href="#">
+                            <div class="header__logo"> <a href="./">
                     <img src="assets/img/logo.png" alt="">
                 </a>
 
@@ -98,13 +129,13 @@
                             <div class="header__nav-wrapper">
                                 <nav class="nav">
                                     <ul>
-                                        <li class="nav__item nav__item--active"> <a href="#">Главная</a>
+                                        <li class="nav__item nav__item--active"> <a href="main.html">Главная</a>
 
                                         </li>
-                                        <li class="nav__item"><a href="#">Маркетинг</a>
+                                        <li class="nav__item"><a href="marketing.html">Маркетинг</a>
 
                                         </li>
-                                        <li class="nav__item"><a href="#">Новости</a>
+                                        <li class="nav__item"><a href="news.html">Новости</a>
 
                                         </li>
                                         <li class="nav__item"><a href="#">Контакты</a>
@@ -112,17 +143,17 @@
                                         </li>
                                     </ul>
                                 </nav>
-                                <div class="control-panel"> <a href="#" class="btn btn--other-btn registration-js">Регистрация</a>
+                                <div class="control-panel"> <a data-fancybox data-src="#registration" href="javascript:;" class="btn btn--other-btn registration-js">Регистрация</a>
 
                                     <a
-                                    href="#" class="btn">Вход</a>
+                                    data-fancybox="" data-src="#login" href="javascript:;" class="btn">Вход</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </header>
                 <!-- /.header -->
-                <section class="marketing">
+                <div class="marketing">
                     <div class="container">
                         <div class="title-wrap">
                              <h2 class="title title--other">МАРКЕТИНГ</h2>
@@ -162,7 +193,7 @@
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
-                        <section class="status-desc">
+                        <div class="status-desc">
                             <div class="status-desc__item">
                                 <div class="status-desc__link status-desc__link--active">
                                     <div class="status-desc__info">
@@ -247,120 +278,124 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <section class="status-info">
+                        </div>
+                        <div class="status-info">
                             <div class="pyramid">
-                                <ul class="pyramid__wrap">
-                                    <li class="pyramid__first-level">
-                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                        </div>
+                                <ul>
+                                    <li>
                                         <ul>
-                                            <li class="pyramid__second-level">
-                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+                                            <li>
+                                                <div class="pyramid__user pyramid__user--main-user"> <i class="fas fa-user"></i>
 
                                                 </div>
                                                 <ul>
-                                                    <li class="pyramid__third-level">
+                                                    <li>
                                                         <div class="pyramid__user"> <i class="fas fa-user"></i>
 
                                                         </div>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </li>
-                                                    <li class="pyramid__third-level">
+                                                    <li>
                                                         <div class="pyramid__user"> <i class="fas fa-user"></i>
 
                                                         </div>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </li>
-                                                    <li class="pyramid__third-level">
+                                                    <li>
                                                         <div class="pyramid__user"> <i class="fas fa-user"></i>
 
                                                         </div>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </li>
-                                                    <li class="pyramid__third-level">
+                                                    <li>
                                                         <div class="pyramid__user"> <i class="fas fa-user"></i>
 
                                                         </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="pyramid__second-level">
-                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
 
-                                                </div>
-                                                <ul>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
 
-                                                        </div>
-                                                    </li>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
 
-                                                        </div>
-                                                    </li>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
 
-                                                        </div>
-                                                    </li>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="pyramid__second-level">
-                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                </div>
-                                                <ul>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="pyramid__second-level">
-                                                <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                </div>
-                                                <ul>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="pyramid__third-level">
-                                                        <div class="pyramid__user"> <i class="fas fa-user"></i>
-
-                                                        </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -415,11 +450,11 @@
                                     переведет вас на вторую ступень. Работа со ступенью «Нефрит» принесет вам
                                     12 000 рублей.</p>
                             </div>
-                        </section>
+                        </div>
                     </div>
-                </section>
+                </div>
                 <!-- /.marketing -->
-                <section class="package-services">
+                <div class="package-services">
                     <div class="container">
                         <div class="title-wrap">
                              <h2 class="title title--other">
@@ -510,7 +545,7 @@
                             </table>
                         </div>
                     </div>
-                </section>
+                </div>
                 <!-- /.package-services -->
                 <section class="gallery">
                     <div class="gallery__wrap">
@@ -547,30 +582,46 @@
                     </div>
                 </section>
                 <!-- /.package-services -->
-                <section class="specially-offer">
+                <div class="specially-offer">
                     <div class="container">
                         <p>С привлечением каждого 1000-го партнера пакет «Акционер» подлежит обновлению.
                             <br>Компания «JewelInkom»: твоя мечта ближе, чем ты думаешь!</p>
                     </div>
-                </section>
+                </div>
             </div>
             <!-- /.content -->
             <footer class="footer" style="background-image: url('assets/img/hero/hero-bg.jpg');">
                 <div class="container">
                     <div class="footer__wrapper">
-                        <div class="footer__item">
-                            <p>Моментальные выплаты</p>
+                        <div class="footer__item"> <a href="mailto:Support@Jewel.Money"><i class="fal fa-envelope"></i>Support@Jewel.Money</a>
+
                         </div>
                         <div class="footer__item">
-                            <div class="footer__logo">
-                                <img src="assets/img/logo.png" alt="">
+                            <div class="footer__logo"> <a href="./">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+
                             </div>
                         </div>
                         <div class="footer__item">
-                            <p>Круглосуточня поддержка</p>
-                        </div>
-                    </div> <a href="mailto:Support@Jewel.Money">Support@Jewel.Money</a>
+                            <div class="social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>
 
+                                    </li>
+                                    <li><a href="#"><i class="fab fa-vk"></i></a>
+
+                                    </li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a>
+
+                                    </li>
+                                    <li><a href="#"><i class="fab fa-telegram-plane"></i></a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </footer>
             <!-- /.footer -->
