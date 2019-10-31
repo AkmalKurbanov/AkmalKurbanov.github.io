@@ -1,0 +1,20 @@
+{
+  "particles": {
+    "number": {
+      "value": 20
+    },
+    "color": {
+      "value": "#6e6e6e"
+    },
+    "size": {
+      "value": 5
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 300,
+      "color": "#d3d3d3",
+      "opacity": 0.4,
+      "width": 2
+    }
+  }
+}

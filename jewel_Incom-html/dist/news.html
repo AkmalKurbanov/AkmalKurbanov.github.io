@@ -80,7 +80,7 @@
                 </div>
             </div>
             <!-- /.registration -->
-            <div class="modal-wrap" id="login">
+            <div class="modal-wrap modal-wrap-login" id="login">
                 <div class="container">
                     <div class="popup-window">
                         <div class="popup-window__aside" style="background-image: url('assets/img/hero/hero-bg.jpg');">
@@ -102,7 +102,7 @@
                                 <div class="form-group">
                                     <label for="password">Пароль</label>
                                     <input id="password" name="password" type="password" class="form-control">
-                                </div> <a href="#" class="recovery">Не помню пароль</a>
+                                </div> <a href="#" class="recovery">Забыли пароль?</a>
 
                                 <button class="btn btn--other-kind-btn">войти</button>
                             </form>
@@ -112,6 +112,7 @@
             </div>
             <!-- /.login.html -->
             <div class="content">
+                <div id="particles-js"></div>
                 <header class="header">
                     <div class="mobile-menu"></div>
                     <div class="container">
@@ -138,7 +139,7 @@
                                         <li class="nav__item"><a href="news.html">Новости</a>
 
                                         </li>
-                                        <li class="nav__item"><a href="#">Контакты</a>
+                                        <li class="nav__item"><a href="contacts.html">Контакты</a>
 
                                         </li>
                                     </ul>
@@ -147,16 +148,51 @@
 
                                     <a
                                     data-fancybox="" data-src="#login" href="javascript:;" class="btn">Вход</a>
+                                        <!-- <a href="#" class="btn btn&#45;&#45;other-btn registration-js">Личный кабинет</a>-->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </header>
                 <!-- /.header -->
-                <section class="news">
-                    <div class="container">
+                <div class="news">
+                    <div class="modal-wrap modal-wrap-news" id="news-window">
+                        <div class="container">
+                            <div class="popup-window">
+                                <div class="popup-window__aside" style="background-image: url('assets/img/hero/hero-bg.jpg');">
+                                    <div class="popup-window__logo">
+                                        <img src="assets/img/logo.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="new-window__desc">
+                                    <div data-fancybox-close class="close-btn"> <i class="fal fa-times"></i>
+
+                                    </div>
+                                     <h1><strong>Новости</strong></h1>
+
+                                    <div class="title-wrap">
+                                         <h2 class="title">Заголовок новости</h2>
+
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cum
+                                        cupiditate deleniti eligendi et hic molestiae numquam quam qui soluta.
+                                        A accusantium aliquid aperiam autem dicta dolorem doloremque dolorum ducimus
+                                        eaque earum eius est harum hic iste maiores natus nostrum nulla odit, praesentium
+                                        quae quisquam ratione reiciendis sit tempora vitae voluptate voluptatem
+                                        voluptates? Aperiam aspernatur at autem beatae culpa error hic itaque nemo
+                                        nostrum quaerat quas, repudiandae sit soluta sunt totam! Ad alias aliquid
+                                        aperiam assumenda at blanditiis consectetur debitis doloremque, earum ex
+                                        incidunt inventore maxime molestias nemo optio placeat provident quia quisquam
+                                        repellat sed sint ullam unde veniam, voluptatem.</p> <a href="#" class="btn news__link-more">читать дальше</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container overlap-bg">
                         <div class="title-wrap">
-                             <h2 class="title title--other">НОВОСТИ</h2>
+                             <h2 class="title title--other" data-fancybox="" data-src="#registration"
+                            href="javascript:;">НОВОСТИ</h2>
 
                         </div>
                         <div class="news__wrap">
@@ -172,7 +208,7 @@
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-                                <i class="icon-lock"></i>
+                                <i class="fal fa-thumbs-up"></i>
                             </a>
  <span class="news__like-quantity">125</span>
 
@@ -193,7 +229,7 @@
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-                                <i class="icon-lock"></i>
+                                <i class="fal fa-thumbs-up"></i>
                             </a>
  <span class="news__like-quantity">125</span>
 
@@ -214,7 +250,7 @@
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-                                <i class="icon-lock"></i>
+                                <i class="fal fa-thumbs-up"></i>
                             </a>
  <span class="news__like-quantity">125</span>
 
@@ -235,7 +271,7 @@
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-                                <i class="icon-lock"></i>
+                                <i class="fal fa-thumbs-up"></i>
                             </a>
  <span class="news__like-quantity">125</span>
 
@@ -256,7 +292,7 @@
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-                                <i class="icon-lock"></i>
+                                <i class="fal fa-thumbs-up"></i>
                             </a>
  <span class="news__like-quantity">125</span>
 
@@ -277,7 +313,7 @@
                                         lacus.</p>
                                         <div class="news__bar">
                                             <div class="news__liked-counter"> <a href="#">
-                                <i class="icon-lock"></i>
+                                <i class="fal fa-thumbs-up"></i>
                             </a>
  <span class="news__like-quantity">125</span>
 
@@ -288,7 +324,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
                 <!-- /.header -->
             </div>
             <!-- /.content -->
@@ -329,6 +365,11 @@
             <!-- /.footer -->
         </div>
         <script src="assets/scripts.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'assets/particles.json', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
         <!-- /.wrapper -->
     </body>
 
