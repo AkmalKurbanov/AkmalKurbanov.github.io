@@ -44,6 +44,7 @@
         <!--[if lt IE 9 ]>
     <script src="static/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script>
     <script src="static/js/separate-js/respond.min.js" type="text/javascript"></script>
+    
     <meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
     </head>
@@ -107,383 +108,560 @@
                     <div class="test__inner">
                         <div class="test__heading">
 
-                            <h1 class="test__title">PR и репутация.
-                        <span>Для чего вам нужны публичные коммуникации?</span></h1>
-                            <a href="https://yelikbayev.online/ru/customer/courses/9/lesson/show" class="test__close">Закрыть</a>
+                            <!--                        <h1 class="test__title">PR и репутация.-->
+                            <!--                            <span>Для чего вам нужны публичные коммуникации?</span></h1>-->
+                            <!--                        <a href="https://yelikbayev.online/ru/customer/courses/9/lesson/show"-->
+                            <!--                            class="test__close">Закрыть</a>-->
+
+
+                            <div class="questionnaire">
+                                <h1 class="test__title"> Поздравляю вас с прохождением первого курса из онлайн-цикла обучения
+                            yelikbayev.online! </h1>
+
+                                <h1 class="test__title">
+                            <span> Я благодарю вас за доверие и попрошу уделить пару минут, чтобы вы могли поделиться своим мнением о моих курсах. Не против? </span>
+                        </h1>
+
+                                <a href="#" class="button test__finish test__finish--replay">я Против. Пропустить</a>
+                            </div>
+
+
                         </div>
                         <div class="test__controls">
                             <a href="#" class="test__prev jsTestSliderPrev" rel="prev">Предыдущий</a>
-                            <div class="test__pagination"><span class="jsCounterCurrent">2</span>/<span class="jsCounterTotal">25</span>
+                            <div class="test__pagination">
+                                <span class="jsCounterCurrent"></span>/
+                                <span class="jsCounterTotal"></span>
                             </div>
-                            <div class="jsDefaultSliderPagination" style="opacity: 0"></div>
+                            <div class="jsDefaultSliderPagination" style="opacity: 1"></div>
                             <a href="#" class="test__next jsTestSliderNext" rel="prev">Следующий вопрос</a>
                             <a href="#" class="button test__finish" id="testSubmit">Завершить тест</a>
                         </div>
-                        <!--                <div class="test__body">-->
-                        <!--                    <form action="https://yelikbayev.online/ru/customer/courses/9/lesson/test/submit"-->
-                        <!--                          method="post" class="ajax" id="testForm">-->
-                        <!--                        <div class="swiper-container jsTestSlider">-->
-                        <!--                            <div class="swiper-wrapper">-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>1. Что такое PR?</p>-->
-                        <!--                                    </div>-->
+                        <div class="test__body">
+                            <form action="https://yelikbayev.online/ru/customer/courses/9/lesson/test/submit" method="post" class="ajax" id="testForm">
+                                <div class="swiper-container jsTestSlider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>1. Что такое PR?</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[11]"-->
-                        <!--                                               value="26" type="radio"-->
-                        <!--                                               id="answer26"/>-->
-                        <!--                                        <label for="answer26">Журналистика</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[11]"-->
-                        <!--                                               value="27" type="radio"-->
-                        <!--                                               id="answer27"/>-->
-                        <!--                                        <label for="answer27">Маркетинг</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[11]"-->
-                        <!--                                               value="28" type="radio"-->
-                        <!--                                               id="answer28"/>-->
-                        <!--                                        <label for="answer28">Публичные коммуникации</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[11]"-->
-                        <!--                                               value="29" type="radio"-->
-                        <!--                                               id="answer29"/>-->
-                        <!--                                        <label for="answer29">Реклама</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[11]" value="26" type="radio" id="answer26" />
+                                                <label class="check-trigger" for="answer26">Журналистика</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[11]" value="27" type="radio" id="answer27" />
+                                                <label class="check-trigger" for="answer27">Маркетинг</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[11]" value="29" type="radio" id="answer100" />
+                                                <label class="textarea-trigger" for="answer100">Реклама</label>
+                                                <textarea class="test__textarea" placeholder="Напишите отзыв"></textarea>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[11]" value="29" type="radio" id="answer29" />
+                                                <label class="textarea-trigger" for="answer29">Реклама</label>
+                                                <textarea class="test__textarea" placeholder="Напишите отзыв"></textarea>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>2. На что в первую очередь нацелен PR?</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>2. На что в первую очередь нацелен PR?</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[12]"-->
-                        <!--                                               value="30" type="radio"-->
-                        <!--                                               id="answer30"/>-->
-                        <!--                                        <label for="answer30">Продажи</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[12]"-->
-                        <!--                                               value="31" type="radio"-->
-                        <!--                                               id="answer31"/>-->
-                        <!--                                        <label for="answer31">Репутацию</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[12]"-->
-                        <!--                                               value="32" type="radio"-->
-                        <!--                                               id="answer32"/>-->
-                        <!--                                        <label for="answer32">Известность</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[12]"-->
-                        <!--                                               value="33" type="radio"-->
-                        <!--                                               id="answer33"/>-->
-                        <!--                                        <label for="answer33">Публичность</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[12]" value="30" type="radio" id="answer30" />
+                                                <label for="answer30">Продажи</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[12]" value="31" type="radio" id="answer31" />
+                                                <label for="answer31">Репутацию</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[12]" value="32" type="radio" id="answer32" />
+                                                <label for="answer32">Известность</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[12]" value="33" type="radio" id="answer33" />
+                                                <label for="answer33">Публичность</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>3. Публичные коммуникации отвечают за?</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>3. Публичные коммуникации отвечают за?</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[13]"-->
-                        <!--                                               value="34" type="radio"-->
-                        <!--                                               id="answer34"/>-->
-                        <!--                                        <label for="answer34">Позиционирование на рынке</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[13]"-->
-                        <!--                                               value="35" type="radio"-->
-                        <!--                                               id="answer35"/>-->
-                        <!--                                        <label for="answer35">Продвижение бренда</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[13]"-->
-                        <!--                                               value="36" type="radio"-->
-                        <!--                                               id="answer36"/>-->
-                        <!--                                        <label for="answer36">Работу с блогерами</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[13]" value="34" type="radio" id="answer34" />
+                                                <label for="answer34">Позиционирование на рынке</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[13]" value="35" type="radio" id="answer35" />
+                                                <label for="answer35">Продвижение бренда</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[13]" value="36" type="radio" id="answer36" />
+                                                <label for="answer36">Работу с блогерами</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>4. Навыки публичных коммуникаций необходимы:</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>4. Навыки публичных коммуникаций необходимы:</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[14]"-->
-                        <!--                                               value="37" type="radio"-->
-                        <!--                                               id="answer37"/>-->
-                        <!--                                        <label for="answer37">PR-щикам и журналистам</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[14]"-->
-                        <!--                                               value="38" type="radio"-->
-                        <!--                                               id="answer38"/>-->
-                        <!--                                        <label for="answer38">Маркетологам и рекламщикам</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[14]"-->
-                        <!--                                               value="39" type="radio"-->
-                        <!--                                               id="answer39"/>-->
-                        <!--                                        <label for="answer39">Депутатам и чиновникам</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[14]"-->
-                        <!--                                               value="40" type="radio"-->
-                        <!--                                               id="answer40"/>-->
-                        <!--                                        <label for="answer40">Всем, вне зависимости от отрасли</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[14]" value="37" type="radio" id="answer37" />
+                                                <label for="answer37">PR-щикам и журналистам</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[14]" value="38" type="radio" id="answer38" />
+                                                <label for="answer38">Маркетологам и рекламщикам</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[14]" value="39" type="radio" id="answer39" />
+                                                <label for="answer39">Депутатам и чиновникам</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[14]" value="40" type="radio" id="answer40" />
+                                                <label for="answer40">Всем, вне зависимости от отрасли</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>5. Репутация строится на:</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>5. Репутация строится на:</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[15]"-->
-                        <!--                                               value="41" type="radio"-->
-                        <!--                                               id="answer41"/>-->
-                        <!--                                        <label for="answer41">Социальной активности</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[15]"-->
-                        <!--                                               value="42" type="radio"-->
-                        <!--                                               id="answer42"/>-->
-                        <!--                                        <label for="answer42">Доверии</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[15]"-->
-                        <!--                                               value="43" type="radio"-->
-                        <!--                                               id="answer43"/>-->
-                        <!--                                        <label for="answer43">Благотворительной деятельности</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[15]"-->
-                        <!--                                               value="44" type="radio"-->
-                        <!--                                               id="answer44"/>-->
-                        <!--                                        <label for="answer44">Умении хорошо выглядеть</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[15]" value="41" type="radio" id="answer41" />
+                                                <label for="answer41">Социальной активности</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[15]" value="42" type="radio" id="answer42" />
+                                                <label for="answer42">Доверии</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[15]" value="43" type="radio" id="answer43" />
+                                                <label for="answer43">Благотворительной деятельности</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[15]" value="44" type="radio" id="answer44" />
+                                                <label for="answer44">Умении хорошо выглядеть</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>6. Неправильные коммуникации могут привести к:</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>6. Неправильные коммуникации могут привести к:</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[16]"-->
-                        <!--                                               value="45" type="radio"-->
-                        <!--                                               id="answer45"/>-->
-                        <!--                                        <label for="answer45">Кризисам</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[16]"-->
-                        <!--                                               value="46" type="radio"-->
-                        <!--                                               id="answer46"/>-->
-                        <!--                                        <label for="answer46">Убыткам</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[16]"-->
-                        <!--                                               value="47" type="radio"-->
-                        <!--                                               id="answer47"/>-->
-                        <!--                                        <label for="answer47">Скандалам</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[16]"-->
-                        <!--                                               value="48" type="radio"-->
-                        <!--                                               id="answer48"/>-->
-                        <!--                                        <label for="answer48">Все варианты верны</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[16]" value="45" type="radio" id="answer45" />
+                                                <label for="answer45">Кризисам</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[16]" value="46" type="radio" id="answer46" />
+                                                <label for="answer46">Убыткам</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[16]" value="47" type="radio" id="answer47" />
+                                                <label for="answer47">Скандалам</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[16]" value="48" type="radio" id="answer48" />
+                                                <label for="answer48">Все варианты верны</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>7. Самопродвижение – это:</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>7. Самопродвижение – это:</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[17]"-->
-                        <!--                                               value="49" type="radio"-->
-                        <!--                                               id="answer49"/>-->
-                        <!--                                        <label for="answer49">Плохо, пусть другие говорят обо мне и моих-->
-                        <!--                                            поступках</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[17]"-->
-                        <!--                                               value="50" type="radio"-->
-                        <!--                                               id="answer50"/>-->
-                        <!--                                        <label for="answer50">Хорошо, сам себя не похвалишь – никто не похвалит</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[17]" value="49" type="radio" id="answer49" />
+                                                <label for="answer49">Плохо, пусть другие говорят обо мне и моих поступках
+                                                </label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[17]" value="50" type="radio" id="answer50" />
+                                                <label for="answer50">Хорошо, сам себя не похвалишь – никто не похвалит</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>8. Кому лучше заниматься вашим PR, если у вас небольшой бизнес?</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>8. Кому лучше заниматься вашим PR, если у вас небольшой бизнес?</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[18]"-->
-                        <!--                                               value="51" type="radio"-->
-                        <!--                                               id="answer51"/>-->
-                        <!--                                        <label for="answer51">Самому</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[18]"-->
-                        <!--                                               value="52" type="radio"-->
-                        <!--                                               id="answer52"/>-->
-                        <!--                                        <label for="answer52">Наемному PR-щику</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[18]"-->
-                        <!--                                               value="53" type="radio"-->
-                        <!--                                               id="answer53"/>-->
-                        <!--                                        <label for="answer53">PR-агентству</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[18]" value="51" type="radio" id="answer51" />
+                                                <label for="answer51">Самому</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[18]" value="52" type="radio" id="answer52" />
+                                                <label for="answer52">Наемному PR-щику</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[18]" value="53" type="radio" id="answer53" />
+                                                <label for="answer53">PR-агентству</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>9. Стоит ли повторяться в коммуникациях (часто говорить об одном и тоже)?</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>9. Стоит ли повторяться в коммуникациях (часто говорить об одном и тоже)?</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[19]"-->
-                        <!--                                               value="54" type="radio"-->
-                        <!--                                               id="answer54"/>-->
-                        <!--                                        <label for="answer54">Нет, это всем надоест</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[19]"-->
-                        <!--                                               value="55" type="radio"-->
-                        <!--                                               id="answer55"/>-->
-                        <!--                                        <label for="answer55">Да, это ликбез</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[19]" value="54" type="radio" id="answer54" />
+                                                <label for="answer54">Нет, это всем надоест</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[19]" value="55" type="radio" id="answer55" />
+                                                <label for="answer55">Да, это ликбез</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>10. Что верно относительно обратной связи:</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>10. Что верно относительно обратной связи:</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[20]"-->
-                        <!--                                               value="56" type="radio"-->
-                        <!--                                               id="answer56"/>-->
-                        <!--                                        <label for="answer56">Хвалите публично, критикуйте публично</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[20]"-->
-                        <!--                                               value="57" type="radio"-->
-                        <!--                                               id="answer57"/>-->
-                        <!--                                        <label for="answer57">Хвалите публично, критикуйте лично</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[20]"-->
-                        <!--                                               value="58" type="radio"-->
-                        <!--                                               id="answer58"/>-->
-                        <!--                                        <label for="answer58">Хвалите лично, критикуйте публично</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[20]"-->
-                        <!--                                               value="59" type="radio"-->
-                        <!--                                               id="answer59"/>-->
-                        <!--                                        <label for="answer59">Хвалите лично, критикуйте лично</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[20]" value="56" type="radio" id="answer56" />
+                                                <label for="answer56">Хвалите публично, критикуйте публично</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[20]" value="57" type="radio" id="answer57" />
+                                                <label for="answer57">Хвалите публично, критикуйте лично</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[20]" value="58" type="radio" id="answer58" />
+                                                <label for="answer58">Хвалите лично, критикуйте публично</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[20]" value="59" type="radio" id="answer59" />
+                                                <label for="answer59">Хвалите лично, критикуйте лично</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>11. Игнорирование обратной связи это:</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>11. Игнорирование обратной связи это:</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[21]"-->
-                        <!--                                               value="60" type="radio"-->
-                        <!--                                               id="answer60"/>-->
-                        <!--                                        <label for="answer60">Первый шаг к построению независимого сильно бренда</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[21]"-->
-                        <!--                                               value="61" type="radio"-->
-                        <!--                                               id="answer61"/>-->
-                        <!--                                        <label for="answer61">Первый шаг к PR-кризису</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[21]"-->
-                        <!--                                               value="62" type="radio"-->
-                        <!--                                               id="answer62"/>-->
-                        <!--                                        <label for="answer62">Правильное распределение трудовых ресурсов</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[21]" value="60" type="radio" id="answer60" />
+                                                <label for="answer60">Первый шаг к построению независимого сильно бренда</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[21]" value="61" type="radio" id="answer61" />
+                                                <label for="answer61">Первый шаг к PR-кризису</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[21]" value="62" type="radio" id="answer62" />
+                                                <label for="answer62">Правильное распределение трудовых ресурсов</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
-                        <!--                                <div class="swiper-slide">-->
-                        <!--                                    <div class="test__text">-->
-                        <!--                                        <p>12. Навыки публичных коммуникаций востребованы:</p>-->
-                        <!--                                    </div>-->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>12. Навыки публичных коммуникаций востребованы:</p>
+                                            </div>
 
 
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[22]"-->
-                        <!--                                               value="63" type="radio"-->
-                        <!--                                               id="answer63"/>-->
-                        <!--                                        <label for="answer63">Начиная с учебы в ВУЗе</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[22]"-->
-                        <!--                                               value="64" type="radio"-->
-                        <!--                                               id="answer64"/>-->
-                        <!--                                        <label for="answer64">Как только вышел на свою первую работу</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[22]"-->
-                        <!--                                               value="65" type="radio"-->
-                        <!--                                               id="answer65"/>-->
-                        <!--                                        <label for="answer65">Когда появился первый собственный бизнес</label>-->
-                        <!--                                    </div>-->
-                        <!--                                    <div class="test__option">-->
-                        <!--                                        <input class="with-gap" name="answer[22]"-->
-                        <!--                                               value="66" type="radio"-->
-                        <!--                                               id="answer66"/>-->
-                        <!--                                        <label for="answer66">Чем раньше, тем лучше</label>-->
-                        <!--                                    </div>-->
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[22]" value="63" type="radio" id="answer63" />
+                                                <label for="answer63">Начиная с учебы в ВУЗе</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[22]" value="64" type="radio" id="answer64" />
+                                                <label for="answer64">Как только вышел на свою первую работу</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[22]" value="65" type="radio" id="answer65" />
+                                                <label for="answer65">Когда появился первый собственный бизнес</label>
+                                            </div>
+                                            <div class="test__option">
+                                                <input class="with-gap" name="answer[22]" value="66" type="radio" id="answer66" />
+                                                <label for="answer66">Чем раньше, тем лучше</label>
+                                            </div>
 
 
-                        <!--                                </div>-->
+                                        </div>
 
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-                        <!--                    </form>-->
-                        <!--                </div>-->
+                                        <div class="swiper-slide">
+                                            <div class="test__text">
+                                                <p>10. Не могли бы оставить общий отзыв или ваше мнение о пройденном курсе(-ах)?
+                                                </p>
+                                            </div>
+
+
+                                            <textarea class="test__textarea" placeholder="Напишите отзыв"></textarea>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- <div class="swiper-wraper">
+
+
+                                <div class="swiper-slide">
+                                    <div class="test__text">
+                                        <p>1. Как вы считаете насколько полезным был для вас данный курс?</p>
+                                    </div>
+
+
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="30" type="radio"
+                                            id="answer30" />
+                                        <label for="answer30">Очень полезно и практично</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="31" type="radio"
+                                            id="answer31" />
+                                        <label for="answer31">Была надежда получить больше</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Много слов, мало толку</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="33" type="radio"
+                                            id="answer33" />
+                                      <label class="textarea-trigger" for="answer29">Реклама</label>
+                                      <textarea class="test__textarea" placeholder="Напишите отзыв"></textarea>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="test__text">
+                                        <p>4. Вам понравились наши приглашенные эксперты??</p>
+                                    </div>
+
+
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="30" type="radio"
+                                            id="answer30" />
+                                        <label for="answer30">Да, отличные эксперты!</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="31" type="radio"
+                                            id="answer31" />
+                                        <label for="answer31">Хотелось бы побольше экспертов</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Зачем тут вообще нужны эксперты?</label>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="test__text">
+                                        <p>5. Как вам наши видео?</p>
+                                    </div>
+
+
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="30" type="radio"
+                                            id="answer30" />
+                                        <label for="answer30">Все снято отлично и динамично</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="31" type="radio"
+                                            id="answer31" />
+                                        <label for="answer31">Хотелось бы чего-то более креативного и
+                                            динамичного</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Снято как попало</label>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="test__text">
+                                        <p>6. Что вы думаете о сайте?</p>
+                                    </div>
+
+
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="30" type="radio"
+                                            id="answer30" />
+                                        <label for="answer30">Отличный сайт для работы и учебы</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="31" type="radio"
+                                            id="answer31" />
+                                        <label for="answer31">Неплохо, но многое можно улучшить</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Что за криворукие люди делали этот сайт?</label>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="test__text">
+                                        <p>6. Что вы думаете о сайте?</p>
+                                    </div>
+
+
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="30" type="radio"
+                                            id="answer30" />
+                                        <label for="answer30">Отличный сайт для работы и учебы</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="31" type="radio"
+                                            id="answer31" />
+                                        <label for="answer31">Неплохо, но многое можно улучшить</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Что за криворукие люди делали этот сайт?</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="test__text">
+                                        <p>7. Удобно ли вам было заниматься? Как вам личный кабинет?</p>
+                                    </div>
+
+
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="30" type="radio"
+                                            id="answer30" />
+                                        <label for="answer30">Все супер, пользовался(-лась) с
+                                            удовольствием</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="31" type="radio"
+                                            id="answer31" />
+                                        <label for="answer31">Можно было сделать удобнее</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Все плохо, вам еще работать и работать над
+                                            сайтом</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="test__text">
+                                        <p>8. Как прошел процесс оплаты?<p>
+                                    </div>
+
+
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="30" type="radio"
+                                            id="answer30" />
+                                        <label for="answer30">Отлично, все просто и быстро</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="31" type="radio"
+                                            id="answer31" />
+                                        <label for="answer31">Немножко помучался, но все прошло нормально</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Это очень неудобно</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Где, Kaspi брат?</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="test__text">
+                                        <p>9. Что скажете об обратной связи?<p>
+                                    </div>
+
+
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="30" type="radio"
+                                            id="answer30" />
+                                        <label for="answer30">Не пользовался(-лась), все прошло гладко</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="31" type="radio"
+                                            id="answer31" />
+                                        <label for="answer31">Обращался(-лась), мой вопрос был быстро решен</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Обращался(-лась), решали очень долго</label>
+                                    </div>
+                                    <div class="test__option">
+                                        <input class="with-gap" name="answer[12]" value="32" type="radio"
+                                            id="answer32" />
+                                        <label for="answer32">Все очень плохо…</label>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="test__text">
+                                        <p>10. Не могли бы оставить общий отзыв или ваше мнение о
+                                            пройденном курсе(-ах)?
+                                        </p>
+                                    </div>
+
+
+
+
+                                    <textarea class="test__textarea" placeholder="Напишите отзыв"></textarea>
+
+
+                                </div>
+
+
+                            </div> -->
+                                </div>
+                            </form>
+                        </div>
                         <div class="test__controls">
 
                             <div class="jsDefaultSliderPagination2" style="opacity: 0"></div>
@@ -494,7 +672,6 @@
                 </div>
 
 
-
             </div>
             <!--/. Layout Wrapper End -->
 
@@ -503,7 +680,7 @@
             <footer class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-lg-6 col-md-5">
                             <div class="footer__copyright">
                                 <span>© yelikbayev.online</span>
                                 All Rights Reserved.
@@ -512,7 +689,7 @@
                             </div>
                         </div>
                         <!--<div class="footer__copyright&#45;&#45;right-side"></div>-->
-                        <div class="col-md-7">
+                        <div class="col-lg-6 col-md-7">
                             <div class="row no-gutters">
                                 <div class="col-md-9">
                                     <ul class="footer__menu">
@@ -584,6 +761,9 @@
         <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
         <script src="static/js/main.js"></script>
         <!-- <script src="static/js/plugins/jquery.maskedinput.js"></script> -->
+
+        <script src="static/js/separate-js/canvas.js"></script>
+        <script src="static/js/separate-js/jsPDF.js"></script>
         <script src="static/js/separate-js/scripts.js"></script>
 
     </body>

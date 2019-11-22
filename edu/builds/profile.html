@@ -44,15 +44,18 @@
         <!--[if lt IE 9 ]>
     <script src="static/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script>
     <script src="static/js/separate-js/respond.min.js" type="text/javascript"></script>
+    
     <meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
     </head>
 
     <body>
-
         <!-- Layout Begin -->
-        <div class="layout">
 
+        <div class="layout">
+            <div id="preloader">
+                <div id="loader"></div>
+            </div>
             <!-- Layout Wrapper Begin -->
             <div class="layout__wrapper">
 
@@ -68,7 +71,7 @@
                         <div class="navigation__userPanel">
                             <a href="#" class="navigation__link">Войти</a>
                             <a href="#featuresCourse" class="navigation__link navigation__link--sale" data-scroll>Купить
-                            курс</a>
+                        курс</a>
                         </div>
                     </nav>
                 </div>
@@ -206,6 +209,155 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="certificate">
+                                            <div class="user__links-header certificate-caption">Мои сертификаты</div>
+
+                                            <div class="certificate__list">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-6">
+                                                        <div class="certificate__item">
+                                                            <div class="certificate__content">
+                                                                <div class="certificate__icon">
+                                                                    <img src="static/img/general/certificate_icon.svg" alt="">
+                                                                </div>
+                                                                <div class="certificate__theme">
+                                                                    <p>Правила
+                                                                        <br>хорошего роста</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="certificate__control-btn">
+                                                                <a href="#" id="zoom">
+                                                                    <img src="static/img/general/zoom-certificate.svg" alt="">
+                                                                </a>
+                                                                <a href="#" class="download-pdf" onclick="getPDF()">
+                                                                    <img src="static/img/general/save-certificate.svg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="certificate-pdf-wrap" style="display: block; opacity: 1;">
+                                                                <div class="certificate-pdf" id="myDiv">
+                                                                    <img src="data:image/png;base64,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">
+                                                                    <div class="certificate-content-pdf">
+                                                                        <h2>Сертификат</h2>
+                                                                        <div class="certificate-desc-pdf">
+                                                                            <p>Свидетельствует о том, что</p>
+                                                                            <h3>Джамал Малик</h3>
+                                                                            <p>успешно закончил блок авторского онлайн-курса
+                                                                                <br>Алишера Еликбаева — “Yelikbayev.online” на тему:</p>
+                                                                            <strong>“Public Relations (PR)”</strong>
+                                                                            <p>25 сентября 2020 года.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="course-author-pdf">
+                                                                        <strong>Алишер Еликбаев</strong>
+                                                                        <p>автор курса</p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+
+
+
+
+
+                                                            <div id="certificate" class="certificate-list">
+                                                                <div class="certificate-wrap">
+                                                                    <div class="certificate-bg">
+                                                                        <img src="static/img/general/certificate-list.png" alt="">
+                                                                    </div>
+                                                                    <div class="certificate-author">
+                                                                        <p>Алишер Еликбаев</p>
+                                                                        <span>автор курса</span>
+                                                                    </div>
+                                                                    <div class="certificate-content">
+                                                                        <h2>Сертификат</h2>
+                                                                        <div class="certificate-desc">
+                                                                            <p>Свидетельствует о том, что</p>
+                                                                            <h3>Джамал Малик</h3>
+                                                                            <p>успешно закончил блок авторского онлайн-курса
+                                                                                <br>Алишера Еликбаева — “Yelikbayev.online” на тему:
+                                                                                <br>
+                                                                                <span>“Public Relations</span>
+                                                                            </p>
+                                                                            <p>(PR)” 25 сентября 2020 года.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6">
+                                                        <div class="certificate__item">
+                                                            <div class="certificate__content">
+                                                                <div class="certificate__icon">
+                                                                    <img src="static/img/general/certificate_icon.svg" alt="">
+                                                                </div>
+                                                                <div class="certificate__theme">
+                                                                    <p>PR и
+                                                                        <br>репутация</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="certificate__control-btn">
+                                                                <a href="#">
+                                                                    <img src="static/img/general/zoom-certificate.svg" alt="">
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="static/img/general/save-certificate.svg" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6">
+                                                        <div class="certificate__item">
+                                                            <div class="certificate__content">
+                                                                <div class="certificate__icon">
+                                                                    <img src="static/img/general/certificate_icon.svg" alt="">
+                                                                </div>
+                                                                <div class="certificate__theme">
+                                                                    <p>SMM и Digital-
+                                                                        <br>маркетинг</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="certificate__control-btn">
+                                                                <a href="#">
+                                                                    <img src="static/img/general/zoom-certificate.svg" alt="">
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="static/img/general/save-certificate.svg" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6">
+                                                        <div class="certificate__item">
+                                                            <div class="certificate__content">
+                                                                <div class="certificate__icon">
+                                                                    <img src="static/img/general/certificate_icon.svg" alt="">
+                                                                </div>
+                                                                <div class="certificate__theme">
+                                                                    <p>Публичные
+                                                                        <br>выступления</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="certificate__control-btn">
+                                                                <a href="#">
+                                                                    <img src="static/img/general/zoom-certificate.svg" alt="">
+
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="static/img/general/save-certificate.svg" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                            </div>
+
+                                        </div>
                                         <div class="user__links">
                                             <div class="user__links-header">Настройки</div>
                                             <a href="#" class="user__links-item">Редактировать данные профиля</a>
@@ -218,8 +370,8 @@
                                     <div class="tab-pane fade" id="userPayment" role="tabpanel" aria-labelledby="userPayment">
                                         <div class="payment-history">
                                             <a class="payment-history__header" href="#paymentsTable" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="paymentsTable">
-                                            История платежей
-                                        </a>
+                                        История платежей
+                                    </a>
                                             <div class="collapse">
                                                 <table>
                                                     <thead>
@@ -285,15 +437,13 @@
                 </div>
                 <!--/. Layout Main End -->
 
-
-
             </div>
             <!--/. Layout Wrapper End -->
             <!-- Footer Begin -->
             <footer class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-lg-6 col-md-5">
                             <div class="footer__copyright">
                                 <span>© yelikbayev.online</span>
                                 All Rights Reserved.
@@ -302,7 +452,7 @@
                             </div>
                         </div>
                         <!--<div class="footer__copyright&#45;&#45;right-side"></div>-->
-                        <div class="col-md-7">
+                        <div class="col-lg-6 col-md-7">
                             <div class="row no-gutters">
                                 <div class="col-md-9">
                                     <ul class="footer__menu">
@@ -347,12 +497,18 @@
                     </div>
                     <!--        <div class="container">-->
                     <!--
-                <!--        </div>-->
+            <!--        </div>-->
                 </div>
             </footer>
             <!--/. Footer End -->
+
         </div>
+
         <!--/. Layout End -->
+
+
+
+
 
         <!-------------------------------- CONTENT ENDS HERE -------------------------------->
 
@@ -370,8 +526,60 @@
         <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
         <script src="static/js/main.js"></script>
         <!-- <script src="static/js/plugins/jquery.maskedinput.js"></script> -->
+
+        <script src="static/js/separate-js/canvas.js"></script>
+        <script src="static/js/separate-js/jsPDF.js"></script>
         <script src="static/js/separate-js/scripts.js"></script>
 
     </body>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Тестовый сайт</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="format-detection" content="telephone=no">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+        <!-- Stylesheet -->
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <link href="static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
+        <!-- <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"> -->
+        <!--  Open Graph Tags -->
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link rel="icon" type="image/png" href="favicon.png">
+
+        <script>
+            (function (H) {
+                H.className = H.className.replace(/\bno-js\b/, 'js')
+            })(document.documentElement)
+        </script>
+
+
+        <!--[if lt IE 9 ]>
+    <script src="static/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script>
+    <script src="static/js/separate-js/respond.min.js" type="text/javascript"></script>
+    
+    <meta content="no" http-equiv="imagetoolbar">
+    <![endif]-->
+
+    </head>
 
 </html>

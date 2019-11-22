@@ -31,6 +31,7 @@ $(function () {
         $('.navigation__userPanel').removeClass('userPanelShow');
         $('.header__logo').removeClass('mobileLogo');
         $('.header__logo span').removeClass('mobileLogoSpan');
+        $('body, html').removeClass('mobileBody-scroll');
     });
 
 
@@ -54,7 +55,7 @@ $(function () {
     }
 
 
-//    burger end
+    //    burger end
 
 
     setTimeout(function () {
@@ -191,13 +192,14 @@ $(function () {
         mousewheel: false,
         loop: false,
         spaceBetween: 0,
+        autoHeight: true,
         navigation: {
             nextEl: '.jsTestSliderNext',
             prevEl: '.jsTestSliderPrev',
         },
         pagination: {
             el: ".jsDefaultSliderPagination",
-            clickable: true,
+            clickable: false,
         },
         touchRatio: 0,
         slidesPerView: 1,
@@ -208,6 +210,9 @@ $(function () {
             },
         }
     });
+    $('.jsTestSliderPrev').on('click', function () {
+        $('.test__finish').removeClass('-show');
+    })
 
     /*
     |--------------------------------------------------------------------------
@@ -294,9 +299,9 @@ $(function () {
     // maodal window end
 
 
-// $('.courseItem-js').on('click', function() {
-//     $(this).toggleClass('-active');
-// });
+    // $('.courseItem-js').on('click', function() {
+    //     $(this).toggleClass('-active');
+    // });
 
 
     let buttonDesabled = function () {
@@ -349,10 +354,121 @@ $('#userDropdown').on('click', function () {
 });
 $(document).mouseup(function (e) {
     var div = $("#userDropdownMenu");
-    if (!div.is(e.target)
-        && div.has(e.target).length === 0) {
+    if (!div.is(e.target) &&
+        div.has(e.target).length === 0) {
         div.hide();
     }
 });
 
+$(document).mouseup(function (e) {
+    var div = $(".certificate-wrap");
+    if (!div.is(e.target) &&
+        div.has(e.target).length === 0) {
+        $('.certificate-list').hide();
+    }
+});
 
+
+var swiper = new Swiper('.expertSlider-js', {
+    slidesPerView: 1,
+    autoHeight: false,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+
+});
+
+
+
+
+// $('#zoom').on('click', function (e) {
+//     e.preventDefault();
+//     $('#certificate').css('display', 'flex');
+// });
+
+
+$('.zoom').on('click', function (e) {
+    e.preventDefault();
+    $('#' + $(this).data('cert')).css('display', 'flex');
+});
+
+
+$('.textarea-trigger').on('click', function () {
+    $(this).parent().find('.test__textarea').show().val('');
+});
+
+
+$('.check-trigger').on('click', function () {
+    $(this).parent().parent().find('.test__textarea').val('').hide();
+});
+
+function getPDF() {
+    doCanvas();
+}
+
+function doCanvas() {
+    html2canvas(document.querySelector("#myDiv")).then(canvas => {
+        doPDF(canvas);
+    });
+
+}
+
+function doPDF(canvas) {
+    var doc = new jsPDF('l', 'mm', [590, 435]);
+    var width = doc.internal.pageSize.getWidth();
+    var height = doc.internal.pageSize.getHeight();
+    doc.addImage(canvas.toDataURL(), 'PNG', 0, 0, width, height);
+    doc.save(cerfName);
+    $('#preloader').hide();
+}
+
+var cerfName = $('.certificate-desc span').text();
+
+$('.download-pdf').on('click', function (e) {
+    e.preventDefault();
+    $('#preloader').show();
+});
+
+
+var swiper = new Swiper('.courses-comments-js', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: '.comment-next',
+        prevEl: '.comment-prev',
+    },
+    breakpoints: {
+        575: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        991: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        }
+    }
+});
+
+var widthImgExpert = $('.experts__foto img').width();
+var halfWidthImgExpert = (widthImgExpert / 2);
+
+var widthPagination = $('.experts .swiper-pagination').width();
+var halfWidthPagination = (widthPagination / 2);
+var indentPagination = (halfWidthImgExpert - halfWidthPagination);
+
+$('.experts .swiper-pagination').css('left', indentPagination);
+
+
+var widthExpertsInfo = $('.experts__info').width();
+var widthSwiperNav = $('.experts .swiper-nav').width();
+var indentSwiperNav = (widthExpertsInfo - widthSwiperNav);
+
+
+$('.experts .swiper-nav').css('right', indentSwiperNav);
