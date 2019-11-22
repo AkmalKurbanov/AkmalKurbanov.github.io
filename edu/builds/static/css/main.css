@@ -20023,7 +20023,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 @media (max-width: 575.98px) {
   .entry--camry .caption {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
     margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;

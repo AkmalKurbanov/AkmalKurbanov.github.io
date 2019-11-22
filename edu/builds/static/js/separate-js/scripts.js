@@ -385,8 +385,6 @@ var swiper = new Swiper('.expertSlider-js', {
 });
 
 
-
-
 // $('#zoom').on('click', function (e) {
 //     e.preventDefault();
 //     $('#certificate').css('display', 'flex');
@@ -472,3 +470,9 @@ var indentSwiperNav = (widthExpertsInfo - widthSwiperNav);
 
 
 $('.experts .swiper-nav').css('right', indentSwiperNav);
+
+
+var screenHeight = window.innerHeight;
+window.onscroll = function () {
+    $('.entry--camry .caption').css('height', screenHeight);
+};
