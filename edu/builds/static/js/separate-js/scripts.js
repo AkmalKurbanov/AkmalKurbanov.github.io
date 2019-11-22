@@ -477,5 +477,12 @@ $('.experts .swiper-nav').css('right', indentSwiperNav);
 
 
 
-var viewportHeight = $('.entry--camry .caption').outerHeight();
-$('.entry--camry .caption').css({ height: viewportHeight });
+function calcVH() {
+    $('.entry--camry .caption').innerHeight( $(this).innerHeight() );
+}
+(function($) {
+    calcVH();
+    $(window).on('orientationchange', function() {
+        calcVH();
+    });
+})(jQuery);
