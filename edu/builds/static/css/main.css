@@ -19994,6 +19994,8 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   .entry--camry {
     min-height: 500px;
     background-position: 85% 50%;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 }
 
@@ -20023,6 +20025,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 @media (max-width: 575.98px) {
   .entry--camry .caption {
     height: calc(100vh - 60px);
+    height: calc(var(--vh, 1vh) * 100);
     margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -20034,7 +20037,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
   }
 }
 
@@ -20147,7 +20150,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 @media (max-width: 575.98px) {
   .entry--camry .caption span {
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
   }
 }
 

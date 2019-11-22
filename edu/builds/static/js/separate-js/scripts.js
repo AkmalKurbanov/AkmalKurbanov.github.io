@@ -476,9 +476,7 @@ $('.experts .swiper-nav').css('right', indentSwiperNav);
 
 
 
-function calcVH() {
-    $('.caption-js').innerHeight( $(this).innerHeight() );
-}
-$(window).on('load resize orientationchange', function() {
-    calcVH();
-});
+
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
