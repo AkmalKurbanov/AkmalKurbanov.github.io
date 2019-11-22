@@ -20004,7 +20004,6 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 100vh;
   }
 }
 

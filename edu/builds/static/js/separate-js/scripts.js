@@ -476,13 +476,9 @@ $('.experts .swiper-nav').css('right', indentSwiperNav);
 
 
 
-
 function calcVH() {
-    $('.entry--camry .caption').innerHeight( $(this).innerHeight() );
+    $('.caption-js').innerHeight( $(this).innerHeight() );
 }
-(function($) {
+$(window).on('load resize orientationchange', function() {
     calcVH();
-    $(window).on('orientationchange', function() {
-        calcVH();
-    });
-})(jQuery);
+});
