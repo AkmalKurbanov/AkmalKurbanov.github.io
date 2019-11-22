@@ -20004,8 +20004,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: auto;
-    min-height: auto;
+    min-height: 100vh;
   }
 }
 
@@ -20024,7 +20023,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 @media (max-width: 575.98px) {
   .entry--camry .caption {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 80px);
     margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
