@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>match-calendar
+  </title>
+  <link rel="stylesheet" href="assets/styles.min.css">
+  <link link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrap">
+            <div class="hamburger">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div><a class="header__logo" href="./"><span class="header__logo-wrap"><img src="assets/img/logo.svg" alt=""></span><span>Кыргызская <br> Премьер Лига</span></a>
+            <div class="team">
+              <div class="header__top">
+                <div class="social">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                  </ul>
+                </div>
+                <div class="lang">
+                  <ul>
+                    <li class="active"><a href="#">Кыр</a></li>
+                    <li><a href="#">Рус</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team__wrap">
+                <div class="team__item"><a href="#" title="#"><img src="assets/img/KPL-teams/Abdysh-Ata.png" alt=""></a></div>
+                <div class="team__item"><a href="#" title="#"><img src="assets/img/KPL-teams/Alai.png" alt=""></a></div>
+                <div class="team__item"><a href="#" title="#"><img src="assets/img/KPL-teams/lider.png" alt=""></a></div>
+                <div class="team__item"><a href="#" title="#"><img src="assets/img/KPL-teams/Alga.png" alt=""></a></div>
+                <div class="team__item"><a href="#" title="#"><img src="assets/img/KPL-teams/Dordoi.png" alt=""></a></div>
+                <div class="team__item"><a href="#" title="#"><img src="assets/img/KPL-teams/Ilbirs.png" alt=""></a></div>
+                <div class="team__item"><a href="#" title="#"><img src="assets/img/KPL-teams/KaraBalta.png" alt=""></a></div>
+                <div class="team__item"><a href="#" title="#"><img src="assets/img/KPL-teams/Neftchi.png" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item active"><a class="nav__link" href="news.html">Новости</a></li>
+              <li class="nav__item nav__item--submenu"><a class="nav__link" href="#">клубы<i class="fal fa-angle-down"></i></a>
+                <div class="club-list-wrap club sub-block"> 
+                  <div class="club__list"><a class="club__item" href="#">
+                                          <div class="club__img"><img src="assets/img/KPL-teams/Abdysh-Ata.png"></div>
+                                          <div class="club__name">АБДЫШ-АТА</div></a><a class="club__item" href="#">
+                                          <div class="club__img"><img src="assets/img/KPL-teams/Alai.png"></div>
+                                          <div class="club__name">АЛАЙ</div></a><a class="club__item" href="#">
+                                          <div class="club__img"><img src="assets/img/KPL-teams/lider.png"></div>
+                                          <div class="club__name">АКАДЕМИЯ ЛИДЕР</div></a><a class="club__item" href="#">
+                                          <div class="club__img"><img src="assets/img/KPL-teams/Alga.png"></div>
+                                          <div class="club__name">АЛГА</div></a><a class="club__item" href="#">
+                                          <div class="club__img"><img src="assets/img/KPL-teams/Dordoi.png"></div>
+                                          <div class="club__name">ДОРДОЙ</div></a><a class="club__item" href="#">
+                                          <div class="club__img"><img src="assets/img/KPL-teams/Ilbirs.png"></div>
+                                          <div class="club__name">ИЛБИРС</div></a><a class="club__item" href="#">
+                                          <div class="club__img"><img src="assets/img/KPL-teams/KaraBalta.png"></div>
+                                          <div class="club__name">КАРА-БАЛТА</div></a><a class="club__item" href="#">
+                                          <div class="club__img"><img src="assets/img/KPL-teams/Neftchi.png"></div>
+                                          <div class="club__name">НЕФТЧИ</div></a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item nav__item--submenu"><a class="nav__link" href="#">турниры<i class="fal fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item active"><a class="sub-menu__link" href="#">Кыргызская премьер-лига</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">первая лига Кыргызстана</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">кубок Кыргызстана</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">супер кубок Кыргызстана</a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="media.html">медиа</a></li>
+              <li class="nav__item nav__item--submenu"> <a class="nav__link" href="about.html">о кпл <i class="fal fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item active"><a class="sub-menu__link" href="#">персонал</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">официальные лица</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">документы</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">стадионы</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="search-wrap">
+              <div class="search-btn"><i class="fas fa-search"></i></div>
+              <div class="search-btn-close"><i class="fal fa-times"></i></div>
+            </div>
+          </nav>
+          <div class="search" id="search"> 
+            <form action="#">
+              <input class="search__input" type="search" placeholder="Поиск">
+              <button class="search__btn" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          <div class="championship swiper-container championship-js">
+            <div class="championship__wrapper swiper-wrapper">    
+                            <div class="championship__item championship__item--past-game swiper-slide">
+                              <div class="championship__wrap">
+                                <div class="championship__tour">5 тур</div>
+                                <div class="championship__info"> 
+                                  <div class="championship__game-date">Пт, 25.10, 18:00</div>
+                                  <div class="championship__game-result"><a class="championship__team" href="#">Абдыш-Ата
+                                      <div class="team-score">2</div></a><a class="championship__team" href="#">Кара-Балта
+                                      <div class="team-score">0</div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="championship__item championship__item--past-game swiper-slide">
+                              <div class="championship__wrap">
+                                <div class="championship__tour">5 тур</div>
+                                <div class="championship__info"> 
+                                  <div class="championship__game-date">Сб, 25.10, 18:00</div>
+                                  <div class="championship__game-result"><a class="championship__team" href="#">Дордой
+                                      <div class="team-score">0</div></a><a class="championship__team" href="#">Илбирс
+                                      <div class="team-score">0</div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="championship__item championship__item--past-game swiper-slide">
+                              <div class="championship__wrap">
+                                <div class="championship__tour">5 тур</div>
+                                <div class="championship__info"> 
+                                  <div class="championship__game-date">Сб, 25.10, 18:00</div>
+                                  <div class="championship__game-result"><a class="championship__team" href="#">Ак.Лидер
+                                      <div class="team-score">1</div></a><a class="championship__team" href="#">Алай
+                                      <div class="team-score">5</div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="championship__item championship__item--past-game swiper-slide">
+                              <div class="championship__wrap">
+                                <div class="championship__tour">5 тур</div>
+                                <div class="championship__info"> 
+                                  <div class="championship__game-date">Сб, 25.10, 18:00</div>
+                                  <div class="championship__game-result"><a class="championship__team" href="#">Алга
+                                      <div class="team-score">11</div></a><a class="championship__team" href="#">Нефтчи
+                                      <div class="team-score">3</div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="championship__item swiper-slide">
+                              <div class="championship__wrap">
+                                <div class="championship__tour">6 тур</div>
+                                <div class="championship__info"> 
+                                  <div class="championship__game-date">Пт, 25.10, 18:00</div>
+                                  <div class="championship__game-result">
+                                    <div class="championship__team">Кара-Балта</div>
+                                    <div class="championship__team">Дордой</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="championship__item swiper-slide">
+                              <div class="championship__wrap">
+                                <div class="championship__tour">6 тур</div>
+                                <div class="championship__info"> 
+                                  <div class="championship__game-date">Сб, 25.10, 18:00</div>
+                                  <div class="championship__game-result">
+                                    <div class="championship__team">Нефтчи</div>
+                                    <div class="championship__team">Ак.Лидер</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="championship__item swiper-slide">
+                              <div class="championship__wrap">
+                                <div class="championship__tour">6 тур</div>
+                                <div class="championship__info"> 
+                                  <div class="championship__game-date">Сб, 31.10, 19:45</div>
+                                  <div class="championship__game-result">
+                                    <div class="championship__team">Абдыш-Ата</div>
+                                    <div class="championship__team">Алга</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="championship__item swiper-slide">
+                              <div class="championship__wrap">
+                                <div class="championship__tour">6 тур</div>
+                                <div class="championship__info"> 
+                                  <div class="championship__game-date">Сб, 25.10, 18:00</div>
+                                  <div class="championship__game-result">
+                                    <div class="championship__team">Алай</div>
+                                    <div class="championship__team">Илбирс</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="players">
+        <div class="container">
+          <div class="players__team-banner players__team-banner--alga">
+            <div class="players__part">
+                            <div class="breadcrumbs">
+                              <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="Главная">Главная</a></li>
+                                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="Клубы">Клубы</a></li>
+                                <li class="breadcrumbs__item">Алга</li>
+                              </ul>
+                            </div>
+              <div class="players__team-info">
+                <div class="players__team-logo"><img src="assets/img/KPL-teams/Alga1.png" alt=""></div>
+                <div class="players__team-desc">
+                  <h2>АЛГА</h2>
+                  <ul>
+                    <li>Дата организации: 1960 г</li>
+                    <li>Тренер: Азаматов Азамат Азаматович</li>
+                    <li>Стадион: Арена ФЦ ФФКР</li>
+                    <li>Официальный сайт: <a href="www.fcalga.kg">www.fcalga.kg</a></li>
+                  </ul>
+                  <div class="players__team-social">
+                    <ul>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="players__part">
+              <div class="players__team-foto">
+                <svg viewBox="0 0 489 290">
+                  <path class="cut" d="M 0,0 V 291 H 125.73242 L 42.5,193 0,92.56816 0.08838835,82.668665 78.03125,0.06250046 Z"></path>
+                </svg><img src="assets/img/players/banner.jpg" alt="">
+              </div>
+            </div>
+          </div>
+                    <div class="tabs">
+                      <ul class="tabs__list">
+                        <li class="tabs__item"><a class="tabs__link" href="#">Игроки</a></li>
+                        <li class="tabs__item"><a class="tabs__link" href="#">Календарь игр</a></li>
+                      </ul>
+                    </div>
+          <div class="calendar calendar__personal">
+            <div class="standings__control">
+              <h3 class="heading">Календарь</h3>
+              <form>
+                <div class="select-wrap"><span>Сезон</span>
+                  <div class="select">
+                    <input class="select-item" type="hidden" name="select-season" value="2019">
+                    <div class="select_checked">2019</div>
+                    <ul class="select__dropdown">
+                      <li class="select__option" data-value="2019">2019</li>
+                      <li class="select__option" data-value="2020">2020</li>
+                      <li class="select__option" data-value="2021">2021</li>
+                      <li class="select__option" data-value="2022">2022</li>
+                      <li class="select__option" data-value="2023">2023</li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="calendar__wrap">
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">15 мар 2019</span><span class="calendar__tour">Тур 1</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="past-game calendar__score-wrap"> <a class="winner calendar__game-score" href="#"><span>2</span><span class="separator">:</span><span>0</span></a></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/lider.png" alt=""></div>
+                        <div class="calendar__team-name">Академия Лидер</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="away-game calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">21 мар 2019</span><span class="calendar__tour">Тур 2</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="past-game calendar__score-wrap"> <a class="loser calendar__game-score" href="#"><span>2</span><span class="separator">:</span><span>0</span></a></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Dordoi.png" alt=""></div>
+                        <div class="calendar__team-name">Дордой</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="away-game calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">1 апр 2019</span><span class="calendar__tour">Тур 3</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="past-game calendar__score-wrap"> <a class="equal calendar__game-score" href="#"><span>0</span><span class="separator">:</span><span>0</span></a></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Neftchi.png" alt=""></div>
+                        <div class="calendar__team-name">Нефтчи</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">7 апр 2019</span><span class="calendar__tour">Тур 4</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="past-game calendar__score-wrap"> <a class="winner calendar__game-score" href="#"><span>2</span><span class="separator">:</span><span>0</span></a></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Ilbirs.png" alt=""></div>
+                        <div class="calendar__team-name">Илбирс</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">15 май 2019</span><span class="calendar__tour">Тур 5</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="past-game calendar__score-wrap"> <a class="winner calendar__game-score" href="#"><span>4</span><span class="separator">:</span><span>0</span></a></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/KaraBalta.png" alt=""></div>
+                        <div class="calendar__team-name">Кара-Балта</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="away-game calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">22 май 2019</span><span class="calendar__tour">Тур 6</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="past-game calendar__score-wrap"> <a class="loser calendar__game-score" href="#"><span>0</span><span class="separator">:</span><span>5</span></a></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Abdysh-Ata.png" alt=""></div>
+                        <div class="calendar__team-name">Абдыш-Ата</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="away-game calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">29 май 2019</span><span class="calendar__tour">Тур 7</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="past-game calendar__score-wrap"> <a class="loser calendar__game-score" href="#"><span>0</span><span class="separator">:</span><span>1</span></a></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alai.png" alt=""></div>
+                        <div class="calendar__team-name">Алай</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">10 июн 2019</span><span class="calendar__tour">1/8 финала</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="past-game calendar__score-wrap"> <a class="winner calendar__game-score" href="#"><span>3</span><span class="separator">:</span><span>0</span></a></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/lider.png" alt=""></div>
+                        <div class="calendar__team-name">Академия Лидер</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/players/satus.png" alt=""></div>
+                </div>
+              </div>
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">17 июн 2019</span><span class="calendar__tour">Тур 8</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="calendar__game-score upcoming-game"><span>21:30</span></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Dordoi.png" alt=""></div>
+                        <div class="calendar__team-name">Дордой</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">11 сен 2019</span><span class="calendar__tour">Тур 9</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="calendar__game-score upcoming-game"><span>19:45</span></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Neftchi.png" alt=""></div>
+                        <div class="calendar__team-name">Нефтчи</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="away-game calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">18 сен 2019</span><span class="calendar__tour">Тур 10</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="calendar__game-score upcoming-game"><span>19:45</span></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Ilbirs.png" alt=""></div>
+                        <div class="calendar__team-name">Илбирс</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="away-game calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">28 сен 2019</span><span class="calendar__tour">Тур 11</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="calendar__game-score upcoming-game"><span>19:45</span></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/KaraBalta.png" alt=""></div>
+                        <div class="calendar__team-name">Кара-Балта</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">5 окт 2019</span><span class="calendar__tour">Тур 12</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="calendar__game-score upcoming-game"><span>19:45</span></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Abdysh-Ata.png" alt=""></div>
+                        <div class="calendar__team-name">Абдыш-Ата</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">12 окт 2019</span><span class="calendar__tour">Тур 13</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="calendar__game-score upcoming-game"><span>19:45</span></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alai.png" alt=""></div>
+                        <div class="calendar__team-name">Алай</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">29 окт 2019</span><span class="calendar__tour">Тур 14</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="calendar__game-score upcoming-game"><span>19:45</span></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/lider.png" alt=""></div>
+                        <div class="calendar__team-name">Академия Лидер</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/logo.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="calendar__item">
+                <div class="calendar__block">
+                  <div class="calendar__info"><span class="calendar__date">3 ноя 2019</span><span class="calendar__tour">Финал</span></div>
+                </div>
+                <div class="calendar__block">   
+                  <div class="calendar__game-score-wrap">
+                    <div class="calendar__team">
+                      <div class="calendar__team-wrap">
+                        <div class="calendar__team-name">Алга</div>
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/Alga.png" alt=""></div>
+                      </div>
+                      <div class="calendar__game-score upcoming-game"><span>19:45</span></div>
+                      <div class="calendar__team-wrap"> 
+                        <div class="calendar__team-logo"><img src="assets/img/KPL-teams/lider.png" alt=""></div>
+                        <div class="calendar__team-name">Академия Лидер</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__block">
+                  <div class="calendar__status"><img src="assets/img/players/satus.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__info">
+            <p>© 2019. ОФ “Кыргызская Премьер Лига” </p>
+            <p>Адрес: Кыргызская Республика г. Бишкек, ул. Медерова, 1 </p>
+          </div>
+          <div class="footer__contacts"><a href="tel:+996312123456"><i class="fas fa-phone"></i>Тел.: +996 312 12-34-56</a><a href="mailto:info@kpl.kg"><i class="fas fa-envelope"></i>info@kpl.kg</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="assets/scripts.min.js"></script>
+</body>

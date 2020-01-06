@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>KPL</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+  <link rel="manifest" href="images/favicon//site.webmanifest">
+  <link rel="mask-icon" href="images/favicon//safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <style>
+    .main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      background-size: cover;
+      padding: 30px 0;
+      position: relative;
+    }
+
+    .main:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .logo {
+      max-width: 160px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo-title {
+      color: #ffffff;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+      font-size: 25px;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .list {
+      max-width: 1140px;
+      width: 100%;
+      padding: 20px 15px 0px;
+    }
+
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    li {
+      list-style-type: none;
+      flex-basis: 33.33%;
+    }
+
+    ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.8;
+      position: relative;
+      padding-left: 25px;
+      transition: all .3s
+    }
+
+    ul li a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 1px solid #fff;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all .3s
+    }
+
+
+
+    ul li a:hover {
+      color: #ffc327;
+      text-decoration: none;
+    }
+
+    ul li a:hover:before {
+      border: 1px solid #ffc327;
+    }
+
+
+    @media (max-width:1199.98px) {
+      ul li a {
+        font-size: 15px
+      }
+
+      ul li a:before {
+        width: 12px;
+        height: 12px;
+        left: 5px;
+      }
+    }
+
+    @media (max-width:991.98px) {
+      li {
+        list-style-type: none;
+        flex-basis: 60%;
+        padding-left: 200px;
+      }
+
+      li:nth-child(2n) {
+        padding-left: 0;
+        flex-basis: 40%;
+      }
+
+      ul li a {
+        font-size: 14px;
+        padding-left: 10px
+      }
+
+      ul li a:before {
+        width: 10px;
+        height: 10px;
+        left: -8px
+      }
+    }
+
+    @media (max-width:767.98px) {
+      .logo {
+        max-width: 120px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        padding-left: 125px;
+      }
+
+      ul li a {
+        color: #fff
+      }
+    }
+
+    @media (max-width:575.98px) {
+      .list {
+        max-width: 168px;
+        padding: 5px 0 0;
+      }
+
+      li {
+        flex-basis: 100%;
+        padding: 0;
+      }
+
+      li:nth-child(2n) {
+        padding-left: 0;
+        flex-basis: 100%;
+      }
+
+      ul li a {
+        font-size: 13px;
+        font-weight: 500;
+        padding-left: 7px;
+      }
+
+      .logo {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+  <div class="main" style="background-image:url(../../kpl-bg.jpg)">
+    <div class="logo">
+      <img src="assets/img/logo-white.svg" alt="">
+    </div>
+    <span class="logo-title">Кыргызская <br> Премьер Лига</span>
+    <div class="list">
+      <ul>
+        <li><a target="_blank" href="main.html">Главная</a></li>
+        <li><a target="_blank" href="news.html">Новости</a></li>
+        <li><a target="_blank" href="news-detail.html">Cтатья</a></li>
+        <li><a target="_blank" href="online.html">Трансляция матчей</a></li>
+        <li><a target="_blank" href="clubs.html">Клубы</a></li>
+        <li><a target="_blank" href="players.html">Список футболистов</a></li>
+        <li><a target="_blank" href="match-calendar.html">Календарь игр</a></li>
+        <li><a target="_blank" href="match-details.html">Результат матча</a></li>
+        <li><a target="_blank" href="standings.html">Турнирная таблица</a></li>
+        <li><a target="_blank" href="tournament-calendar.html">Календарь турнира</a></li>
+        <li><a target="_blank" href="bombardiers.html">Бомбардиры</a></li>
+        <li><a target="_blank" href="statistics.html">Статистика</a></li>
+        <li><a target="_blank" href="media.html">Медиа</a></li>
+        <li><a target="_blank" href="video.html">Медиа(Видео)</a></li>
+        <li><a target="_blank" href="photo.html">Медиа(Фото)</a></li>
+        <li><a target="_blank" href="employees.html">СОТРУДНИКИ</a></li>
+        <li><a target="_blank" href="referee.html">АРБИТРЫ И КОМИССАРЫ</a></li>
+        <li><a target="_blank" href="documents.html">ДОКУМЕНТЫ</a></li>
+        <li><a target="_blank" href="stadiums.html">СТАДИОНЫ</a></li>
+        <li><a target="_blank" href="stadium-detail.html">о СТАДИОНе</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</html>
