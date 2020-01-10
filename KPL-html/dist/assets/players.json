@@ -6,7 +6,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/1.png"
+      "photo": "assets/img/players/1.png"
     },
     {
       "number": "16",
@@ -15,7 +15,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/2.png"
+      "photo": "assets/img/players/2.png"
     },
     {
       "number": "3",
@@ -24,7 +24,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/uzb.png",
       "country": "Узбекистан",
-      "foto": "assets/img/players/3.png"
+      "photo": "assets/img/players/3.png"
     },
     {
       "number": "6",
@@ -33,7 +33,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/gh.png",
       "country": "Гана",
-      "foto": "assets/img/players/4.png"
+      "photo": "assets/img/players/4.png"
     },
     {
       "number": "17",
@@ -42,7 +42,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/5.png"
+      "photo": "assets/img/players/5.png"
     },
     {
       "number": "16",
@@ -51,7 +51,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/6.png"
+      "photo": "assets/img/players/6.png"
     },
     {
       "number": "39",
@@ -60,7 +60,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/7.png"
+      "photo": "assets/img/players/7.png"
     },
     {
       "number": "77",
@@ -69,7 +69,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/8.png"
+      "photo": "assets/img/players/8.png"
     },
     {
       "number": "87",
@@ -78,7 +78,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/ug.png",
       "country": "Уганда",
-      "foto": "assets/img/players/9.png"
+      "photo": "assets/img/players/9.png"
     },
     {
       "number": "7",
@@ -87,7 +87,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/10.png"
+      "photo": "assets/img/players/10.png"
     },
     {
       "number": "8",
@@ -96,7 +96,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/uzb.png",
       "country": "Узбекистан",
-      "foto": "assets/img/players/11.png"
+      "photo": "assets/img/players/11.png"
     },
     {
       "number": "14",
@@ -105,7 +105,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/12.png"
+      "photo": "assets/img/players/12.png"
     },
     {
       "number": "18",
@@ -114,7 +114,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/13.png"
+      "photo": "assets/img/players/13.png"
     },
     {
       "number": "21",
@@ -123,7 +123,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/14.png"
+      "photo": "assets/img/players/14.png"
     },
     {
       "number": "24",
@@ -132,7 +132,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/rus.png",
       "country": "Россия",
-      "foto": "assets/img/players/15.png"
+      "photo": "assets/img/players/15.png"
     },
     {
       "number": "10",
@@ -141,7 +141,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/rus.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/16.png"
+      "photo": "assets/img/players/16.png"
     },
     {
       "number": "9",
@@ -150,7 +150,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/16.png"
+      "photo": "assets/img/players/16.png"
     },
     {
       "number": "30",
@@ -159,7 +159,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/17.png"
+      "photo": "assets/img/players/17.png"
     },
     {
       "number": "84",
@@ -168,7 +168,7 @@
       "dateBirth": "15.02.1993",
       "flag": "assets/img/country/kg.png",
       "country": "Кыргызстан",
-      "foto": "assets/img/players/18.png"
+      "photo": "assets/img/players/18.png"
     }
   ],
 
@@ -176,164 +176,164 @@
   "startingLineup1": [{
     "number": "1",
     "name": "Карапетян Грант",
-    "foto": "assets/img/players/1.png"
+    "photo": "assets/img/players/1.png"
   }, {
     "number": "12",
     "name": "Виктор Айо",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "8",
     "name": "Мамытов Эламан",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "3",
     "name": "Кенешов Темирлан",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "10",
     "name": "Жумалиев Эрлан",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "11",
     "name": "Сакебаев Нурмат",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "20",
     "name": "Айбек Тыныстанов",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "21",
     "name": "Керезбеков Мидин",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "13",
     "name": "Бакыт уулу Шаршенбек",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "4",
     "name": "Кольбаев Кайрат",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "6",
     "name": "Искаков Асылбек",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }],
 
   "startingLineup2": [{
       "number": "1",
       "name": "Карапетян Грант",
-      "foto": "assets/img/players/20.png"
+      "photo": "assets/img/players/20.png"
     },
     {
       "number": "12",
       "name": "Виктор Айо",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     },
     {
       "number": "8",
       "name": "Мамытов Эламан",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     },
     {
       "number": "3",
       "name": "Кенешов Темирлан",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     },
     {
       "number": "10",
       "name": "Жумалиев Эрлан",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     },
     {
       "number": "11",
       "name": "Сакебаев Нурмат",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     },
     {
       "number": "20",
       "name": "Айбек Тыныстанов",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     },
     {
       "number": "21",
       "name": "Керезбеков Мидин",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     },
     {
       "number": "13",
       "name": "Бакыт уулу Шаршенбек",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     },
     {
       "number": "4",
       "name": "Кольбаев Кайрат",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     },
     {
       "number": "6",
       "name": "Искаков Асылбек",
-      "foto": "assets/img/players/22.png"
+      "photo": "assets/img/players/22.png"
     }
   ],
   "substitute1": [{
     "number": "11",
     "name": "Сакебаев Нурмат",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "20",
     "name": "Айбек Тыныстанов",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "21",
     "name": "Керезбеков Мидин",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "13",
     "name": "Бакыт уулу Шаршенбек",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "4",
     "name": "Кольбаев Кайрат",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }, {
     "number": "6",
     "name": "Искаков Асылбек",
-    "foto": "assets/img/players/21.png"
+    "photo": "assets/img/players/21.png"
   }],
 
   "substitute2": [{
     "number": "11",
     "name": "Сакебаев Нурмат",
-    "foto": "assets/img/players/22.png"
+    "photo": "assets/img/players/22.png"
   }, {
     "number": "20",
     "name": "Айбек Тыныстанов",
-    "foto": "assets/img/players/22.png"
+    "photo": "assets/img/players/22.png"
   }, {
     "number": "21",
     "name": "Керезбеков Мидин",
-    "foto": "assets/img/players/22.png"
+    "photo": "assets/img/players/22.png"
   }, {
     "number": "13",
     "name": "Бакыт уулу Шаршенбек",
-    "foto": "assets/img/players/22.png"
+    "photo": "assets/img/players/22.png"
   }, {
     "number": "4",
     "name": "Кольбаев Кайрат",
-    "foto": "assets/img/players/22.png"
+    "photo": "assets/img/players/22.png"
   }, {
     "number": "6",
     "name": "Искаков Асылбек",
-    "foto": "assets/img/players/22.png"
+    "photo": "assets/img/players/22.png"
   }],
 
   "coach1": [{
     "name": "Касымбаев Арзымат",
-    "foto": "assets/img/players/coach1.png"
+    "photo": "assets/img/players/coach1.png"
   }],
   "coach2": [{
     "name": "Касымбаев Арзымат",
-    "foto": "assets/img/players/coach2.png"
+    "photo": "assets/img/players/coach2.png"
   }],
 
 
