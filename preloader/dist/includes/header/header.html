@@ -1,14 +1,20 @@
 
 <header class="header">
   <div class="header__logo"><a href="#">dara<span>благотворительный фонд</span></a></div>
-  <div class="header__control"><a href="#">Слабовидящим</a>
-    <div class="lang">
+  <div class="header__control">
+    <div class="header__control-item"><a href="#">Слабовидящим</a></div>
+    <div class="header__control-item">
       <form action="">
-        <input class="select-item" type="text" value="">
+        <div class="lang select">
+          <input class="select__item" type="hidden" name="lang" value="РУС">
+          <div class="select__checked">РУС </div>
+          <ul class="select__dropdown">
+            <li class="select__option" data-value="РУС">РУС</li>
+            <li class="select__option" data-value="ҚАЗ">ҚАЗ</li>
+            <li class="select__option" data-value="ENG">ENG</li>
+          </ul>
+        </div>
       </form>
-      <ul>
-        <li></li>
-      </ul>
     </div>
   </div>
 </header>
