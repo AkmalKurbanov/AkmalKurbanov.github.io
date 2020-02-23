@@ -10,6 +10,62 @@
   <link link rel="icon" href="favicon.ico"><script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
 </head>
 <body>
+  <div class="preloader">
+    <div class="preloader__wrap">
+      <div class="preloader__logo" id="prlogo">BELGRAVIA</div>
+      <div class="preloader__text" id="prText">
+        <p>Жилой комплекс Belgravia</p>
+      </div>
+      <div class="preloader__loader" id="prLoader">
+        <svg class="circular" viewbox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="1" stroke-miterlimit="10"></circle>
+        </svg>
+      </div>
+    </div>
+    <div class="preloader__bg" id="strip">
+      <div class="preloader__bg-wrap" id="strip-wrap"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="hamburglar" id="hamburger">
+    <div class="burger-icon">
+      <div class="burger-container"><span class="burger-bun-top"></span><span class="burger-filling"></span><span class="burger-bun-bot"></span></div>
+    </div>
+    <div class="burger-ring">
+      <svg class="svg-ring">
+        <path class="path" fill="none" stroke="#dcbf83" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"></path>
+      </svg>
+    </div>
+    <svg width="0" height="0">
+      <mask id="mask">
+        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"></path>
+      </mask>
+    </svg>
+    <div class="path-burger">
+      <div class="animate-path">
+        <div class="path-rotation"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sticky-header">
+    <div class="container">
+      <div class="sticky-header__wrap">
+        <div class="logo"><a href="#top" data-scroll><img src="assets/img/logo.svg" alt=""></a></div>
+        <div class="nav">   
+          <ul>
+                        <li class="nav__item"><a href="#top" data-scroll>Главная</a></li>
+                        <li class="nav__item"><a href="#about" data-scroll>О Проекте</a></li>
+                        <li class="nav__item"><a href="#gallery" data-scroll>Галерея</a></li>
+                        <li class="nav__item"><a href="#advantages" data-scroll>Преимущества</a></li>
+                        <li class="nav__item"><a href="#objects" data-scroll>Объекты</a></li>
+                        <li class="nav__item"><a href="#contacts" data-scroll>Контакты</a></li>
+          </ul>
+        </div>
+        <div class="call-back">
+          <div class="btn-wrap"><a class="btn btn_painted" data-fancybox="" data-src="#consultation" href="javascript:;">заказть звонок   </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="mobile-menu">
     <div class="header__top-wrap">
       <div class="header__contat">
@@ -34,26 +90,6 @@
   </div>
   <div class="wrapper">
     <div class="content"> 
-      <div class="hamburglar" id="hamburger">
-        <div class="burger-icon">
-          <div class="burger-container"><span class="burger-bun-top"></span><span class="burger-filling"></span><span class="burger-bun-bot"></span></div>
-        </div>
-        <div class="burger-ring">
-          <svg class="svg-ring">
-            <path class="path" fill="none" stroke="#dcbf83" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"></path>
-          </svg>
-        </div>
-        <svg width="0" height="0">
-          <mask id="mask">
-            <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"></path>
-          </mask>
-        </svg>
-        <div class="path-burger">
-          <div class="animate-path">
-            <div class="path-rotation"></div>
-          </div>
-        </div>
-      </div>
       <header class="header" id="top">
         <div class="header__top">
           <div class="container">
@@ -74,7 +110,7 @@
         <div class="header__masterbar wow fadeInUp">
           <div class="container">
             <div class="header__masterbar-wrap">
-              <div class="logo"><a href="#"><img src="assets/img/logo.svg" alt=""></a></div>
+              <div class="logo"><a href="#top" data-scroll><img src="assets/img/logo.svg" alt=""></a></div>
               <div class="header__control">     
                 <div class="header nav">
                   <ul>
@@ -86,7 +122,7 @@
                                         <li class="nav__item"><a href="#contacts" data-scroll>Контакты</a></li>
                   </ul>
                 </div>
-                <div class="btn-wrap"><a class="btn btn_painted" data-fancybox="" data-src="#consultation" href="javascript:;">КОНСУЛЬТАЦИЯ</a></div>
+                <div class="btn-wrap"><a class="btn btn_painted" data-fancybox="" data-src="#consultation" href="javascript:;">заказть звонок</a></div>
               </div>
             </div>
           </div>
@@ -102,15 +138,15 @@
                                     <h2 class="entry__name">СТРОИТЕЛЬНАЯ КОМПАНИЯ “NURZAMAN”</h2>
                                     <h3 class="entry__title">Жилой комплекс премиум класса “Белгравия”</h3>
                                     <p class="entry__desc">Самый элитный район Лондона в Бишкеке! Мы передадим ту же эксклюзивность и престижность. Представляем вам совершенно новый образ жизни.</p>
-                                    <div class="btn-wrap btn-wrap_center"><a class="btn btn_secondary" href="#">ПОДРОБНЕЕ</a></div>
+                                    <div class="btn-wrap btn-wrap_center"><a class="btn btn_secondary" href="#">бесплатная консультация</a></div>
                                   </div>
                                 </div>
                                 <div class="swiper-slide">
                                   <div class="entry__item wow slideInDown">
-                                    <h2 class="entry__name">СТРОИТЕЛЬНАЯ КОМПАНИЯ1 “NURZAMAN”</h2>
-                                    <h3 class="entry__title">Жилой комплекс премиум класса “Белгравия1”</h3>
-                                    <p class="entry__desc">Самый элитный район Лондона в Бишкеке! Мы передадим ту же эксклюзивность и престижность. Представляем вам совершенно новый образ жизни.1</p>
-                                    <div class="btn-wrap btn-wrap_center"><a class="btn btn_secondary" href="#">ПОДРОБНЕЕ</a></div>
+                                    <h2 class="entry__name">СТРОИТЕЛЬНАЯ КОМПАНИЯ “NURZAMAN”</h2>
+                                    <h3 class="entry__title">Жилой комплекс премиум класса “Белгравия”</h3>
+                                    <p class="entry__desc">Самый элитный район Лондона в Бишкеке! Мы передадим ту же эксклюзивность и престижность. Представляем вам совершенно новый образ жизни.</p>
+                                    <div class="btn-wrap btn-wrap_center"><a class="btn btn_secondary" href="#">бесплатная консультация</a></div>
                                   </div>
                                 </div>
               </div>
@@ -906,7 +942,10 @@
       <div class="popup" style="display: none;" id="blockC"><img src="assets/img/plan/blockv.png" alt=""></div>
       <div class="popup popup_consultation" style="display: none;" id="consultation">
         <div class="logo"><img src="assets/img/logo.svg" alt=""></div>
-        <form action="">
+        <form class="form" method="post">
+          <input type="hidden" name="project_name" value="Site Name">
+          <input type="hidden" name="admin_email" value="250296a@gmail.com">
+          <input type="hidden" name="form_subject" value="Form Subject">
           <div class="form-group">
             <div class="form-group__field">
               <input type="text" placeholder="Как Вас зовут?" name="Ф.И.О">
@@ -921,11 +960,18 @@
           </div>
         </form>
       </div>
+      <div class="popup-wrap">
+        <div class="success">
+          <div class="success__icon"><i class="icon-correct"></i></div>
+          <h2>Спасибо, ваша заявка принята! </h2>
+          <p>Мы свяжемся с вами в ближайшее время</p>
+        </div>
+      </div>
     </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__wrap wow fadeInDown">
-          <div class="logo"><a href="#"><img src="assets/img/logo-dark.png" alt=""></a></div>
+          <div class="logo"><a href="#top" data-scroll><img src="assets/img/logo-dark.png" alt=""></a></div>
           <div class="footer nav">
             <ul>
                             <li class="nav__item"><a href="#top" data-scroll>Главная</a></li>
