@@ -103,10 +103,8 @@
         <div class="hamburger__item"></div>
       </div>
       <div class="header">
-        <div class="header__top top">
-          <div class="container"><a class="top__link" href="#">Биз тууралуу</a><a class="top__link" href="#">Байланыш</a></div>
-        </div>
         <div class="container">
+          <div class="header__top top"><a class="top__link" href="#">Биз тууралуу</a><a class="top__link" href="#">Байланыш</a></div>
           <div class="header__middle">
             <div class="search">
               <form class="search-form" action="">         
@@ -114,6 +112,7 @@
                   <div class="search-form__trigger">
                     <label class="search-form__trigger-wrap search-js" for="search"><i class="fal fa-search"></i></label>
                     <input type="text" placeholder="Издөө" id="search">
+                    <div class="search-form__result-window"></div>
                   </div>
                 </div>
               </form>
@@ -277,8 +276,30 @@
                 <p></p><b>"Элита плюс" 2018-жыл, март.</b>
               </div>
               <div class="comments">  
-                <div id="commento"></div>
-                <script async="" src="https://cdn.commento.io/js/commento.js"></script>
+                <div class="comments__wrap">
+                  <div class="comments__item">
+                    <div class="comments__info">
+                      <div class="comments__user-name">Башка адамдын аты</div>
+                      <div class="comments__date">2 минөт мурун</div>
+                    </div>
+                    <div class="comments__user-review">Башка адамдын пикири (отзывы)</div>
+                  </div>
+                  <div class="comments__item comments__item--your-review">
+                    <div class="comments__info">
+                      <div class="comments__date">2 минөт мурун</div>
+                      <div class="comments__user-name">Менин атым</div>
+                    </div>
+                    <div class="comments__user-review">Менин пикирим (отзывым)</div>
+                  </div>
+                  <div class="message-form">
+                    <form>
+                      <textarea placeholder="Текст билдирүү"></textarea>
+                      <div class="btn-wrap btn-wrap_right">
+                        <button class="btn btn_empty" type="submit">Жөнөтүү</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
             <aside class="sidebar">  
@@ -431,11 +452,8 @@
   <script src="assets/scripts.min.js"></script>
   <script type="text/javascript">
     document.ondragstart = noselect;
-    // запрет на перетаскивание
     document.onselectstart = noselect;
-    // запрет на выделение элементов страницы
     document.oncontextmenu = noselect;
-    // запрет на выведение контекстного меню
     function noselect() {return false;}
   </script>
 </body>

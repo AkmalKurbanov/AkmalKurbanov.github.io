@@ -103,10 +103,8 @@
         <div class="hamburger__item"></div>
       </div>
       <div class="header">
-        <div class="header__top top">
-          <div class="container"><a class="top__link" href="#">Биз тууралуу</a><a class="top__link" href="#">Байланыш</a></div>
-        </div>
         <div class="container">
+          <div class="header__top top"><a class="top__link" href="#">Биз тууралуу</a><a class="top__link" href="#">Байланыш</a></div>
           <div class="header__middle">
             <div class="search">
               <form class="search-form" action="">         
@@ -114,6 +112,7 @@
                   <div class="search-form__trigger">
                     <label class="search-form__trigger-wrap search-js" for="search"><i class="fal fa-search"></i></label>
                     <input type="text" placeholder="Издөө" id="search">
+                    <div class="search-form__result-window"></div>
                   </div>
                 </div>
               </form>
@@ -325,16 +324,20 @@
           </div>
         </div>
       </footer>
+      <div class="popup-wrap">
+        <div class="popup"><i class="far fa-check-circle"></i>
+          <h2>Рахмат!</h2>
+          <p>
+            Сиздин кайрылуунуз кабылга алынды. <br>Биздин менеджер сиз менен бир аздан кийин байланышат.</p>
+        </div>
+      </div>
     </div>
   </div>
   <script src="assets/scripts.min.js"></script>
   <script type="text/javascript">
     document.ondragstart = noselect;
-    // запрет на перетаскивание
     document.onselectstart = noselect;
-    // запрет на выделение элементов страницы
     document.oncontextmenu = noselect;
-    // запрет на выведение контекстного меню
     function noselect() {return false;}
   </script>
   <script>

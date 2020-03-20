@@ -103,10 +103,8 @@
         <div class="hamburger__item"></div>
       </div>
       <div class="header">
-        <div class="header__top top">
-          <div class="container"><a class="top__link" href="#">Биз тууралуу</a><a class="top__link" href="#">Байланыш</a></div>
-        </div>
         <div class="container">
+          <div class="header__top top"><a class="top__link" href="#">Биз тууралуу</a><a class="top__link" href="#">Байланыш</a></div>
           <div class="header__middle">
             <div class="search">
               <form class="search-form" action="">         
@@ -114,6 +112,7 @@
                   <div class="search-form__trigger">
                     <label class="search-form__trigger-wrap search-js" for="search"><i class="fal fa-search"></i></label>
                     <input type="text" placeholder="Издөө" id="search">
+                    <div class="search-form__result-window"></div>
                   </div>
                 </div>
               </form>
@@ -296,7 +295,7 @@
                                 <div class="news__desc">Бүгүн, 21-январда Жогорку Кеңештин Эл аралык иштер, коргоо жана коопсуздук боюнча комитетинде кыргыз-тажик чек ара маселеси каралды.</div>
                               </div>
                             </div>
-              <div class="pagination"><a class="pagination__prev" href="#"><i class="fal fa-angle-left"></i></a>
+              <div class="pagination"><a class="pagination__prev disabled" href="#"><i class="fal fa-angle-left"></i></a>
                 <ul class="pagination__list">
                   <li class="pagination__item is-active"><a class="pagination__number" href="#">1</a></li>
                   <li class="pagination__item"><a class="pagination__number" href="#">2</a></li>
@@ -407,11 +406,8 @@
   <script src="assets/scripts.min.js"></script>
   <script type="text/javascript">
     document.ondragstart = noselect;
-    // запрет на перетаскивание
     document.onselectstart = noselect;
-    // запрет на выделение элементов страницы
     document.oncontextmenu = noselect;
-    // запрет на выведение контекстного меню
     function noselect() {return false;}
   </script>
 </body>
