@@ -2098,6 +2098,15 @@ button,input {
   background-color: rgba(32,35,42,.7);
 }
 
+.call-back {
+  background-color: transparent;
+  padding: .625rem;
+}
+
+.call-back .contacts__form {
+  margin: 0;
+}
+
 .float-social {
   display: none;
   padding: .3125rem 0;
@@ -2711,6 +2720,7 @@ button,input {
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
+  position: relative;
 }
 
 .main .advantages__desc {
@@ -3116,6 +3126,46 @@ button,input {
 
 .third-section .first-section-item {
   z-index: 9999;
+}
+
+.curtain {
+  overflow: hidden;
+}
+
+.curtain:after,.curtain:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.curtain:before {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: #d5d5d5;
+}
+
+.curtain:after {
+  background-color: #20232a;
+  z-index: 9;
+}
+
+.load-effect {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.load-effect:after,.load-effect:before {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .about__main-screen {
@@ -4763,10 +4813,6 @@ button,input {
   transform: translateX(100%);
   padding-right: 0;
   padding-left: 1.25rem;
-}
-
-.body-scroll {
-  overflow: hidden;
 }
 
 .footer {
