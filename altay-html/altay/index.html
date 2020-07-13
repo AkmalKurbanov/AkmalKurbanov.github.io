@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GH Altay</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+  <link rel="manifest" href="images/favicon//site.webmanifest">
+  <link rel="mask-icon" href="images/favicon//safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <style>
+    .main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      background-size: cover;
+      padding: 30px 0;
+    }
+
+    .logo {
+      max-width: 150px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width:767.98px) {
+      .logo {
+        max-width: 100px;
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      column-count: 3;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @media (max-width:991.98px) {
+      ul {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width:767.98px) {
+      ul {
+        column-count: auto;
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 20px;
+      line-height: 1.8;
+      position: relative;
+      padding-left: 25px;
+      transition: all .3s
+    }
+
+    @media (max-width:1199.98px) {
+      ul li a {
+        font-size: 16px
+      }
+    }
+
+    @media (max-width:991.98px) {
+      ul li a {
+        font-size: 14px;
+        padding-left: 10px
+      }
+    }
+
+    @media (max-width:767.98px) {
+      ul li a {
+        color: #fff
+      }
+    }
+
+    ul li a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 1px solid #fff;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all .3s
+    }
+
+    @media (max-width: 1199.98px) {
+      ul li a:before {
+        width: 12px;
+        height: 12px;
+        left: 5px;
+      }
+    }
+
+    @media (max-width:991.98px) {
+      ul li a:before {
+        width: 10px;
+        height: 10px;
+        left: -8px
+      }
+    }
+
+
+
+    ul li a:hover {
+      color: #cf3c3a;
+      text-decoration: none;
+    }
+
+    ul li a:hover:before {
+      border: 1px solid #cf3c3a
+    }
+  </style>
+
+  <div class="main" style="background-image:url(../iside.jpg)">
+    <div class="logo">
+      <img src="images/logo_en_white.svg" alt="">
+    </div>
+    <div class="list">
+      <ul>
+        <li>
+          <a target="_blank" href="main.html">Главная</a>
+        </li>
+        <li>
+          <a target="_blank" href="about.html">О нас</a>
+        </li>
+        <li>
+          <a target="_blank" href="rooms.html">Номера</a>
+        </li>
+        <li>
+          <a target="_blank" href="tours.html">Туры</a>
+        </li>
+        <li>
+          <a target="_blank" href="kitchen.html">Кухня</a>
+        </li>
+        <li>
+          <a target="_blank" href="gallery_photo.html">Фотогалерея</a>
+        </li>
+        <li>
+          <a target="_blank" href="gallery_video.html">Видеогалерея</a>
+        </li>
+        <li>
+          <a target="_blank" href="blog.html">Блог</a>
+        </li>
+        <li>
+          <a target="_blank" href="blog_detail.html">Статья</a>
+        </li>
+        <li>
+          <a target="_blank" href="reviews.html">Отзывы</a>
+        </li>
+        <li>
+          <a target="_blank" href="contacts.html">Контакты</a>
+        </li>
+        <li>
+          <a target="_blank" href="error.html">404</a>
+        </li>
+        <li>
+          <a target="_blank" href="modal.html">Модальные окна</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
+</html>

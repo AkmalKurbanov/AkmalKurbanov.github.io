@@ -1,0 +1,152 @@
+.flabContact {
+	@include media-breakpoint-down(sm) {
+		padding-bottom: rem(30px);
+	}
+	&__map {
+		min-height: rem(450px);
+		width: 100%;
+		@include media-breakpoint-down(md) {
+			min-height: rem(350px);
+		}
+		.leaflet-bottom {
+			display: none;
+		}
+	}
+	&__communications {
+
+	}
+	&__communicationsDesc {
+		padding-top: rem(30px);
+		@include media-breakpoint-down(md) {
+			padding-top: rem(30px);
+		}
+		@include media-breakpoint-down(sm) {
+			padding-bottom: rem(30px);
+		}
+		p{
+			margin-bottom: rem(45px);
+			margin-top: 20px;
+			@include media-breakpoint-down(md) {
+				font-size: rem(14px);
+				margin-bottom: rem(20px);
+				margin-top: 10px;
+			}
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			li {
+				list-style-type: none;
+				padding-bottom: rem(7px);
+				padding-left: rem(30px);
+				position: relative;
+				@include media-breakpoint-down(md) {
+					font-size: rem(14px);
+				}
+				&:last-child {
+					padding-bottom: 0;
+				}
+				i{
+					color: #000;
+					position: absolute;
+					left: 0;
+				}
+				.flabio-location {
+					font-size: rem(18px);
+					left: rem(-6px);
+				}
+				.flabio-mobile {
+					font-size: rem(23px);
+					left: rem(-10px);
+				}
+				.flabio-mail {
+					left: rem(-4.5px);
+				}
+				a{
+					color: #000;
+					text-decoration: none;
+					tarnsition: all .3s;
+					@include media-breakpoint-down(md) {
+						font-size: rem(14px);
+					}
+					&:hover {
+						color: #a4a3a3;
+					}
+				}
+			}
+		}
+	}
+	&__caption {
+		font-size: rem(30px);
+		color: #000;
+		position: relative;
+		margin-bottom: rem(20px);
+		@include media-breakpoint-down(md) {
+			font-size: rem(20px);
+		}
+		i {
+			font-size: rem(23px);
+			font-family: 'flabioiconfont';
+			color: #a4a3a3;
+			padding-right: rem(15px);
+		}
+		&--captionForm {
+			// text-align: center;
+			padding-left: 0;
+		}
+	}
+	&__form {
+		width: 100%;
+		max-width: 100%;
+		background-color: #f5f5f5;
+		padding: rem(30px) rem(20px) rem(20px) ;
+		@include media-breakpoint-down(md) {
+			padding: rem(30px) rem(20px) 0;
+		}
+		@include media-breakpoint-down(sm) {
+			max-width: 400px;
+			width: 100%;
+			margin: auto;
+			padding: rem(15px) rem(10px) 0;
+		}
+		form {
+			// min-height: rem(400px);
+			@include media-breakpoint-down(md) {
+				min-height: rem(380px);
+			}
+			@include media-breakpoint-down(sm) {
+				min-height: rem(360px);
+			}
+			input,textarea {
+				background-color: rgb(255, 255, 255);
+				max-width: 100%;
+				width: 100%;
+				margin-bottom: rem(20px);
+				padding-left: rem(30px);
+				border: none;
+				outline: none;
+				display: block;
+				@include media-breakpoint-down(sm) {
+					padding-left: rem(15px);
+				}
+			}
+			input {
+				min-height: rem(40px);
+			}
+			textarea {
+				min-height: rem(100px);
+				resize: none;
+				padding-top: rem(10px);
+			}
+		}
+		.flabBtn {
+			position: relative;
+			z-index: 1;
+			display: block;
+			text-align: right;
+			button {
+				background-color: transparent;
+			}
+		}
+	}
+}

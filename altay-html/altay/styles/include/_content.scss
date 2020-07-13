@@ -1,0 +1,44 @@
+.flabContent{
+  padding-top: rem(50px);
+  height: 100%;
+  padding-bottom: rem(307px);
+  @include media-breakpoint-down(lg) {
+    padding-bottom: rem(499px);
+  }
+  @include media-breakpoint-down(md) {
+    padding-bottom: rem(606px);
+  }
+  @include media-breakpoint-down(sm) {
+    padding-bottom: rem(20px);
+    padding-top: rem(20px);
+  }
+  &--main{
+    padding-top: rem(100px);
+    padding-bottom: rem(257px);
+    @include media-breakpoint-down(lg) {
+      padding-bottom: rem(449px);
+    }
+    @include media-breakpoint-down(md) {
+      padding-bottom: rem(556px);
+      padding-top: rem(0px);
+    }
+    @include media-breakpoint-down(sm) {
+      padding-bottom: rem(0px);
+    }
+  }
+  &--contacts {
+   padding-top: 0;
+ }
+ &--kitchen {
+  padding-bottom: rem(40px);
+  @include media-breakpoint-down(md) {
+    padding-bottom: rem(20px);
+  }
+  @include media-breakpoint-down(sm) {
+    padding-bottom: rem(0);
+  }
+  @include media-breakpoint-down(xs) {
+    padding-bottom: rem(20px);
+  }
+}
+}

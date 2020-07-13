@@ -1,0 +1,111 @@
+.flabFooter {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: $white;
+  display: none;
+  z-index: 1;
+  @include media-breakpoint-down(sm) {
+		position: relative;
+    bottom: auto;
+	}
+	&__head {
+    background-color: $fourth_color;
+    padding-top: rem(25px);
+    padding-bottom: rem(25px);
+	}
+
+	&__navLists {
+    .flabNavigation__item{
+      margin-left: rem(12px);
+      margin-right: rem(12px);
+    }
+	}
+
+	&__social {
+
+	}
+  &__logo{
+    text-align: center;
+    img{
+      max-width: 100%;
+    }
+  }
+	&__main {
+    background-color: $third_color;
+    padding-top: rem(25px);
+    padding-bottom: rem(15px);
+	}
+  &__headline{
+    font-size: $f_sz_fourth;
+    font-weight: normal;
+    color: darken($white,52);
+    @include media-breakpoint-down(lg) {
+      margin-top: rem(20px);
+    }
+  }
+  .flabNavigation{
+    &__item {
+      @include media-breakpoint-down(md) {
+        margin-left: rem(10px);
+        margin-right: rem(10px);
+      }
+      @include media-breakpoint-down(sm) {
+        margin-bottom: rem(15px);
+        margin-left: rem(5px);
+        margin-right: rem(5px);
+      }
+    }
+  }
+  .flabSocial{
+    text-align: right;
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+      margin-top: rem(20px);
+    }
+  }
+  &--contact {
+    position: relative;
+  }
+}
+// flabFooter end
+.flabContacts{
+  padding-bottom: rem(15px);
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+  &__email{
+    text-align: right;
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+  &__link{
+    color: $white;
+    display: block;
+    font-size: $f_sz_fifth;
+    line-height: 1.3;
+    @include media-breakpoint-down(sm) {
+      font-size: $f_sz_third;
+    }
+    &:hover{
+      text-decoration: none;
+      color: darken($white,36);
+    }
+  }
+}
+// flabContacts end
+.flabCopyright{
+  padding-top: rem(15px);
+  border-top: rem(1px) solid darken($white,36);
+  color: darken($white,52);
+  font-size: $f_sz_second;
+  &__descr{
+    margin: 0;
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      margin-bottom: rem(20px);
+    }
+  }
+}
+// flabCopyright end

@@ -1,0 +1,22 @@
+@import "mixins/rem";
+
+$black: #000;
+$white: #fff;
+// Bootstrap variables change
+$font-family-base: 'Muller', $font-family-sans-serif;
+$body-color: $black;
+// end bootstrap variables
+$primary_color: #513531;
+$secondary_color: #f4a337;
+$third_color: #172032;
+$fourth_color: #08152b;
+$fifth_color: #dd0002;
+
+// font-sizes
+$f_sz_first: rem(13px);
+$f_sz_second: rem(14px);
+$f_sz_third: rem(16px);
+$f_sz_fourth: rem(18px);
+$f_sz_fifth: rem(20px);
+$f_sz_sixth: rem(25px);
+// end font-sizes

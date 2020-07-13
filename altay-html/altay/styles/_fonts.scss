@@ -1,0 +1,7 @@
+@import "mixins/fontface";
+
+@include font-face("Muller", "../fonts/Muller/MullerRegular/MullerRegular");
+@include font-face("Muller", "../fonts/Muller/MullerRegularItalic/MullerRegularItalic", normal, italic);
+@include font-face("Muller", "../fonts/Muller/MullerBold/MullerBold", bold);
+@include font-face("Muller", "../fonts/Muller/MullerBoldItalic/MullerBoldItalic", bold, italic);
+@include font-face("flabioiconfont", "../fonts/flabioiconfont/font/flabioiconfont");
