@@ -1,67 +1,75 @@
-.icon-angle {
+.icon-ph2 {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;');
 }
 
-.icon-clock {
+.icon-play {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;');
 }
 
-.icon-env1 {
+.icon-play-button {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;');
 }
 
-.icon-env2 {
+.icon-sent {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;');
 }
 
-.icon-fd {
+.icon-tick {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;');
 }
 
-.icon-house {
+.icon-tw {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;');
 }
 
-.icon-in {
+.icon-users {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe806;&nbsp;');
 }
 
-.icon-mark {
+.icon-angle {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;');
 }
 
-.icon-mark2 {
+.icon-clock {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe808;&nbsp;');
 }
 
-.icon-ph {
+.icon-env1 {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe809;&nbsp;');
 }
 
-.icon-ph2 {
+.icon-env2 {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80a;&nbsp;');
 }
 
-.icon-play {
+.icon-fd {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80b;&nbsp;');
 }
 
-.icon-play-button {
+.icon-house {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80c;&nbsp;');
 }
 
-.icon-sent {
+.icon-in {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80d;&nbsp;');
 }
 
-.icon-tick {
+.icon-left-small {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80e;&nbsp;');
 }
 
-.icon-tw {
+.icon-mark {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80f;&nbsp;');
 }
 
-.icon-users {
+.icon-mark2 {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe810;&nbsp;');
+}
+
+.icon-ph {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe811;&nbsp;');
+}
+
+.icon-linkedin {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e1;&nbsp;');
 }
