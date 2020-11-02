@@ -1,0 +1,388 @@
+Uri: http://serten.kg/
+File Name: C:\copy\serten.kg\index.htm
+Content Type: text/html
+
+Uri: http://serten.kg/local/templates/serten/img/foto.png
+File Name: C:\copy\serten.kg\local\templates\serten\img\foto.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/img/sale.png
+File Name: C:\copy\serten.kg\local\templates\serten\img\sale.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/favicons/apple-touch-icon.png
+File Name: C:\copy\serten.kg\local\templates\serten\favicons\apple-touch-icon.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/favicons/favicon-32x32.png
+File Name: C:\copy\serten.kg\local\templates\serten\favicons\favicon-32x32.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/favicons/favicon-16x16.png
+File Name: C:\copy\serten.kg\local\templates\serten\favicons\favicon-16x16.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/favicons/manifest.json
+File Name: C:\copy\serten.kg\local\templates\serten\favicons\manifest.json
+Content Type: application/json
+
+Uri: http://serten.kg/local/templates/serten/favicons/safari-pinned-tab.svg
+File Name: C:\copy\serten.kg\local\templates\serten\favicons\safari-pinned-tab.svg
+Content Type: image/svg+xml
+
+Uri: http://serten.kg/local/templates/serten/favicons/favicon.ico
+File Name: C:\copy\serten.kg\local\templates\serten\favicons\favicon.ico
+Content Type: image/x-icon
+
+Uri: http://serten.kg/bitrix/cache/css/s1/serten/template_1462d39eeabf9d9c7ab935d4834a26f5/template_1462d39eeabf9d9c7ab935d4834a26f5.css?1583208923178681
+File Name: C:\copy\serten.kg\bitrix\cache\css\s1\serten\template_1462d39eeabf9d9c7ab935d4834a26f5\template_1462d39eeabf9d9c7ab935d4834a26f5.css
+Content Type: text/css
+
+Uri: http://serten.kg/about/
+File Name: C:\copy\serten.kg\about\index.htm
+Content Type: text/html
+
+Uri: http://serten.kg/policy.php
+File Name: C:\copy\serten.kg\policy.html
+Content Type: text/html
+
+Uri: http://serten.kg/uslugi/?ELEMENT_ID=94
+File Name: C:\copy\serten.kg\uslugi\index.htm
+Content Type: text/html
+
+Uri: http://serten.kg/uslugi/?ELEMENT_ID=95
+File Name: C:\copy\serten.kg\uslugi\index-1.htm
+Content Type: text/html
+
+Uri: http://serten.kg/uslugi/?ELEMENT_ID=96
+File Name: C:\copy\serten.kg\uslugi\index-2.htm
+Content Type: text/html
+
+Uri: http://serten.kg/uslugi/?ELEMENT_ID=97
+File Name: C:\copy\serten.kg\uslugi\index-3.htm
+Content Type: text/html
+
+Uri: http://serten.kg/uslugi/?ELEMENT_ID=98
+File Name: C:\copy\serten.kg\uslugi\index-4.htm
+Content Type: text/html
+
+Uri: http://serten.kg/upload/alldoc.pdf
+File Name: C:\copy\serten.kg\upload\alldoc.pdf
+Content Type: application/pdf
+
+Uri: http://serten.kg/bitrix/cache/js/s1/serten/template_9ed7a3a366962458dcdd8b1fb5b6e386/template_9ed7a3a366962458dcdd8b1fb5b6e386.js?1582608946313107
+File Name: C:\copy\serten.kg\bitrix\cache\js\s1\serten\template_9ed7a3a366962458dcdd8b1fb5b6e386\template_9ed7a3a366962458dcdd8b1fb5b6e386.js
+Content Type: application/javascript
+
+Uri: http://serten.kg/local/templates/serten/img/logo.png
+File Name: C:\copy\serten.kg\local\templates\serten\img\logo.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/img/logo_small.png
+File Name: C:\copy\serten.kg\local\templates\serten\img\logo_small.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/svg/fb.svg?v2
+File Name: C:\copy\serten.kg\local\templates\serten\svg\fb.svg
+Content Type: image/svg+xml
+
+Uri: http://serten.kg/local/templates/serten/svg/inst.svg?v2
+File Name: C:\copy\serten.kg\local\templates\serten\svg\inst.svg
+Content Type: image/svg+xml
+
+Uri: http://serten.kg/local/templates/serten/svg/whatsapp.svg?v2
+File Name: C:\copy\serten.kg\local\templates\serten\svg\whatsapp.svg
+Content Type: image/svg+xml
+
+Uri: http://serten.kg/upload/iblock/3fa/3fa192d1d00830661d87bf36b67350f2.png
+File Name: C:\copy\serten.kg\upload\iblock\3fa\3fa192d1d00830661d87bf36b67350f2.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/b5f/b5f6840f49d9c08c0130a8b0ca5725b5.png
+File Name: C:\copy\serten.kg\upload\iblock\b5f\b5f6840f49d9c08c0130a8b0ca5725b5.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/b29/b29fefb1c05040ea6be265ea78ad5dd6.png
+File Name: C:\copy\serten.kg\upload\iblock\b29\b29fefb1c05040ea6be265ea78ad5dd6.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/143/1435177d5ebdc0ec77cb3b784172da7b.png
+File Name: C:\copy\serten.kg\upload\iblock\143\1435177d5ebdc0ec77cb3b784172da7b.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/7c9/7c976c5b157d11d37d92e0343769f4a3.png
+File Name: C:\copy\serten.kg\upload\iblock\7c9\7c976c5b157d11d37d92e0343769f4a3.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/dc6/dc6ba2367d867dc3101b9defd05d89cb.png
+File Name: C:\copy\serten.kg\upload\iblock\dc6\dc6ba2367d867dc3101b9defd05d89cb.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/a7a/a7a67b7cfd8fe58617d3d2da8218d4b4.png
+File Name: C:\copy\serten.kg\upload\iblock\a7a\a7a67b7cfd8fe58617d3d2da8218d4b4.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/6b0/6b0f20c435f1bad92bb43af818a58ec9.png
+File Name: C:\copy\serten.kg\upload\iblock\6b0\6b0f20c435f1bad92bb43af818a58ec9.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/511/51134b472ca3320f4fd14a9a53747c24.png
+File Name: C:\copy\serten.kg\upload\iblock\511\51134b472ca3320f4fd14a9a53747c24.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/e6b/e6b060660b8e9e53d9f2b35b2014cc25.png
+File Name: C:\copy\serten.kg\upload\iblock\e6b\e6b060660b8e9e53d9f2b35b2014cc25.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/390/3909a661a5dae21c8a93207ed9ea072d.png
+File Name: C:\copy\serten.kg\upload\iblock\390\3909a661a5dae21c8a93207ed9ea072d.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/931/9312918231aebf182163eee478f216e9.png
+File Name: C:\copy\serten.kg\upload\iblock\931\9312918231aebf182163eee478f216e9.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/4ba/4ba11b2ae6fb5237784baaf445a0fc29.png
+File Name: C:\copy\serten.kg\upload\iblock\4ba\4ba11b2ae6fb5237784baaf445a0fc29.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/770/770c6bcafca6ef2a81749328f81c12ea.png
+File Name: C:\copy\serten.kg\upload\iblock\770\770c6bcafca6ef2a81749328f81c12ea.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/3fd/3fd5424e36bb42849cab57487c1e5364.png
+File Name: C:\copy\serten.kg\upload\iblock\3fd\3fd5424e36bb42849cab57487c1e5364.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/6a4/6a4706ba933ad44e2200febd9452e079.png
+File Name: C:\copy\serten.kg\upload\iblock\6a4\6a4706ba933ad44e2200febd9452e079.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/img/logo_small_2.png
+File Name: C:\copy\serten.kg\local\templates\serten\img\logo_small_2.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/4bf/4bfbc7c52efdb4b8de30af4c795912f2.jpg
+File Name: C:\copy\serten.kg\upload\iblock\4bf\4bfbc7c52efdb4b8de30af4c795912f2.jpg
+Content Type: image/jpeg
+
+Uri: http://serten.kg/upload/iblock/060/06096a409994433875e5b60ff355f71f.jpg
+File Name: C:\copy\serten.kg\upload\iblock\060\06096a409994433875e5b60ff355f71f.jpg
+Content Type: image/jpeg
+
+Uri: http://serten.kg/upload/iblock/0ab/0abdd6ecf0fe4a155b7d506da357b9c8.jpg
+File Name: C:\copy\serten.kg\upload\iblock\0ab\0abdd6ecf0fe4a155b7d506da357b9c8.jpg
+Content Type: image/jpeg
+
+Uri: http://serten.kg/upload/iblock/174/1747e7ac9d21388a95088e73ce2cd416.jpg
+File Name: C:\copy\serten.kg\upload\iblock\174\1747e7ac9d21388a95088e73ce2cd416.jpg
+Content Type: image/jpeg
+
+Uri: http://serten.kg/upload/iblock/33e/33ee75fd9330638f12b1b0ff0443ae94.jpg
+File Name: C:\copy\serten.kg\upload\iblock\33e\33ee75fd9330638f12b1b0ff0443ae94.jpg
+Content Type: image/jpeg
+
+Uri: http://serten.kg/upload/iblock/802/80252ba13bc53cbc6bc4054954aec86d.jpg
+File Name: C:\copy\serten.kg\upload\iblock\802\80252ba13bc53cbc6bc4054954aec86d.jpg
+Content Type: image/jpeg
+
+Uri: http://serten.kg/local/templates/serten/img/icons/pdf.png
+File Name: C:\copy\serten.kg\local\templates\serten\img\icons\pdf.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/img/copyright.png
+File Name: C:\copy\serten.kg\local\templates\serten\img\copyright.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/font/fontello.eot?27815466
+File Name: C:\copy\serten.kg\local\templates\serten\font\fontello.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://serten.kg/local/templates/serten/font/fontello.woff2?27815466
+File Name: C:\copy\serten.kg\local\templates\serten\font\fontello.woff2
+Content Type: 
+
+Uri: http://serten.kg/local/templates/serten/font/fontello.woff?27815466
+File Name: C:\copy\serten.kg\local\templates\serten\font\fontello.woff
+Content Type: application/font-woff
+
+Uri: http://serten.kg/local/templates/serten/font/fontello.ttf?27815466
+File Name: C:\copy\serten.kg\local\templates\serten\font\fontello.bin
+Content Type: application/octet-stream
+
+Uri: http://serten.kg/local/templates/serten/font/fontello.svg?27815466
+File Name: C:\copy\serten.kg\local\templates\serten\font\fontello.svg
+Content Type: image/svg+xml
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-regular.eot
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-regular.eot?
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-regular-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-regular.otf
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-regular.bin
+Content Type: application/octet-stream
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-regular.ttf
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-regular-1.bin
+Content Type: application/octet-stream
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-regular.woff
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-regular.woff
+Content Type: application/font-woff
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-medium.eot
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-medium.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-medium.eot?
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-medium-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-medium.otf
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-medium.bin
+Content Type: application/octet-stream
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-medium.ttf
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-medium-1.bin
+Content Type: application/octet-stream
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-medium.woff
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-medium.woff
+Content Type: application/font-woff
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-bold.eot
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-bold.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-bold.eot?
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-bold-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-bold.otf
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-bold.bin
+Content Type: application/octet-stream
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-bold.ttf
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-bold-1.bin
+Content Type: application/octet-stream
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-bold.woff
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-bold.woff
+Content Type: application/font-woff
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-black.eot
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-black.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-black.eot?
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-black-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-black.otf
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-black.bin
+Content Type: application/octet-stream
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-black.ttf
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-black-1.bin
+Content Type: application/octet-stream
+
+Uri: http://serten.kg/local/templates/serten/font/dincyr-black.woff
+File Name: C:\copy\serten.kg\local\templates\serten\font\dincyr-black.woff
+Content Type: application/font-woff
+
+Uri: http://serten.kg/local/templates/serten/img/sprite.png
+File Name: C:\copy\serten.kg\local\templates\serten\img\sprite.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/img/icons/arrows.png
+File Name: C:\copy\serten.kg\local\templates\serten\img\icons\arrows.png
+Content Type: image/png
+
+Uri: http://serten.kg/local/templates/serten/img/foto2.jpg
+File Name: C:\copy\serten.kg\local\templates\serten\img\foto2.jpg
+Content Type: image/jpeg
+
+Uri: http://serten.kg/upload/iblock/36b/36bc25468016a26337a77e129dfd4b94.jpeg
+File Name: C:\copy\serten.kg\upload\iblock\36b\36bc25468016a26337a77e129dfd4b94.jpeg
+Content Type: image/jpeg
+
+Uri: http://serten.kg/upload/iblock/05a/05a8e44e580403b897c1adbbfa3c10a8.png
+File Name: C:\copy\serten.kg\upload\iblock\05a\05a8e44e580403b897c1adbbfa3c10a8.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/809/80915a58837026271f0e41d4d959f76b.PNG
+File Name: C:\copy\serten.kg\upload\iblock\809\80915a58837026271f0e41d4d959f76b.PNG
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/a20/a2025eb9950cc3dc29dda8895c504734.JPG
+File Name: C:\copy\serten.kg\upload\iblock\a20\a2025eb9950cc3dc29dda8895c504734.JPG
+Content Type: image/jpeg
+
+Uri: http://serten.kg/upload/iblock/d75/d75328189be7e1b8adf7d36b9f309735.JPG
+File Name: C:\copy\serten.kg\upload\iblock\d75\d75328189be7e1b8adf7d36b9f309735.JPG
+Content Type: image/jpeg
+
+Uri: http://serten.kg/upload/iblock/04c/04ccaef6d0efbbf196875fbca125daf6.PNG
+File Name: C:\copy\serten.kg\upload\iblock\04c\04ccaef6d0efbbf196875fbca125daf6.PNG
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/04b/04bfc7ca53379e1ac7ead584cbea3b2e.png
+File Name: C:\copy\serten.kg\upload\iblock\04b\04bfc7ca53379e1ac7ead584cbea3b2e.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/3f2/3f20e95f44173eb54d7a689a4cd88621.png
+File Name: C:\copy\serten.kg\upload\iblock\3f2\3f20e95f44173eb54d7a689a4cd88621.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/975/9751fec78b6a0d246e95904b04ddbd5c.png
+File Name: C:\copy\serten.kg\upload\iblock\975\9751fec78b6a0d246e95904b04ddbd5c.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/2c1/2c1fea5842b87f83f2ed95308823b35a.png
+File Name: C:\copy\serten.kg\upload\iblock\2c1\2c1fea5842b87f83f2ed95308823b35a.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/909/909d20610c045f42b3fce7a6498a3624.png
+File Name: C:\copy\serten.kg\upload\iblock\909\909d20610c045f42b3fce7a6498a3624.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/f7a/f7a2aeed9aff45630f93b236be21b01f.png
+File Name: C:\copy\serten.kg\upload\iblock\f7a\f7a2aeed9aff45630f93b236be21b01f.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/85c/85cbb8101282f509c21fa3bac9dbb4cb.png
+File Name: C:\copy\serten.kg\upload\iblock\85c\85cbb8101282f509c21fa3bac9dbb4cb.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/1c3/1c37e29e697bbc41b409bfeda01cf864.png
+File Name: C:\copy\serten.kg\upload\iblock\1c3\1c37e29e697bbc41b409bfeda01cf864.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/56c/56c821a0f07dee6d2b37d1119d3ccba6.png
+File Name: C:\copy\serten.kg\upload\iblock\56c\56c821a0f07dee6d2b37d1119d3ccba6.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/735/735fbe40c9719b9e9ee0ea92e574aeaa.png
+File Name: C:\copy\serten.kg\upload\iblock\735\735fbe40c9719b9e9ee0ea92e574aeaa.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/12b/12bc50fc1f08774a6fcc2bc7eaebf940.png
+File Name: C:\copy\serten.kg\upload\iblock\12b\12bc50fc1f08774a6fcc2bc7eaebf940.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/edf/edf70f41e43573ba9e571bf57e474acc.png
+File Name: C:\copy\serten.kg\upload\iblock\edf\edf70f41e43573ba9e571bf57e474acc.png
+Content Type: image/png
+
+Uri: http://serten.kg/upload/iblock/908/908692adcf2c8532684ee08b87d69d1e.png
+File Name: C:\copy\serten.kg\upload\iblock\908\908692adcf2c8532684ee08b87d69d1e.png
+Content Type: image/png
+
+Uri: http://serten.kg/bitrix/cache/css/s1/serten/page_d0bd8e77a908079295a4a97faa096b17/page_d0bd8e77a908079295a4a97faa096b17.css?1582608953359
+File Name: C:\copy\serten.kg\bitrix\cache\css\s1\serten\page_d0bd8e77a908079295a4a97faa096b17\page_d0bd8e77a908079295a4a97faa096b17.css
+Content Type: text/css
+
