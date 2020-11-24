@@ -1,1 +1,0 @@
-"use strict";$(document).ready(function(){$(".list-js").mCustomScrollbar({theme:"themeMalihu"})});
