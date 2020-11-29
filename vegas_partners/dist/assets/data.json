@@ -1,7 +1,12 @@
 {
-  "production": [
-    {
-      "magazine": "assets/img/production/1.jpg"
-    }  
-  ] 
+  "mainHeader": [{
+    "title": "RELIABLE TERMS OF COOPERATION"
+  }],
+  "adv": [{
+    "count": "011",
+    "text": "We guarantee timely payments and provide detailed reports on partners' earnings"
+  }, {
+    "count": "02",
+    "text": "We guarantee timely payments and provide detailed reports on partners' earnings"
+  }]
 }
