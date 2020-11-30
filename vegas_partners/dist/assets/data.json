@@ -3,10 +3,190 @@
     "title": "RELIABLE TERMS OF COOPERATION"
   }],
   "adv": [{
-    "count": "011",
+    "count": "01",
     "text": "We guarantee timely payments and provide detailed reports on partners' earnings"
   }, {
     "count": "02",
     "text": "We guarantee timely payments and provide detailed reports on partners' earnings"
-  }]
+  }],
+  "tabsItem": [{
+      "menuItem": "24/7",
+      "active": "first",
+      "current": "current"
+    },
+    {
+      "menuItem": "Audience",
+      "active": "second"
+    }, {
+      "menuItem": "Payments",
+      "active": "third"
+    }, {
+      "menuItem": "Revenue",
+      "active": "fourth"
+    }, {
+      "menuItem": "For the best",
+      "active": "fifth"
+    }, {
+      "menuItem": "Bonuses",
+      "active": "sixth"
+    }, {
+      "menuItem": "How to earn",
+      "active": "seventh"
+    }
+  ],
+  "tabsMobItem": [{
+      "active": "first",
+      "current": "current"
+    },
+    {
+      "active": "second"
+    }, {
+      "active": "third"
+    }, {
+      "active": "fourth"
+    }, {
+      "active": "fifth"
+    }, {
+      "active": "sixth"
+    }, {
+      "active": "seventh"
+    }
+  ],
+  "tabsItemContent": [{
+      "current": "current",
+      "title": "Contact US",
+      "img": "assets/img/tabs_img.svg",
+      "titleSecond": "24/7 Professional support",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "Audience",
+      "img": "assets/img/tabs_img.svg",
+      "titleSecond": "Audience",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "Payments",
+      "img": "assets/img/tabs_img.svg",
+      "titleSecond": "Payments",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "Revenue",
+      "img": "assets/img/tabs_img.svg",
+      "titleSecond": "Revenue",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "For the best",
+      "img": "assets/img/tabs_img.svg",
+      "titleSecond": "For the best",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "Bonuses",
+      "img": "assets/img/tabs_img.svg",
+      "titleSecond": "Bonuses",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "How to earn",
+      "img": "assets/img/tabs_img.svg",
+      "titleSecond": "How to earn",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ],
+  "gamblingChip": [{
+    "gamblingChipImg": "assets/img/gambling_chip1.svg"
+  }, {
+    "gamblingChipImg": "assets/img/gambling_chip2.svg"
+  }, {
+    "gamblingChipImg": "assets/img/gambling_chip3.svg"
+  }, {
+    "gamblingChipImg": "assets/img/gambling_chip4.svg"
+  }, {
+    "gamblingChipImg": "assets/img/gambling_chip5.svg"
+  }, {
+    "gamblingChipImg": "assets/img/gambling_chip6.svg"
+  }, {
+    "gamblingChipImg": "assets/img/gambling_chip5.svg"
+  }, {
+    "gamblingChipImg": "assets/img/gambling_chip5.svg"
+  }],
+  "partnersLogo": [{
+      "partnersImg": "assets/img/partner1.svg"
+    },
+    {
+      "partnersImg": "assets/img/partner2.svg"
+    }, {
+      "partnersImg": "assets/img/partner3.svg"
+    }, {
+      "partnersImg": "assets/img/partner4.svg"
+    }
+  ],
+  "getStart": [{
+      "step": "Step1",
+      "title": "Registration",
+      "text": "To become a partner of the Rock in Affiliate program, register in a few clicks on the presented form."
+    },
+    {
+      "step": "Step2",
+      "title": "Registration",
+      "text": "To become a partner of the Rock in Affiliate program, register in a few clicks on the presented form."
+    }
+  ],
+  "menu": [{
+      "link": "Main",
+      "active": "active"
+    },
+    {
+      "link": "Our brand"
+    }, {
+      "link": "Questions and answers"
+    }, {
+      "link": "Contacts"
+    }
+  ],
+  "registartionInputField": [{
+      "typeField": "text",
+      "name": "email",
+      "placeholder": "enter email"
+    },
+    {
+      "typeField": "password",
+      "name": "password",
+      "placeholder": "enter password"
+    },
+    {
+      "typeField": "password",
+      "name": "confirm the password",
+      "placeholder": "confirm the password"
+    }
+  ],
+  "callbackInputField": [{
+      "typeField": "text",
+      "name": "name",
+      "placeholder": "enter your name"
+    },
+    {
+      "typeField": "text",
+      "placeholder": "enter your email"
+    },
+    {
+      "typeField": "number",
+      "name": "number",
+      "placeholder": "enter your number"
+    }
+  ],
+  "loginInputField": [{
+      "typeField": "text",
+      "name": "email",
+      "placeholder": "enter your email"
+    },
+    {
+      "typeField": "password",
+      "name": "password",
+      "placeholder": "enter your password"
+    }
+  ]
 }

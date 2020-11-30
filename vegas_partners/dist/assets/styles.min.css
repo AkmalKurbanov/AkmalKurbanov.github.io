@@ -2276,6 +2276,7 @@ button,input {
   position: relative;
   z-index: 1;
   padding-bottom: 3.125rem;
+  max-width: 34.375rem;
 }
 
 @media (max-width:767.98px) {
@@ -2814,6 +2815,13 @@ button,input {
   color: #fff;
   position: relative;
   z-index: 999;
+  padding: 0 1.25rem;
+}
+
+@media (max-width:1199.98px) {
+  .tabs__item {
+    padding: 0 .9375rem;
+  }
 }
 
 .tabs__item:first-child {
@@ -2886,7 +2894,7 @@ button,input {
   border-radius: 2.8125rem;
   border: .625rem solid #fff;
   width: 100%;
-  padding: 8.125rem 1.25rem 1.25rem;
+  padding: 8.125rem 0 1.25rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
@@ -2896,7 +2904,7 @@ button,input {
   .tabs__mob {
     max-width: 16.875rem;
     min-height: 35rem;
-    padding: 6.25rem .9375rem .9375rem;
+    padding: 6.25rem 0 .9375rem;
   }
 }
 
@@ -2904,7 +2912,7 @@ button,input {
   .tabs__mob {
     max-width: 15rem;
     min-height: 32.5rem;
-    padding: 6.875rem .9375rem .9375rem;
+    padding: 6.875rem 0 .9375rem;
   }
 }
 
@@ -2914,7 +2922,7 @@ button,input {
     min-height: 18.75rem;
     border-radius: 1.5625rem;
     border: .3125rem solid #fff;
-    padding: 4.375rem .9375rem .9375rem;
+    padding: 4.375rem 0 .9375rem;
   }
 }
 
@@ -3030,12 +3038,14 @@ button,input {
 .tabs__item-content {
   position: absolute;
   top: 0;
-  margin-left: 140%;
+  left: 100%;
+  margin-left: 30%;
+  width: 100%;
 }
 
-@media (max-width:1199.98px) {
+@media (max-width:575.98px) {
   .tabs__item-content {
-    margin-left: 133%;
+    margin-left: 15%;
   }
 }
 
