@@ -55,73 +55,77 @@
   "tabsItemContent": [{
       "current": "current",
       "title": "Contact US",
-      "img": "assets/img/tabs_img.svg",
+      "img": "https://useimg.xyz/vegas/tabs_img.svg",
       "titleSecond": "24/7 Professional support",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "title": "Audience",
-      "img": "assets/img/tabs_img.svg",
+      "img": "https://useimg.xyz/vegas/tabs_img.svg",
       "titleSecond": "Audience",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "title": "Payments",
-      "img": "assets/img/tabs_img.svg",
+      "img": "https://useimg.xyz/vegas/tabs_img.svg",
       "titleSecond": "Payments",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "title": "Revenue",
-      "img": "assets/img/tabs_img.svg",
+      "img": "https://useimg.xyz/vegas/tabs_img.svg",
       "titleSecond": "Revenue",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "title": "For the best",
-      "img": "assets/img/tabs_img.svg",
+      "img": "https://useimg.xyz/vegas/tabs_img.svg",
       "titleSecond": "For the best",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "title": "Bonuses",
-      "img": "assets/img/tabs_img.svg",
+      "img": "https://useimg.xyz/vegas/tabs_img.svg",
       "titleSecond": "Bonuses",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "title": "How to earn",
-      "img": "assets/img/tabs_img.svg",
+      "img": "https://useimg.xyz/vegas/tabs_img.svg",
       "titleSecond": "How to earn",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
   ],
   "gamblingChip": [{
-    "gamblingChipImg": "assets/img/gambling_chip1.svg"
+    "gamblingChipImg": "https://useimg.xyz/vegas/gambling_chip1.svg"
   }, {
-    "gamblingChipImg": "assets/img/gambling_chip2.svg"
+    "gamblingChipImg": "https://useimg.xyz/vegas/gambling_chip2.svg"
   }, {
-    "gamblingChipImg": "assets/img/gambling_chip3.svg"
+    "gamblingChipImg": "https://useimg.xyz/vegas/gambling_chip3.svg"
   }, {
-    "gamblingChipImg": "assets/img/gambling_chip4.svg"
+    "gamblingChipImg": "https://useimg.xyz/vegas/gambling_chip4.svg"
   }, {
-    "gamblingChipImg": "assets/img/gambling_chip5.svg"
+    "gamblingChipImg": "https://useimg.xyz/vegas/gambling_chip5.svg"
   }, {
-    "gamblingChipImg": "assets/img/gambling_chip6.svg"
+    "gamblingChipImg": "https://useimg.xyz/vegas/gambling_chip6.svg"
   }, {
-    "gamblingChipImg": "assets/img/gambling_chip5.svg"
+    "gamblingChipImg": "https://useimg.xyz/vegas/gambling_chip5.svg"
   }, {
-    "gamblingChipImg": "assets/img/gambling_chip5.svg"
+    "gamblingChipImg": "https://useimg.xyz/vegas/gambling_chip5.svg"
+  }, {
+    "gamblingChipImg": "assets/img/bg_elem1.svg"
+  }, {
+    "gamblingChipImg": "assets/img/bg_elem2.svg"
   }],
   "partnersLogo": [{
-      "partnersImg": "assets/img/partner1.svg"
+      "partnersImg": "https://useimg.xyz/vegas/partner1.svg"
     },
     {
-      "partnersImg": "assets/img/partner2.svg"
+      "partnersImg": "https://useimg.xyz/vegas/partner2.svg"
     }, {
-      "partnersImg": "assets/img/partner3.svg"
+      "partnersImg": "https://useimg.xyz/vegas/partner3.svg"
     }, {
-      "partnersImg": "assets/img/partner4.svg"
+      "partnersImg": "https://useimg.xyz/vegas/partner4.svg"
     }
   ],
   "getStart": [{

@@ -2266,6 +2266,7 @@ button,input {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .main-screen__title {
@@ -2563,6 +2564,18 @@ button,input {
   }
 }
 
+.main-screen .gambling-chip__list li:nth-child(9) {
+  left: 90%;
+  bottom: 10%;
+  width: 31.25rem;
+}
+
+.main-screen .gambling-chip__list li:nth-child(10) {
+  right: 100%;
+  top: 0;
+  width: 12.5rem;
+}
+
 @-webkit-keyframes swing1 {
   0% {
     -webkit-transform: rotateZ(0);
@@ -2639,6 +2652,7 @@ button,input {
   padding-bottom: 7.5rem;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 @media (max-width:1199.98px) {
@@ -2670,10 +2684,28 @@ button,input {
   content: '';
   width: 100%;
   height: 200%;
-  background-image: url(../../assets/img/tabs_bg1.png);
+  background-image: url(https://useimg.xyz/vegas/tabs_bg1.png);
   top: -80%;
   background-size: cover;
   background-position: top;
+}
+
+.tabs__bg-elent {
+  position: absolute;
+}
+
+.tabs__bg-elent:first-child {
+  width: 31.25rem;
+  right: 90%;
+}
+
+.tabs__bg-elent:nth-child(2) {
+  width: 12.5rem;
+  left: 90%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .tabs__content {
@@ -2886,6 +2918,7 @@ button,input {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .tabs__mob {
@@ -3059,6 +3092,7 @@ button,input {
   height: .125rem;
   background-color: #8e7576;
   top: 2.5rem;
+  left: .9375rem;
 }
 
 .tabs__mob-arrow:before {
@@ -3088,6 +3122,10 @@ button,input {
   margin-bottom: .25rem;
   background-color: #1a364b;
   display: block;
+}
+
+.tabs__list::-webkit-scrollbar {
+  width: 0;
 }
 
 .get-start {
@@ -3348,6 +3386,7 @@ button,input {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
 }
 
 @media (max-width:1199.98px) {
@@ -3373,6 +3412,25 @@ button,input {
   .advantages {
     padding: 3.125rem 0;
   }
+}
+
+.advantages__bg-elent {
+  position: absolute;
+}
+
+.advantages__bg-elent:first-child {
+  width: 31.25rem;
+  left: 80%;
+  top: -6%;
+}
+
+.advantages__bg-elent:nth-child(2) {
+  width: 12.5rem;
+  right: 85%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .advantages__bg-mobile {
@@ -3887,5 +3945,5 @@ button,input {
 }
 
 .webp .tabs:before {
-  background-image: url(../../assets/img/tabs_bg1.webp);
+  background-image: url(https://useimg.xyz/vegas/tabs_bg1.webp);
 }
