@@ -1,0 +1,29 @@
+.icon-arrow:before {
+  content: '\e800';
+}
+
+/* '' */
+
+.icon-current:before {
+  content: '\e801';
+}
+
+/* '' */
+
+.icon-search:before {
+  content: '\e802';
+}
+
+/* '' */
+
+.icon-warranty:before {
+  content: '\e803';
+}
+
+/* '' */
+
+.icon-marker:before {
+  content: '\e804';
+}
+
+/* '' */
