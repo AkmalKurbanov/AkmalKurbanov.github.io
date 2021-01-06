@@ -1118,6 +1118,14 @@ select.form-control {
     width: 100%;
     /* margin: auto; */
   }
+  #team h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #team h2 {
+    font-size: 30px;
+  }
 }
 
 #contact {
