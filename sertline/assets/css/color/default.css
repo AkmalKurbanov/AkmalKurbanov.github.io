@@ -8,42 +8,44 @@ a:hover, a:focus, a:active {
   color: #4444e0; }
 
 .bg-theme {
-  background: #4444e0; }
+  background: orange; }
 
 .btn.btn-theme {
-  background: #4444e0; }
+  background: orange;
+  }
 
 .loader-icon {
   border-right: 3px solid #4444e0 !important; }
 
 .scroll-top {
-  background: #4444e0; }
+  background: orange; }
 
 .nav.navbar-nav > li > a.btn-call-to-action {
-  background: #4444e0; }
+  background: orange; }
 
 .nav.navbar-nav > li > a:hover,
 .nav.navbar-nav > li > a:active,
 .nav.navbar-nav > li > a:focus {
-  color: #4444e0; }
+  color: orange; }
 
 .nav.navbar-nav > li > a.btn-call-to-action:hover,
 .nav.navbar-nav > li > a.btn-call-to-action:active,
 .nav.navbar-nav > li > a.btn-call-to-action:focus {
-  background: #4444e0; }
+  background: orange; }
 
 .navbar-toggle {
-  background: #4444e0; }
+  background: orange;
+  }
 
 .feature-slider .owl-nav > div:hover {
-  background: #4444e0; }
+  background: orange; }
 
 #fun-facts:after {
   background: #4444e0;
   background: rgba(145, 94, 223, 0.9); }
 
 .owl-dot.active {
-  background: #4444e0; }
+  background: orange; }
 
 .pricing-plan:hover .plan-value > h4,
 .pricing-plan.recommanded .plan-value > h4 {

@@ -191,7 +191,7 @@ h2 {
 }
 
 .bg-yellow {
-  background: #ffb81e;
+  background: orange;
 }
 
 .bg-theme {
@@ -259,6 +259,27 @@ h2 {
 #hero-content h2 {
   color: #fff;
 }
+
+@media screen and (max-width: 1199px) {
+  #hero-content h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #hero-content h2 {
+    font-size: 25px;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #hero-content h2 {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
 
 .hero-title {
   font-size: 48px;
@@ -1021,6 +1042,8 @@ select.form-control {
   margin-bottom: 20px;
   cursor: pointer;
   padding: 10px 40px;
+  box-shadow: 0 0 5px rgba(11, 60, 52, .2);
+  transition: all .3s;
 }
 
 .team-single:hover {
@@ -1091,6 +1114,9 @@ select.form-control {
 @media screen and (max-width: 767px) {
   .team-single {
     margin-bottom: 30px;
+    max-width: 500px;
+    width: 100%;
+    /* margin: auto; */
   }
 }
 
@@ -1131,14 +1157,31 @@ select.form-control {
   -webkit-transform: .5s;
   -ms-transform: .5s;
   transform: .5s;
+  font-size: 20px;
 }
 
 .social>.list-inline>li>a>i.fa-facebook {
   background: #365493;
 }
 
+.social>.list-inline>li>a>i.fa-instagram {
+  background: #c13584;
+}
+
+.social>.list-inline>li>a>i.fa-telegram {
+  background: #0088cc;
+}
+
 .social>.list-inline>li>a>i.fa-twitter {
   background: #33ccff;
+}
+
+.social>.list-inline>li>a>i.fa-whatsapp {
+  background: #25d366;
+}
+
+.social>.list-inline>li>a>i.fa-vk {
+  background: #45668e;
 }
 
 .social>.list-inline>li>a>i.fa-google-plus {
@@ -1246,11 +1289,11 @@ select.form-control {
   font-size: 15px;
 }
 
-.widget-instargram ul>li {
+/* .widget-instargram ul>li {
   width: 33.33333%;
   float: left;
   padding: 3px;
-}
+} */
 
 #instafeed>a {
   display: block;
@@ -1472,48 +1515,8 @@ select.form-control {
   list-style-type: none;
 }
 
-.instagram {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: #c13584;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.instagram_icon {
-  width: 25px;
-  height: 25px;
-  border-radius: 7px;
-  position: relative;
-  border: 2px solid #fff;
-}
 
-.instagram:before,
-.instagram:after {
-  position: absolute;
-  content: '';
-  border-radius: 100%;
-  border: 1px solid #fff;
-}
-
-.instagram:before {
-  width: 12px;
-  height: 12px;
-}
-
-.instagram:after {
-  width: 4px;
-  height: 4px;
-  margin-left: 14px;
-  margin-bottom: 14px;
-  background-color: #fff;
-}
-
-.list-inline {
-  display: flex;
-}
 
 .contact-address {
   color: #fff;
