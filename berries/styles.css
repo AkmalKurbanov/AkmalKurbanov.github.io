@@ -218,7 +218,7 @@ header {
 
 @media screen and (max-width: 575px) {
   header {
-    min-height: 50px;
+    min-height: 80px;
   }
 }
 
