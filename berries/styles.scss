@@ -57,7 +57,8 @@ ul {
     transform-origin: center;
     opacity: 0;
     margin-top: -200px;
-    
+    position: relative;
+
     @media screen and (max-width: 1700px) {
       min-width: 170px;
       height: 180px;
@@ -86,6 +87,10 @@ ul {
     @media screen and (max-width: 455px) {
       min-width: 45px;
       height: 55px;
+    }
+
+    &:hover {
+      img {}
     }
 
     img {
@@ -141,6 +146,7 @@ ul {
 .wrapper {
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
 }
 
