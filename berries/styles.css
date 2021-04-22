@@ -333,25 +333,7 @@ header.slide-top {
           transform: scale(0);
   -webkit-transition: 1s;
   transition: 1s;
-  max-width: 724px;
-}
-
-@media screen and (max-width: 1199px) {
-  .central {
-    min-width: 350px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .central {
-    min-width: 200px;
-  }
-}
-
-@media screen and (max-width: 455px) {
-  .central {
-    min-width: 120px;
-  }
+  max-width: 37%;
 }
 
 .central.central-scale {

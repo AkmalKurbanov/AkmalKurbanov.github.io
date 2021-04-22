@@ -16,7 +16,6 @@ $(document).ready(function () {
 
     var random = Math.floor(Math.random() * 1000);
     var $li = $(this).find('span');
-    // var $li = $(".main__berries ul li span");
     $li.eq(random % $li.length).addClass("--open");
     $(this).find('.berry').fadeOut();
     var countClass = $('.main__berries ul li span.--open').length;

@@ -213,7 +213,7 @@ header {
   justify-content: center;
   z-index: 9;
   overflow: hidden;
-
+  
   &__wrap {
     display: flex;
     display: flex;
@@ -283,19 +283,7 @@ header {
 .central {
   transform: scale(0);
   transition: 1s;
-  max-width: 724px;
-
-  @media screen and (max-width: 1199px) {
-    min-width: 350px;
-  }
-
-  @media screen and (max-width: 767px) {
-    min-width: 200px;
-  }
-
-  @media screen and (max-width: 455px) {
-    min-width: 120px;
-  }
+  max-width: 37%;
 
 
   &.central-scale {
