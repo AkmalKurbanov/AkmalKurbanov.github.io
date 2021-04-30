@@ -247,7 +247,7 @@ button,input {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-  background-image: url(../../assets/img/bg.png);
+  background-image: url(../assets/img/bg.png);
 }
 
 @media (max-width:575.98px) {
@@ -831,7 +831,7 @@ button,input {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  background-image: url(../../assets/img/hero.png);
+  background-image: url(../assets/img/hero.png);
   background-size: cover;
   background-position: right top;
   background-repeat: no-repeat;
@@ -875,7 +875,7 @@ button,input {
   .hero {
     height: 300px;
     padding-bottom: 0;
-    background-image: url(../../assets/img/hero-mobile1.png);
+    background-image: url(../assets/img/hero-mobile1.png);
   }
 }
 
@@ -1282,7 +1282,7 @@ button,input {
 }
 
 .offers {
-  background-image: url(../../assets/img/offers-bg.png);
+  background-image: url(../assets/img/offers-bg.png);
   background-attachment: fixed;
 }
 
@@ -1623,6 +1623,7 @@ button,input {
 
 .join {
   background-attachment: fixed;
+  background-image: url(../assets/img/join-bg.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2138,25 +2139,29 @@ button,input {
 }
 
 .webp .wrapper .content {
-  background-image: url(../../assets/img/bg.webp);
+  background-image: url(../assets/img/bg.webp);
 }
 
 .webp .hero {
-  background-image: url(../../assets/img/hero.webp);
+  background-image: url(../assets/img/hero.webp);
 }
 
 @media (max-width:575.98px) {
   .webp .hero {
-    background-image: url(../../assets/img/hero-mobile1.webp);
+    background-image: url(../assets/img/hero-mobile1.webp);
   }
 }
 
 .webp .offers {
-  background-image: url(../../assets/img/offers-bg.webp);
+  background-image: url(../assets/img/offers-bg.webp);
 }
 
 .webp .advantages__col--items-wrap:after {
   background-image: url(../../assets/img/advantage-bg.webp);
+}
+
+.webp .join {
+  background-image: url(../assets/img/join-bg.webp);
 }
 
 .webp .join__offer:after {
