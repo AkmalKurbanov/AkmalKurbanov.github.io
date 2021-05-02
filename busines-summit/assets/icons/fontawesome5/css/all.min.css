@@ -2525,6 +2525,10 @@
   content: "\f3af";
 }
 
+.fa-hamburger:before {
+  content: "\f805";
+}
+
 .fa-hand-heart:before {
   content: "\f4bc";
 }
