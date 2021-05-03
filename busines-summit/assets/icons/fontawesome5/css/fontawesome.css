@@ -4345,6 +4345,14 @@
   content: "\f3f3";
 }
 
+.fa-speaker:before {
+  content: "\f8df";
+}
+
+.fa-speakers:before {
+  content: "\f8e0";
+}
+
 .fa-spinner:before {
   content: "\f110";
 }
