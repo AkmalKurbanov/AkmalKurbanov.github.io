@@ -1,0 +1,126 @@
+{
+  "typeSite": [{
+      "title": "Сайт визитка",
+      "desc": "Небольшой сайт, как правило, состоящий из нескольких веб-страниц (до 5), содержит основную информацию об организации, частном лице, компании.",
+      "individualPrice": "100",
+      "individualTerm": "1",
+      "uniquelPrice": "200",
+      "uniquelTerm": "2",
+      "inStockPrice": "0",
+      "inStockTerm": "0",
+      "pageProofsPrice": "300",
+      "pageProofsTerm": "3",
+      "magentoPrice": "400",
+      "magentoTerm": "4",
+      "wordpressPrice": "500",
+      "wordpressTerm": "5",
+      "inStockCmsPrice": "0",
+      "inStockCmsTerm": "0"
+    },
+    {
+      "title": "Landing Page",
+      "desc": "Это посадочная страница, основная задача которой, побудить пользователя совершить целевое действие. Такое действие может быть направлено на оформление заказа, онлайн оплату или получение контактных данных пользователя.",
+      "individualPrice": "600",
+      "individualTerm": "6",
+      "uniquelPrice": "700",
+      "uniquelTerm": "7",
+      "inStockPrice": "0",
+      "inStockTerm": "0",
+      "pageProofsPrice": "800",
+      "pageProofsTerm": "8",
+      "magentoPrice": "900",
+      "magentoTerm": "9",
+      "wordpressPrice": "1000",
+      "wordpressTerm": "10",
+      "inStockCmsPrice": "0",
+      "inStockCmsTerm": "0"
+    },
+    {
+      "title": "Корпоративный сайт",
+      "desc": "Многостраничный сайт, обычно содержит многоуровневую структуру, личный кабинет, формы обратной связи. Такой сайт может быть направлен как на взаимодействие с существующими клиентами и партнерами, так и на привлечение новых.",
+      "individualPrice": "1100",
+      "individualTerm": "11",
+      "uniquelPrice": "1200",
+      "uniquelTerm": "12",
+      "inStockPrice": "0",
+      "inStockTerm": "0",
+      "pageProofsPrice": "1300",
+      "pageProofsTerm": "13",
+      "magentoPrice": "1400",
+      "magentoTerm": "14",
+      "wordpressPrice": "1500",
+      "wordpressTerm": "15",
+      "inStockCmsPrice": "0",
+      "inStockCmsTerm": "0"
+    },
+    {
+      "title": "Сайт-каталог",
+      "desc": "Представляет собой многостраничный сайт с многоуровневой структурой. Такой сайт содержит каталог продуктов компании, есть возможность указывать цены, скидки, акции, разделять контент для различных групп пользователей (опт/розница).",
+      "individualPrice": "100",
+      "individualTerm": "1",
+      "uniquelPrice": "200",
+      "uniquelTerm": "2",
+      "inStockPrice": "0",
+      "inStockTerm": "0",
+      "pageProofsPrice": "400",
+      "pageProofsTerm": "4",
+      "magentoPrice": "500",
+      "magentoTerm": "5",
+      "wordpressPrice": "500",
+      "wordpressTerm": "5",
+      "inStockCmsPrice": "0",
+      "inStockCmsTerm": "0"
+    },
+    {
+      "title": "Интернет магазин",
+      "desc": "Интернет-магазин, который содержит каталог товаров компании, с возможностью фильтрации и сортировки. Пользователи могут оформить заказ, оплатить онлайн, зарегистрироваться, участвовать в программе лояльности.",
+      "individualPrice": "100",
+      "individualTerm": "1",
+      "uniquelPrice": "200",
+      "uniquelTerm": "2",
+      "inStockPrice": "0",
+      "inStockTerm": "0",
+      "pageProofsPrice": "400",
+      "pageProofsTerm": "4",
+      "magentoPrice": "500",
+      "magentoTerm": "5",
+      "wordpressPrice": "500",
+      "wordpressTerm": "5",
+      "inStockCmsPrice": "0",
+      "inStockCmsTerm": "0"
+    }
+  ],
+
+  "design": [{
+      "title": "Индивидуальный дизайн",
+      "class": "calculate__item--individual"
+    },
+    {
+      "title": "Уникальный WOW дизайн",
+      "class": "calculate__item--unique"
+    },
+    {
+      "title": "Дизайн уже есть (свой)",
+      "class": "calculate__item--in-stock"
+    }
+  ],
+
+  "pageProofs": [{
+    "title": "ПК + Планшет + Смартфон",
+    "desc": "Если проект направлен на широкий охват пользователей, запуск проекта обязателен с адаптацией под мобильные устройства"
+  }],
+
+  "cms": [{
+      "title": "Magento",
+      "class": "calculate__item--magento"
+    },
+    {
+      "title": "CMS Wordpress",
+      "class": "calculate__item--wordpress"
+    },
+    {
+      "title": "Без движка",
+      "class": "calculate__item--in-stock"
+    }
+  ]
+}

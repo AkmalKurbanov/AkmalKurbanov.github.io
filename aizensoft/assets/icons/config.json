@@ -1,0 +1,42 @@
+{
+  "name": "icon",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "08d79c766e2b5c10904dbde14d394767",
+      "css": "arrow",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M607.5 256.9L593.7 270.7C584.5 279.8 584.5 294.7 593.7 303.8L757.6 466.8H23.4C10.5 466.8 0 477.3 0 490.2V509.8C0 522.7 10.5 533.2 23.4 533.2H757.6L593.7 696.2C584.5 705.3 584.5 720.2 593.7 729.3L607.5 743.1C616.6 752.3 631.5 752.3 640.6 743.1L868.1 516.6C877.3 507.4 877.3 492.6 868.1 483.4L640.6 256.9C631.5 247.7 616.6 247.7 607.5 256.9Z",
+        "width": 875
+      },
+      "search": [
+        "arrow"
+      ]
+    },
+    {
+      "uid": "5de9370846a26947e03f63142a3f1c07",
+      "css": "angle-up",
+      "code": 61702,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7e4164950ffa4990961958b2d6318658",
+      "css": "info-circled",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59394,
+      "src": "fontawesome"
+    }
+  ]
+}
